@@ -1,0 +1,24 @@
+﻿name: Sync Markdown to Notion
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'wiki/**/*.md'
+      - 'research/**/*.md'
+      - 'findings/**/*.md'
+      - 'prompts/**/*.md'
+      - 'README.md'
+      - 'scripts/sync_notion.py'
+
+jobs:
+  sync-notion:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Placeholder
+        run: echo "Notion sync will be configured in a later step."

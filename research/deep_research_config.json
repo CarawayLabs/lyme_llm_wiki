@@ -1,0 +1,13 @@
+{
+  "output_dir": "outputs/deep_research",
+  "max_parallel": 2,
+  "jobs": [
+    {
+      "id": "example_lyme_dataset_landscape",
+      "enabled": false,
+      "description": "Example job. Enable after creating the input markdown file.",
+      "input_file": "input/deep_research/lyme_dataset_landscape.md",
+      "output_prefix": "lyme_dataset_landscape"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "name": "phase_zero_research",
+  "output_dir": "outputs/deep_research/phase_zero",
+  "rendered_prompt_dir": "outputs/deep_research/rendered_prompts",
+  "max_parallel": 4,
+  "nodes": [
+    {
+      "id": "problem_space_map",
+      "label": "1. Problem-space map",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/lyme_disease_problem_space_map.md",
+      "output_prefix": "01_problem_space_map",
+      "batch": 1,
+      "depends_on": []
+    },
+    {
+      "id": "patient_and_clinician_journeys",
+      "label": "2. Patient and clinician journeys",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/patient_and_clinician_journeys.md",
+      "output_prefix": "02_patient_and_clinician_journeys",
+      "batch": 1,
+      "depends_on": []
+    },
+    {
+      "id": "open_data_inventory",
+      "label": "3. Open-data inventory",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/open_data_inventory.md",
+      "output_prefix": "03_open_data_inventory",
+      "batch": 1,
+      "depends_on": []
+    },
+    {
+      "id": "evidence_and_controversy_map",
+      "label": "4. Evidence and controversy map",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/evidence_and_controversy_map.md",
+      "output_prefix": "04_evidence_and_controversy_map",
+      "batch": 1,
+      "depends_on": []
+    },
+    {
+      "id": "synthesis_agent_integrate_findings",
+      "label": "Synthesis agent: integrate findings",
+      "mode": "openai_synthesis",
+      "model": "gpt-4.1",
+      "input_file": "input/deep_research/synthesis_agent_integrate_findings.md",
+      "output_prefix": "05_synthesis_agent_integrate_findings",
+      "batch": 2,
+      "depends_on": [
+        "problem_space_map",
+        "patient_and_clinician_journeys",
+        "open_data_inventory",
+        "evidence_and_controversy_map"
+      ]
+    },
+    {
+      "id": "data_linkage_feasibility",
+      "label": "5. Data-linkage feasibility",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/data_linkage_feasibility.md",
+      "output_prefix": "06_data_linkage_feasibility",
+      "batch": 3,
+      "depends_on": [
+        "open_data_inventory",
+        "evidence_and_controversy_map",
+        "synthesis_agent_integrate_findings"
+      ]
+    },
+    {
+      "id": "previous_solution_analysis",
+      "label": "6. Previous solution analysis",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/previous_solution_analysis.md",
+      "output_prefix": "07_previous_solution_analysis",
+      "batch": 3,
+      "depends_on": [
+        "problem_space_map",
+        "patient_and_clinician_journeys",
+        "evidence_and_controversy_map",
+        "synthesis_agent_integrate_findings"
+      ]
+    },
+    {
+      "id": "stakeholder_and_incentive_map",
+      "label": "7. Stakeholder and incentive map",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/stakeholder_and_incentive_map.md",
+      "output_prefix": "08_stakeholder_and_incentive_map",
+      "batch": 4,
+      "depends_on": [
+        "data_linkage_feasibility",
+        "problem_space_map",
+        "patient_and_clinician_journeys",
+        "previous_solution_analysis",
+        "synthesis_agent_integrate_findings"
+      ]
+    },
+    {
+      "id": "opportunity_generation",
+      "label": "8. Opportunity generation",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/opportunity_generation.md",
+      "output_prefix": "09_opportunity_generation",
+      "batch": 5,
+      "depends_on": [
+        "data_linkage_feasibility",
+        "previous_solution_analysis",
+        "stakeholder_and_incentive_map",
+        "synthesis_agent_integrate_findings"
+      ]
+    },
+    {
+      "id": "red_team_analysis",
+      "label": "9. Red-team analysis",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/red_team_analysis.md",
+      "output_prefix": "10_red_team_analysis",
+      "batch": 6,
+      "depends_on": [
+        "opportunity_generation"
+      ]
+    },
+    {
+      "id": "interview_preparation",
+      "label": "10. Interview preparation",
+      "mode": "gemini_deep_research",
+      "input_file": "input/deep_research/interview_preparation.md",
+      "output_prefix": "11_interview_preparation",
+      "batch": 7,
+      "depends_on": [
+        "patient_and_clinician_journeys",
+        "stakeholder_and_incentive_map",
+        "opportunity_generation",
+        "red_team_analysis"
+      ]
+    }
+  ]
+}

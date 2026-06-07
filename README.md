@@ -1,17 +1,89 @@
-﻿# Lyme LLM Wiki
+# TopX Lyme Challenge LLM Wiki
 
-A repository for researching the TopX Lyme disease challenge, exploring relevant public datasets, and maintaining a structured LLM-assisted knowledge base.
+![TopX Lyme Challenge Phase One Infographic](resources/phase_one_infographic.png)
 
-## Repository structure
+This repository is an implementation of an Andrej Karpathy-style LLM wiki for the TopX Lyme Challenge: a structured, source-grounded workspace where research materials, prompts, notes, findings, and submission thinking can accumulate into a navigable knowledge base.
 
-- `raw_sources/` â€” original documents, API results, papers, and challenge materials
-- `wiki/` â€” structured summaries, concepts, datasets, questions, and analyses
-- `scripts/` â€” data discovery and ingestion utilities
-- `outputs/` â€” generated JSON and Markdown artifacts
+The TopX Lyme Challenge focuses on identifying high-value AI opportunities related to Lyme disease. This repo is designed to support Phase 1 research: understanding the challenge, finding relevant public datasets and source material, documenting evidence, shaping research questions, and turning that work into a credible submission narrative.
 
-## Getting started
+## How This Wiki Is Organized
 
-1. Add original materials to `raw_sources/`.
-2. Create structured summaries in `wiki/`.
-3. Record research activity in `wiki/log.md`.
-4. Track unanswered questions in `wiki/questions/`.
+- `wiki/` contains the human-readable knowledge base: challenge brief, dataset inventory, research questions, findings, opportunities, and submission planning.
+- `raw_sources/` is for original source material such as downloaded documents, API results, papers, and challenge references. Do not overwrite these files.
+- `research/` contains working research configuration and notes that belong in the repo, including Gemini Deep Research job configuration.
+- `prompts/` contains reusable prompt templates for research assistance, dataset scoring, and opportunity scoring.
+- `findings/` is for more developed evidence notes and synthesized research outputs that should become part of the project record.
+- `scripts/` contains automation for ingestion, discovery, Notion sync, and Gemini Deep Research.
+- `outputs/` contains generated artifacts. Review outputs before promoting important content into `wiki/` or `findings/`.
+- `resources/` contains README and project assets such as images.
+- `project_scaffolding/` contains setup and maintenance scripts for the repo itself.
+
+## Current Wiki Pages
+
+- `wiki/00_home.md` - entry point for the TopX Lyme Challenge wiki
+- `wiki/01_challenge_brief.md` - goals, requirements, assumptions, and open questions
+- `wiki/02_dataset_inventory.md` - candidate datasets and source tracking
+- `wiki/03_research_questions.md` - active research questions
+- `wiki/04_findings.md` - finding template and synthesized evidence
+- `wiki/05_opportunities.md` - opportunity scoring table
+- `wiki/06_submission_plan.md` - Phase 1 deliverables and narrative checklist
+- `wiki/log.md` - research activity log
+- `wiki/index.md` and `wiki/overview.md` - wiki navigation and summary pages
+
+## Gemini Deep Research
+
+This project includes a Gemini Deep Research runner for launching one or more markdown prompts in parallel. The runner and configuration are part of the repo; individual input prompts and generated report files are local run artifacts and are intentionally ignored by git.
+
+Install dependencies:
+
+```powershell
+pip install -r requirements.txt
+```
+
+Create `.env` from `.env.example` and set:
+
+```dotenv
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+Create one or more markdown prompts under:
+
+```text
+input/deep_research/
+```
+
+Then edit:
+
+```text
+research/deep_research_config.json
+```
+
+Set each job's `enabled` field to `true` when it should run. The config controls the output directory, maximum parallel jobs, prompt paths, optional per-job agent overrides, and output filename prefixes.
+
+List configured jobs:
+
+```powershell
+python scripts/run_deep_research.py list
+```
+
+Run all enabled jobs:
+
+```powershell
+python scripts/run_deep_research.py run
+```
+
+Retrieve a completed Gemini interaction:
+
+```powershell
+python scripts/run_deep_research.py retrieve --interaction-id v1_your_interaction_id_here --job-id lyme_followup
+```
+
+Generated reports are written to `outputs/deep_research/`. Promote only reviewed, useful conclusions into `wiki/` or `findings/`, and keep sourced facts distinct from analysis or inference.
+
+## Working Principles
+
+- Read relevant source and wiki files before adding conclusions.
+- Ground claims in repository content and cite source paths or headings.
+- Keep raw source material unchanged.
+- Prefer small, reviewable updates.
+- Treat Deep Research as an input to the wiki, not as the wiki itself.
