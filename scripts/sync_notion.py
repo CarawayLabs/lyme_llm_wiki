@@ -42,6 +42,26 @@ MAX_CODE_CHARS = 1800
 MAX_BLOCKS_PER_APPEND = 100
 
 
+class NotionApiError(RuntimeError):
+    def __init__(
+        self,
+        method: str,
+        path: str,
+        status_code: int,
+        response_text: str,
+        code: str | None = None,
+        message: str | None = None,
+    ) -> None:
+        self.method = method
+        self.path = path
+        self.status_code = status_code
+        self.response_text = response_text
+        self.code = code
+        self.message = message
+        detail = message or response_text
+        super().__init__(f"{method} {path} failed: {status_code}\n{detail}")
+
+
 class NotionClient:
     def __init__(self, token: str) -> None:
         self.session = requests.Session()
@@ -71,8 +91,22 @@ class NotionClient:
     @staticmethod
     def _raise_for_error(response: requests.Response, method: str, path: str) -> None:
         if not response.ok:
-            raise RuntimeError(
-                f"{method} {path} failed: {response.status_code}\n{response.text}"
+            error_code = None
+            error_message = None
+            try:
+                error_payload = response.json()
+                error_code = error_payload.get("code")
+                error_message = error_payload.get("message")
+            except ValueError:
+                pass
+
+            raise NotionApiError(
+                method=method,
+                path=path,
+                status_code=response.status_code,
+                response_text=response.text,
+                code=error_code,
+                message=error_message,
             )
 
     def query_page_by_repo_path(
@@ -301,6 +335,36 @@ def find_markdown_files(repo_root: Path) -> list[Path]:
     return sorted(files)
 
 
+def print_notion_error(error: NotionApiError, database_id: str) -> None:
+    print(
+        f"Notion API error: {error.method} {error.path} failed with "
+        f"{error.status_code}.",
+        file=sys.stderr,
+    )
+
+    if error.code:
+        print(f"Code: {error.code}", file=sys.stderr)
+
+    if error.message:
+        print(f"Message: {error.message}", file=sys.stderr)
+
+    if error.status_code == 404 and error.code == "object_not_found":
+        print(
+            "\nThe Notion integration cannot access the Repo Pages database.",
+            file=sys.stderr,
+        )
+        print(f"Configured database ID: {database_id}", file=sys.stderr)
+        print(
+            "In Notion, open the TopX Lyme Challenge Hub or Repo Pages database, "
+            "use Share/Connections, and add the integration tied to NOTION_TOKEN.",
+            file=sys.stderr,
+        )
+        print(
+            "Also confirm NOTION_REPO_PAGES_DATABASE_ID matches the Repo Pages database.",
+            file=sys.stderr,
+        )
+
+
 def main() -> int:
     load_dotenv()
 
@@ -323,6 +387,12 @@ def main() -> int:
         return 0
 
     client = NotionClient(token)
+
+    try:
+        client.get(f"/databases/{database_id}")
+    except NotionApiError as error:
+        print_notion_error(error, database_id)
+        return 1
 
     print(f"Repo root: {repo_root}")
     print(f"Markdown files found: {len(markdown_files)}")

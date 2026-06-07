@@ -1,24 +1,47 @@
-﻿name: Sync Markdown to Notion
+name: Sync Markdown to Notion
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'wiki/**/*.md'
-      - 'research/**/*.md'
-      - 'findings/**/*.md'
-      - 'prompts/**/*.md'
-      - 'README.md'
-      - 'scripts/sync_notion.py'
+      - "README.md"
+      - "wiki/**/*.md"
+      - "research/**/*.md"
+      - "findings/**/*.md"
+      - "prompts/**/*.md"
+      - "scripts/sync_notion.py"
+      - ".github/workflows/sync-notion.yml"
+
+  workflow_dispatch:
 
 jobs:
   sync-notion:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: read
+
+    env:
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      NOTION_REPO_PAGES_DATABASE_ID: ${{ secrets.NOTION_REPO_PAGES_DATABASE_ID }}
+      GITHUB_REPOSITORY: CarawayLabs/lyme_llm_wiki
+      GITHUB_DEFAULT_BRANCH: main
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Placeholder
-        run: echo "Notion sync will be configured in a later step."
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Sync markdown to Notion
+        run: |
+          python scripts/sync_notion.py
