@@ -1,0 +1,457 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:24.873556Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "PUBM-0026",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "search_term": "Lyme disease facial palsy",
+    "search_expression": "(\"Lyme disease facial palsy\"[Title/Abstract]) AND humans[MeSH Terms]",
+    "parameters": {
+      "db": "pubmed",
+      "term": "(\"Lyme disease facial palsy\"[Title/Abstract]) AND humans[MeSH Terms]",
+      "retmode": "json",
+      "retmax": 100,
+      "usehistory": "y",
+      "sort": "pub date",
+      "tool": "topx_lyme_explorer"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "NCBI_API_KEY",
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NCBI PubMed E-utilities",
+    "catalog_slug": "pubmed",
+    "source_type": "biomedical_citation_database",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:24.218131Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "duration_ms": 248,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 5,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 5,
+    "total_count": 5,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0026_lyme-disease-facial-palsy\\raw\\page_0001.json",
+      "sha256": "a2dee8c5061c1689fb3119bf767c90e5271a92090f8c57701a5548d24cca8f55",
+      "byte_count": 397
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "pubmed:38518069",
+      "source_record_id": "38518069",
+      "record_type": "publication_citation",
+      "title": "38518069",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.218131Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "38518069"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0026",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0026_lyme-disease-facial-palsy\\raw\\page_0001.json",
+        "raw_record_sha256": "9e422e36b1f0ba0299d27d1aa47ac07450f0a950bee59f15e0d9d50bcf46f088"
+      },
+      "raw_metadata": {
+        "id": "38518069",
+        "title": "38518069"
+      }
+    },
+    {
+      "normalized_id": "pubmed:21199982",
+      "source_record_id": "21199982",
+      "record_type": "publication_citation",
+      "title": "21199982",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.218131Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "21199982"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0026",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0026_lyme-disease-facial-palsy\\raw\\page_0001.json",
+        "raw_record_sha256": "37e9d1b9e8140d3cc7e2cce659384d084d3ecc1e3d4373800f3ceb9f5dbe47aa"
+      },
+      "raw_metadata": {
+        "id": "21199982",
+        "title": "21199982"
+      }
+    },
+    {
+      "normalized_id": "pubmed:18931349",
+      "source_record_id": "18931349",
+      "record_type": "publication_citation",
+      "title": "18931349",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.218131Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "18931349"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0026",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0026_lyme-disease-facial-palsy\\raw\\page_0001.json",
+        "raw_record_sha256": "be7426d1bd864e7b1d3a37b7558cffa373c1fe629541db92ba2e6c50411baad3"
+      },
+      "raw_metadata": {
+        "id": "18931349",
+        "title": "18931349"
+      }
+    },
+    {
+      "normalized_id": "pubmed:2508957",
+      "source_record_id": "2508957",
+      "record_type": "publication_citation",
+      "title": "2508957",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.218131Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "2508957"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0026",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0026_lyme-disease-facial-palsy\\raw\\page_0001.json",
+        "raw_record_sha256": "94f9262f6c2d5d7f1c0dc83d2fc88f87acd277171ee26d2af4045cffa346845c"
+      },
+      "raw_metadata": {
+        "id": "2508957",
+        "title": "2508957"
+      }
+    },
+    {
+      "normalized_id": "pubmed:2508822",
+      "source_record_id": "2508822",
+      "record_type": "publication_citation",
+      "title": "2508822",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.218131Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "2508822"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0026",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0026_lyme-disease-facial-palsy\\raw\\page_0001.json",
+        "raw_record_sha256": "06c1884308a9ba52cb21d2c9322f6465a8da7ef36a927ab770b217032bc8b6c3"
+      },
+      "raw_metadata": {
+        "id": "2508822",
+        "title": "2508822"
+      }
+    }
+  ],
+  "warnings": [
+    "Optional credential NCBI_API_KEY was not found; request used anonymous/public access."
+  ],
+  "errors": []
+}

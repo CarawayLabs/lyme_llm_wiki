@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:42.631023Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "NIHR-0011",
+    "query_mode": "record_search",
+    "method": "POST",
+    "endpoint": "https://api.reporter.nih.gov/v2/projects/search",
+    "search_term": "Lyme disease misdiagnosis",
+    "search_expression": "Lyme disease misdiagnosis",
+    "parameters": {
+      "criteria": {
+        "advanced_text_search": {
+          "operator": "and",
+          "search_field": "projecttitle,terms,abstracttext",
+          "search_text": "Lyme disease misdiagnosis"
+        },
+        "include_active_projects": true,
+        "exclude_subprojects": true,
+        "use_relevance": true
+      },
+      "offset": 0,
+      "limit": 500,
+      "sort_field": "award_notice_date",
+      "sort_order": "desc"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NIH RePORTER API v2",
+    "catalog_slug": "nih_reporter",
+    "source_type": "research_grant_portfolio",
+    "organization": "NIH RePORTER API v2",
+    "docs_url": "https://api.reporter.nih.gov/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:41.842562Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "duration_ms": 435,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0011_lyme-disease-misdiagnosis\\raw\\page_0001.json",
+      "sha256": "ac5dc4b6e968658f26d9194f01a5f2c288d79a218208970d4bf8436000908e77",
+      "byte_count": 10232
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "nih_reporter:NIHR-0011-0",
+      "source_record_id": "NIHR-0011-0",
+      "record_type": "funded_research_project",
+      "title": "Lyme disease misdiagnosis",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:41.842562Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0011-0"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease misdiagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0011_lyme-disease-misdiagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "cbab67c29ec22770c3ab56248605b546ac3140d974ab9df44ff135812de29cab"
+      },
+      "raw_metadata": {
+        "appl_id": 11119257,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "1R21AI191151-01",
+        "project_serial_num": "AI191151",
+        "organization": {
+          "org_name": "STANFORD UNIVERSITY",
+          "city": null,
+          "country": null,
+          "org_city": "STANFORD",
+          "org_country": "UNITED STATES",
+          "org_state": "CA",
+          "org_state_name": null,
+          "dept_type": "PATHOLOGY",
+          "fips_country_code": null,
+          "org_duns": [
+            "009214214"
+          ],
+          "org_ueis": [
+            "HJD6G4D6TJY5"
+          ],
+          "primary_duns": "009214214",
+          "primary_uei": "HJD6G4D6TJY5",
+          "org_fips": "US",
+          "org_ipf_code": "8046501",
+          "org_zipcode": "943052004",
+          "external_org_id": 8046501
+        },
+        "award_type": "1",
+        "activity_code": "R21",
+        "award_amount": 436236,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "1",
+          "activity_code": "R21",
+          "ic_code": "AI",
+          "serial_num": "191151",
+          "support_year": "01",
+          "full_support_year": "01",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 8039788,
+            "first_name": "Matthew",
+            "middle_name": "",
+            "last_name": "Bogyo",
+            "is_contact_pi": true,
+            "full_name": "Matthew  Bogyo",
+            "title": "PROFESSOR"
+          }
+        ],
+        "contact_pi_name": "BOGYO, MATTHEW ",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 436236.0,
+            "direct_cost_ic": 317436.0,
+            "indirect_cost_ic": 118800.0
+          }
+        ],
+        "cong_dist": "CA-16",
+        "spending_categories": null,
+        "project_start_date": "2025-08-01T00:00:00",
+        "project_end_date": "2027-07-31T00:00:00",
+        "organization_type": {
+          "name": "SCHOOLS OF MEDICINE",
+          "code": "10",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -122.17047,
+          "lat": 37.426852
+        },
+        "opportunity_number": "PA-20-195",
+        "full_study_section": {
+          "srg_code": "CBP",
+          "srg_flex": null,
+          "sra_designator_code": null,
+          "sra_flex_code": null,
+          "group_code": null,
+          "name": "Chemical Biology and Probes Study Section[CBP]"
+        },
+        "award_notice_date": "2025-07-28T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "RP",
+        "core_project_num": "R21AI191151",
+        "terms": "<Active Sites><Amino Acid Sequence><Antibiotic Agents><Antibiotic Drugs><Antibiotics><Antibodies><Antigens><Arthritis><B burgdorferi><B. burgdorferi><Bacteria><Binding><Biological Markers><Biosensor><Blood><Blood Reticuloendothelial System><Borrelia><Borrelia Infections><Borrelia burgdorferi><Borrelia burgdorferi sensu stricto><Borreliella burgdorferi><Cancers><Carditis><Cell Body><Cell Communication and Signaling><Cell Signaling><Cells><Centers for Disease Control><Centers for Disease Control and Prevention><Centers for Disease Control and Prevention (U.S.)><Chemicals><Communicable Diseases><DNA><Deoxyribonucleic Acid><Detection><Devices><Diagnostic><Diagnostic Device><Diagnostic Equipment><Disease><Disorder><ELISA><Early Diagnosis><Electric Resistance><Electrical Resistance><Elements><Engineering><Enzyme Gene><Enzyme-Linked Immunosorbent Assay><Enzymes><Esteroproteases><Event><Frequencies><GeneHomolog><Genome><Goals><Guidelines><High temperature of physical object><Homolog><Homologous Gene><Homologue><Human><Immunoblotting><Infection><Infectious Diseases><Infectious Disorder><Intracellular Communication and Signaling><Joints><L-Serine><Lead><Libraries><Ligand Binding><Lyme Borreliosis><Lyme Disease><Lyme Disease Spirochete><Lyme disease diagnostic><Malaria><Malignant Neoplasms><Malignant Tumor><Measurable><Measures><Membrana Synovialis Capsulae Articularis><Methods><Miscellaneous Antibiotic><Modern Man><Molecular Interaction><North America><Paludism><Pathogenicity Factors><Patients><Pb element><Peptidases><Peptide Hydrolases><Peptide Library><Peptides><Performance><Plasmodium Infections><Primary Protein Structure><Process><Protease Gene><Proteases><Proteinases><Proteolytic Enzymes><Proteomics><Reaction><Recombinants><Recommendation><Reporting><Sampling><Serine><Serology><Serology test><Signal Transduction><Signal Transduction Systems><Signaling><Staphylococcal Infections><Staphylococcus infection><Surface><Symptoms><Synovia><Synovial Fluid><Synovial Membrane><Synovium><Testing><Tick-Borne Diseases><United States Centers for Disease Control><United States Centers for Disease Control and Prevention><Urine><Virulence Factors><Western Blotting><Western Immunoblotting><accurate diagnosis><arthritic><bio-markers><biologic marker><biological sensor><biological signal transduction><biomarker><borrelial><borreliosis><design><designing><detection limit><diagnostic platform><diagnostic system><diagnostic tool><early detection><enzyme linked immunoassay><experiment><experimental research><experimental study><experiments><graphene><heavy metal Pb><heavy metal lead><high reward><high risk><high temperature><immunogen><improved><inhibitor><innovate><innovation><innovative><lyme spirochete><malignancy><nano-molar><nanomolar><neoplasm/cancer><non-natural amino acids><non-proteinogenic amino acids><nonproteinogenic amino acids><novel><pathogen><protein blotting><protein sequence><rapid detection><sensor><serology assay><small molecule><solid state><staph infections><success><tick-borne illness><tickborne disease><tickborne illness><tool><unnatural amino acids>",
+        "pref_terms": "Active Sites;Amino Acid Sequence;Antibiotics;Antibodies;Antigens;Arthritis;Bacteria;Binding;Biological Markers;Biosensor;Blood;Borrelia;Borrelia Infections;Borrelia burgdorferi;Carditis;Cells;Centers for Disease Control and Prevention (U.S.);Chemicals;Communicable Diseases;DNA;Detection;Devices;Diagnostic;Diagnostic Equipment;Disease;Early Diagnosis;Electrical Resistance;Elements;Engineering;Enzyme-Linked Immunosorbent Assay;Enzymes;Event;Frequencies;Genome;Goals;Guidelines;High temperature of physical object;Homologous Gene;Human;Infection;Joints;Lead;Libraries;Ligand Binding;Lyme Disease;Lyme disease diagnostic;Malaria;Malignant Neoplasms;Measurable;Measures;Methods;North America;Patients;Peptide Hydrolases;Peptide Library;Peptides;Performance;Process;Proteomics;Reaction;Recombinants;Recommendation;Reporting;Sampling;Serine;Serology;Serology test;Signal Transduction;Staphylococcal Infections;Surface;Symptoms;Synovial Fluid;Synovial Membrane;Testing;Tick-Borne Diseases;Urine;Virulence Factors;Western Blotting;accurate diagnosis;design;detection limit;diagnostic platform;diagnostic tool;experimental study;graphene;high reward;high risk;improved;inhibitor;innovation;nanomolar;novel;pathogen;rapid detection;sensor;small molecule;solid state;success;tool;unnatural amino acids",
+        "abstract_text": "Project Summary\nLyme disease (LD) is the most common tick-borne illness in North America caused by the bacterial species\nBorrelia burgdorferi (Bb). If diagnosed early, broad-spectrum antibiotics can effectively clear an infection.\nUnfortunately, delays in treatment lead to more serious symptoms including arthritis, carditis, and\nneuroborreliosis. The Center for Disease Control and Prevention reports 30,000 new cases of LD annually.\nHowever, experts estimate this number is closer to 400,000. This discrepancy is mainly due to the high\nfrequency of misdiagnosis. Current diagnostic guidelines recommend a standard two-tier (STT) serology\napproach using an enzyme-linked immunosorbent assay (ELISA) to measure antibody levels followed by a\nWestern blot to verify the presence of Bb antigens. These tests have limited value because antibodies can take\nweeks to develop at which point the disease has progressed beyond the stage at which it is effectively treated.\nIn addition, Bb antibodies continue circulating for years rendering them useless to distinguish between an\nactive and a prior infection. In this proposal, we outline a plan to develop a sensitive solid-state biosensor that\ntargets an active Bb protease as a biomarker to accurately diagnose both early- and late-stage active Bb\ninfections. The proposed epitaxial graphene-based biosensor provides the potential for exceptionally high\nsensitivity, rapid detection, and ability to function with low volumes of patient samples by combining a novel\nelectrical transduction platform with a selective biorecognition element. We have selected the Bb protease,\nhigh temperature requirement A (BbHtrA), as a biomarker because it is constitutively expressed on the bacteria\nsurface, is also secreted, remains active across all stages of Bb infection, and contains an active site serine\nresidue that is reactive towards small molecule electrophiles. This allows us to design and synthesize covalent\nprobes consisting of short amino acid sequences attached to an electrophilic ‘warhead’ that irreversibly\nmodifies the active protease with high selectivity and potency. The resulting covalent probes will be attached to\nthe surface of a quasi-freestanding epitaxial graphene (QEG) biosensor and used to detect Bb bacteria in\npatient blood and urine, as well as in test synovial fluid samples. Success of this project will address several of\nthe most significant challenges associated with LD and potentially allow our overall approach to be applied to\nother diseases where proteases can serve as optimal biomarkers.",
+        "project_title": "Protease sensor for rapid and sensitive detection of Borrelia infections",
+        "phr_text": "PROJECT NARRATIVE\nThis project outlines plans to develop a highly sensitive device that can detect the presence of an enzyme\nmarker that is produced by the bacteria Borrelia bergdorferi, the causative agent of Lyme Disease. The primary\ngoal is to create a simple and inexpensive test that could be used to detect the presence of an active infection\nof Borrelia bergdorferi.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2025-08-01T00:00:00",
+        "budget_end": "2027-07-31T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "Non-SBIR/STTR",
+        "direct_cost_amt": 317436,
+        "indirect_cost_amt": 118800,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11119257",
+        "date_added": "2025-08-02T16:13:37"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,29 @@
+# EPA-0004: land use mix
+
+- Catalog: EPA EnviroAtlas Web Services (`epa_enviroatlas`)
+- Query mode: `geospatial_layer_search`
+- Priority/theme: `P2` / `ecology_climate`
+- Endpoint: `GET https://www.epa.gov/enviroatlas/enviroatlas-web-services`
+- Retrieval URL: `https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=land+use+mix&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST`
+- Auth alias: `none`; credential sent: no
+- HTTP status: `202`
+- Records normalized from this page: `0`
+- Raw response: `C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\catalogs\epa_enviroatlas\EPA-0004_land-use-mix\raw\page_0001.html`
+- JSON envelope: `C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\catalogs\epa_enviroatlas\EPA-0004_land-use-mix\json\page_0001.json`
+
+## Search Intent
+
+Tick ecology, weather, climate, habitat, land-cover, hosts, and geographic-risk features.
+
+## Downstream Use
+
+Construct environmental context and risk features without treating correlation as causation.
+
+## Pagination And Rate Notes
+
+- Pagination: Enumerate services/layers, then use the selected service's ArcGIS REST or OGC pagination.
+- Rate limit note: Throttle conservatively and retry 429/5xx with exponential backoff.
+
+## Interpretation Notes
+
+Select only layers tied to a defensible hypothesis; do not ingest the entire catalog.

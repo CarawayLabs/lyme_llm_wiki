@@ -1,0 +1,29 @@
+# Search CSV Data Dictionary
+
+- `search_id` — Stable row identifier used in folders, logs, and provenance.
+- `run_order` — Suggested deterministic execution order.
+- `priority` — P0 first, P1 next, P2 only after a specific hypothesis justifies it.
+- `research_theme` — Problem-space category used for coverage reporting.
+- `catalog_name` — Human-readable source or catalog name.
+- `catalog_slug` — Filesystem-safe source identifier.
+- `source_type` — General class of data source.
+- `query_mode` — How the script should handle the row: API search, schema discovery, download, terminology lookup, etc.
+- `http_method` — Expected HTTP method.
+- `endpoint_template` — Endpoint or access page. Templates may contain placeholders.
+- `search_term` — Human-readable query target.
+- `search_expression` — Catalog-specific search expression when different from the human term.
+- `request_parameters_json` — Valid JSON containing query parameters or request body template.
+- `geography_scope` — Intended geographic scope.
+- `time_scope` — Intended time range or vintage handling.
+- `expected_record_type` — Normalized record type expected from the query.
+- `what_are_we_expecting` — What useful information the search should return.
+- `downstream_use` — Why the result matters to problem discovery or product design.
+- `auth_requirement` — required, optional_recommended, none, or account/license caveat.
+- `auth_env_var` — Environment-variable alias; never the secret itself.
+- `pagination_strategy` — How to continue through result pages.
+- `rate_limit_note` — Source-specific throttling guidance.
+- `dedupe_key_hint` — Preferred key for within-source deduplication.
+- `join_keys_expected` — Likely fields for cross-source linkage.
+- `requires_schema_discovery` — true when field names or exact API contracts must be inspected before final execution.
+- `source_docs_url` — Official documentation URL.
+- `notes` — Interpretation caveats and implementation guidance.

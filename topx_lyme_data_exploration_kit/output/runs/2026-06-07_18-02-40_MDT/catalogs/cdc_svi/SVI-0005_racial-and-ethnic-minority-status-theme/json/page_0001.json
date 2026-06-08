@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:09.246190Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "SVI-0005",
+    "query_mode": "download_manifest",
+    "method": "GET",
+    "endpoint": "https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html",
+    "search_term": "racial and ethnic minority status theme",
+    "search_expression": "racial and ethnic minority status theme",
+    "parameters": {
+      "geography": "tract",
+      "capture_csv_and_documentation": true
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "CDC/ATSDR Social Vulnerability Index",
+    "catalog_slug": "cdc_svi",
+    "source_type": "downloadable_area_level_index",
+    "organization": "Centers for Disease Control and Prevention",
+    "docs_url": "https://www.atsdr.cdc.gov/place-health/php/svi/index.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "SVI is an area-level index, not an individual characteristic. Align vintage and geographic boundaries with outcome data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:08.676752Z",
+    "http_status": 200,
+    "content_type": "text/html",
+    "duration_ms": 213,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\cdc_svi\\SVI-0005_racial-and-ethnic-minority-status-theme\\raw\\page_0001.html",
+      "sha256": "534877cac5d2b70f353958c0f5d2e640bb7d882159555af00927e07b3da2d42d",
+      "byte_count": 56704
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

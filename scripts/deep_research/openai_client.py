@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 from dataclasses import dataclass
+from importlib.metadata import PackageNotFoundError, version
 
 from openai import OpenAI
 
@@ -26,6 +27,7 @@ class OpenAISynthesisClient:
 
     def __init__(self, settings: OpenAISettings) -> None:
         self._settings = settings
+        _validate_openai_httpx_compatibility()
         self._client = OpenAI(api_key=settings.api_key)
 
     def run(self, job_id: str, prompt: str, model: str | None = None) -> OpenAIResult:
@@ -55,3 +57,32 @@ class OpenAISynthesisClient:
         response_id = getattr(response, "id", "unknown")
         logger.info("OpenAI synthesis job %s completed as response %s", job_id, response_id)
         return OpenAIResult(job_id=job_id, response_id=response_id, markdown=markdown.strip())
+
+
+def _validate_openai_httpx_compatibility() -> None:
+    """Fail early for the known OpenAI 1.36/httpx 0.28 constructor mismatch."""
+
+    try:
+        openai_version = _parse_version(version("openai"))
+        httpx_version = _parse_version(version("httpx"))
+    except PackageNotFoundError:
+        return
+
+    if openai_version < (1, 58, 1) and httpx_version >= (0, 28, 0):
+        raise RuntimeError(
+            "Installed package versions are incompatible: openai<1.58.1 with httpx>=0.28. "
+            "Run `python -m pip install -r requirements.txt --upgrade` and retry."
+        )
+
+
+def _parse_version(value: str) -> tuple[int, int, int]:
+    parts = value.split("+", 1)[0].split("-", 1)[0].split(".")
+    numbers = []
+    for part in parts[:3]:
+        try:
+            numbers.append(int(part))
+        except ValueError:
+            numbers.append(0)
+    while len(numbers) < 3:
+        numbers.append(0)
+    return tuple(numbers)

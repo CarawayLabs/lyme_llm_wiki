@@ -1,0 +1,284 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:43.461832Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "NIHR-0015",
+    "query_mode": "record_search",
+    "method": "POST",
+    "endpoint": "https://api.reporter.nih.gov/v2/projects/search",
+    "search_term": "amoxicillin Lyme disease",
+    "search_expression": "amoxicillin Lyme disease",
+    "parameters": {
+      "criteria": {
+        "advanced_text_search": {
+          "operator": "and",
+          "search_field": "projecttitle,terms,abstracttext",
+          "search_text": "amoxicillin Lyme disease"
+        },
+        "include_active_projects": true,
+        "exclude_subprojects": true,
+        "use_relevance": true
+      },
+      "offset": 0,
+      "limit": 500,
+      "sort_field": "award_notice_date",
+      "sort_order": "desc"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NIH RePORTER API v2",
+    "catalog_slug": "nih_reporter",
+    "source_type": "research_grant_portfolio",
+    "organization": "NIH RePORTER API v2",
+    "docs_url": "https://api.reporter.nih.gov/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:42.679756Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "duration_ms": 426,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0015_amoxicillin-lyme-disease\\raw\\page_0001.json",
+      "sha256": "a3a6f91208e679717008cf122fbfb0314810b9b7e49004cc6786d63708d2cc9c",
+      "byte_count": 12359
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "nih_reporter:NIHR-0015-0",
+      "source_record_id": "NIHR-0015-0",
+      "record_type": "funded_research_project",
+      "title": "amoxicillin Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.679756Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0015-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "amoxicillin Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0015",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0015_amoxicillin-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "5f0ad428547e3988379035930552c3cc3d90bebe536b87ab9aad59b0d2f3fda3"
+      },
+      "raw_metadata": {
+        "appl_id": 11134674,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "5R41AI186833-02",
+        "project_serial_num": "AI186833",
+        "organization": {
+          "org_name": "L2 DIAGNOSTICS, LLC",
+          "city": null,
+          "country": null,
+          "org_city": "NEW HAVEN",
+          "org_country": "UNITED STATES",
+          "org_state": "CT",
+          "org_state_name": null,
+          "dept_type": null,
+          "fips_country_code": null,
+          "org_duns": [
+            "142406110"
+          ],
+          "org_ueis": [
+            "GKA7VH5LFR25"
+          ],
+          "primary_duns": "142406110",
+          "primary_uei": "GKA7VH5LFR25",
+          "org_fips": "US",
+          "org_ipf_code": "3970901",
+          "org_zipcode": "065300175",
+          "external_org_id": 3970901
+        },
+        "award_type": "5",
+        "activity_code": "R41",
+        "award_amount": 299933,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "5",
+          "activity_code": "R41",
+          "ic_code": "AI",
+          "serial_num": "186833",
+          "support_year": "02",
+          "full_support_year": "02",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 1866620,
+            "first_name": "Erol",
+            "middle_name": "",
+            "last_name": "Fikrig",
+            "is_contact_pi": true,
+            "full_name": "Erol  Fikrig",
+            "title": ""
+          }
+        ],
+        "contact_pi_name": "FIKRIG, EROL ",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 299933.0,
+            "direct_cost_ic": 243332.0,
+            "indirect_cost_ic": 36980.0
+          }
+        ],
+        "cong_dist": "CT-03",
+        "spending_categories": null,
+        "project_start_date": "2024-07-08T00:00:00",
+        "project_end_date": "2027-06-30T00:00:00",
+        "organization_type": {
+          "name": "Domestic For-Profits",
+          "code": "FP",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -72.931023,
+          "lat": 41.30464
+        },
+        "opportunity_number": "PA-23-232",
+        "full_study_section": {
+          "srg_code": "ZRG1",
+          "srg_flex": null,
+          "sra_designator_code": "DCAI",
+          "sra_flex_code": "F",
+          "group_code": "12",
+          "name": "Special Emphasis Panel[ZRG1-DCAI-F(12)B]"
+        },
+        "award_notice_date": "2025-07-02T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "SB",
+        "core_project_num": "R41AI186833",
+        "terms": "<ALP sputum><Abscission><Ache><Affect><After Care><After-Treatment><Aftercare><Albumins><Amoxicillin><Amoxicilline><Amoxil><Amoxycillin><Anti-Bacterial Agents><Anti-Inflammatories><Anti-Inflammatory Agents><Anti-inflammatory><Antibiotic Agents><Antibiotic Drugs><Antibiotic Therapy><Antibiotic Treatment><Antibiotics><Antiinflammatory Effect><Antileukoproteinase><Arthralgia><Arthritis><Arthritis in Lyme disease><Assay><B afzelii><B burgdorferi><B garinii><B. afzelii><B. burgdorferi><B. garinii><Binding><Bioassay><Biological Assay><Blood Neutrophil><Blood Polymorphonuclear Neutrophil><Blood Serum><Body Tissues><Borrelia><Borrelia afzelii><Borrelia burgdorferi><Borrelia burgdorferi sensu stricto><Borrelia garinii><Borreliella burgdorferi><C3H/HeN Mouse><Causality><Cefatriaxone><Ceftriaxone><Cell Body><Cells><Chemotactic Cytokines><Clinical><Clinical Treatment><Cognitive Disturbance><Cognitive Impairment><Cognitive decline><Cognitive function abnormal><DMARD><DMARDs><Data><Development><Diagnosis><Diarthrosis><Disease><Disease-Modifying Antirheumatic Drugs><Disease-Modifying Second-Line Drugs><Disorder><Disturbance in cognition><Dose><Doxycycline><Dysfunction><ELISA><Enzyme-Linked Immunosorbent Assay><Etiology><Europe><Excision><Extirpation><Fatigue><Flow Cytofluorometries><Flow Cytofluorometry><Flow Cytometry><Flow Microfluorimetry><Flow Microfluorometry><Formulation><Fostering><Foundations><Functional disorder><Goals><Half-Life><Histology><Homologous Chemotactic Cytokines><Human><Hydroxyampicillin><Impaired cognition><In Vitro><Individual><Infection><Infiltration><Intercrines><Joint Pain><Joints><KO mice><Knock-out><Knock-out Mice><Knockout><Knockout Mice><Knowledge><Lack of Energy><Libraries><Lyme Arthritis><Lyme Borreliosis><Lyme Disease><Lyme Disease Spirochete><Macrophage><Marrow Neutrophil><Measures><Membrana Synovialis Capsulae Articularis><Methods><Mice><Mice Mammals><Minimum Inhibitory Concentration measurement><Minimum Inhibitory Concentrations><Minority><Miscellaneous Antibiotic><Modeling><Modern Man><Molecular Interaction><Morbidity><Morbidity - disease rate><Murine><Mus><Muscle><Muscle Tissue><Mφ><NHP models><Neutrophilic Granulocyte><Neutrophilic Leukocyte><Null Mouse><Oral><Order Spirochaetales><Pain><Painful><Pathology><Pathway interactions><Patients><Persons><Phase><Physiopathology><Polymorphonuclear Cell><Polymorphonuclear Leukocytes><Polymorphonuclear Neutrophils><Polymox><Population><Post Treatment Lyme Disease Syndrome><Proteins><Regimen><Removal><Research><Resolution><SIS cytokines><Serum><Severities><Spirochaetales><Spirochetes><Surgical Removal><Swelling><Symptoms><Synovia><Synovial Fluid><Synovial Membrane><Synovial joint><Synovitis><Synovium><Testing><Therapeutic><Therapeutic Agents><Therapeutic Fungicides><Tick-Borne Diseases><Tissues><Toxicology><Trimox><United States><Utimox><Vibramycin><Viral Activity><Viral Function><Viral Physiology><Wymox><Yeasts><alpha-6-Deoxyoxytetracycline><anti-bacterial><anti-fungal><anti-fungal agents><anti-fungal drug><anti-inflammatory effect><anti-microbial><antileukoprotease><antimicrobial><arthritic><bacterial disease treatment><bacterial infectious disease treatment><bactericidal><bactericide><borrelial><causation><chemoattractant cytokine><chemokine><clinical intervention><clinical significance><clinical therapy><clinically significant><cognitive dysfunction><cognitive loss><communicable disease transmission><cytokine><developmental><disease causation><disease transmission><dosage><enzyme linked immunoassay><experience><flow cytophotometry><in vitro Assay><in vivo><infectious disease transmission><inflamed joint><inflamed synovial tissue><inflamed synovium><joint inflammation><joint swelling><lyme spirochete><mouse model><mucus protease inhibitor><mucus proteinase inhibitor><murine model><muscular><neutrophil><new drug treatments><new drugs><new pharmacological therapeutic><new therapeutics><new therapy><next generation therapeutics><nonhuman primate models><novel><novel drug treatments><novel drugs><novel pharmaco-therapeutic><novel pharmacological therapeutic><novel therapeutics><novel therapy><pathogen><pathophysiology><pathway><pleiotropic effect><pleiotropism><pleiotropy><post treatment><public health relevance><resection><resolutions><secretory leukocyte-protease inhibitor><secretory leukoprotease inhibitor><synovial inflammation><tick bite><tick mediated transmission><tick transmission><tick transmitted><tick-borne illness><tickborne disease><tickborne illness><trial regimen><trial treatment><vaccine efficacy>",
+        "pref_terms": "Ache;Affect;Aftercare;Albumins;Amoxicillin;Anti-Bacterial Agents;Anti-Inflammatory Agents;Antibiotic Therapy;Antibiotics;Antiinflammatory Effect;Arthralgia;Arthritis;Binding;Biological Assay;Borrelia;Borrelia afzelii;Borrelia burgdorferi;Borrelia garinii;C3H/HeN Mouse;Ceftriaxone;Cells;Clinical;Clinical Treatment;Data;Development;Diagnosis;Disease;Disease-Modifying Second-Line Drugs;Dose;Doxycycline;Enzyme-Linked Immunosorbent Assay;Etiology;Europe;Excision;Fatigue;Flow Cytometry;Formulation;Fostering;Foundations;Functional disorder;Goals;Half-Life;Histology;Human;Impaired cognition;In Vitro;Individual;Infection;Infiltration;Joints;Knock-out;Knockout Mice;Knowledge;Libraries;Lyme Arthritis;Lyme Disease;Macrophage;Measures;Methods;Minimum Inhibitory Concentration measurement;Minority;Modeling;Morbidity - disease rate;Mus;Muscle;Oral;Order Spirochaetales;Pain;Pathology;Pathway interactions;Patients;Persons;Phase;Population;Post Treatment Lyme Disease Syndrome;Proteins;Regimen;Research;Resolution;Serum;Severities;Swelling;Symptoms;Synovial Fluid;Synovial Membrane;Synovial joint;Synovitis;Testing;Therapeutic;Therapeutic Agents;Tick-Borne Diseases;Tissues;Toxicology;United States;Viral Physiology;Yeasts;anti-fungal agents;antileukoprotease;antimicrobial;bactericide;chemokine;clinically significant;cytokine;disease transmission;dosage;experience;in vitro Assay;in vivo;joint inflammation;mouse model;neutrophil;nonhuman primate models;novel;novel therapeutics;pathogen;pleiotropism;public health relevance;tick bite;tick transmission;vaccine efficacy",
+        "abstract_text": "PROJECT SUMMARY/ABSTRACT\n Lyme disease (LD), the most common tick-borne disease in the United States, is caused by a spirochete,\nBorrelia burgdorferi. An estimated 500,000 people are diagnosed and treated each year. Antibiotic therapy is mostly\nsuccessful in cases diagnosed in the early stage of the infection. However, in some patients, early B. burgdorferi\ninfection is asymptomatic and Lyme arthritis (LA) is the primary manifestation of long-term LD, which usually occurs\nmonths after the tick bite. LA is the leading cause of Lyme disease-associated morbidity, affecting around one third of\nB. burgdorferi-infected individuals. Symptoms of LA include intermittent or persistent attacks of joint swelling and\npain that can lead to permanent joint dysfunction and debilitation. Most patient respond to a 30-day course of oral or\nIV antibiotic therapy. However, in a small percentage of LA patients, arthritis persists after antibiotic therapy and can\nlast for months or several years. Distinct from LA, research has shown that up to 34% of Lyme patients have Post\nTreatment Lyme Disease Syndrome (PTLDS). Symptoms include fatigue, pain, joint and muscle aches, and cognitive\ndecline, with an onset ranging from months to years. Long-term antibiotic therapy has not been proven to be beneficial\nfor PTLDS. Therefore, better therapeutic agents are urgently needed to resolve both LA and PTLDS.\n A human secretory leukocyte protease inhibitor (SLPI) was identified as binding to B. burgdorferi from the\nBASEHIT yeast display library of 3,336 human exoproteins. SLPI is an evolutionarily conserved, multi-functional\nprotein. SLPI expression inhibits neutrophil activity and the NF-κB pathway in macrophages, leading to an overall\nanti-inflammatory effect. A high percentage of neutrophils and macrophages have been observed in the synovial fluid\nof LA patients during active LA and post-treatment LA respectively. SLPI also has broad-spectrum antibacterial,\nantifungal, and antiviral activities. Using a SLPI knockout mice, our preliminary data showed a significantly higher B.\nburgdorferi infection load and severe swelling and synovitis in the tibiotarsal joints of SLPI knockout mice in\ncomparison to the WT mice. The data indicate that SLPI expression suppresses the B. burgdorferi infection load and\ninhibits the development of murine Lyme arthritis.\n The prior knowledge of SLPI and our preliminary data form the foundation of our hypothesis that therapeutic\ndosing of SLPI will significantly mitigate human LA. This proposal aims to show the feasibility of that in the murine\nLA model. Our long-term product goal is a novel secretory leukocyte protease inhibitor (SLPI) based therapeutic\nindicated for advanced Lyme disease, including both LA and PTLS.",
+        "project_title": "A novel therapeutic for Lyme arthritis based on a secretory leukocyte protease inhibitor",
+        "phr_text": "PUBLIC HEALTH RELEVANCE\nLyme disease (LD), caused by the spirochete Borrelia burgdorferi, is the most common disease transmitted by tick,\naffecting an estimated 500,000 people in the United States each year. 10-20% of patients experience long-term clinical\nmanifestations, including Lyme arthritis (LA) and/or Post Treatment Lyme Disease Syndrome (PTLDS), for which\nbetter therapeutic agents are urgently needed. Our long-term product goal is a novel secretory leukocyte protease\ninhibitor (SLPI) based therapeutic indicated for advanced Lyme disease, including potentially both LA and PTLDS.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2025-07-01T00:00:00",
+        "budget_end": "2027-06-30T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "SBIR/STTR",
+        "direct_cost_amt": 243332,
+        "indirect_cost_amt": 36980,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11134674",
+        "date_added": "2025-07-05T16:13:35"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,772 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:56.020091Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CDCL-0001",
+    "query_mode": "schema_discovery",
+    "method": "GET",
+    "endpoint": "https://data.cdc.gov/api/views/84rx-ksgd",
+    "search_term": "schema discovery",
+    "search_expression": "schema discovery",
+    "parameters": {},
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "CDC_SOCRATA_APP_TOKEN",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "CDC Lyme surveillance 1992-2007",
+    "catalog_slug": "cdc_lyme_84rx-ksgd",
+    "source_type": "disease_surveillance_dataset",
+    "organization": "Centers for Disease Control and Prevention",
+    "docs_url": "https://dev.socrata.com/foundry/data.cdc.gov/84rx-ksgd",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Fetch field names, types, descriptions, and metadata before constructing SoQL. Surveillance location is not necessarily exposure location; preserve case-definition vintage."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:55.269127Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "duration_ms": 692,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\cdc_lyme_84rx-ksgd\\CDCL-0001_schema-discovery\\raw\\page_0001.json",
+      "sha256": "0b7a6fc0c695e9cc5fd66e5cad8a7d7ed4f20a00332e8570a0e2779e1f01e79f",
+      "byte_count": 16110
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "cdc_lyme_84rx-ksgd:84rx-ksgd",
+      "source_record_id": "84rx-ksgd",
+      "record_type": "dataset_schema",
+      "title": "Lyme disease public use aggregated data with geography, 1992-2007",
+      "description": "Overview: \nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817. \n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments. \n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.  \n       1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.  \n       2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n       3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context:  Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+      "summary": null,
+      "source_url": "https://data.cdc.gov/api/views/84rx-ksgd",
+      "retrieved_at": "2026-06-08T00:02:55.269127Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "source_id": "84rx-ksgd"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Fetch field names, types, descriptions, and metadata before constructing SoQL. Surveillance location is not necessarily exposure location; preserve case-definition vintage."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Fetch field names, types, descriptions, and metadata before constructing SoQL. Surveillance location is not necessarily exposure location; preserve case-definition vintage."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "cdc_lyme_84rx-ksgd",
+        "search_id": "CDCL-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://data.cdc.gov/api/views/84rx-ksgd",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\cdc_lyme_84rx-ksgd\\CDCL-0001_schema-discovery\\raw\\page_0001.json",
+        "raw_record_sha256": "d291d91b2d84efb88dd63b7e22a236bccae36d42a99872dadd151ee87324365d"
+      },
+      "raw_metadata": {
+        "id": "84rx-ksgd",
+        "name": "Lyme disease public use aggregated data with geography, 1992-2007",
+        "assetType": "dataset",
+        "attribution": "CDC/NCEZID/DVBD",
+        "averageRating": 0,
+        "category": "National Center for Emerging and Zoonotic Infectious Diseases",
+        "createdAt": 1755625822,
+        "description": "Overview: \nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817. \n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments. \n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.  \n       1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.  \n       2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n       3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context:  Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+        "diciBackend": false,
+        "displayType": "table",
+        "downloadCount": 155,
+        "hideFromCatalog": false,
+        "hideFromDataJson": false,
+        "licenseId": "USGOV_WORKS",
+        "locked": false,
+        "newBackend": true,
+        "numberOfComments": 0,
+        "oid": 41531381,
+        "provenance": "official",
+        "publicationAppendEnabled": false,
+        "publicationDate": 1755627626,
+        "publicationGroup": 20017684,
+        "publicationStage": "published",
+        "rowsUpdatedAt": 1755627615,
+        "rowsUpdatedBy": "w6xk-sxm6",
+        "tableId": 20017684,
+        "totalTimesRated": 0,
+        "viewCount": 458,
+        "viewLastModified": 1755633738,
+        "viewType": "tabular",
+        "approvals": [
+          {
+            "reviewedAt": 1755627627,
+            "reviewedAutomatically": true,
+            "state": "approved",
+            "submissionId": 7037859,
+            "submissionObject": "public_audience_request",
+            "submissionOutcome": "change_audience",
+            "submittedAt": 1755627627,
+            "targetAudience": "public",
+            "workflowId": 2100,
+            "submissionDetails": {
+              "permissionType": "READ"
+            },
+            "submissionOutcomeApplication": {
+              "endedAt": 1755627627,
+              "failureCount": 0,
+              "startedAt": 1755627627,
+              "status": "success"
+            },
+            "submitter": {
+              "id": "w6xk-sxm6",
+              "displayName": "xee5@cdc.gov"
+            }
+          }
+        ],
+        "clientContext": {
+          "clientContextVariables": [],
+          "inheritedVariables": {}
+        },
+        "columns": [
+          {
+            "id": 616087118,
+            "name": "Year",
+            "dataTypeName": "text",
+            "description": "Reporting year, plain text",
+            "fieldName": "year",
+            "position": 1,
+            "renderTypeName": "text",
+            "tableColumnId": 160986923,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "2007",
+              "null": "0",
+              "top": [
+                {
+                  "item": "2007",
+                  "count": "1218"
+                },
+                {
+                  "item": "2005",
+                  "count": "1108"
+                },
+                {
+                  "item": "2006",
+                  "count": "1065"
+                },
+                {
+                  "item": "2004",
+                  "count": "1053"
+                },
+                {
+                  "item": "2002",
+                  "count": "1033"
+                },
+                {
+                  "item": "2003",
+                  "count": "983"
+                },
+                {
+                  "item": "2000",
+                  "count": "831"
+                },
+                {
+                  "item": "2001",
+                  "count": "829"
+                },
+                {
+                  "item": "1998",
+                  "count": "735"
+                },
+                {
+                  "item": "1999",
+                  "count": "719"
+                },
+                {
+                  "item": "1996",
+                  "count": "649"
+                },
+                {
+                  "item": "1997",
+                  "count": "641"
+                },
+                {
+                  "item": "1994",
+                  "count": "621"
+                },
+                {
+                  "item": "1995",
+                  "count": "604"
+                },
+                {
+                  "item": "1992",
+                  "count": "594"
+                },
+                {
+                  "item": "1993",
+                  "count": "497"
+                }
+              ],
+              "smallest": "1992",
+              "count": "13180",
+              "cardinality": "16"
+            },
+            "format": {
+              "decimalSeparator": ".",
+              "groupSeparator": ","
+            }
+          },
+          {
+            "id": 616087117,
+            "name": "State",
+            "dataTypeName": "text",
+            "description": "Two-character abbreviation, plain text",
+            "fieldName": "state",
+            "position": 2,
+            "renderTypeName": "text",
+            "tableColumnId": 160986922,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "WY",
+              "null": "0",
+              "top": [
+                {
+                  "item": "NJ",
+                  "count": "1623"
+                },
+                {
+                  "item": "WI",
+                  "count": "1622"
+                },
+                {
+                  "item": "PA",
+                  "count": "1591"
+                },
+                {
+                  "item": "NY",
+                  "count": "1531"
+                },
+                {
+                  "item": "MD",
+                  "count": "1058"
+                },
+                {
+                  "item": "MA",
+                  "count": "1004"
+                },
+                {
+                  "item": "MN",
+                  "count": "955"
+                },
+                {
+                  "item": "CT",
+                  "count": "866"
+                },
+                {
+                  "item": "RI",
+                  "count": "350"
+                },
+                {
+                  "item": "VA",
+                  "count": "306"
+                },
+                {
+                  "item": "DE",
+                  "count": "243"
+                },
+                {
+                  "item": "ME",
+                  "count": "235"
+                },
+                {
+                  "item": "NH",
+                  "count": "222"
+                },
+                {
+                  "item": "CA",
+                  "count": "216"
+                },
+                {
+                  "item": "NC",
+                  "count": "134"
+                },
+                {
+                  "item": "TX",
+                  "count": "125"
+                },
+                {
+                  "item": "IL",
+                  "count": "112"
+                },
+                {
+                  "item": "VT",
+                  "count": "103"
+                },
+                {
+                  "item": "MO",
+                  "count": "85"
+                },
+                {
+                  "item": "FL",
+                  "count": "74"
+                }
+              ],
+              "smallest": "AK",
+              "count": "13180",
+              "cardinality": "47"
+            },
+            "format": {}
+          },
+          {
+            "id": 616087116,
+            "name": "FIPS",
+            "dataTypeName": "text",
+            "description": "Federal Information Processing code, five-digit code made up of two-digit state and three-digit county codes, plain text",
+            "fieldName": "fips",
+            "position": 3,
+            "renderTypeName": "text",
+            "tableColumnId": 160986921,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "Unknown",
+              "null": "0",
+              "top": [
+                {
+                  "item": "Suppressed",
+                  "count": "1278"
+                },
+                {
+                  "item": "Unknown",
+                  "count": "213"
+                },
+                {
+                  "item": "09001",
+                  "count": "108"
+                },
+                {
+                  "item": "34027",
+                  "count": "105"
+                },
+                {
+                  "item": "34035",
+                  "count": "100"
+                },
+                {
+                  "item": "34019",
+                  "count": "100"
+                },
+                {
+                  "item": "09015",
+                  "count": "99"
+                },
+                {
+                  "item": "25001",
+                  "count": "98"
+                },
+                {
+                  "item": "09011",
+                  "count": "96"
+                },
+                {
+                  "item": "09005",
+                  "count": "96"
+                },
+                {
+                  "item": "34025",
+                  "count": "96"
+                },
+                {
+                  "item": "09009",
+                  "count": "95"
+                },
+                {
+                  "item": "34029",
+                  "count": "93"
+                },
+                {
+                  "item": "34021",
+                  "count": "92"
+                },
+                {
+                  "item": "36103",
+                  "count": "92"
+                },
+                {
+                  "item": "36119",
+                  "count": "91"
+                },
+                {
+                  "item": "25023",
+                  "count": "91"
+                },
+                {
+                  "item": "09007",
+                  "count": "90"
+                },
+                {
+                  "item": "09013",
+                  "count": "89"
+                },
+                {
+                  "item": "25009",
+                  "count": "89"
+                }
+              ],
+              "smallest": "01023",
+              "count": "13180",
+              "cardinality": "483"
+            },
+            "format": {}
+          },
+          {
+            "id": 616087115,
+            "name": "Case_status",
+            "dataTypeName": "text",
+            "description": "Surveillance case classification as determined by local and state public health authorities, plain text",
+            "fieldName": "case_status",
+            "position": 4,
+            "renderTypeName": "text",
+            "tableColumnId": 160986920,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "Confirmed",
+              "null": "0",
+              "top": [
+                {
+                  "item": "Confirmed",
+                  "count": "13180"
+                }
+              ],
+              "smallest": "Confirmed",
+              "count": "13180",
+              "cardinality": "1"
+            },
+            "format": {}
+          },
+          {
+            "id": 616087114,
+            "name": "Sex",
+            "dataTypeName": "text",
+            "description": "Patient sex as reported to health authorities, plain text",
+            "fieldName": "sex",
+            "position": 5,
+            "renderTypeName": "text",
+            "tableColumnId": 160986919,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "Unknown",
+              "null": "0",
+              "top": [
+                {
+                  "item": "Male",
+                  "count": "5420"
+                },
+                {
+                  "item": "Female",
+                  "count": "5162"
+                },
+                {
+                  "item": "Suppressed",
+                  "count": "2464"
+                },
+                {
+                  "item": "Unknown",
+                  "count": "134"
+                }
+              ],
+              "smallest": "Female",
+              "count": "13180",
+              "cardinality": "4"
+            },
+            "format": {}
+          },
+          {
+            "id": 616087113,
+            "name": "Age_cat_yrs",
+            "dataTypeName": "text",
+            "description": "Patient age, categorized as 0–19 years, and 20+ years, plain text",
+            "fieldName": "age_cat_yrs",
+            "position": 6,
+            "renderTypeName": "text",
+            "tableColumnId": 160986918,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "Unknown",
+              "null": "0",
+              "top": [
+                {
+                  "item": "20+",
+                  "count": "5488"
+                },
+                {
+                  "item": "Suppressed",
+                  "count": "4402"
+                },
+                {
+                  "item": "0-19",
+                  "count": "3043"
+                },
+                {
+                  "item": "Unknown",
+                  "count": "247"
+                }
+              ],
+              "smallest": "0-19",
+              "count": "13180",
+              "cardinality": "4"
+            },
+            "format": {}
+          },
+          {
+            "id": 616087112,
+            "name": "Frequency",
+            "dataTypeName": "number",
+            "description": "Count of the number of cases that reflect this geographic, sex, age, and case status per year among residents of a specific county, numeric",
+            "fieldName": "frequency",
+            "position": 7,
+            "renderTypeName": "number",
+            "tableColumnId": 160986917,
+            "cachedContents": {
+              "non_null": "13180",
+              "largest": "1173",
+              "null": "0",
+              "top": [
+                {
+                  "item": "5",
+                  "count": "1510"
+                },
+                {
+                  "item": "1",
+                  "count": "1359"
+                },
+                {
+                  "item": "6",
+                  "count": "996"
+                },
+                {
+                  "item": "2",
+                  "count": "896"
+                },
+                {
+                  "item": "3",
+                  "count": "812"
+                },
+                {
+                  "item": "7",
+                  "count": "737"
+                },
+                {
+                  "item": "4",
+                  "count": "646"
+                },
+                {
+                  "item": "8",
+                  "count": "572"
+                },
+                {
+                  "item": "9",
+                  "count": "413"
+                },
+                {
+                  "item": "10",
+                  "count": "354"
+                },
+                {
+                  "item": "11",
+                  "count": "285"
+                },
+                {
+                  "item": "12",
+                  "count": "241"
+                },
+                {
+                  "item": "13",
+                  "count": "232"
+                },
+                {
+                  "item": "14",
+                  "count": "221"
+                },
+                {
+                  "item": "15",
+                  "count": "184"
+                },
+                {
+                  "item": "17",
+                  "count": "168"
+                },
+                {
+                  "item": "16",
+                  "count": "161"
+                },
+                {
+                  "item": "19",
+                  "count": "144"
+                },
+                {
+                  "item": "20",
+                  "count": "120"
+                },
+                {
+                  "item": "21",
+                  "count": "118"
+                }
+              ],
+              "smallest": "1",
+              "count": "13180",
+              "cardinality": "303"
+            },
+            "format": {
+              "decimalSeparator": ".",
+              "groupSeparator": ","
+            }
+          }
+        ],
+        "grants": [
+          {
+            "inherited": false,
+            "type": "viewer",
+            "flags": [
+              "public"
+            ]
+          }
+        ],
+        "license": {
+          "name": "Public Domain U.S. Government",
+          "termsLink": "https://www.usa.gov/government-works"
+        },
+        "metadata": {
+          "custom_fields": {
+            "Common Core": {
+              "Contact Email": "bdbepigroup@cdc.gov",
+              "Homepage": "https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html",
+              "Language": "English",
+              "Data Standard": "NNDSS",
+              "References": "https://ndc.services.cdc.gov/conditions/lyme-disease/",
+              "Contact Name": "Bacterial Diseases Branch Epidemiology & Surveillance Team",
+              "Program Code": "009:028",
+              "Collection": "Lyme Disease Public Use Datasets",
+              "Geographic Coverage": "United States of America",
+              "Bureau Code": "009:20",
+              "Public Access Level": "public"
+            },
+            "Dataset Information": {
+              "Glossary/Methodology": "Data Suppression: Some data are suppressed to protect individual privacy. To prevent release of data that could be used to identify individuals, data cells are suppressed for low frequency (<5 Lyme disease records with the same combinations of certain potentially identifying variables). In these datasets, suppression includes low frequency combinations of geographic characteristics (county and state of residence), and demographic characteristics (sex and age group). Suppressed values are re-coded accordingly with “suppressed” text inserted; records with data suppression are never removed. Missing data or unknown values are indicated accordingly, so as not to be confused with intentionally suppressed data."
+            }
+          },
+          "availableDisplayTypes": [
+            "table",
+            "fatrow",
+            "page"
+          ]
+        },
+        "owner": {
+          "id": "w6xk-sxm6",
+          "displayName": "xee5@cdc.gov",
+          "screenName": "xee5@cdc.gov",
+          "type": "interactive",
+          "flags": [
+            "acceptedEula",
+            "mayBeStoriesCoOwner"
+          ]
+        },
+        "query": {},
+        "rights": [
+          "read"
+        ],
+        "tableAuthor": {
+          "id": "w6xk-sxm6",
+          "displayName": "xee5@cdc.gov",
+          "screenName": "xee5@cdc.gov",
+          "type": "interactive",
+          "flags": [
+            "acceptedEula",
+            "mayBeStoriesCoOwner"
+          ]
+        },
+        "tags": [
+          "lyme disease",
+          "surveillance"
+        ],
+        "flags": [
+          "default",
+          "ownerMayBeContacted",
+          "restorable",
+          "restorePossibleForType"
+        ]
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

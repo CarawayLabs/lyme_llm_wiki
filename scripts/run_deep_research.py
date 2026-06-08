@@ -63,6 +63,13 @@ def build_parser() -> ArgumentParser:
         "--config",
         help="Path to the workflow JSON config. Defaults to research/phase_zero_workflow.json.",
     )
+    workflow_run_parser.add_argument(
+        "--resume-from-summary",
+        help=(
+            "Path to a previous workflow summary JSON. Completed artifacts in that summary "
+            "are loaded as dependency context and are not rerun."
+        ),
+    )
 
     return parser
 
@@ -162,7 +169,13 @@ def _run_workflow(args: Namespace, gemini_settings: GeminiSettings) -> int:
     from scripts.deep_research.workflow_runner import run_workflow
 
     openai_settings = OpenAISettings.from_env()
-    outcome = run_workflow(gemini_settings, openai_settings, _load_workflow_config(args))
+    resume_from_summary = getattr(args, "resume_from_summary", None)
+    outcome = run_workflow(
+        gemini_settings,
+        openai_settings,
+        _load_workflow_config(args),
+        Path(resume_from_summary).resolve() if resume_from_summary else None,
+    )
     print(f"Completed workflow artifacts: {len(outcome.reports)}")
     print(f"Failed workflow nodes: {len(outcome.failures)}")
     print(f"Skipped workflow nodes: {len(outcome.skipped)}")

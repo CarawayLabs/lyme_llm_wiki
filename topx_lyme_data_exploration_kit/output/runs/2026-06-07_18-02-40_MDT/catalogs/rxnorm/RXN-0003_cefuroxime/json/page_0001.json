@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:57.753491Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "RXN-0003",
+    "query_mode": "terminology_lookup",
+    "method": "GET",
+    "endpoint": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json",
+    "search_term": "cefuroxime",
+    "search_expression": "cefuroxime",
+    "parameters": {
+      "term": "cefuroxime",
+      "maxEntries": 20,
+      "option": 1
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NLM RxNorm API",
+    "catalog_slug": "rxnorm",
+    "source_type": "medication_terminology",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:56.817985Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 535,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0003_cefuroxime\\raw\\page_0001.json",
+      "sha256": "130772b693344321242107446921f0e753db2d096e4319ebc3605e2e373d9f3c",
+      "byte_count": 2095
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "rxnorm:RXN-0003-0",
+      "source_record_id": "RXN-0003-0",
+      "record_type": "medication_concept",
+      "title": "cefuroxime",
+      "description": null,
+      "summary": null,
+      "source_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=cefuroxime&maxEntries=20&option=1",
+      "retrieved_at": "2026-06-08T00:04:56.817985Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "rxcui": "RXN-0003-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "cefuroxime"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "rxnorm",
+        "search_id": "RXN-0003",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=cefuroxime&maxEntries=20&option=1",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0003_cefuroxime\\raw\\page_0001.json",
+        "raw_record_sha256": "7dd6177ed5b3aa65f91527210c895a9bb06842c684b1d6980938e75035b429f2"
+      },
+      "raw_metadata": {
+        "approximateGroup": {
+          "inputTerm": null,
+          "candidate": [
+            {
+              "rxcui": "2194",
+              "rxaui": "10327076",
+              "score": "12.82373046875",
+              "rank": "1",
+              "source": "GS"
+            },
+            {
+              "rxcui": "2194",
+              "rxaui": "12250443",
+              "score": "12.82373046875",
+              "rank": "1",
+              "name": "cefuroxime",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2194",
+              "rxaui": "2069465",
+              "score": "12.82373046875",
+              "rank": "1",
+              "name": "CEFUROXIME",
+              "source": "VANDF"
+            },
+            {
+              "rxcui": "2194",
+              "rxaui": "3640251",
+              "score": "12.82373046875",
+              "rank": "1",
+              "source": "NDDF"
+            },
+            {
+              "rxcui": "2194",
+              "rxaui": "5479190",
+              "score": "12.82373046875",
+              "rank": "1",
+              "name": "cefuroxime",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "2194",
+              "rxaui": "5479191",
+              "score": "12.82373046875",
+              "rank": "1",
+              "name": "cefuroxime",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "2194",
+              "rxaui": "8644924",
+              "score": "12.82373046875",
+              "rank": "1",
+              "name": "Cefuroxime",
+              "source": "DRUGBANK"
+            },
+            {
+              "rxcui": "1665443",
+              "rxaui": "12263599",
+              "score": "12.378774366855621",
+              "rank": "8",
+              "name": "cefuroxime Injection",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1152420",
+              "rxaui": "12286830",
+              "score": "12.378774366855621",
+              "rank": "8",
+              "name": "cefuroxime Pill",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "374541",
+              "rxaui": "12258926",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Injectable Solution",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "371340",
+              "rxaui": "12259871",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Oral Suspension",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "371342",
+              "rxaui": "12259872",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Oral Tablet",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "377415",
+              "rxaui": "12260958",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Ophthalmic Solution",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1152419",
+              "rxaui": "12285762",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Oral Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1152110",
+              "rxaui": "12286617",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Ophthalmic Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1152109",
+              "rxaui": "12294110",
+              "score": "11.998211404234649",
+              "rank": "10",
+              "name": "cefuroxime Injectable Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1152111",
+              "rxaui": "12293680",
+              "score": "11.668908143568027",
+              "rank": "17",
+              "name": "cefuroxime Oral Liquid Product",
+              "source": "RXNORM"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,4059 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:12.796888Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0014",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "Lyme serology",
+    "search_expression": "Lyme serology",
+    "parameters": {
+      "query.cond": "Lyme Disease",
+      "query.term": "Lyme serology",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:11.997418Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 441,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 9,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 9,
+    "total_count": 9,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+      "sha256": "71d95da48c16612c4722242288281a373d879bbd8ebb832f737810037624e8b7",
+      "byte_count": 105844
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-0",
+      "source_record_id": "CTG-0014-0",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-0"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "ae0b3c5c05d21a2c5b597ca81b3e19daec4e5d24499d1283e0bf5b3df79d71e4"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT00237016",
+            "orgStudyIdInfo": {
+              "id": "RF1"
+            },
+            "organization": {
+              "fullName": "Medical Corps, Israel Defense Force",
+              "class": "OTHER"
+            },
+            "briefTitle": "Post Exposure Treatment With Doxycycline for the Prevention of Relapsing Fever",
+            "officialTitle": "Post Exposure Treatment With Doxycycline for the Prevention of Relapsing Fever"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2024-12",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2002-04"
+            },
+            "completionDateStruct": {
+              "date": "2003-04"
+            },
+            "studyFirstSubmitDate": "2005-10-07",
+            "studyFirstSubmitQcDate": "2005-10-07",
+            "studyFirstPostDateStruct": {
+              "date": "2005-10-12",
+              "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2024-12-15",
+            "lastUpdatePostDateStruct": {
+              "date": "2024-12-19",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "leadSponsor": {
+              "name": "Medical Corps, Israel Defense Force",
+              "class": "OTHER"
+            }
+          },
+          "descriptionModule": {
+            "briefSummary": "Abstract Background Tick-Borne Relapsing Fever (TBRF) is an acute febrile illness. In Israel, TBRF is caused by Borrelia persica and is transmitted by Ornithodoros tholozani ticks. We examined the safety and efficacy of a post exposure treatment policy to prevent TBRF.\n\nMethods In a double blind, placebo controlled trial 93 healthy volunteers with suspected tick exposure (51 with bite signs and 42 contacts) were randomly assigned to receive either Doxycycline (200 mg for the first day and 100mg/d for 4 days) or placebo, approximately 2 days after contact. Blood smears were examined for Borrelia at inclusion and during fever rise. Serology for Lyme disease cross- reactivity and PCR for Borrelia GlpQ gene were also performed. Cases of TBRF were defined as subjects having fever and a positive blood smear."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Relapsing Fever, Tick-borne",
+              "Jarisch Herxheimer Reaction"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "PHASE2",
+              "PHASE3"
+            ],
+            "designInfo": {
+              "allocation": "RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "maskingInfo": {
+                "masking": "DOUBLE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 140
+            }
+          },
+          "armsInterventionsModule": {
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "doxycycline treatment"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* suspected exposure to tick-borne relapsing fever\n* after returning from field exercise in a tick-borne relapsing fever infected area\n* having a tick bite or staying in field in close proximity to a subject with tick bite sign\n\nExclusion Criteria:\n\n* known sensitivity to tetracycline or doxycycline\n* febrile illness on recruitment",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "stdAges": [
+              "CHILD",
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Tal Hasin, MD",
+                "affiliation": "Medical corps, Israel Defence Forces",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Israel Defence Forces",
+                "city": "Tel Litwinsky",
+                "country": "Israel",
+                "geoPoint": {
+                  "lat": 32.05096,
+                  "lon": 34.84588
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "11450675",
+                "type": "BACKGROUND",
+                "citation": "Nadelman RB, Nowakowski J, Fish D, Falco RC, Freeman K, McKenna D, Welch P, Marcus R, Aguero-Rosenfeld ME, Dennis DT, Wormser GP; Tick Bite Study Group. Prophylaxis with single-dose doxycycline for the prevention of Lyme disease after an Ixodes scapularis tick bite. N Engl J Med. 2001 Jul 12;345(2):79-84. doi: 10.1056/NEJM200107123450201."
+              },
+              {
+                "pmid": "16837678",
+                "type": "DERIVED",
+                "citation": "Hasin T, Davidovitch N, Cohen R, Dagan T, Romem A, Orr N, Klement E, Lubezky N, Kayouf R, Sela T, Keller N, Derazne E, Halperin T, Yavzori M, Grotto I, Cohen D. Postexposure treatment with doxycycline for the prevention of tick-borne relapsing fever. N Engl J Med. 2006 Jul 13;355(2):148-55. doi: 10.1056/NEJMoa053884."
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D012061",
+                "term": "Relapsing Fever"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-1",
+      "source_record_id": "CTG-0014-1",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-1"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "137952e05c52f154dd74da948f7dba5c7a5dba4aa48ee13f31d0410bc6693347"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03820999",
+            "orgStudyIdInfo": {
+              "id": "FCKPhDProject4"
+            },
+            "organization": {
+              "fullName": "Odense University Hospital",
+              "class": "OTHER"
+            },
+            "briefTitle": "An Intervention in a Primary Healthcare Setting to Reduce Lyme Neuroborreliosis Treatment Delay",
+            "officialTitle": "An Intervention in a Primary Healthcare Setting to Reduce Lyme Neuroborreliosis Treatment Delay",
+            "acronym": "NBdelay"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-01",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "NOT_YET_RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2019-02",
+              "type": "ESTIMATED"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2020-12-31",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2021-04-01",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2019-01-22",
+            "studyFirstSubmitQcDate": "2019-01-28",
+            "studyFirstPostDateStruct": {
+              "date": "2019-01-29",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2019-01-29",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-01-31",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Fredrikke Christie Knudtzen",
+              "investigatorTitle": "Speciality Registrar, Specialist in Infectious Diseases, Principal Investigator",
+              "investigatorAffiliation": "Odense University Hospital"
+            },
+            "leadSponsor": {
+              "name": "Odense University Hospital",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": true,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "This study evaluates the effect of written and oral information in a primary health care setting on 1) patients referred to specialised examination for Lyme neuroborreliosis, 2) delay from patient symptom debut to treatment for Lyme neuroborreliosis, and 3) number of Borrelia serology tests from primary health care.",
+            "detailedDescription": "Lyme neuroborreliosis is among the most common neuroinfections in northern Europe. Residual symptoms after treatment are a frequent problem in Lyme neuroborreliosis, and an association between the delay from symptom debut to antibiotic treatment has been established. In a previous study on Funen Island, Denmark, the delay from day of symptom debut to treatment for Lyme neuroborreliosis patients was 24 days. This considerable treatment delay did not change in the 20 years study period.\n\nIn the Danish health system, the general practitioners are the first medical professionals to see the majority of patients. They can refer patients to the hospital for further examination if indicated. Many general practitioners use Borrelia burgdorferi antibodies (igM/IgG) as a screening tool when they suspect Lyme disease or see patients with uncharacteristic symptoms. This is unfortunate, as the rash Erythema Migrans, the most common Borreliosis manifestation in Europe, is a clinical diagnosis. Only around 50% of patients have positive antibodies at time of Erythema Migrans diagnosis. Lyme neuroborreliosis is diagnosed based on symptoms and the results from the cerebrospinal fluid, and cannot be diagnosed based on serology, which only delays the time to diagnoses and treatment. The Danish guidelines on Lyme borreliosis therefore discourage general practitioners from using Borrelia serology.\n\nIn the before mentioned study from Funen Island, several patients described multiple contacts to their general practitioners, where the symptoms of Lyme neuroborreliosis were not recognized. The cardinal symptom of radicular pain was associated with a longer delay than many of the less common symptoms of Lyme neuroborreliosis."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Neuroborreliosis"
+            ],
+            "keywords": [
+              "treatment delay",
+              "primary health care"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NON_RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "interventionModelDescription": "Open label interventional study where primary Health care Physicians in areas on Funen Island, Denmark, are included if they have their practice in an area with Lyme Neuroborreliosis incidens \\> 4.6/100.000",
+              "primaryPurpose": "TREATMENT",
+              "maskingInfo": {
+                "masking": "NONE",
+                "maskingDescription": "Open label study, due to the intervention (lectures) and the criteria for receiving the intervention (Lyme neuroborreliosis incidens \\> 4.6/100.000), the study cannot be blinded."
+              }
+            },
+            "enrollmentInfo": {
+              "count": 60,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Teaching arm",
+                "type": "EXPERIMENTAL",
+                "description": "The Primary Health Care physicians getting oral and written information on tick-bites and Lyme disease with focus on Lyme neuroborreliosis.",
+                "interventionNames": [
+                  "Other: Oral and written information on tick-bites and Lyme disease"
+                ]
+              },
+              {
+                "label": "Passive arm",
+                "type": "NO_INTERVENTION",
+                "description": "The Primary Health Care physicians that does not get contacted with an offer to receive oral and written information."
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "Oral and written information on tick-bites and Lyme disease",
+                "description": "See under study arm descriptions",
+                "armGroupLabels": [
+                  "Teaching arm"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Number of days from symptom debut to beginning of antibiotic treatment for Lyme neuroborreliosis",
+                "description": "Number of days from debut of neurological symptoms to beginning of antibiotic treatment for Lyme neuroborreliosis.",
+                "timeFrame": "0-90 days"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Number of yearly referred Lyme patients",
+                "description": "Number of yearly referred patients in the two study arms in the two years before the intervention (2017+2018) and after the intervention (2019+2020).",
+                "timeFrame": "Up to 4 years (1460 days)."
+              },
+              {
+                "measure": "Number of Borrelia antibody tests in peripheral blood ordered by primary care physicians",
+                "description": "Number of Borrelia antibody tests in peripheral blood ordered by primary Health care physicians in the two study arms in the two years before (2017+2018) and after (2019 + 2020) the intervention.",
+                "timeFrame": "Up to 4 years (1460 days)."
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Primary care physicians with a postal code in an area of Funen Island with a Lyme neuroborreliosis incidens of \\> 4.6/100.000\n* Patients with a postal address on Funen and a positive Borrelia intrathecal antibody test (diagnostic for lyme neuroborreliosis) performed at the Department of Clinical Microbiology, Odense University Hospital from January 1st 2017 - December 31st 2020\n* A Borrelia IgM/IgG serology ordered from Primary Health Care and performed at the Department of Clinical Microbiology, Odense University Hospital from January 1st 2017 - December 31st 2020\n\nExclusion Criteria:\n\n* Primary care physicians with a postal code in an area of Funen Island with a Lyme neuroborreliosis incidens of \\< 4.7/100.000",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "stdAges": [
+              "CHILD",
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Fredrikke C Knudtzen, MD",
+                "role": "CONTACT",
+                "phone": "004529178083",
+                "email": "fredrikke.christie.knudtzen@rsyd.dk"
+              },
+              {
+                "name": "Sigurdur Skarphédinsson, MD, PhD",
+                "role": "CONTACT",
+                "phone": "004565414280",
+                "email": "s.skarphedinsson@rsyd.dk"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Fredrikke C Knudtzen, MD",
+                "affiliation": "Department of Infectious Diseases, Odense University Hospital",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Clinical Center for Emerging and Vectorborne Infections",
+                "city": "Odense",
+                "state": "Funen",
+                "zip": "5000",
+                "country": "Denmark",
+                "contacts": [
+                  {
+                    "name": "Sigurdur Skarphedinsson, MD, PhD",
+                    "role": "CONTACT"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 55.39594,
+                  "lon": 10.38831
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "29048514",
+                "type": "RESULT",
+                "citation": "Knudtzen FC, Andersen NS, Jensen TG, Skarphedinsson S. Characteristics and Clinical Outcome of Lyme Neuroborreliosis in a High Endemic Area, 1995-2014: A Retrospective Cohort Study in Denmark. Clin Infect Dis. 2017 Oct 16;65(9):1489-1495. doi: 10.1093/cid/cix568."
+              },
+              {
+                "pmid": "35323885",
+                "type": "DERIVED",
+                "citation": "Knudtzen FC, Jensen TG, Andersen NS, Johansen IS, Hovius JW, Skarphedinsson S. An intervention in general practice to improve the management of Lyme borreliosis in Denmark. Eur J Public Health. 2022 Jun 1;32(3):436-442. doi: 10.1093/eurpub/ckac013."
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO",
+            "description": "Due to Denmark´s strict data-sharing Laws, data will not be shared after completion of study."
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D020852",
+                "term": "Lyme Neuroborreliosis"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D020806",
+                "term": "Central Nervous System Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D002494",
+                "term": "Central Nervous System Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D002493",
+                "term": "Central Nervous System Diseases"
+              },
+              {
+                "id": "D009422",
+                "term": "Nervous System Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-2",
+      "source_record_id": "CTG-0014-2",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-2"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "d1d9a1df9c70f356932cf889467916f57f8cfe13b38c4f247b978c64f4cb7a41"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT05856812",
+            "orgStudyIdInfo": {
+              "id": "2022-02143; ks23Heininger"
+            },
+            "organization": {
+              "fullName": "University Children's Hospital Basel",
+              "class": "OTHER"
+            },
+            "briefTitle": "BOrrelia BUrgdorferi IN Children and Adolescents",
+            "officialTitle": "BOrrelia BUrgdorferi IN Children and Adolescents- a Seroprevalence Study",
+            "acronym": "BOBUINCA"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2024-11",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2023-06-23",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2024-02-06",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2024-02-06",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2023-04-26",
+            "studyFirstSubmitQcDate": "2023-05-09",
+            "studyFirstPostDateStruct": {
+              "date": "2023-05-12",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2024-11-22",
+            "lastUpdatePostDateStruct": {
+              "date": "2024-11-26",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "University Children's Hospital Basel",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The aim of this study is to assess B. burgdorferi antibodies in children and adolescents in north-western Switzerland and neighbouring countries (\"Triregio\") treated at the University Children's Hospital Basel to define age-dependent B. burgdorferi seroprevalence rates.",
+            "detailedDescription": "Lyme borreliosis is one of the most prevalent tick-borne zoonosis in the northern hemisphere. Children with Borrelia (B.) burgdorferi infection present with different clinical stages and related symptoms: an early localized stage is commonly associated with an erythema migrans or a borrelial lymphocytoma. Early disseminated disease include early neuroborreliosis, acute arthritis or carditis. Later disease stages include acrodermatitis chronica atrophicans, late neuroborreliosis or Lyme Arthritis. B. burgdorferi prevalence is highest in Europe and has been increasing in the last decade.\n\nOnly limited data about the seroprevalence in children is available. A recently published systematic review and meta-analysis estimated the overall global seroprevalence at 14.5% (95% confidence interval (CI) 12.8-16.3%), and at 7.1% (95% CI 5.1-9.5%) in those \\<40 years of age (based on 18 studies). Only a few studies included in this systematic review assessed paediatric cohorts in Europe: One study from Germany was published 10 years ago and estimated the seroprevalence at 4.5% (95% CI 4.3-5.4%) in the age group 1-17 years. The seroprevalence was higher in males and in the southern part of Germany, and it increased by 11% and 6% for every year of age in boys and girls, respectively. A study from Sweden looked at 5-year old children and estimated a seroprevalence of 3.2%. More data about the seroprevalence is available in adults with heterogenous findings: recent studies from southern Germany, eastern Slovakia, Jordan, Finland and Romania, reported seroprevalence values of 2.4%, 13%, 11.7%, 3.9% and 7.4% respectively.\n\nMore recent estimates of the seroprevalence stratified by age are needed in routine care to enable definition of pre-test probability for this serological test in the clinical evaluation of children with suspected Lyme disease. Since an age dependant relationship is plausible and has been shown in studies, seroprevalence estimates from adults should not be used in children. Knowledge of the seroprevalence of B. burgdorferi in children will help to better differentiate between active Lyme disease and seroprevalence due to previous Borrelia infection without signs of active disease. This is also important for avoiding overtreatment of children without active diseases. Only a small amount of plasma or serum is needed to determine the B. burgdorferi antibodies. Therefore, this study aims to evaluate the seroprevalence B. burgdorferi antibodies from left-over blood samples that were taken for other clinically relevant tests without an additional invasive procedure for the child."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "B. Burgdorferi Infection"
+            ],
+            "keywords": [
+              "children",
+              "adolescents"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "OTHER",
+              "timePerspective": "PROSPECTIVE"
+            },
+            "bioSpec": {
+              "retention": "SAMPLES_WITH_DNA",
+              "description": "Blood samples"
+            },
+            "enrollmentInfo": {
+              "count": 962,
+              "type": "ACTUAL"
+            }
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Assesment of B.burgdorferi antibodies in children and adolescents",
+                "description": "Analysis of blood samples using B. burgdorferi Immunoglobulin G ELISA test and line blot for confirmation.\n\nA positive serology for B. burgdorferi will be defined as a positive Immunglobulin G (IgG) enzyme-linked immunoassay (ELISA) test for B. burgdorferi and a positive confirmation test by Line Blot (similar to a western blot technique).",
+                "timeFrame": "one time assessment at baseline"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* signed informed general consent\n* residence in cantons Basel city, Basel country, Aargau, Solothurn and neighboring areas of France and Germany (Germany postal codes 794x, 795x, 796x, 797x and France postal codes 68480, 68640, 68220, 68330, 68300, 68128, 68730, 68870, 68510, 68130, 68640, 68960, 56890, 68118, 68580, 68680, 68440, 68720)\n\nExclusion Criteria:\n\n\\- case blood is taken repetitively from the same child, only the first sample will be used and the child will only be included in the study once.\n\nRefugees seeking asylum will be excluded. These children will be identified by postal address of the Bundesasylzentrum.\n\n* Children presenting for a diagnosis related to a B. burgdorferi infection will be excluded since including these children would result in an over-estimation of the pre-test prevalence of B. burgdorferi IgG due to a possible selection bias. Diagnosis related to a B. burgdorferi infection will include erythema migrans, borrelial lymphocytoma, early or late neuroborreliosis, acute arthritis or carditis, acrodermatitis chronica atrophicans.\n* Children with underlying chronic disease, that potentially affects plasma antibodies will be excluded, these include for example the following conditions:\n\n  * known inborn or acquired immunodeficiency syndrome\n  * Systemic lupus erythematosus\n  * Children with history of intravenous immunoglobulin treatment in the past 12 months for any reason including Kawasaki Disease, Paediatric Inflammatory Multisystem Syndrome, Immunothrombocytopenia.\n  * Children after allogenic stem cell transplantation.\n  * Children with cancer or known chronic hematology disease.\n  * Children treated with immunosuppressive treatment in the last 6 months including systemic steroids \\>2 weeks duration (\\>2mg/kg or \\>20 mg prednisone equivalent) or immunosuppressive combination treatments (e.g. biological disease modifying antirheumatic drugs (DMARDs) + conventional DMARDs), Rituximab or leflunomide",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "1 Year",
+            "maximumAge": "17 Years",
+            "stdAges": [
+              "CHILD"
+            ],
+            "studyPopulation": "The study population will include children and adolescents, who presented at the University Childrens Hospital Basel in outpatient or inpatient setting.\n\nAll children and adolescents, from whom a sufficient left over amount of the EDTA sample taken for clinical routine tests at the hematology laboratory of the University Childrens Hospital Basel will be included",
+            "samplingMethod": "PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Ulrich Heininger, Prof.",
+                "affiliation": "University Childrens Hospital",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "University Childrens Hospital Basel",
+                "city": "Basel",
+                "zip": "4031",
+                "country": "Switzerland",
+                "geoPoint": {
+                  "lat": 47.55839,
+                  "lon": 7.57327
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "39325354",
+                "type": "BACKGROUND",
+                "citation": "Heeb L, Fritschi N, Marten A, Welzel T, Ritz N, Heininger U. Borrelia burgdorferi infections in children and adolescents in Switzerland - a seroprevalence study 2023/2024 (BOBUINCA). Infection. 2025 Jun;53(3):893-903. doi: 10.1007/s15010-024-02387-7. Epub 2024 Sep 26."
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-3",
+      "source_record_id": "CTG-0014-3",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-3"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "73a3cbe0a0a5ccf52635afcedd8b1257d31a04c2077dc9fed0fc2e8dab335fe9"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03981874",
+            "orgStudyIdInfo": {
+              "id": "P/2019/419"
+            },
+            "organization": {
+              "fullName": "Centre Hospitalier Universitaire de Besancon",
+              "class": "OTHER"
+            },
+            "briefTitle": "Peripheral Facial Paralysis Sequelae in Lyme Disease Among Children",
+            "officialTitle": "Comparative Study of Peripheral Facial Paralysis Sequelae Based on the Initial Medical Care of Lyme Disease Among Children",
+            "acronym": "LYMEPED"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-06",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2019-05-29",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2019-07-29",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2019-07-29",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2019-06-07",
+            "studyFirstSubmitQcDate": "2019-06-10",
+            "studyFirstPostDateStruct": {
+              "date": "2019-06-11",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2019-06-11",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-06-12",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "Centre Hospitalier Universitaire de Besancon",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Neuroborreliosis (NB) is the second most frequent manifestation of Lyme disease. Painful meningoradiculitis is the most common neurologic manifestation in adults while facial nerve palsy (FP) and lymphocytic meningitis is predominant in children. FP is a common reason for pediatric consultation and FP due to Lyme borreliosis (LB) represents about 50% of the child's FP in an endemic area.\n\nThe action to be taken is not formally defined for a child consulting for FP in a Lyme disease endemic area.\n\nThe new recommendations of the High Authority of Health of June 2018 recommend to carry out a blood serology in first intention, in search of a NB in a child consulting for a peripheral facial paralysis. If this is positive, a lumbar puncture will be performed in search of meningitis. In the case of negative serology, a close clinical surveillance and sometimes serological control is necessary, in order to reassess the diagnosis. In adult recommendations, a lumbar puncture is performed first in any patient consulting for facial paralysis in LB endemic area.\n\nThe main objective of this study was to describe the clinical and biological characteristics of pediatric NB with FP. Others objectives were to describe the diagnostic and therapeutic behavior of a child consulting at university hospital for a facial nerve palsy, to compare the initial gravity of facial nerve palsy, the duration of the paralysis and sequels depending on the diagnosis and treatment initiated."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Disease"
+            ],
+            "keywords": [
+              "neuroborreliosis",
+              "facial palsy",
+              "children"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "primaryPurpose": "DIAGNOSTIC",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 50,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Telephonic interview",
+                "type": "EXPERIMENTAL",
+                "description": "Parents or patients will be contacted by phone in order to precise whether there are persistent sequelae or not",
+                "interventionNames": [
+                  "Other: telephonic interview"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "telephonic interview",
+                "description": "Telephonic interview",
+                "armGroupLabels": [
+                  "Telephonic interview"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Assesment of persistent sequelae",
+                "description": "Facial paralysis duration assesment and persistence of physical sequelae at time of the telephonic call using House \\& Brackmann classification for facial function.\n\nThis grading system has 6 levels, used for middle- to long-term monitoring:\n\nI. Normal II. Mild dysfunction III. Moderate dysfunction IV. Moderately severe dysfunction",
+                "timeFrame": "4 years"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Children consulting for peripheral facial palsy\n\nExclusion Criteria:\n\n* Children consulting for central facial palsy\n* Children with congenital peripheral facial palsy\n* Children with surgery and trauma in the area of the facial nerve,\n* Children with peripheral facial palsy with previous diagnosis\n* Children whose parents refuse the study participation",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "maximumAge": "18 Years",
+            "stdAges": [
+              "CHILD",
+              "ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Candice Feuillebois, Int",
+                "role": "CONTACT",
+                "phone": "+33381218516",
+                "email": "sydnak@hotmail.fr"
+              },
+              {
+                "name": "Raphael Anxionnat, MD",
+                "role": "CONTACT",
+                "phone": "+33381218516",
+                "email": "ranxionnat@chu-besancon.fr"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Raphael Anxionnat, MD",
+                "affiliation": "CHU Besançon",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "CHU Besancon",
+                "status": "RECRUITING",
+                "city": "Besançon",
+                "country": "France",
+                "geoPoint": {
+                  "lat": 47.24878,
+                  "lon": 6.01815
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D005158",
+                "term": "Facial Paralysis"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              },
+              {
+                "id": "D010243",
+                "term": "Paralysis"
+              },
+              {
+                "id": "D009461",
+                "term": "Neurologic Manifestations"
+              },
+              {
+                "id": "D009422",
+                "term": "Nervous System Diseases"
+              },
+              {
+                "id": "D012816",
+                "term": "Signs and Symptoms"
+              },
+              {
+                "id": "D013568",
+                "term": "Pathological Conditions, Signs and Symptoms"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-4",
+      "source_record_id": "CTG-0014-4",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-4"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "acee115c81638f18558fd7d0c927a0a0e4ad15702aa60a7dd6fc2d6c64092417"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT06859619",
+            "orgStudyIdInfo": {
+              "id": "RECHMPL24_0384"
+            },
+            "organization": {
+              "fullName": "University Hospital, Montpellier",
+              "class": "OTHER"
+            },
+            "briefTitle": "Serological Measurement of Montpellier Professionals' Contacts with Infectious Agents Responsible for Animal-borne Diseases",
+            "officialTitle": "Seroprevalence of Zoonotic and Arboviral Emerging Infections in Exposed Agents from the City of Montpellier: a Transversal Study.",
+            "acronym": "SEZAM"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2025-02",
+            "overallStatus": "NOT_YET_RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2025-03-03",
+              "type": "ESTIMATED"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2025-10-03",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2025-10-03",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2025-02-27",
+            "studyFirstSubmitQcDate": "2025-02-27",
+            "studyFirstPostDateStruct": {
+              "date": "2025-03-05",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2025-02-27",
+            "lastUpdatePostDateStruct": {
+              "date": "2025-03-05",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "University Hospital, Montpellier",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "TransVIHMI UM, IRD UMI233, Inserm U1175",
+                "class": "UNKNOWN"
+              },
+              {
+                "name": "UMR 1058 Pathogenesis & Control of Chronic & Emerging Infections PCCEI",
+                "class": "UNKNOWN"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false,
+            "isUsExport": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Zoonoses and arboviroses refer to a group of diseases transmitted from animals to humans, either directly or indirectly (via mosquitoes, ticks or contact with contaminated environments). Most of these diseases are found in certain tropical zones, but global warming and increased international trade are modifying their geographical distribution, with a gradual trend towards temperate regions. A number of these pathogens have already been detected in Occitania, including dengue fever, West Nile, leishmaniasis and Q fever. Given the region's high mosquito population and favorable climatic conditions, other zoonoses have a strong potential to appear in the region, or may already be circulating at a low level. The study focuses on 18 pathogens selected for their potential to emerge and establish themselves in the Occitanie region: Leishmaniasis, Leptospirosis, Brucellosis, Q fever, Rickettsiosis, Tularemia, Psittacosis, Lyme disease, Tick-borne encephalitis, Hantavirus, Hepatitis E virus, Dengue virus, Zika virus, Chikungunya virus, West-Nile virus, Usutu virus, Toscana virus, Crimean-Congo haemorrhagic fever virus.\n\nThe aim of the study is to find out whether patients have antibodies against these infectious agents, which would indicate that they have been exposed to them in the past, even in the absence of symptoms.\n\nDescribing the circulation of these pathogens will enable to implement appropriate public health measures to avoid the risk of epidemics (mosquito control, informing professionals, etc.), as well as to assess the risk incurred in the workplace and have this risk recognized by the healthcare system.",
+            "detailedDescription": "Current environmental changes are influencing the epidemiology of zoonoses, which account for over 75% of emerging infections, with the Mediterranean region being a high-risk area. The proposed study focuses on occupational zoonoses, that is, those that can be contracted in the workplace, through direct contact with animals or exposure to their environment. Some of these zoonoses are recognized and compensable as occupational diseases (OD), while for others, the onus is on the employee to prove the origin of the contamination. The advantages of studying this population are threefold: i) to document occupational risk and improve management and prevention practices in this context, ii) to use this sentinel population - when many of these zoonoses are emerging - to anticipate risks for the less-exposed general population, iii) in the event of the discovery of a positive serology for an infectious agent considered non-circulating in the Occitanie region, to improve the management of symptomatic patients by raising awareness of differential diagnosis. For the purposes of this study, the zoonoses recognized as occupational diseases are: Mediterranean spotted fever, Lyme borreliosis, tularemia, Q fever, brucellosis, psittacosis, hepatitis E and leptospirosis. Although not recognized as occupational diseases, leishmaniasis, hantaviruses, dengue fever, zika, chikungunya, West Nile virus, Usutu, Toscana, Crimean-Congo hemorrhagic fever and tick-borne encephalitis are of particular interest to workers exposed to these diseases, and are also included in the study.\n\nFew data are currently available on the actual rate of circulation of these pathogens in the population of occupationally exposed workers, and none in Occitanie. These outdoor workers also represent a sentinel population, due to their increased exposure, so obtaining precise seroprevalence data in these groups would enable the researchers to anticipate the emergence of these pathogens in the general population in the near future, and to diagnose them individually."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Leishmaniasis",
+              "Leptospirosis",
+              "Brucellosis",
+              "Q Fever",
+              "Rickettsiosis",
+              "Tularemia",
+              "Psittacosis",
+              "Lyme Disease",
+              "Tick-borne Encephalitis",
+              "Hantaviral Infection Nos",
+              "Hepatitis E",
+              "Dengue Virus",
+              "Zika Virus",
+              "Chikungunya Virus Infection",
+              "West Nile Virus",
+              "Usutu Virus",
+              "Toscana Virus",
+              "Crimean-Congo Haemorrhagic Fever Virus"
+            ],
+            "keywords": [
+              "Leishmaniasis,",
+              "Leptospirosis",
+              "Brucellosis",
+              "Zika virus",
+              "Q fever, Rickettsiosis",
+              "Lyme disease",
+              "Tick-borne encephaliti",
+              "Hantavirus",
+              "Hepatitis E virus",
+              "Dengue virus",
+              "Chikungunya virus",
+              "West-Nile virus",
+              "Usutu virus",
+              "Toscana virus",
+              "Tularemia",
+              "Psittacosis",
+              "Crimean-Congo haemorrhagic fever virus",
+              "epidemiology"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "interventionModelDescription": "cross-sectional study with minimal risk and constraints",
+              "primaryPurpose": "SCREENING",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 183,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "City of Montpellier employees working at the Zoo, the Ecolothèque and the Green Spaces Department",
+                "type": "EXPERIMENTAL",
+                "description": "City of Montpellier employees working at the Zoo, Ecolotheque or green spaces exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies) in the Occitanie region",
+                "interventionNames": [
+                  "Other: Peripheral venous blood sample"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "Peripheral venous blood sample",
+                "description": "Peripheral venous blood sampling for IgG serology against leishmaniasis, leptospirosis, brucellosis, Q fever, rickettsiosis, tularemia, psittacosis, Lyme disease, tick-borne encephalitis, hantavirus, hepatitis E virus, dengue virus, Zika virus, Chikungunya virus, West Nile virus, Usutu virus, Toscana virus, Crimean-Congo hemorrhagic fever virus.",
+                "armGroupLabels": [
+                  "City of Montpellier employees working at the Zoo, the Ecolothèque and the Green Spaces Department"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies). Leishmaniasis,",
+                "description": "prevalence (in percentage) of pathogen IgG positivity against : Leishmaniasis,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Leptospirosis,",
+                "description": "prevalence of pathogen IgG positivity against : Leptospirosis,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Brucellosis",
+                "description": "prevalence of pathogen IgG positivity against : Brucellosis",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Q fever",
+                "description": "prevalence of pathogen IgG positivity against : Q fever",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Rickettsiosis",
+                "description": "prevalence of pathogen IgG positivity against : Rickettsiosis,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Tularemia",
+                "description": "prevalence of pathogen IgG positivity against : Tularemia",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Psittacosis",
+                "description": "prevalence of pathogen IgG positivity against : Psittacosis",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Lyme disease,",
+                "description": "prevalence of pathogen IgG positivity against : Lyme disease,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Tick-borne encephalitis",
+                "description": "prevalence of pathogen IgG positivity against : Tick-borne encephalitis",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Hantavirus",
+                "description": "prevalence of pathogen IgG positivity against : Hantavirus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies). Hepatitis E virus",
+                "description": "prevalence of pathogen IgG positivity against : Hepatitis E virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Dengue virus",
+                "description": "prevalence of pathogen IgG positivity against : Dengue virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies). Zika virus",
+                "description": "prevalence of pathogen IgG positivity against : Zika virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Chikungunya virus",
+                "description": "prevalence of pathogen IgG positivity against : Chikungunya virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies). West-Nile virus,",
+                "description": "prevalence of pathogen IgG positivity against : West-Nile virus,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies). usutu virus",
+                "description": "prevalence of pathogen IgG positivity against : Usutu virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Toscana virus",
+                "description": "prevalence of pathogen IgG positivity against : Toscana virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimate seroprevalences of the zoonoses in populations exposed to wildlife by zoo staff and to various vectors (ticks, mosquitoes, sandflies).Crimean-Congo haemorrhagic fever virus.",
+                "description": "prevalence of pathogen IgG positivity against : Crimean-Congo haemorrhagic fever virus.",
+                "timeFrame": "Baseline"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases. socio-demographic criteria",
+                "description": "OR of logistic regression of univariate model between serologies and socio-demographic criteria (age, sex, profession)",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases. travel to endemic areas",
+                "description": "OR of the logistic regression of the univariate model between serologies and travel to endemic areas for these diseases",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases. occupational exposure",
+                "description": "OR of the logistic regression of the univariate model between serologies and occupational exposure to these pathologies",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases. exposure in private activities",
+                "description": "OR of the logistic regression of the univariate model between serologies and exposure in private activities, including the importance of contact with transmission vectors,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases. use of mosquito protection",
+                "description": "OR of the logistic regression of the univariate model between serologies and use of mosquito protection,",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases.history of transfusion or transplant",
+                "description": "OR of the logistic regression of the univariate model between serologies and history of transfusion or transplant",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the factors associated with seropositivity to these diseases. comparison of the linear models",
+                "description": "AOR of the multivariate logistic regression with the best AIC among all the models tested",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimating vaccination coverage against leptospirosis in the workplace",
+                "description": "prevalence (in percentage) of professional vaccinations for leptospirosis",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Estimating vaccination coverage against rabies in the workplace",
+                "description": "prevalence (in percentage) of professional vaccinations for rabies",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. Dengue virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for Dengue virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. Dengue virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for Dengue virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. Zika virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for Zika virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. Zika virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for Zika virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. Chikungunya virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for Chikungunya virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. Chikungunya virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for Chikungunya virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. West-Nile virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for West-Nile virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. West-Nile virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for West-Nile virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. Usutu virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for Usutu virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. Usutu virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for Usutu virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. Toscana virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for Toscana virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. Toscana virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for Toscana virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the sensitivity of DBS (dried blood spot) serum neutralization for viral serologies. Crimean-Congo haemorrhagic fever virus",
+                "description": "Determine the sensitivity (in percentage) of DBS (dried blood spot) seroneutralization for Crimean-Congo haemorrhagic fever virus",
+                "timeFrame": "Baseline"
+              },
+              {
+                "measure": "Determine the specificity of DBS (dried blood spot) serum neutralization for viral serologies. Crimean-Congo haemorrhagic fever virus",
+                "description": "Determine the specificity (in percentage) of DBS (dried blood spot) seroneutralization for Crimean-Congo haemorrhagic fever virus",
+                "timeFrame": "Baseline"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 18 or over\n* Consultant in an infectious diseases department\n* Have given written consent to participate in the study\n* Working for the City or Metropolis of Montpellier in the Zoo, Espaces Vert or Ecolothèque departments.\n\nExclusion Criteria:\n\n* \\- Pregnant and breast-feeding women\n* Persons benefiting from legal protection measures (guardianship, curatorship, safeguard of justice)\n* Participants who are not fluent in French and who do not have a support person capable of reading French.\n* Persons unable to express their consent.\n* Persons participating in another research project with an exclusion period still in progress.\n* Persons not affiliated to a social security scheme or not benefiting from such a scheme.",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "CHARLOTTE BOULLE, MD",
+                "role": "CONTACT",
+                "phone": "04 67 33 52 34",
+                "phoneExt": "+33",
+                "email": "c-boulle@chu-montpellier.fr"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "CHARLOTTE BOULLE, MD",
+                "affiliation": "University Hospital, Montpellier",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "University Hospital Of Montpellier",
+                "city": "Montpellier",
+                "state": "herault",
+                "zip": "34295",
+                "country": "France",
+                "contacts": [
+                  {
+                    "name": "CHARLOTTE BOULLE, MD",
+                    "role": "CONTACT",
+                    "phone": "04 67 33 52 34",
+                    "phoneExt": "+33",
+                    "email": "c-boulle@chu-montpellier.fr"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 43.61093,
+                  "lon": 3.87635
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "UNDECIDED"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D007896",
+                "term": "Leishmaniasis"
+              },
+              {
+                "id": "D007922",
+                "term": "Leptospirosis"
+              },
+              {
+                "id": "D002006",
+                "term": "Brucellosis"
+              },
+              {
+                "id": "D011778",
+                "term": "Q Fever"
+              },
+              {
+                "id": "D012282",
+                "term": "Rickettsia Infections"
+              },
+              {
+                "id": "D014406",
+                "term": "Tularemia"
+              },
+              {
+                "id": "D009956",
+                "term": "Psittacosis"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D004675",
+                "term": "Encephalitis, Tick-Borne"
+              },
+              {
+                "id": "D016751",
+                "term": "Hepatitis E"
+              },
+              {
+                "id": "D000071243",
+                "term": "Zika Virus Infection"
+              },
+              {
+                "id": "D065632",
+                "term": "Chikungunya Fever"
+              },
+              {
+                "id": "D018804",
+                "term": "Hantavirus Pulmonary Syndrome"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D056986",
+                "term": "Euglenozoa Infections"
+              },
+              {
+                "id": "D011528",
+                "term": "Protozoan Infections"
+              },
+              {
+                "id": "D010272",
+                "term": "Parasitic Diseases"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D012876",
+                "term": "Skin Diseases, Parasitic"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D012874",
+                "term": "Skin Diseases, Infectious"
+              },
+              {
+                "id": "D012871",
+                "term": "Skin Diseases"
+              },
+              {
+                "id": "D017437",
+                "term": "Skin and Connective Tissue Diseases"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D012288",
+                "term": "Rickettsiaceae Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D023521",
+                "term": "Chlamydophila Infections"
+              },
+              {
+                "id": "D002694",
+                "term": "Chlamydiaceae Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D004671",
+                "term": "Encephalitis, Arbovirus"
+              },
+              {
+                "id": "D018792",
+                "term": "Encephalitis, Viral"
+              },
+              {
+                "id": "D020805",
+                "term": "Central Nervous System Viral Diseases"
+              },
+              {
+                "id": "D002494",
+                "term": "Central Nervous System Infections"
+              },
+              {
+                "id": "D000069544",
+                "term": "Infectious Encephalitis"
+              },
+              {
+                "id": "D001102",
+                "term": "Arbovirus Infections"
+              },
+              {
+                "id": "D014777",
+                "term": "Virus Diseases"
+              },
+              {
+                "id": "D012327",
+                "term": "RNA Virus Infections"
+              },
+              {
+                "id": "D018177",
+                "term": "Flavivirus Infections"
+              },
+              {
+                "id": "D018178",
+                "term": "Flaviviridae Infections"
+              },
+              {
+                "id": "D004660",
+                "term": "Encephalitis"
+              },
+              {
+                "id": "D001927",
+                "term": "Brain Diseases"
+              },
+              {
+                "id": "D002493",
+                "term": "Central Nervous System Diseases"
+              },
+              {
+                "id": "D009422",
+                "term": "Nervous System Diseases"
+              },
+              {
+                "id": "D000090862",
+                "term": "Neuroinflammatory Diseases"
+              },
+              {
+                "id": "D006525",
+                "term": "Hepatitis, Viral, Human"
+              },
+              {
+                "id": "D006505",
+                "term": "Hepatitis"
+              },
+              {
+                "id": "D008107",
+                "term": "Liver Diseases"
+              },
+              {
+                "id": "D004066",
+                "term": "Digestive System Diseases"
+              },
+              {
+                "id": "D000096724",
+                "term": "Mosquito-Borne Diseases"
+              },
+              {
+                "id": "D018354",
+                "term": "Alphavirus Infections"
+              },
+              {
+                "id": "D014036",
+                "term": "Togaviridae Infections"
+              },
+              {
+                "id": "D018778",
+                "term": "Hantavirus Infections"
+              },
+              {
+                "id": "D002044",
+                "term": "Bunyaviridae Infections"
+              },
+              {
+                "id": "D012131",
+                "term": "Respiratory Insufficiency"
+              },
+              {
+                "id": "D012120",
+                "term": "Respiration Disorders"
+              },
+              {
+                "id": "D012140",
+                "term": "Respiratory Tract Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-5",
+      "source_record_id": "CTG-0014-5",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-5"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "25436c056968fe00fb288815daf6794c232acb3f768f43555cb3a5c17d0aa728"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03958058",
+            "orgStudyIdInfo": {
+              "id": "TBE-LB observational"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Tick-borne Encephalitis and Possible Borrelial Serology",
+            "officialTitle": "Tick-Borne Encephalitis Virus and Lyme Borreliae Causing Coillness, Coinfection, or Just Coincidence. A Prospective Observational Study"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-05",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2007-01-01",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2013-12-31",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2013-12-31",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2019-05-17",
+            "studyFirstSubmitQcDate": "2019-05-17",
+            "studyFirstPostDateStruct": {
+              "date": "2019-05-21",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2019-05-17",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-05-21",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Daša Stupica",
+              "investigatorTitle": "Prinicipal Investigator",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "University of Ljubljana School of Medicine, Slovenia",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "In Europe, tick-borne encephalitis (TBE) virus causing TBE is transmitted by the bite of Ixodes ricinus tick, which can also transmit Lyme borreliae , the causative agent of Lyme borreliosis (LB). Since TBE and LB are both endemic with high incidence rates in Slovenia, we should be attentive to the possibility of double infections. Double infections with TBE virus and Lyme borreliae were reported to occur rarely even in endemic countries, however reliable data on coinfection rates are rather limited. Microbiological diagnosis of TBE virus infection is quite straightforward, and there is no specific therapy for TBE available so far. This markedly differs from borrelial infection, in which case interpretation of serological test results demands more caution, but there is highly efficient antibiotic treatment available for LB. This may lead to over prescribing of antibiotics to TBE patients with documented borrelial antibodies in serum indicating possible coinfection with Lyme borreliae, but missing clinical or microbiological criteria for proven borrelial coinfection. Approximately 10% of patients who had been treated appropriately for LB and about one third of patients after TBE report nonspecific subjective complaints, such as fatigue, headache, arthralgia, and myalgia, termed post-Lyme and post-encephalitic symptoms, respectively. These may not be differentiated clearly from nonspecific symptoms occurring with a rather substantial incidence also in the general population. A trend of ascribing medically unexplained nonspecific subjective symptoms to LB in subjects with positive borrelial antibodies in serum puzzles the situation further.\n\nThe aim of this prospective observational study was to assess the proportion and clinical implication of proven and possible coinfection with Lyme borreliae in patients with TBE, and to evaluate the association between anti-borrelial antibiotic therapy and clinical outcome in the subgroup of patients with possible coinfection."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Tick Borne Encephalitis",
+              "Lyme Disease"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "COHORT",
+              "timePerspective": "RETROSPECTIVE"
+            },
+            "enrollmentInfo": {
+              "count": 690,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Anti-borrelial antibiotic therapy",
+                "interventionNames": [
+                  "Drug: Anti-borrelial antibiotic therapy"
+                ]
+              },
+              {
+                "label": "No antibiotics",
+                "description": "Patients who received symptomatic therapy (paracetamol, Lekadol®, granisetron, Kytril®, metamizol, Analgin®, parenteral hydration with saline). Patients reported the presence of nonspecific symptoms such as headache, fatigue, arthralgia, myalgia.",
+                "interventionNames": [
+                  "Other: No antibiotic."
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Anti-borrelial antibiotic therapy",
+                "description": "Beside symptomatic therapy, patients received oral doxycycline 100 mg (Doxy®) twice daily or ceftriaxone 2 g (Lendacin®) once daily for 14 days. Antibiotic therapy was left to the discretion of treating physicians. Patients reported the presence of nonspecific symptoms such as headache, fatigue, arthralgia, myalgia.",
+                "armGroupLabels": [
+                  "Anti-borrelial antibiotic therapy"
+                ]
+              },
+              {
+                "type": "OTHER",
+                "name": "No antibiotic.",
+                "description": "Patients who received symptomatic therapy (paracetamol, Lekadol®, granisetron, Kytril®, metamizol, Analgin®, parenteral hydration with saline). Patients reported the presence of nonspecific symptoms such as headache, fatigue, arthralgia, myalgia.",
+                "armGroupLabels": [
+                  "No antibiotics"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Number of patients with objective manifestations of Lyme borreliosis",
+                "description": "At each visit physical examination was performed and clinical signs indicating objective manifestations of Lyme borreliosis, such as erythema migrans, were searched for and documented.",
+                "timeFrame": "up to 12 months follow-up"
+              },
+              {
+                "measure": "Frequency of nonspecific symptoms such as headache, fatigue, arthralgia, myalgia",
+                "description": "At each visit patients were asked to report the presence of nonspecific symptoms.",
+                "timeFrame": "up to 12 months follow-up"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* age ≥18 years\n* admitted between January 2007 and December 2013 at the University Medical Centre Ljubljana, Slovenia\n* tick-borne encephalitis defined according to European criteria (febrile illness with symptoms and/or signs of meningitis or meningoencephalitis, cerebrospinal fluid (CSF) pleocytosis (\\>5 × 106 cells/L), and demonstration of acute TBE virus infection (the presence of specific tick-borne encephalitis virus IgM and IgG antibodies in serum or demonstration of intrathecal production of specific TBE virus IgM and/or IgG antibodies in patients previously vaccinated against tick-borne encephalitis)\n\nExclusion Criteria:\n\n* Lyme borreliosis in the past",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ],
+            "studyPopulation": "Adult patients with tick-borne encephalitis.",
+            "samplingMethod": "NON_PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "locations": [
+              {
+                "facility": "University Medical Center Ljubljana",
+                "city": "Ljubljana",
+                "country": "Slovenia",
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D004675",
+                "term": "Encephalitis, Tick-Borne"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D004671",
+                "term": "Encephalitis, Arbovirus"
+              },
+              {
+                "id": "D018792",
+                "term": "Encephalitis, Viral"
+              },
+              {
+                "id": "D020805",
+                "term": "Central Nervous System Viral Diseases"
+              },
+              {
+                "id": "D002494",
+                "term": "Central Nervous System Infections"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D000069544",
+                "term": "Infectious Encephalitis"
+              },
+              {
+                "id": "D001102",
+                "term": "Arbovirus Infections"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D014777",
+                "term": "Virus Diseases"
+              },
+              {
+                "id": "D012327",
+                "term": "RNA Virus Infections"
+              },
+              {
+                "id": "D018177",
+                "term": "Flavivirus Infections"
+              },
+              {
+                "id": "D018178",
+                "term": "Flaviviridae Infections"
+              },
+              {
+                "id": "D004660",
+                "term": "Encephalitis"
+              },
+              {
+                "id": "D001927",
+                "term": "Brain Diseases"
+              },
+              {
+                "id": "D002493",
+                "term": "Central Nervous System Diseases"
+              },
+              {
+                "id": "D009422",
+                "term": "Nervous System Diseases"
+              },
+              {
+                "id": "D000090862",
+                "term": "Neuroinflammatory Diseases"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-6",
+      "source_record_id": "CTG-0014-6",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-6"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 6,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "6aec9bb8cd5b9aa9ecabb010a47178380db714e8e4ea44e0b66573b126118930"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03201042",
+            "orgStudyIdInfo": {
+              "id": "L3"
+            },
+            "organization": {
+              "fullName": "Oxford Immunotec",
+              "class": "INDUSTRY"
+            },
+            "briefTitle": "Lyme Test Indication Combinations (LyTIC) Study",
+            "officialTitle": "Lyme Test Indication Combinations (LyTIC) Study",
+            "acronym": "LyTIC"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2018-06",
+            "overallStatus": "TERMINATED",
+            "whyStopped": "Sponsor Decision",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2017-06-08",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2018-11-30",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2018-11-30",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2017-06-21",
+            "studyFirstSubmitQcDate": "2017-06-26",
+            "studyFirstPostDateStruct": {
+              "date": "2017-06-28",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2018-12-11",
+            "lastUpdatePostDateStruct": {
+              "date": "2018-12-13",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "Oxford Immunotec",
+              "class": "INDUSTRY"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": true,
+            "isUsExport": false
+          },
+          "descriptionModule": {
+            "briefSummary": "To establish performance of individual tests and combinations of tests (serological, molecular and cellular tests) in early Lyme infection diagnosis",
+            "detailedDescription": "The present study aims to investigate the performance characteristics of both established and new assays for Borrelia burgdorferi infection and to assess the relative performance of appropriate combinations of these tests. The study will also investigate the effect of the time course of the infection and its treatment on the outcomes for the various tests. Polymerase Chain Reaction(PCR), serology and T cell based tests will be performed. In addition, tests for Babesia, Anaplasma, Ehrlichia and Rickettsia will also be performed as these pathogens can be carried by the same tick that carries Borrelia and may result in coinfection."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Disease"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "COHORT",
+              "timePerspective": "PROSPECTIVE"
+            },
+            "bioSpec": {
+              "retention": "SAMPLES_WITHOUT_DNA",
+              "description": "whole blood serum"
+            },
+            "enrollmentInfo": {
+              "count": 410,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "1a:Lyme patients- Erythema Migrans(EM)rash present",
+                "description": "Patients with newly diagnosed Lyme disease based on the presence of a physician-documented EM rash. PCR, serology and Tcell based assay.",
+                "interventionNames": [
+                  "Diagnostic Test: PCR based assay",
+                  "Diagnostic Test: Serology based assay",
+                  "Diagnostic Test: Tcell based assay"
+                ]
+              },
+              {
+                "label": "1b:Lyme patients no typical EM",
+                "description": "Patients documented symptoms of early Lyme disease, without a typical EM rash present, and the physician's intention to treat for Lyme disease. PCR, serology and Tcell based assay",
+                "interventionNames": [
+                  "Diagnostic Test: PCR based assay",
+                  "Diagnostic Test: Serology based assay",
+                  "Diagnostic Test: Tcell based assay"
+                ]
+              },
+              {
+                "label": "Cohort 2: healthy controls",
+                "description": "Patients drawn from Lyme disease non-endemic areas and subjects with known exposure to Lyme disease will be excluded. PCR, serology and Tcell based assay.",
+                "interventionNames": [
+                  "Diagnostic Test: PCR based assay",
+                  "Diagnostic Test: Serology based assay",
+                  "Diagnostic Test: Tcell based assay"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DIAGNOSTIC_TEST",
+                "name": "PCR based assay",
+                "description": "Whole blood specimens will be tested for the presence of Borrelia DNA by PCR in a two-step test (Imugen). In Cohort 1a and 1b. The first step tests for the presence of any Borrelia DNA. The second step is employed on positive samples and tests for the presence of either B. burgdorferi DNA or B. miyamotoi DNA. Positivity by PCR has a short but early window in the infection cycle for Borrelia burgdorferi and results may enable this window period and diagnosis rates to be better defined.\n\nIn addition co-infection PCR analysis will be performed for the presence of Babesia, Anaplasma or Ehrlichia DNA (Imugen).",
+                "armGroupLabels": [
+                  "1a:Lyme patients- Erythema Migrans(EM)rash present",
+                  "1b:Lyme patients no typical EM",
+                  "Cohort 2: healthy controls"
+                ]
+              },
+              {
+                "type": "DIAGNOSTIC_TEST",
+                "name": "Serology based assay",
+                "description": "1. The Imugen Lyme Antibody Analysis which includes immunoglobulin M (IgM),immunoglobulin G (IgG), and immunoglobulin A (IgA) antibody capture immunoassay and IgG and IgM based Western blots. In Cohort 1a and 1b.\n2. The Immunetics C6 Lyme ELISA assay.\n3. A 2-tier Lyme test performed and interpreted according to Centers for Disease Control (CDC) Guidelines\n4. A Rickettsia antibody test will be used to identify Spotted Fever and Typhus fever groups infections.\n\nLyme test methodologies generally indicate a need to run a combination of tests in order to overcome limitations in either sensitivity or specificity of the various individual tests. Performance of all these tests on the same set of samples should enable both individual and combinatorial performance values to be calculated and compared.",
+                "armGroupLabels": [
+                  "1a:Lyme patients- Erythema Migrans(EM)rash present",
+                  "1b:Lyme patients no typical EM",
+                  "Cohort 2: healthy controls"
+                ]
+              },
+              {
+                "type": "DIAGNOSTIC_TEST",
+                "name": "Tcell based assay",
+                "description": "A research based ELISpot assay will be performed on peripheral blood mononuclear cells (PBMC) extracted from whole blood samples to test for presence of T cells activated against Borrelia antigens. Unlike serology based methods, this signal may not persist over extended periods of time in the absence of Borrelia antigens. The diagnostic window may be different for a test measuring adaptive immune response (i.e. T cells) and thus such test may identify patients with undetectable antibody response and may aid sensitivity of diagnosis.",
+                "armGroupLabels": [
+                  "1a:Lyme patients- Erythema Migrans(EM)rash present",
+                  "1b:Lyme patients no typical EM",
+                  "Cohort 2: healthy controls"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Sample Data Analysis",
+                "description": "The results will be used to calculate performance, including sensitivity and specificity of the tests under evaluation. The utility of these tests at different time points post initial presentation will be evaluated.",
+                "timeFrame": "Tests at different time points post inital presentation will be evaluated through study completion, an average of 1 year."
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Cohort 1a (typical EM and intention to treat):\n\nInclusion\n\n1. Documented new onset Lyme disease EM rash (single or multiple) with photographic evidence provided to Oxford Immunotec.\n2. Patient must be able to provide blood sample at the initial visit (prior to treatment initiation) and subsequent samples according to the schedule.\n3. Patients 5 years of age or older, with a minimum weight of 40 pounds.\n4. Patient able to read English and to give consent to study participation.\n5. If patient is younger than 18 years of age a legally authorized representative must provide consent.\n\nCohort 1b (no typical EM; Lyme disease symptoms; intention to treat):\n\nInclusion\n\n1. Patients with suspected Lyme disease, based on physician's examination, where the physician has the intention to treat for Lyme disease (i.e. patients who following initial examination were prescribed treatment for Lyme disease).\n2. Documented new onset of Lyme disease symptoms without a typical EM rash or with no rash. If a rash is present, photographic evidence must be provided.\n3. Patient must be able to provide blood sample at the initial visit (prior to treatment initiation) and subsequent samples according to the schedule.\n4. Patients 5 years of age or older, with a minimum weight of 40 pounds.\n5. Patient able to read English and to give consent to study participation.\n6. If patient is younger than 18 years of age a legally authorized representative must provide consent.\n\nCohort 2 (Healthy subjects):\n\nInclusion\n\n1. Subjects 5 years of age or older, with a minimum weight of 40 pounds.\n2. Subjects never diagnosed with any tick borne disease including Lyme disease\n3. Subjects able to read English and to give consent to study participation.\n4. If subject is younger than 18 years of age a legally authorized representative must provide consent.\n\nExclusion Criteria:\n\n* Exclusion Cohort 1a (typical EM and intention to treat):\n\n  1. Patients with Lyme-like symptoms lasting longer than 1 month prior to study enrolment.\n  2. Patients receiving treatment for any tick borne disease (including Lyme disease) prior to enrolment.\n  3. Patients who received a Lyme vaccination.\n  4. Patients with anemia defined as a serum hemoglobin \\<10gm/dL.\n  5. Patients who are participating in, or plan to participate in, any investigational drug study.\n  6. Patients who are considered unsuitable for the study by the Investigator.\n\nCohort 1b (no typical EM; Lyme disease symptoms; intention to treat):\n\n1. Patients with Lyme-like symptoms lasting longer than 1 month prior to study enrolment.\n2. Patients receiving treatment for any tick borne disease (including Lyme disease) prior to enrolment.\n3. Patients who received a Lyme vaccination.\n4. Patients with anemia defined as a serum hemoglobin \\<10gm/dL.\n5. Patients who are participating in, or plan to participate in, any investigational drug study.\n6. Patients who are considered unsuitable for the study by the Investigator.\n\nCohort 2 (Healthy subjects):\n\nExclusion\n\n1. Subjects with a history of tick bite\n2. Subjects with past or current tick borne disease diagnosis\n3. Subjects at risk for tick borne diseases including Lyme disease\n4. Subjects residing in endemic regions for tick borne diseases: Connecticut, Delaware, Maine, Maryland, Massachusetts, Minnesota, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, Vermont, Virginia and Wisconsin.\n5. Subjects who have ever visited non-urban areas of endemic regions for tick borne diseases: Connecticut, Delaware, Maine, Maryland, Massachusetts, Minnesota, New Hampshire, New Jersey, New York, Pennsylvania, Rhode Island, Vermont, Virginia and Wisconsin.",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "minimumAge": "5 Years",
+            "stdAges": [
+              "CHILD",
+              "ADULT",
+              "OLDER_ADULT"
+            ],
+            "studyPopulation": "500 subjects aged 5 years or older.",
+            "samplingMethod": "PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "locations": [
+              {
+                "facility": "Paradigm Clinical Research",
+                "city": "Redding",
+                "state": "California",
+                "zip": "96001",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.58654,
+                  "lon": -122.39168
+                }
+              },
+              {
+                "facility": "Coastal Connecticut Research",
+                "city": "New London",
+                "state": "Connecticut",
+                "zip": "06320",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.35565,
+                  "lon": -72.09952
+                }
+              },
+              {
+                "facility": "Circle CARE Center",
+                "city": "Norwalk",
+                "state": "Connecticut",
+                "zip": "06850",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.1176,
+                  "lon": -73.4079
+                }
+              },
+              {
+                "facility": "Orthopaedic Foundation for Active Lifestyles, Inc",
+                "city": "Stamford",
+                "state": "Connecticut",
+                "zip": "06905",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.05343,
+                  "lon": -73.53873
+                }
+              },
+              {
+                "facility": "Delaware Integrated Medicine",
+                "city": "Georgetown",
+                "state": "Delaware",
+                "zip": "19958",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 38.69011,
+                  "lon": -75.38547
+                }
+              },
+              {
+                "facility": "Eastern Research, Inc.",
+                "city": "Hialeah",
+                "state": "Florida",
+                "zip": "33013",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 25.8576,
+                  "lon": -80.27811
+                }
+              },
+              {
+                "facility": "South Florida Clinical Trials SFCT, A member of the Alliance, Inc.",
+                "city": "Hialeah",
+                "state": "Florida",
+                "zip": "33016",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 25.8576,
+                  "lon": -80.27811
+                }
+              },
+              {
+                "facility": "South Coast Research Center",
+                "city": "Miami",
+                "state": "Florida",
+                "zip": "33136",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 25.77427,
+                  "lon": -80.19366
+                }
+              },
+              {
+                "facility": "Advance Clinical Research",
+                "city": "Meridian",
+                "state": "Idaho",
+                "zip": "83642",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 43.61211,
+                  "lon": -116.39151
+                }
+              },
+              {
+                "facility": "Acadia Clinical Research",
+                "city": "Bangor",
+                "state": "Maine",
+                "zip": "04401",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 44.79884,
+                  "lon": -68.77265
+                }
+              },
+              {
+                "facility": "Integrative Health Center of Maine",
+                "city": "Portland",
+                "state": "Maine",
+                "zip": "01430",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 43.65737,
+                  "lon": -70.2589
+                }
+              },
+              {
+                "facility": "Centennial Medical Group",
+                "city": "Eldridge",
+                "state": "Maryland",
+                "zip": "21075",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 39.58899,
+                  "lon": -77.5511
+                }
+              },
+              {
+                "facility": "Klein & Associates, MD, PA",
+                "city": "Hagerstown",
+                "state": "Maryland",
+                "zip": "21740",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 39.64176,
+                  "lon": -77.71999
+                }
+              },
+              {
+                "facility": "MD Medical Research, Inc.",
+                "city": "Oxon Hill",
+                "state": "Maryland",
+                "zip": "20745",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 38.80345,
+                  "lon": -76.9897
+                }
+              },
+              {
+                "facility": "Rockville Internal Medicine Group",
+                "city": "Rockville",
+                "state": "Maryland",
+                "zip": "20854",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 39.084,
+                  "lon": -77.15276
+                }
+              },
+              {
+                "facility": "NECCR Primacare Research,LLC",
+                "city": "Fall River",
+                "state": "Massachusetts",
+                "zip": "02721",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.70149,
+                  "lon": -71.15505
+                }
+              },
+              {
+                "facility": "Cape Cod Hospital",
+                "city": "Hyannis",
+                "state": "Massachusetts",
+                "zip": "02601",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.65289,
+                  "lon": -70.2828
+                }
+              },
+              {
+                "facility": "Metromedic Walk In",
+                "city": "New Bedford",
+                "state": "Massachusetts",
+                "zip": "02740",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.63526,
+                  "lon": -70.92701
+                }
+              },
+              {
+                "facility": "The Research Institute",
+                "city": "Springfield",
+                "state": "Massachusetts",
+                "zip": "01105",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.10148,
+                  "lon": -72.58981
+                }
+              },
+              {
+                "facility": "NECCR Primacare Research, LLC",
+                "city": "Westford",
+                "state": "Massachusetts",
+                "zip": "02790",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.57926,
+                  "lon": -71.43784
+                }
+              },
+              {
+                "facility": "Clinical Pharmacology Study Group",
+                "city": "Worcester",
+                "state": "Massachusetts",
+                "zip": "01605",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.26259,
+                  "lon": -71.80229
+                }
+              },
+              {
+                "facility": "Asthma and Allergy Institute of MI",
+                "city": "Clinton Township",
+                "state": "Michigan",
+                "zip": "48038",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.58698,
+                  "lon": -82.91992
+                }
+              },
+              {
+                "facility": "Oakland Medical Research",
+                "city": "Troy",
+                "state": "Michigan",
+                "zip": "48085",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.60559,
+                  "lon": -83.14993
+                }
+              },
+              {
+                "facility": "Pinnacle Research",
+                "city": "Sartell",
+                "state": "Minnesota",
+                "zip": "56377",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 45.62163,
+                  "lon": -94.20694
+                }
+              },
+              {
+                "facility": "Andrea Gaito",
+                "city": "Basking Ridge",
+                "state": "New Jersey",
+                "zip": "07920",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.70621,
+                  "lon": -74.54932
+                }
+              },
+              {
+                "facility": "MAffiliated Medical Associates",
+                "city": "Florham Park",
+                "state": "New Jersey",
+                "zip": "07932",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.78788,
+                  "lon": -74.38821
+                }
+              },
+              {
+                "facility": "Modern Medical",
+                "city": "Brooklyn",
+                "state": "New York",
+                "zip": "11207",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.6501,
+                  "lon": -73.94958
+                }
+              },
+              {
+                "facility": "Private Practice-Johnathan Liebowitz",
+                "city": "Brooklyn",
+                "state": "New York",
+                "zip": "11219",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.6501,
+                  "lon": -73.94958
+                }
+              },
+              {
+                "facility": "NY Arthritis Clinic",
+                "city": "Brooklyn",
+                "state": "New York",
+                "zip": "12298",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.6501,
+                  "lon": -73.94958
+                }
+              },
+              {
+                "facility": "Regional Clinical Research, Inc.",
+                "city": "Endwell",
+                "state": "New York",
+                "zip": "13760",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.11285,
+                  "lon": -76.02103
+                }
+              },
+              {
+                "facility": "Private Practice-David Wurwitz",
+                "city": "Flushing",
+                "state": "New York",
+                "zip": "11367",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.76538,
+                  "lon": -73.81736
+                }
+              },
+              {
+                "facility": "Adirondack Medical Research Center",
+                "city": "Glens Falls",
+                "state": "New York",
+                "zip": "12801",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 43.30952,
+                  "lon": -73.64401
+                }
+              },
+              {
+                "facility": "NYCT, A member of Alliance, Inc.",
+                "city": "New York",
+                "state": "New York",
+                "zip": "10022",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.71427,
+                  "lon": -74.00597
+                }
+              },
+              {
+                "facility": "Mid Hudson Medical Research",
+                "city": "Newburgh",
+                "state": "New York",
+                "zip": "12550",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.50343,
+                  "lon": -74.01042
+                }
+              },
+              {
+                "facility": "John T. Mather Hospital",
+                "city": "Port Jefferson",
+                "state": "New York",
+                "zip": "11777",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.94649,
+                  "lon": -73.06927
+                }
+              },
+              {
+                "facility": "Rapid Medical Research",
+                "city": "Cleveland",
+                "state": "Ohio",
+                "zip": "44122",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.4995,
+                  "lon": -81.69541
+                }
+              },
+              {
+                "facility": "Buckeye Health and Research",
+                "city": "Columbus",
+                "state": "Ohio",
+                "zip": "43207",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 39.96118,
+                  "lon": -82.99879
+                }
+              },
+              {
+                "facility": "Toledo Institute of Clinical Research",
+                "city": "Toledo",
+                "state": "Ohio",
+                "zip": "43207",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.66394,
+                  "lon": -83.55521
+                }
+              },
+              {
+                "facility": "Bally Medical Group",
+                "city": "Barto",
+                "state": "Pennsylvania",
+                "zip": "19504",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.39121,
+                  "lon": -75.61019
+                }
+              },
+              {
+                "facility": "Boyertown Medical Assoc.",
+                "city": "Boyertown",
+                "state": "Pennsylvania",
+                "zip": "18512",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.33371,
+                  "lon": -75.63741
+                }
+              },
+              {
+                "facility": "Collegeville Family Practice",
+                "city": "Collegeville",
+                "state": "Pennsylvania",
+                "zip": "19426",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.18566,
+                  "lon": -75.45157
+                }
+              },
+              {
+                "facility": "Brandywine Clinic",
+                "city": "Downingtown",
+                "state": "Pennsylvania",
+                "zip": "19335",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.0065,
+                  "lon": -75.70327
+                }
+              },
+              {
+                "facility": "Altoona Center for Clinical Research",
+                "city": "Duncansville",
+                "state": "Pennsylvania",
+                "zip": "16635",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.42341,
+                  "lon": -78.4339
+                }
+              },
+              {
+                "facility": "Pediatric Medical Associates of NTN/ABG",
+                "city": "East Norriton",
+                "state": "Pennsylvania",
+                "zip": "19401",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.15043,
+                  "lon": -75.33637
+                }
+              },
+              {
+                "facility": "Liberty Family Practice/Square 1",
+                "city": "Erie",
+                "state": "Pennsylvania",
+                "zip": "16506",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.12922,
+                  "lon": -80.08506
+                }
+              },
+              {
+                "facility": "Detweiler Family Practice",
+                "city": "Lansdale",
+                "state": "Pennsylvania",
+                "zip": "19446",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.2415,
+                  "lon": -75.28379
+                }
+              },
+              {
+                "facility": "Green and Seidner Family Practice",
+                "city": "Lansdale",
+                "state": "Pennsylvania",
+                "zip": "19446",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.2415,
+                  "lon": -75.28379
+                }
+              },
+              {
+                "facility": "Suburban Research Assoc.",
+                "city": "Media",
+                "state": "Pennsylvania",
+                "zip": "19063",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 39.91678,
+                  "lon": -75.38769
+                }
+              },
+              {
+                "facility": "Brookside Family Practice and Pediatrics",
+                "city": "Pottstown",
+                "state": "Pennsylvania",
+                "zip": "19465",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.24537,
+                  "lon": -75.64963
+                }
+              },
+              {
+                "facility": "Spring-Ford Family Practice",
+                "city": "Royersford",
+                "state": "Pennsylvania",
+                "zip": "19468",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.18427,
+                  "lon": -75.53796
+                }
+              },
+              {
+                "facility": "Safe Harbor Clinical Research",
+                "city": "East Providence",
+                "state": "Rhode Island",
+                "zip": "02914",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.81371,
+                  "lon": -71.37005
+                }
+              },
+              {
+                "facility": "Ocean State Clinical Research",
+                "city": "Lincoln",
+                "state": "Rhode Island",
+                "zip": "02865",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.92111,
+                  "lon": -71.435
+                }
+              },
+              {
+                "facility": "NECCR Primacare Research, LLC",
+                "city": "Portsmouth",
+                "state": "Rhode Island",
+                "zip": "02871",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.60232,
+                  "lon": -71.25033
+                }
+              },
+              {
+                "facility": "Atascosa Clinical Trial",
+                "city": "Lytle",
+                "state": "Texas",
+                "zip": "78052",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 29.23329,
+                  "lon": -98.79641
+                }
+              },
+              {
+                "facility": "Brookside Family Health Care",
+                "city": "Hinesburg",
+                "state": "Vermont",
+                "zip": "05461",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 44.32922,
+                  "lon": -73.11068
+                }
+              },
+              {
+                "facility": "Millennium Clincial Trials",
+                "city": "Arlington",
+                "state": "Virginia",
+                "zip": "22207",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 38.88101,
+                  "lon": -77.10428
+                }
+              },
+              {
+                "facility": "Burke Internal Medicine",
+                "city": "Burke",
+                "state": "Virginia",
+                "zip": "22015",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 38.79345,
+                  "lon": -77.27165
+                }
+              },
+              {
+                "facility": "The Education and Research Foundation, Inc.",
+                "city": "Lynchburg",
+                "state": "Virginia",
+                "zip": "24501",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 37.41375,
+                  "lon": -79.14225
+                }
+              },
+              {
+                "facility": "Manassas Clinical Research Center",
+                "city": "Manassas",
+                "state": "Virginia",
+                "zip": "21010",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 38.75095,
+                  "lon": -77.47527
+                }
+              },
+              {
+                "facility": "Exemplar Research",
+                "city": "Morgantown",
+                "state": "West Virginia",
+                "zip": "26505",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 39.62953,
+                  "lon": -79.9559
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-7",
+      "source_record_id": "CTG-0014-7",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-7"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 7,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "638c5f305e2bdab0074fab2dbb1ea94fe5cf14842ba5d46f1578523675d8a0d4"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT04719962",
+            "orgStudyIdInfo": {
+              "id": "7609"
+            },
+            "organization": {
+              "fullName": "University Hospital, Strasbourg, France",
+              "class": "OTHER"
+            },
+            "briefTitle": "Direct Diagnosis of Disseminated Lyme Borreliosis.",
+            "officialTitle": "Diagnosis of Disseminated Lyme Borreliosis by Targeted Proteomics",
+            "acronym": "DIALYD"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2022-05",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2021-07-07",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2021-07-07",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2022-07-07",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2021-01-18",
+            "studyFirstSubmitQcDate": "2021-01-18",
+            "studyFirstPostDateStruct": {
+              "date": "2021-01-22",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2022-05-05",
+            "lastUpdatePostDateStruct": {
+              "date": "2022-05-11",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "University Hospital, Strasbourg, France",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Lyme borreliosis is a bacterial multisystemic infection transmitted by an Ixodes tick. It affects the skin, the joint and the brain. At the early phase, the diagnosis is clinical, relying on the presence of an erythema migrans at the site of the tick bite. The diagnosis of disseminated infections, more difficult to assess, mainly relies on indirect diagnosis test, i.e. serology.\n\nThis study will evaluate a new direct diagnosis method based on proteomics, which aims to demonstrate proteins of live bacteria in the skin and the synovial or cerebrospinal fluids in a direct manner.",
+            "detailedDescription": "Lyme borreliosis is a multisystemic bacterial infection affecting the skin, the joint and the nervous system. It has been shown that the skin is an essential interface as a site of bacteria inoculation and multiplication. In mouse acutely infected with different Borrelia species, the investigators have detected several protein markers of active infection in the skin by discovery proteomics, which allowed us to design a subsequent targeted proteomics assay. The invcestigators tested the same techniques in skin biopsies of humans presenting with an erythema migrans. Most of the bacterial proteins previously identified in the skin of infected mice were also detected in biopsies of human lesional skin.\n\nThe diagnosis of disseminated Lyme borreliosis currently mainly relies on evocative clinical symptoms along with a positive Borrelia serology. However, a positive serological test does not prove an active infection but merely reflects exposure to the pathogen, which is quite common in endemic regions and thus lacks positive predictive value. Moreover, direct bacteriological diagnosis tools such as culture and nucleic acid amplification (PCR) currently lack sensitivity. Planning to test the ability of proteomics to assist in the diagnosis of disseminated Lyme borreliosis, we have first developed a model of late infection in mouse, and achieved the identification of several bacterial proteins as markers of ongoing infection in the murine skin.\n\nThe investigators now wish to investigate whether the skin also constitutes a reservoir for these bacteria during persistent disseminated infection in humans, and if they can detect bacterial proteins in this easily accessible tissue by the same approach. They will directly look for bacterial proteins by selected reaction monitoring-mass spectrometry (SRM-MS), the method successfully employed in early infection setting. The ability to detect borrelial proteins in synovial fluid (patients with Lyme arthritis), cerebrospinal fluid (patients with Lyme neuroborreliosis) or lesional skin (patients with acrodermatitis chronica atrophicans) will also be investigated, as appropriated.\n\nTo improve the detection of Borrelia proteins in healthy-looking skin, a dermocorticoid will be prealably applied for a short 2-days course, a procedure the investigators demonstrated both useful and safe in mice. Since tick bite mainly occurs in the lower part of the body, the upper part of the thigh will be the site of topical steroids application and skin biopsy .\n\nThe proteomics yield will be compared to the two main other methods of direct detection, i.e. culture and PCR."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Disease"
+            ],
+            "keywords": [
+              "targeted proteomics",
+              "skin biopsy",
+              "biomarker"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "primaryPurpose": "DIAGNOSTIC",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 10,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Disseminated Lyme infection",
+                "type": "EXPERIMENTAL",
+                "description": "Only patients presenting with disseminated Lyme borreliosis will be part of the study.",
+                "interventionNames": [
+                  "Procedure: Targeted proteomics in skin +/- cerebrospinal or synovial fluid to diagnose disseminated Lyme disease"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "PROCEDURE",
+                "name": "Targeted proteomics in skin +/- cerebrospinal or synovial fluid to diagnose disseminated Lyme disease",
+                "description": "Following a 2-days course of local daily clobetasol propionate 0,05% cream application, a skin biopsy (3 mm punch-biopsy ) of healthy-looking skin of the upper part of the thigh will be performed in all patients,.\n\nArthrocentesis (in patients with Lyme arthritis only) and lumbar puncture to collect cerebrospinal fluid (in patients with neuroborreliosis only) will be performed in the usual care setting as appropriated.\n\nAll biological samples will be subject to Borrelia culture, PCR and SRM-MS proteomics.",
+                "armGroupLabels": [
+                  "Disseminated Lyme infection"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Direct diagnosis of disseminated Lyme disease by proteomics",
+                "description": "1. Detection or not of targeted proteins by SRM-MS in healthy-looking skin samples of patients with disseminated Lyme borreliosis (either clinical presentation)\n2. Detection or not of targeted borrelial proteins by SRM-MS in synovial fluid of patients with Lyme arthritis\n3. Detection or not of targeted borrelial proteins by SRM-MS incerebrospinal fluid of patients with neuroborreliosis\n4. Detection or not of targeted borrelial proteins by SRM-MS in lesional skin of patients with acrodermatitis chronica atrophicans",
+                "timeFrame": "6 months"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion criteria:\n\n* Subject over 18 years of age\n* Subject informed of the results of the previous medical examination and informed about research objectives and risks\n* Subject affiliated to a social health insurance\n* Subject having signed informed consent\n* Subject with clinical and serological criteria that meet the criteria of French societies, published in May and June 2019 (Jaulhac et al., 2019) as well as the European criteria of ESGBOR, corresponding to a disseminated infection of Lyme borreliosis.\n\nClinical Criteria:\n\n* acute or subacute meningoradiculitis in a subject exposed to tick bites\n* Uni- or bilateral peripheral facial paralysis in a subject exposed to tick bites\n* Chronic radiculitis table compatible with Lyme borreliosis\n* mono- or oligo arthritis of large jointsin the absence of other obvious diagnosis (inflammatory rheumatism flares, microcrystalline arthritis…)\n* Skin changes suggestive of acrodermatitis chronica atrophicans\n\nSerological criteria: positivity for Lyme serology (two-tiered, IgG)\n\nExclusion criteria:\n\n* contraindication to performing a skin biopsy\n* contraindication to local lidocaine anaesthesia with or without adrenaline\n* contraindication to dermocorticoids (hypersensitivity)\n* antibiotic treatment for borreliosis already administered\n* inability to provide informed information\n* Subject under safeguard of justice",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Benoît JAULHAC",
+                "role": "CONTACT",
+                "phone": "+33 3 69 55 14 52",
+                "email": "Benoit.jaulhac@chru-strasbourg.fr"
+              },
+              {
+                "name": "Nathalie BOULANGER",
+                "role": "CONTACT",
+                "phone": "+33 3 69 55 14 49",
+                "email": "nathalie.boulanger@chru-strasbourg.fr"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Benoît JAULHAC",
+                "affiliation": "Hôpitaux Universitaires de Strasbourg",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Les Hôpitaux Universitaires de Strasbourg",
+                "status": "RECRUITING",
+                "city": "Strasbourg",
+                "zip": "67091",
+                "country": "France",
+                "contacts": [
+                  {
+                    "name": "Benoît JAULHAC",
+                    "role": "CONTACT",
+                    "phone": "+33 3 69 55 14 49",
+                    "email": "benoit.jaulhac@chru-strasbourg.fr"
+                  },
+                  {
+                    "name": "Nathalie BOULANGER",
+                    "role": "CONTACT",
+                    "phone": "+33 3 69 55 14 49",
+                    "email": "nathalie.boulanger@chru-strasbourg.fr"
+                  },
+                  {
+                    "name": "Benoit JAULHAC",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                  },
+                  {
+                    "name": "Yves HANSMANN",
+                    "role": "SUB_INVESTIGATOR"
+                  },
+                  {
+                    "name": "Christelle SORDET",
+                    "role": "SUB_INVESTIGATOR"
+                  },
+                  {
+                    "name": "Cédric LENORMAND",
+                    "role": "SUB_INVESTIGATOR"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 48.58392,
+                  "lon": 7.74553
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "UNDECIDED"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0014-8",
+      "source_record_id": "CTG-0014-8",
+      "record_type": "clinical_trial",
+      "title": "Lyme serology",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:11.997418Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0014-8"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme serology"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 8,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0014_lyme-serology\\raw\\page_0001.bin",
+        "raw_record_sha256": "93106822dc5816d4e6aa87ef4fb5eb6bfe3709a3119f1832095f549de6836a13"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT06026969",
+            "orgStudyIdInfo": {
+              "id": "00000425"
+            },
+            "organization": {
+              "fullName": "Children's National Research Institute",
+              "class": "OTHER"
+            },
+            "briefTitle": "Pregnancy and Early Neurodevelopmental Outcomes Following In Utero Lyme Disease Exposure",
+            "officialTitle": "Pregnancy and Early Neurodevelopmental Outcomes Following In Utero Lyme Disease Exposure"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2025-01",
+            "overallStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2023-07-01",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2025-06",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2025-06",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2023-08-15",
+            "studyFirstSubmitQcDate": "2023-09-05",
+            "studyFirstPostDateStruct": {
+              "date": "2023-09-07",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2025-01-06",
+            "lastUpdatePostDateStruct": {
+              "date": "2025-01-07",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "Children's National Research Institute",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "Clinical Trials Network for Lyme and Other Tick-Borne Diseases",
+                "class": "UNKNOWN"
+              },
+              {
+                "name": "Steven & Alexandra Cohen Foundation",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The purpose of this pilot study is to assess the feasibility of longitudinal neurodevelopmental evaluation of fetuses and infants exposed to Lyme disease in utero. Participants with Lyme disease or Post-Treatment Lyme Disease Syndrome (PTLDS) will be recruited during pregnancy. Pregnancies will be monitored and infant development will be assessed from birth until age 18 months.",
+            "detailedDescription": "Childhood neurodevelopmental outcomes following antenatal Lyme disease exposure are not yet known. This pilot study will lay the groundwork for a larger study to determine the effect of in utero exposure to Lyme disease on pregnancy and early childhood neurodevelopmental outcomes. Understanding the effects on the developing brain is essential in order to inform timely prenatal and postnatal treatments to protect the fetus exposed to Lyme disease during pregnancy. Once childhood neurodevelopmental outcomes are known, appropriate follow-up and treatment guidelines can be developed to help better support children's developmental needs.\n\nThe primary aim of this study is to assess the feasibility of longitudinal follow-up of fetuses and infants exposed to Lyme disease in utero.Lyme disease in pregnancy and the impact on the fetus/child following in utero exposure has been identified as a priority research area; this pilot study is the essential step to plan a large study that will fill this knowledge gap and make a substantial contribution to the field.\n\nThe investigators will perform a prospective pilot longitudinal cohort study of B. burgdorferi-infected parents and their in-utero-exposed fetuses/infants. Patients included in this study will have a clinical diagnosis of Lyme disease during gestation or have been diagnosed with Lyme disease and/or PTLDS within 3 years preceding pregnancy.\n\nPregnant participants will receive a fetal MRI and ultrasound during the second or third trimesters of gestation. The investigators will conduct optional qualitative interviews with interested participants during their 3rd trimester to gather additional data on their experiences with Lyme disease/PTLDS during pregnancy. The placenta will be collected at birth and analyzed by an experienced placental pathologist per a standard protocol. Parent and infant blood will be tested for Lyme disease serology and markers of inflammation.\n\nFollowing birth, infants will receive an unsedated brain MRI and a cranial ultrasound. The investigators will complete serial developmental evaluations using standardized assessments at multiple timepoints through age 18 months and receive neurological examinations. Throughout the study, participants will also be asked to complete questionnaires including but not limited to topics such as medical history, nutrition, breastfeeding, and socioeconomic information."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Disease",
+              "Post-Treatment Lyme Disease",
+              "Chronic Lyme Disease",
+              "Tick-Borne Infections",
+              "Pregnancy Complications",
+              "Child Development"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "COHORT",
+              "timePerspective": "PROSPECTIVE"
+            },
+            "enrollmentInfo": {
+              "count": 40,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Lyme disease",
+                "description": "Pregnant participants in the \"Lyme disease\" cohort will meet CDC criteria for clinical and/or laboratory diagnosis of Lyme disease during pregnancy based on stage of disease. Participants will be enrolled following confirmation that they have been diagnosed by a medical professional per CDC guidelines.\n\nParticipants in this cohort may be enrolled during any trimester of pregnancy. Live-born infants will be included in the cohort and followed through age 18 months.",
+                "interventionNames": [
+                  "Other: Neurodevelopmental assessments and follow-up"
+                ]
+              },
+              {
+                "label": "Post-treatment Lyme Disease Syndrome (PTLDS) or Chronic Lyme",
+                "description": "Pregnant participants in the \"PTLDS/Chronic Lyme\" cohort will have been diagnosed with PTLDS/Chronic Lyme by a health care provider no less than 6 months, but no greater than 3 years, prior to enrollment. Participants will be enrolled following confirmation that they have been diagnosed by a medical professional per CDC guidelines.\n\nParticipants in this cohort may be enrolled during any trimester of pregnancy. Live-born infants will be included in the cohort and followed through age 18 months.",
+                "interventionNames": [
+                  "Other: Neurodevelopmental assessments and follow-up"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "Neurodevelopmental assessments and follow-up",
+                "description": "All infants included in this study will receive standardized neurodevelopmental assessment and neurological examinations through age 18 months.",
+                "armGroupLabels": [
+                  "Lyme disease",
+                  "Post-treatment Lyme Disease Syndrome (PTLDS) or Chronic Lyme"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Number of parent-infant dyads enrolled in the study through completion of their infant's 18-month follow-up visit",
+                "description": "The primary outcome of this pilot study is to assess the feasibility of enrollment and longitudinal follow-up of Lyme-exposed dyads. Investigators will measure the number of parent-infant dyads who are eligible for participation, who participate in each study visit, and who successfully complete the study through infant age 18 months, throughout the duration of the study.",
+                "timeFrame": "7/1/2023 - 6/30/2025"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Warner Initial Developmental Evaluation (WIDEA)",
+                "description": "Infants will be evaluated at 2, 6, 12, and 18 months of age using the Warner Initial Developmental Evaluation (WIDEA). The WIDEA is a 43-item questionnaire to assess the functional domains of self-care, motor function, communication, and social cognition in young children.",
+                "timeFrame": "Child ages: 2 months, 6 months, 12 months, 18 months"
+              },
+              {
+                "measure": "Ages and Stages Questionnaire (ASQ)",
+                "description": "Infants will be evaluated at 2, 6, 12, and 18 months of age using the Ages and Stages Questionnaire (ASQ). The ASQ will assess for possible developmental delays in the domains of communication, gross motor, fine motor, problem solving, and personal adaptive skills.",
+                "timeFrame": "Child ages: 2 months, 6 months, 12 months, 18 months"
+              },
+              {
+                "measure": "Alberta Infant Motor Scale (AIMS)",
+                "description": "Infants will be evaluated at 2, 6, 12, and 18 months of age using the Alberta Infant Motor Scale (AIMS). The AIMS is an observational motor assessment that can be done in-person or using telehealth.",
+                "timeFrame": "Child ages: 2 months, 6 months, 12 months, 18 months"
+              },
+              {
+                "measure": "Infant height",
+                "description": "Infants' height in centimeters will be collected at each study visit.",
+                "timeFrame": "All study visits between birth - 18 months of age"
+              },
+              {
+                "measure": "Infant weight",
+                "description": "Infants' height in kilograms will be collected at each study visit.",
+                "timeFrame": "All study visits between birth - 18 months of age"
+              },
+              {
+                "measure": "Infant head circumference",
+                "description": "Infants' head circumference in centimeters will be collected at each study visit.",
+                "timeFrame": "Birth - 18 months of age"
+              },
+              {
+                "measure": "Placental tissue analysis",
+                "description": "The placenta will be collected at birth and analyzed by an experienced placental pathologist per a standard protocol. The study team will provide the pregnant participant a letter about their study participation that they can share with their obstetrician requesting placental pathology to be performed. The study coordinator will request the paraffin embedded blocks and/or slides to be sent to Children's National for additional analysis including silver stain. Silver stain will be included to identify any spirochetes in placental tissue.",
+                "timeFrame": "Placenta to be collected at delivery hospital immediately after birth"
+              },
+              {
+                "measure": "Analysis of parent and infant blood",
+                "description": "Blood will be collected at the study visit in the Lyme-exposed parent and infant to measure Lyme serology (IgM, IgG), PCR, and inflammatory cytokines. The pregnant participant will have two blood draws (one after enrollment, and one after birth) and the infant will have one blood draw at 2-8 weeks of age. The total volume of blood required for each blood draw is 2mL from the adult participant and 1.5mL from the infant.",
+                "timeFrame": "Adult: during pregnancy between 20-38 weeks gestational age, and between infant age 2-8 weeks; Child: Between ages 2-8 weeks"
+              },
+              {
+                "measure": "Fetal neuroimaging (Magnetic resonance imaging [MRI] and ultrasound) analysis",
+                "description": "Pregnant participants will receive one fetal MRI and ultrasound examinations during the second or third trimester. Fetal MRI will be performed on a GE 1.5 T scanner (General Electric, Milwaukee, WI) using an 8-channel head coil. Fetal ultrasound and MRI will be overseen and interpreted by fetal radiologists and neuroradiologists. Images will be evaluated for any structural abnormalities and for differences in brain maturation or size. The fronto-occipital and biparietal cerebral diameters, cerebellar vermis and diameter, and corpus callosum length will be measured. Biometric measurements and estimation of fetal cortical maturation will be compared with age-expected norms. Fetal ultrasound will be used to evaluate measurements of cerebral head circumference, biparietal diameter, body biometry, and interval growth between research scans. Fetal head circumference z-scores will be calculated from US measurements based on gestational age using the Hadlock method.",
+                "timeFrame": "During pregnancy between 20-38 weeks gestational age"
+              },
+              {
+                "measure": "Infant neuroimaging (Magnetic resonance imaging [MRI] and ultrasound) analysis",
+                "description": "At 2-8 weeks of age, infants will have an unsedated brain MRI and a cranial ultrasound scan. Based on investigator experience, the majority of infants can have a successful brain MRI without sedation at \\<6 weeks of age. The brain MRI protocol will be the standard clinical infant protocol at Children's National Hospital that includes T1, T2, susceptibility weighted imaging, and diffusion sequences. The brain MRI is without contrast.",
+                "timeFrame": "Child age: Between 2-8 weeks"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* English speaker\n* Currently reside in the United States or Canada\n* Meet CDC criteria for: (1) clinical and/or laboratory diagnosis of Lyme disease during any stage of current pregnancy, OR (2) clinical diagnosis of PTLDS/Chronic Lyme within 3 years of current pregnancy\n* Able to be contacted for follow-up\n\nExclusion Criteria:\n\n* Intellectually unable to comprehend study procedures\n* Health issues or metallic implant that precludes undergoing MRI\n* Incapable of completing study requirements (note: inability to travel to Children's National for in-person follow-up \\[for example, due to bedrest, travel restrictions, or financial inability to travel\\] is NOT an exclusion criterion; any interested and eligible participants requiring \"remote only\" participation will be permitted to join the study and complete all requirements besides in-person follow-up)",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ],
+            "studyPopulation": "Pregnant participants with confirmed Borrelia burgdorferi infection or diagnosed PTLDS/Chronic Lyme will be enrolled during any trimester of pregnancy. All live-born infants will be followed to age 18 months and included in the study regardless of birth outcomes.",
+            "samplingMethod": "NON_PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Meagan Williams, MSPH, CCRC",
+                "role": "CONTACT",
+                "phone": "202-476-3388",
+                "email": "mewilliams@childrensnational.org"
+              },
+              {
+                "name": "Sarah Mulkey, MD, PhD",
+                "role": "CONTACT",
+                "email": "sbmulkey@childrensnational.org"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Sarah Mulkey, MD, PhD",
+                "affiliation": "Children's National Research Institute",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Children's National Hospital",
+                "status": "RECRUITING",
+                "city": "Washington D.C.",
+                "state": "District of Columbia",
+                "zip": "20010",
+                "country": "United States",
+                "contacts": [
+                  {
+                    "name": "Meagan Williams, MSPH, CCRC",
+                    "role": "CONTACT",
+                    "phone": "202-476-3388",
+                    "email": "mewilliams@childrensnational.org"
+                  },
+                  {
+                    "name": "Sarah B. Mulkey, MD, PhD",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                  },
+                  {
+                    "name": "Roberta L. DeBiasi, MD, MS",
+                    "role": "SUB_INVESTIGATOR"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 38.89511,
+                  "lon": -77.03637
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "seeAlsoLinks": [
+              {
+                "label": "Participant enrollment screener",
+                "url": "http://redcap.link/CNHLYME"
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D000077342",
+                "term": "Post-Lyme Disease Syndrome"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D011248",
+                "term": "Pregnancy Complications"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D000094025",
+                "term": "Post-Infectious Disorders"
+              },
+              {
+                "id": "D002908",
+                "term": "Chronic Disease"
+              },
+              {
+                "id": "D020969",
+                "term": "Disease Attributes"
+              },
+              {
+                "id": "D010335",
+                "term": "Pathologic Processes"
+              },
+              {
+                "id": "D013568",
+                "term": "Pathological Conditions, Signs and Symptoms"
+              },
+              {
+                "id": "D005261",
+                "term": "Female Urogenital Diseases and Pregnancy Complications"
+              },
+              {
+                "id": "D000091642",
+                "term": "Urogenital Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

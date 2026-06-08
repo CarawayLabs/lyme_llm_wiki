@@ -1,0 +1,2288 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:13.817791Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0018",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "cefuroxime Lyme disease",
+    "search_expression": "cefuroxime Lyme disease",
+    "parameters": {
+      "query.cond": "Lyme Disease",
+      "query.term": "cefuroxime Lyme disease",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:12.865046Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 593,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 4,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 4,
+    "total_count": 4,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0018_cefuroxime-lyme-disease\\raw\\page_0001.bin",
+      "sha256": "6c4aabfc754d46d081fc216659ba200a2fde047ae9fb116430abeca855cadd68",
+      "byte_count": 43203
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0018-0",
+      "source_record_id": "CTG-0018-0",
+      "record_type": "clinical_trial",
+      "title": "cefuroxime Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.865046Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0018-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "cefuroxime Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0018",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0018_cefuroxime-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "9f102debefd2eef7d5974521ab2aeadb055313b42ea3dcaeccfb0607cd148b6a"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03584919",
+            "orgStudyIdInfo": {
+              "id": "Doxy-Zinnat"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Comparison of Doxycycline and Cefuroxime Axetil in Erythema Migrans",
+            "officialTitle": "Comparison of Doxycycline and Cefuroxime Axetil in Patients With Erythema Migrans"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2018-06",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2006-06-01",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2007-09-30",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2007-09-30",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2018-06-19",
+            "studyFirstSubmitQcDate": "2018-07-11",
+            "studyFirstPostDateStruct": {
+              "date": "2018-07-12",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2018-07-11",
+            "lastUpdatePostDateStruct": {
+              "date": "2018-07-12",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Daša Stupica",
+              "investigatorTitle": "Principal Investigator",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "A European, prospective clinical trial in which doxycycline and cefuroxime axetil were compared in the treatment of adult patients with erythema migrans included a control group to address this question. Evaluations of patients were conducted at baseline, 14 days and 2, 6, and 12 months after enrollment. Control subjects were evaluated at baseline and at 6 and 12 months. Subjective complaints that newly developed or intensified since the onset of erythema migrans or since the date of enrollment for controls were referred to as \"new or increased symptoms\"(NOIS)."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Chronicum Migrans"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NON_RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "primaryPurpose": "TREATMENT",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 509
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "EM doxycycline",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "patients with EM who received doxycycline",
+                "interventionNames": [
+                  "Drug: doxycycline"
+                ]
+              },
+              {
+                "label": "EM cefuroxime axetil",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "patients with EM who received cefuroxime axetil",
+                "interventionNames": [
+                  "Drug: Cefuroxime Axetil 500Mg Tab"
+                ]
+              },
+              {
+                "label": "controls",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "control subjects without history of Lyme disease",
+                "interventionNames": [
+                  "Other: control subjects"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "doxycycline",
+                "description": "patients received oral doxycycline 100 milgrams bid for 15 days",
+                "armGroupLabels": [
+                  "EM doxycycline"
+                ]
+              },
+              {
+                "type": "DRUG",
+                "name": "Cefuroxime Axetil 500Mg Tab",
+                "description": "patients received cefuroxime axetil 500 milgrams bid for 15 days",
+                "armGroupLabels": [
+                  "EM cefuroxime axetil"
+                ]
+              },
+              {
+                "type": "OTHER",
+                "name": "control subjects",
+                "description": "no intervention",
+                "armGroupLabels": [
+                  "controls"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Change from Baseline in Objective Manifestations and Subjective New or Increased Symptoms (NOIS) in Patients Treated for Erythema Migrans With Doxycycline or Cefuroxime Axetil for 15 Days",
+                "description": "At each visit patients were examined and asked about the presence of any symptoms that newly developed or had worsened since erythema migrans. If such symptoms had no other medical explanation they were regarded as new or increased symptoms (NOIS). Complete response was defined as absence of any manifestations of Lyme borreliosis, with return to pre-Lyme borreliosis health status. Partial response was defined as presence of NOIS. Failure was defined as presence of objective manifestations of Lyme borreliosis or persistence of Borrelia burgdorferi sensu lato in skin at the site of the previous erythema migrans.",
+                "timeFrame": "One year follow-up (follow-up time points at 14 days, 2 months, 6 months, and 12 months after enrolment)"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Number of Patients (at 12 Months After Treatment With Doxycycline or Cefuroxime Axetil for 15 Days for Erythema Migrans) and Number of Control Subjects (Without a History of Lyme Borreliosis) With Nonspecific Symptoms.",
+                "description": "12 months after treatment patients and controls were asked to complete a written questionnaire asking whether they had had any of 8 nonspecific symptoms (fatigue, arthralgias, headache, myalgias, paresthesias, concentration difficulties, or irritability) within the preceding week. For both patients and controls, the severity of each individual symptom was graded by the subject on a 10-cm visual analog scale (10 = most severe).",
+                "timeFrame": "12 months after treatment"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* typical solitary erythema migrans as defined by the United States Centers for Disease Control and Prevention. In addition, patients with skin lesion \\<5 cm in diameter were also included if they recalled a recent tick bite at the site of the skin lesion, had a symptom-free interval between the bite and the onset of the lesion, and reported an expanding skin lesion prior to diagnosis.\n\nExclusion Criteria:\n\n* Lyme disease previously\n* pregnancy or lactation\n* immunocompromised\n* serious adverse reaction to a beta-lactam or tetracycline drug in the past\n* received an antibiotic with known anti-borrelial activity within 10 days\n* multiple erythema migrans lesions\n* presence of an extracutaneous manifestation of Lyme disease",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "minimumAge": "15 Years",
+            "stdAges": [
+              "CHILD",
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "30075748",
+                "type": "DERIVED",
+                "citation": "Veluscek M, Bajrovic FF, Strle F, Stupica D. Doxycycline-induced photosensitivity in patients treated for erythema migrans. BMC Infect Dis. 2018 Aug 3;18(1):365. doi: 10.1186/s12879-018-3270-y."
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D015787",
+                "term": "Erythema Chronicum Migrans"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017192",
+                "term": "Skin Diseases, Bacterial"
+              },
+              {
+                "id": "D012874",
+                "term": "Skin Diseases, Infectious"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D004890",
+                "term": "Erythema"
+              },
+              {
+                "id": "D012871",
+                "term": "Skin Diseases"
+              },
+              {
+                "id": "D017437",
+                "term": "Skin and Connective Tissue Diseases"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D004318",
+                "term": "Doxycycline"
+              },
+              {
+                "id": "C040738",
+                "term": "cefuroxime axetil"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D013754",
+                "term": "Tetracyclines"
+              },
+              {
+                "id": "D009279",
+                "term": "Naphthacenes"
+              },
+              {
+                "id": "D011084",
+                "term": "Polycyclic Aromatic Hydrocarbons"
+              },
+              {
+                "id": "D006841",
+                "term": "Hydrocarbons, Aromatic"
+              },
+              {
+                "id": "D006844",
+                "term": "Hydrocarbons, Cyclic"
+              },
+              {
+                "id": "D006838",
+                "term": "Hydrocarbons"
+              },
+              {
+                "id": "D009930",
+                "term": "Organic Chemicals"
+              },
+              {
+                "id": "D011083",
+                "term": "Polycyclic Compounds"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0018-1",
+      "source_record_id": "CTG-0018-1",
+      "record_type": "clinical_trial",
+      "title": "cefuroxime Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.865046Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0018-1"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "cefuroxime Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0018",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0018_cefuroxime-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "c774b65bccf36013f498371679d20b10faf82ec35c88850c0c1f321d831ffcf3"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT01518192",
+            "orgStudyIdInfo": {
+              "id": "EM-DC"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Comparison of Doxycycline and Cefuroxime Axetil for Treatment of Erythema Migrans: Clinical and Microbiological Outcome",
+            "officialTitle": "Risk Factors for Failure of Erythema Migrans Treatment - Comparison of Doxycycline and Cefuroxime Axetil for Treatment of Adult Patients With Erythema Migrans: Clinical and Microbiological Outcome."
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2011-12",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2006-06"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2007-11",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2009-01",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2010-06-28",
+            "studyFirstSubmitQcDate": "2011-12-18",
+            "studyFirstPostDateStruct": {
+              "date": "2012-01-25",
+              "type": "ESTIMATED"
+            },
+            "resultsFirstSubmitDate": "2010-06-28",
+            "resultsFirstSubmitQcDate": "2011-12-18",
+            "resultsFirstPostDateStruct": {
+              "date": "2012-01-25",
+              "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2011-12-18",
+            "lastUpdatePostDateStruct": {
+              "date": "2012-01-25",
+              "type": "ESTIMATED"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Franc Strle",
+              "investigatorTitle": "M.D., PhD",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "Slovenian Research Agency",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Background:\n\n* While doxycycline is a standard antibiotic for treatment of erythema migrans in Europe as well as in the USA, the effectiveness of cefuroxime axetil in the treatment of adult patients with erythema migrans has been assessed only in the USA where the causative agent of Lyme disease is Borrelia burgdorferi, but not in Europe where the main etiologic agents are B. afzelii and B. garinii.\n* Controversy exists over the significance and even the existence of post-Lyme disease symptoms because of the high rate of similar background symptoms in the general population.\n\nPurpose:\n\nThe two main purposes of this European, prospective clinical trial in which doxycycline and cefuroxime axetil are compared in the treatment of adult patients with erythema migrans and which included a control group to address the significance of post-Lyme disease symptoms are:\n\n* To assess and compare the effectiveness of doxycycline and cefuroxime axetil in the treatment of erythema migrans using clinical and bacteriological criteria (noninferiority testing approach), and\n* to compare the frequency of post-Lyme disease symptoms in adult patients treated for EM with antibiotics and the frequency of similar symptoms in control subjects without Lyme disease.",
+            "detailedDescription": "Sample size\n\nDecisions were based on the following:\n\n1. Number of patients with erythema migrans treated with doxycycline and cefuroxime axetil was determined assuming no difference in treatment outcome will be detected (non-inferiority testing).\n2. The decision for a larger sample sizes than needed for 1. was done with the intention to evaluate the secondary outcome measure, i.e., to assess the difference between the frequency of new or increased symptoms in patients treated for early Lyme disease and the occurrence of the same symptoms in control subjects.\n\n   1. We assumed that the outcomes in the two treatment groups will be comparable and that the patients could be combined for further analysis.\n   2. To obtain a control group from the same geographical area, each patient was asked if she or he had a family member or friend who was within 5 years of her or his age and who was without a history of Lyme borreliosis. These persons were approached by a short written explanation of the investigation, containing also a request for their participation. We assumed that we will be able to get a corresponding control person not for all but for approximately 80-90% of patients.\n   3. Under the assumption that approximately 15% of an estimated 200 patients would have new or increased symptoms at \\>6 months after enrollment into the study, a control group of 165 subjects would be sufficient to detect a \\>10 percentage point lower rate of new or increased symptoms in controls compared with patients at the 0.05 level (2-sided) with \\>90% power. To comply with drop outs at different time points we assessed that 280 patients and 230 controls should be included at baseline."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans",
+              "Post-Lyme Disease Symptoms"
+            ],
+            "keywords": [
+              "erythema migrans",
+              "doxycycline",
+              "cefuroxime axetil",
+              "post-Lyme disease symptoms",
+              "background symptoms in general population"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "PHASE4"
+            ],
+            "designInfo": {
+              "allocation": "RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "primaryPurpose": "TREATMENT",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 544,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "1Doxycycline",
+                "type": "ACTIVE_COMPARATOR",
+                "interventionNames": [
+                  "Drug: doxycycline"
+                ]
+              },
+              {
+                "label": "2 Cefuroxime axetil",
+                "type": "ACTIVE_COMPARATOR",
+                "interventionNames": [
+                  "Drug: cefuroxime axetil"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "doxycycline",
+                "description": "100 mg bid; 15 days",
+                "armGroupLabels": [
+                  "1Doxycycline"
+                ]
+              },
+              {
+                "type": "DRUG",
+                "name": "cefuroxime axetil",
+                "description": "500 mg bid; 15 days",
+                "armGroupLabels": [
+                  "2 Cefuroxime axetil"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 14 Days",
+                "description": "Number of patients with objective manifestations of Lyme disease(persistence of erythema migrans or any of the extracutaneous-cardiac, nervous or skeletal-Lyme disease manifestations)and/or with post-Lyme disease symptoms in patients treated for solitary erythema migrans at 14 days post inclusion",
+                "timeFrame": "at 14 days post inclusion"
+              },
+              {
+                "measure": "Adverse Events",
+                "description": "Number of patients reporting adverse events",
+                "timeFrame": "at 14 days"
+              },
+              {
+                "measure": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 2 Months",
+                "description": "Number of patients with objective Lyme disease manifestations and/or post-Lyme disease symptoms in patients treated for solitary erythema migrans at 2 months post inclusion",
+                "timeFrame": "2 months"
+              },
+              {
+                "measure": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 6months",
+                "description": "Number of patients with objective Lyme disease manifestations and/or post-Lyme disease symptoms in patients treated for solitary erythema migrans at 6 months post inclusion",
+                "timeFrame": "6 months"
+              },
+              {
+                "measure": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 12 Months",
+                "description": "Number of patients with objective Lyme disease manifestations and/or post-Lyme disease symptoms in patients treated for solitary erythema migrans at 12 months post inclusion",
+                "timeFrame": "12 months"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "New or Increased Symptoms Since Erythema Migrans in Patients and Controls at 6 Months.",
+                "description": "Comparison of the number patients and controls with new or increased symptoms since erythema migrans at 6 months.",
+                "timeFrame": "6 months"
+              },
+              {
+                "measure": "New or Increased Symptoms Since Erythema Migrans in Patients Controls at 12 Months.",
+                "description": "Comparison of the number of patients and controls with new or increased symptoms since erythema migrans at 12 months.",
+                "timeFrame": "12 months"
+              },
+              {
+                "measure": "Selected Subjective Symptoms in Patients and Control Subjects",
+                "description": "Comparison of the number of patients and controls with selected 8 symptoms (fatigue, arthralgias, myalgias, headache, paresthesias, dizziness, irritability, or nausea) within the preceding week, irrespective of whether they were new or increased since erythema migrans.",
+                "timeFrame": "Examination at 12 months"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* patients 15 or more years old\n* with typical erythema migrans\n* evaluated between 6/06 and 9/06\n* evaluated at the Lyme Disease Outpatient Clinic, University Medical Center Ljubljana, Slovenia.\n\nExclusion Criteria:\n\n* history of Lyme disease in the past\n* pregnancy\n* lactation\n* immunocompromising condition\n* history of a serious adverse reaction to a beta-lactam or tetracycline drug\n* receiving an antibiotic with known anti-borrelial activity within 10 days\n* multiple erythema migrans lesions or an extracutaneous manifestation of Lyme disease.",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "minimumAge": "15 Years",
+            "stdAges": [
+              "CHILD",
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Daša Cerar, MD",
+                "affiliation": "Department of Infectious Diseases, University Medical Center Ljubljana, Ljubljana, Slovenia",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              },
+              {
+                "name": "Franc Strle, MD",
+                "affiliation": "Department of Infectious Diseases, University Medical Center Ljubljana, Ljubljana, Slovenia",
+                "role": "STUDY_CHAIR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Institute of Microbiology and Immunology, Medical Faculty, University of Ljubljana",
+                "city": "Ljubljana",
+                "zip": "1000",
+                "country": "Slovenia",
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              },
+              {
+                "facility": "Department of Infectious Diseases, University Medical Center Ljubljana, Ljubljana, Slovenia",
+                "city": "Ljubljana",
+                "zip": "1525",
+                "country": "Slovenia",
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          }
+        },
+        "resultsSection": {
+          "participantFlowModule": {
+            "preAssignmentDetails": "113/398 patients were ineligible due to:\n\n* receiving antibiotic with known anti-borrelial activity (73)\n* multiple erythema migrans (16)\n* history of Lyme disease (12)\n* immunocompromising condition (4)\n* serious adverse reaction to study drugs (3)\n* pregnancy or lactation (4)\n* erythema migrans accompanied by meningitis (1)",
+            "recruitmentDetails": "Adult patients with typical erythema migrans, examined in the period from June to September 2006 at Lyme Disease Outpatient Clinic, University Medical Center Ljubljana, Slovenia",
+            "groups": [
+              {
+                "id": "FG000",
+                "title": "Doxycycline",
+                "description": "Patients were assigned to receive a 15-day oral treatment with doxycycline 100 mg twice daily.\n\nAt baseline and at 14 days, 2, 6, and 12 months thereafter, patients were interviewed and examined. At baseline, a skin biopsy specimen was cultured; this procedure was repeated 2-3 months later in patients with a positive culture."
+              },
+              {
+                "id": "FG001",
+                "title": "Cefuroxime Axetil",
+                "description": "Patients were assigned to receive a 15-day oral treatment with cefuroxime axetil 500 mg twice daily.\n\nAt baseline and at 14 days, 2, 6, and 12 months thereafter, patients were interviewed and examined. At baseline, a skin biopsy specimen was cultured; this procedure was repeated 2-3 months later in patients with a positive culture."
+              },
+              {
+                "id": "FG002",
+                "title": "Controls",
+                "description": "patients' family members or friends without a history of Lyme disease"
+              }
+            ],
+            "periods": [
+              {
+                "title": "Overall Study",
+                "milestones": [
+                  {
+                    "type": "STARTED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "145"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "140"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "259"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "COMPLETED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "116"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "114"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "224"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "NOT COMPLETED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "29"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "26"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "35"
+                      }
+                    ]
+                  }
+                ],
+                "dropWithdraws": [
+                  {
+                    "type": "Lost to Follow-up",
+                    "reasons": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "29"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "26"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "35"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "baselineCharacteristicsModule": {
+            "groups": [
+              {
+                "id": "BG000",
+                "title": "Doxycycline",
+                "description": "Patients were assigned to receive a 15-day oral treatment with either doxycycline 100 mg or cefuroxime axetil 500 mg twice daily, by alternating treatment regimens each week.\n\nEvaluations:\n\nAt baseline and at 14 days, 2, 6, and 12 months thereafter, patients were interviewed and examined. At baseline, a skin biopsy specimen was cultured as previously described; this procedure was repeated 2-3 months later in patients with a positive culture."
+              },
+              {
+                "id": "BG001",
+                "title": "Cefuroxime Axetil",
+                "description": "Patients were assigned to receive a 15-day oral treatment with either doxycycline 100 mg or cefuroxime axetil 500 mg twice daily, by alternating treatment regimens each week.\n\nEvaluations:\n\nAt baseline and at 14 days, 2, 6, and 12 months thereafter, patients were interviewed and examined. At baseline, a skin biopsy specimen was cultured as previously described; this procedure was repeated 2-3 months later in patients with a positive culture."
+              },
+              {
+                "id": "BG002",
+                "title": "Controls",
+                "description": "To obtain a control group from the same geographical area, each patient was asked if he/she had a family member or friend who was within 5 years of his/her age and had no history of Lyme disease (two of the potential control subjects were excluded due to this reason), and was not pregnant, lactating or immunocompromised."
+              },
+              {
+                "id": "BG003",
+                "title": "Total",
+                "description": "Total of all reporting groups"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "BG000",
+                    "value": "145"
+                  },
+                  {
+                    "groupId": "BG001",
+                    "value": "140"
+                  },
+                  {
+                    "groupId": "BG002",
+                    "value": "259"
+                  },
+                  {
+                    "groupId": "BG003",
+                    "value": "544"
+                  }
+                ]
+              }
+            ],
+            "measures": [
+              {
+                "title": "Age Continuous",
+                "paramType": "MEDIAN",
+                "dispersionType": "FULL_RANGE",
+                "unitOfMeasure": "years",
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "54",
+                            "spread": "14.6",
+                            "lowerLimit": "17",
+                            "upperLimit": "85"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "51.5",
+                            "spread": "14.9",
+                            "lowerLimit": "19",
+                            "upperLimit": "82"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "52",
+                            "lowerLimit": "15",
+                            "upperLimit": "85"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "52.5",
+                            "spread": "14.9",
+                            "lowerLimit": "15",
+                            "upperLimit": "85"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Sex: Female, Male",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "title": "Female",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "84"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "77"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "125"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "286.0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Male",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "61"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "63"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "134"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "258.0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Region of Enrollment",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "classes": [
+                  {
+                    "title": "Slovenia",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "145"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "140"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "259"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "544.0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "outcomeMeasuresModule": {
+            "outcomeMeasures": [
+              {
+                "type": "PRIMARY",
+                "title": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 14 Days",
+                "description": "Number of patients with objective manifestations of Lyme disease(persistence of erythema migrans or any of the extracutaneous-cardiac, nervous or skeletal-Lyme disease manifestations)and/or with post-Lyme disease symptoms in patients treated for solitary erythema migrans at 14 days post inclusion",
+                "populationDescription": "All participants who followed the protocol were eligible for analysis",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "at 14 days post inclusion",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Doxycycline",
+                    "description": "doxycycline 100 mg twice daily for 15 days"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cefuroxime Axetil",
+                    "description": "cefuroxime axetil 500 mg twice daily for 15 days"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "145"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "140"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "30"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "27"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "New or Increased Symptoms Since Erythema Migrans in Patients and Controls at 6 Months.",
+                "description": "Comparison of the number patients and controls with new or increased symptoms since erythema migrans at 6 months.",
+                "populationDescription": "all participants who followed the protocol",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "6 months",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Patients",
+                    "description": "patients with new or increased symptoms since erythema migrans at 6 months post inclusion"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Controls",
+                    "description": "controls with new or increased symptoms since enrollment at 6 months post inclusion"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "194"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "236"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "9"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "16"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Adverse Events",
+                "description": "Number of patients reporting adverse events",
+                "populationDescription": "All participants who followed the protocol.",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "at 14 days",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Doxycycline",
+                    "description": "doxycycline 100 mg twice daily for 15 days"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cefuroxime Axetil",
+                    "description": "cefuroxime axetil 500 mg twice daily for 15 days"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "145"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "140"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "22"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "23"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 2 Months",
+                "description": "Number of patients with objective Lyme disease manifestations and/or post-Lyme disease symptoms in patients treated for solitary erythema migrans at 2 months post inclusion",
+                "populationDescription": "all participants who followed the protocol",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "2 months",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Doxycycline",
+                    "description": "doxycycline 100 mg twice daily for 15 days"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cefuroxime Axetil",
+                    "description": "cefuroxime axetil 500 mg twice daily for 15 days"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "136"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "134"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "19"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "14"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 6months",
+                "description": "Number of patients with objective Lyme disease manifestations and/or post-Lyme disease symptoms in patients treated for solitary erythema migrans at 6 months post inclusion",
+                "populationDescription": "all participants who followed the protocol",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "6 months",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Doxycycline",
+                    "description": "doxycycline 100 mg twice daily for 15 days"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cefuroximew Axetil",
+                    "description": "cefuroxime axetil 500 mg twice daily for 15 days"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "102"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "93"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "5"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "6"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Objective Lyme Disease Manifestations and Post-Lyme Disease Symptoms at 12 Months",
+                "description": "Number of patients with objective Lyme disease manifestations and/or post-Lyme disease symptoms in patients treated for solitary erythema migrans at 12 months post inclusion",
+                "populationDescription": "all participants who followed the protocol",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "12 months",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Doxycycline",
+                    "description": "doxycycline 100 mg twice daily for 15 days"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cefuroxime Axetil",
+                    "description": "cefuroxime axetil 500 mg twice daily for 15 days"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "116"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "114"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "3"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "4"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "New or Increased Symptoms Since Erythema Migrans in Patients Controls at 12 Months.",
+                "description": "Comparison of the number of patients and controls with new or increased symptoms since erythema migrans at 12 months.",
+                "populationDescription": "all participants who followed the protocol",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "12 months",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Patients",
+                    "description": "patients with new or increased symptoms since erythema migrans at 12 months post inclusion"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Controls",
+                    "description": "controls with new or increased symptoms since erythema migrans at 12 months post inclusion"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "230"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "224"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "5"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "21"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "Selected Subjective Symptoms in Patients and Control Subjects",
+                "description": "Comparison of the number of patients and controls with selected 8 symptoms (fatigue, arthralgias, myalgias, headache, paresthesias, dizziness, irritability, or nausea) within the preceding week, irrespective of whether they were new or increased since erythema migrans.",
+                "populationDescription": "all participants who followed the protocol",
+                "reportingStatus": "POSTED",
+                "paramType": "NUMBER",
+                "unitOfMeasure": "participants",
+                "timeFrame": "Examination at 12 months",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Patients",
+                    "description": "patients with selected subjective symptoms at 12 months post inclusion"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Controls",
+                    "description": "controls with selected subjective symptoms at 12 months post inclusion"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "230"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "224"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "178"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "181"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "adverseEventsModule": {
+            "frequencyThreshold": "0.7",
+            "timeFrame": "2 months",
+            "eventGroups": [
+              {
+                "id": "EG000",
+                "title": "Doxycycline",
+                "description": "Patients were assigned to receive a 15-day oral treatment with doxycycline 100 mg twice daily.\n\nAt baseline and at 14 days, 2, 6, and 12 months thereafter, patients were interviewed and examined. At baseline, a skin biopsy specimen was cultured; this procedure was repeated 2-3 months later in patients with a positive culture.",
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 145,
+                "otherNumAffected": 21,
+                "otherNumAtRisk": 145
+              },
+              {
+                "id": "EG001",
+                "title": "Cefuroxime Axetil",
+                "description": "Patients were assigned to receive a 15-day oral treatment with cefuroxime axetil 500 mg twice daily.\n\nAt baseline and at 14 days, 2, 6, and 12 months thereafter, patients were interviewed and examined. At baseline, a skin biopsy specimen was cultured; this procedure was repeated 2-3 months later in patients with a positive culture.",
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 140,
+                "otherNumAffected": 21,
+                "otherNumAtRisk": 140
+              },
+              {
+                "id": "EG002",
+                "title": "Controls",
+                "description": "patients' family members or friends without a history of Lyme disease",
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 259,
+                "otherNumAffected": 0,
+                "otherNumAtRisk": 259
+              }
+            ],
+            "otherEvents": [
+              {
+                "term": "Gastrointestinal symptoms",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numEvents": 20,
+                    "numAffected": 20,
+                    "numAtRisk": 145
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numEvents": 21,
+                    "numAffected": 21,
+                    "numAtRisk": 140
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numEvents": 0,
+                    "numAffected": 0,
+                    "numAtRisk": 259
+                  }
+                ]
+              },
+              {
+                "term": "Photosensitivity",
+                "organSystem": "General disorders",
+                "assessmentType": "NON_SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numEvents": 1,
+                    "numAffected": 1,
+                    "numAtRisk": 145
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numEvents": 0,
+                    "numAffected": 0,
+                    "numAtRisk": 140
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numEvents": 0,
+                    "numAffected": 0,
+                    "numAtRisk": 259
+                  }
+                ]
+              }
+            ]
+          },
+          "moreInfoModule": {
+            "limitationsAndCaveats": {
+              "description": "Medical explanation besides Lyme disease of the symptoms in patients was based on history and physical examination, therefore some other medical explanations might have been missed. With regard to controls this was even more likely."
+            },
+            "certainAgreement": {
+              "piSponsorEmployee": true,
+              "restrictiveAgreement": false
+            },
+            "pointOfContact": {
+              "title": "Franc Strle",
+              "organization": "Department of Infectious Diseases, University Medical Center Ljubljana",
+              "email": "franc.strle@kclj.si",
+              "phone": "+386 1 522 2610"
+            }
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D004318",
+                "term": "Doxycycline"
+              },
+              {
+                "id": "C040738",
+                "term": "cefuroxime axetil"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D013754",
+                "term": "Tetracyclines"
+              },
+              {
+                "id": "D009279",
+                "term": "Naphthacenes"
+              },
+              {
+                "id": "D011084",
+                "term": "Polycyclic Aromatic Hydrocarbons"
+              },
+              {
+                "id": "D006841",
+                "term": "Hydrocarbons, Aromatic"
+              },
+              {
+                "id": "D006844",
+                "term": "Hydrocarbons, Cyclic"
+              },
+              {
+                "id": "D006838",
+                "term": "Hydrocarbons"
+              },
+              {
+                "id": "D009930",
+                "term": "Organic Chemicals"
+              },
+              {
+                "id": "D011083",
+                "term": "Polycyclic Compounds"
+              }
+            ]
+          }
+        },
+        "hasResults": true
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0018-2",
+      "source_record_id": "CTG-0018-2",
+      "record_type": "clinical_trial",
+      "title": "cefuroxime Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.865046Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0018-2"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "cefuroxime Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0018",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0018_cefuroxime-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "fb777f232278df0b366df752318133129f4ec1f4b62f6f03b1569a93b9e1d1cd"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03980015",
+            "orgStudyIdInfo": {
+              "id": "MEM vs EM cyto"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Inflammatory Responses in Solitary and Multiple Erythema Migrans",
+            "officialTitle": "Inflammatory Responses in Borrelia Afzelii Culture Positive Patients With Early Disseminated or Early Localized Lyme Borreliosis"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-06",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2006-06-01",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2016-12-31",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2019-05-31",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2019-06-05",
+            "studyFirstSubmitQcDate": "2019-06-06",
+            "studyFirstPostDateStruct": {
+              "date": "2019-06-10",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2019-06-06",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-06-11",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Daša Stupica",
+              "investigatorTitle": "Prinicipal Investigator",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "University of Ljubljana School of Medicine, Slovenia",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The investigators will evaluate differences in host immune responses (levels of cytokines and chemokines, representative of innate, Th1, and Th17 immune responses) in acute sera from adult patients with solitary or multiple erythema migrans."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "CASE_ONLY",
+              "timePerspective": "RETROSPECTIVE"
+            },
+            "bioSpec": {
+              "retention": "SAMPLES_WITHOUT_DNA",
+              "description": "serum"
+            },
+            "enrollmentInfo": {
+              "count": 134,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "erythema migrans",
+                "description": "patients with erythema migrans",
+                "interventionNames": [
+                  "Other: antibiotic treatment"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "antibiotic treatment",
+                "description": "Patients were treated with: ceftriaxone intravenously 2 g OD for 14 days or doxycycline orally 100 mg bid for 10 to 14 days or cefuroxime axetil orally 500 mg bid for 14 days or amoxicillin orally 500 mg tid for 14 days",
+                "armGroupLabels": [
+                  "erythema migrans"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "inflammatory proteins in erythema migrans patients",
+                "description": "The inflammatory immune profiles will be assessed using Luminex to measure the expression of cytokines and chemokines representative of innate and adaptive TH1, TH2, TH17, and B cell responses in serum of patients at enrollment (during active infection).",
+                "timeFrame": "at enrollment"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* erythema migrans in patients \\> 18 years\n* Borrelia afzelii isolated from skin\n\nExclusion Criteria:\n\n* pregnancy or immunocompromising conditions\n* taking antibiotic with antiborrelial activity within 10 days",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ],
+            "studyPopulation": "Adult patients with erythema migrans",
+            "samplingMethod": "NON_PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Daša Stupica, MD PhD",
+                "affiliation": "University Medical Centre Ljubljana",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "University Medical Centre Ljubljana",
+                "city": "Ljubljana",
+                "country": "Slovenia",
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "UNDECIDED"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0018-3",
+      "source_record_id": "CTG-0018-3",
+      "record_type": "clinical_trial",
+      "title": "cefuroxime Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.865046Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0018-3"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "cefuroxime Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0018",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0018_cefuroxime-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "14c38ea0bf1d4d1690d546bdef7089d998070dd26785093884cafefd5514a0b5"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT02147249",
+            "orgStudyIdInfo": {
+              "id": "EM-0613"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Cytokines and Chemokines in Erythema Migrans",
+            "officialTitle": "Inflammatory Proteins, Gene Polymorphisms, and Transcriptome Profiles in Patients With Erythema Migrans"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-04",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2013-07"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2020-12-31",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2020-12-31",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2013-06-24",
+            "studyFirstSubmitQcDate": "2014-05-23",
+            "studyFirstPostDateStruct": {
+              "date": "2014-05-26",
+              "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2019-04-19",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-04-22",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Franc Strle",
+              "investigatorTitle": "MD, PhD",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "University of Ljubljana School of Medicine, Slovenia",
+                "class": "OTHER"
+              },
+              {
+                "name": "Medical University of Vienna",
+                "class": "OTHER"
+              },
+              {
+                "name": "Harvard University",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The main objective of this study is to characterize the inflammatory proteins, gene polymorphisms, and transcriptome profiles in patients with erythema migrans to gain better insight into pathogenesis of early Lyme borreliosis and to define new immune modulators that could serve as biomarkers of disease activity."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans"
+            ],
+            "keywords": [
+              "erythema migrans",
+              "Lyme borreliosis",
+              "inflammation",
+              "outcome"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "primaryPurpose": "BASIC_SCIENCE",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 150,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "erythema migrans patients treated with antibiotics",
+                "type": "EXPERIMENTAL",
+                "description": "adult patients with erythema migrans will be treated with oral antibiotics",
+                "interventionNames": [
+                  "Drug: antibiotic treatment"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "antibiotic treatment",
+                "description": "Patient will be treated with: doxycycline orally, 100 mg, bid, 14 days or cefuroxime axetil orally, 500 mg, bid, 14 days or amoxicillin orally, 500 mg, tid, 14 days",
+                "armGroupLabels": [
+                  "erythema migrans patients treated with antibiotics"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "inflammatory proteins in erythema migrans patients",
+                "description": "The inflammatory immune profiles will be assessed using Luminex to measure the expression of cytokines and chemokines representative of innate and adaptive TH1, TH2, TH17, and B cell responses in serum and if available, skin, of patients during active infection and after treatment.",
+                "timeFrame": "up to 12 months follow-up"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "gene polymorphisms in erythema migrans patients",
+                "description": "The expression of disease-relevant genomic variants will be assessed using ImmunoChip.",
+                "timeFrame": "at enrollment"
+              }
+            ],
+            "otherOutcomes": [
+              {
+                "measure": "transcriptome profiles in erythema migrans patients",
+                "description": "We will use RNA sequencing of individual immune cell subtypes from patients to determine their transcriptome.",
+                "timeFrame": "at 6 month follow-up"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* erythema migrans in patients \\> 18 years\n\nExclusion Criteria:\n\n* pregnancy or lactation\n* taking antibiotic with antiborrelial activity within 10 days",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Dasa Stupica, MD,PhD",
+                "role": "CONTACT",
+                "phone": "+386 1 5222110",
+                "email": "cerar.dasa@gmail.com"
+              },
+              {
+                "name": "Franc Strle, MD, PhD",
+                "role": "CONTACT",
+                "phone": "+386 1 5222610",
+                "email": "franc.strle@kclj.si"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Franc Strle, MD, PhD",
+                "affiliation": "UMC Ljubljana",
+                "role": "STUDY_CHAIR"
+              },
+              {
+                "name": "Dasa Stupica, MD, PhD",
+                "affiliation": "UMC Ljubljana",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "UMC Ljubljana, Department of Infectious Diseases",
+                "status": "RECRUITING",
+                "city": "Ljubljana",
+                "zip": "1525",
+                "country": "Slovenia",
+                "contacts": [
+                  {
+                    "name": "Dasa Stupica, MD,PhD",
+                    "role": "CONTACT",
+                    "phone": "+386 1 5222110",
+                    "email": "cerar.dasa@gmail.com"
+                  },
+                  {
+                    "name": "Franc Strle, MD,PhD",
+                    "role": "CONTACT",
+                    "phone": "+386 1 522 2610",
+                    "email": "franc.strle@kclj.si"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D007249",
+                "term": "Inflammation"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D010335",
+                "term": "Pathologic Processes"
+              },
+              {
+                "id": "D013568",
+                "term": "Pathological Conditions, Signs and Symptoms"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

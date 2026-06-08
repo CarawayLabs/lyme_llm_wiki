@@ -1,0 +1,4 @@
+interface:
+  display_name: "TopX Lyme LLM Wiki"
+  short_description: "Operate the TopX Lyme LLM wiki workflow."
+  default_prompt: "Use the TopX Lyme LLM wiki workflow to answer from repository evidence, promote reviewed artifacts, score datasets or opportunities, and keep sourced facts separate from analysis."

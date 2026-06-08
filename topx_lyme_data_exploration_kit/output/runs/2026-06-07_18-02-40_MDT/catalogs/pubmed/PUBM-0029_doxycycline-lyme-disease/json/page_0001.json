@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:26.032128Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "PUBM-0029",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "search_term": "doxycycline Lyme disease",
+    "search_expression": "(\"doxycycline Lyme disease\"[Title/Abstract]) AND humans[MeSH Terms]",
+    "parameters": {
+      "db": "pubmed",
+      "term": "(\"doxycycline Lyme disease\"[Title/Abstract]) AND humans[MeSH Terms]",
+      "retmode": "json",
+      "retmax": 100,
+      "usehistory": "y",
+      "sort": "pub date",
+      "tool": "topx_lyme_explorer"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "NCBI_API_KEY",
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NCBI PubMed E-utilities",
+    "catalog_slug": "pubmed",
+    "source_type": "biomedical_citation_database",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:25.375966Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "duration_ms": 253,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": 0,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0029_doxycycline-lyme-disease\\raw\\page_0001.json",
+      "sha256": "bbdac5569b578d2c25ad7e01a01ae54f9e97fa7a68a85f2572a8eea9e315f416",
+      "byte_count": 488
+    }
+  },
+  "records": [],
+  "warnings": [
+    "Optional credential NCBI_API_KEY was not found; request used anonymous/public access."
+  ],
+  "errors": []
+}

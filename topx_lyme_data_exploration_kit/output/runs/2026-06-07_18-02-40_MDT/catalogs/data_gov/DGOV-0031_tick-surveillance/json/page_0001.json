@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:43.938526Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "DGOV-0031",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.gsa.gov/technology/datagov/v4/search",
+    "search_term": "tick surveillance",
+    "search_expression": "tick surveillance",
+    "parameters": {
+      "q": "tick surveillance",
+      "sort": "relevance",
+      "per_page": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "required",
+      "credential_alias": "DATA_GOV_API_KEY",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.gov Catalog API",
+    "catalog_slug": "data_gov",
+    "source_type": "federal_metadata_catalog",
+    "organization": "U.S. General Services Administration",
+    "docs_url": "https://resources.data.gov/catalog-api/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:43.599274Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 265,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0031_tick-surveillance\\raw\\page_0001.json",
+      "sha256": "b8d2c4541b086cbd23dd1fd827866b886b5bfd363fc5bfb776959d52db21203c",
+      "byte_count": 3545
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "data_gov:http://datainventory.doi.gov/id/dataset/USGS_66f1cd96d34e0606a9dc8599",
+      "source_record_id": "http://datainventory.doi.gov/id/dataset/USGS_66f1cd96d34e0606a9dc8599",
+      "record_type": "dataset_metadata",
+      "title": "Working Dog Tick Transect results and cost comparisons in Jackson Hole, WY from Oct - Nov 2021",
+      "description": "A tabular dataset providing tick survey results around the Jackson Wyoming area between the dates of Oct 25 2021 and Nov 6 2021. The data compares a dog surveyor to a human surveyor in both transect and survey plots, recording detection events, total number of tick larvae found, and how long the survey took, and the cost of the survey. A second tabular dataset outlining the associated costs for each survey.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=tick+surveillance&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:43.599274Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "U.S. Geological Survey",
+      "organizations": [
+        {
+          "name": "U.S. Geological Survey",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "http://datainventory.doi.gov/id/dataset/USGS_66f1cd96d34e0606a9dc8599"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0031",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=tick+surveillance&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0031_tick-surveillance\\raw\\page_0001.json",
+        "raw_record_sha256": "091fb90e13f17edbf48f2f96ec677072a0adab2eb54690af0e53e8f30157745e"
+      },
+      "raw_metadata": {
+        "_score": 47.28179,
+        "_sort": [
+          47.28179,
+          3,
+          "40e5bcbf-55b1-42ea-aaaa-e8e0da7a4aa1"
+        ],
+        "dcat": {
+          "accessLevel": "public",
+          "bureauCode": [
+            "010:12"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Paul C Cross",
+            "hasEmail": "mailto:pcross@usgs.gov"
+          },
+          "description": "A tabular dataset providing tick survey results around the Jackson Wyoming area between the dates of Oct 25 2021 and Nov 6 2021. The data compares a dog surveyor to a human surveyor in both transect and survey plots, recording detection events, total number of tick larvae found, and how long the survey took, and the cost of the survey. A second tabular dataset outlining the associated costs for each survey.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "accessURL": "https://doi.org/10.5066/P13A6AWF",
+              "description": "Landing page for access to the data",
+              "format": "XML",
+              "mediaType": "application/http",
+              "title": "Digital Data"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "description": "The metadata original format",
+              "downloadURL": "https://data.usgs.gov/datacatalog/metadata/USGS.66f1cd96d34e0606a9dc8599.xml",
+              "format": "XML",
+              "mediaType": "text/xml",
+              "title": "Original Metadata"
+            }
+          ],
+          "identifier": "http://datainventory.doi.gov/id/dataset/USGS_66f1cd96d34e0606a9dc8599",
+          "keyword": [
+            "Greater Yellowstone Ecosystem",
+            "Hard Ticks",
+            "Moose",
+            "Scent Detection Dogs",
+            "Surveillance",
+            "Tick Drag",
+            "USGS:66f1cd96d34e0606a9dc8599",
+            "Winter Ticks",
+            "Wyoming",
+            "arachnids",
+            "biota",
+            "ecosystem monitoring"
+          ],
+          "modified": "2024-10-01T00:00:00Z",
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "U.S. Geological Survey"
+          },
+          "spatial": "-110.9221, 43.3511, -110.6104, 43.6321",
+          "theme": [
+            "geospatial"
+          ],
+          "title": "Working Dog Tick Transect results and cost comparisons in Jackson Hole, WY from Oct - Nov 2021"
+        },
+        "description": "A tabular dataset providing tick survey results around the Jackson Wyoming area between the dates of Oct 25 2021 and Nov 6 2021. The data compares a dog surveyor to a human surveyor in both transect and survey plots, recording detection events, total number of tick larvae found, and how long the survey took, and the cost of the survey. A second tabular dataset outlining the associated costs for each survey.",
+        "distribution_titles": [
+          "Digital Data",
+          "Original Metadata"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/32a5a955-07d6-4219-abdc-f1d0524eb01a",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/32a5a955-07d6-4219-abdc-f1d0524eb01a/raw",
+        "has_spatial": true,
+        "identifier": "http://datainventory.doi.gov/id/dataset/USGS_66f1cd96d34e0606a9dc8599",
+        "keyword": [
+          "Greater Yellowstone Ecosystem",
+          "Hard Ticks",
+          "Moose",
+          "Scent Detection Dogs",
+          "Surveillance",
+          "Tick Drag",
+          "USGS:66f1cd96d34e0606a9dc8599",
+          "Winter Ticks",
+          "Wyoming",
+          "arachnids",
+          "biota",
+          "ecosystem monitoring"
+        ],
+        "last_harvested_date": "2026-05-05T21:07:45.555531",
+        "organization": {
+          "aliases": [
+            "dept"
+          ],
+          "description": null,
+          "id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/master/doi.png",
+          "name": "Department of the Interior",
+          "organization_type": "Federal Government",
+          "slug": "doi"
+        },
+        "popularity": 3,
+        "publisher": "U.S. Geological Survey",
+        "slug": "working-dog-tick-transect-results-and-cost-comparisons-in-jackson-hole-wy-from-oct-no-2021",
+        "spatial_centroid": {
+          "lat": 43.463499999999996,
+          "lon": -110.79742000000002
+        },
+        "spatial_shape": {
+          "coordinates": [
+            [
+              [
+                -110.9221,
+                43.3511
+              ],
+              [
+                -110.9221,
+                43.6321
+              ],
+              [
+                -110.6104,
+                43.6321
+              ],
+              [
+                -110.6104,
+                43.3511
+              ],
+              [
+                -110.9221,
+                43.3511
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "theme": [
+          "geospatial"
+        ],
+        "title": "Working Dog Tick Transect results and cost comparisons in Jackson Hole, WY from Oct - Nov 2021"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

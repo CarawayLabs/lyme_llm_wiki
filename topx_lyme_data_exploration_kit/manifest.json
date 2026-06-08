@@ -1,0 +1,58 @@
+{
+  "kit_version": "1.0.0",
+  "created_date": "2026-06-07",
+  "search_query_count": 339,
+  "catalog_count": 24,
+  "priority_counts": {
+    "P0": 143,
+    "P1": 167,
+    "P2": 29
+  },
+  "query_mode_counts": {
+    "catalog_search": 115,
+    "dataset_query": 20,
+    "download_manifest": 32,
+    "full_download": 3,
+    "geospatial_layer_search": 8,
+    "record_search": 125,
+    "schema_discovery": 4,
+    "terminology_lookup": 10,
+    "variable_query": 16,
+    "xml_query_template": 6
+  },
+  "catalog_counts": {
+    "AHRQ Data Tools / MEPS / Community-Level Health": 10,
+    "CDC Lyme surveillance 1992-2007": 6,
+    "CDC Lyme surveillance 2008-2021": 6,
+    "CDC Lyme surveillance 2022-2023": 6,
+    "CDC NNDSS Weekly Data": 8,
+    "CDC Tick Surveillance Data Sets": 8,
+    "CDC WONDER": 6,
+    "CDC/ATSDR Social Vulnerability Index": 6,
+    "CMS Data Catalog": 15,
+    "CMS Provider Data Catalog": 15,
+    "ClinicalTrials.gov API v2": 22,
+    "Data.CDC.gov / Socrata Catalog": 25,
+    "Data.gov Catalog API": 40,
+    "EPA EnviroAtlas Web Services": 8,
+    "HealthData.gov / Socrata Catalog": 20,
+    "NCBI PubMed Central E-utilities": 15,
+    "NCBI PubMed E-utilities": 40,
+    "NIH RePORTER API v2": 20,
+    "NLM RxNorm API": 10,
+    "NOAA Climate Data Online API v2": 15,
+    "U.S. Census ACS 5-Year API": 16,
+    "USGS Annual National Land Cover Database": 8,
+    "openFDA Drug Adverse Event API": 7,
+    "openFDA Drug Label API": 7
+  },
+  "validation": "JSON Schema is valid Draft 2020-12, and the example validates against it.",
+  "files": [
+    "README.md",
+    ".env.example",
+    "topx_lyme_search_queries.csv",
+    "topx_lyme_metadata.schema.json",
+    "topx_lyme_metadata.example.json",
+    "CSV_DATA_DICTIONARY.md"
+  ]
+}

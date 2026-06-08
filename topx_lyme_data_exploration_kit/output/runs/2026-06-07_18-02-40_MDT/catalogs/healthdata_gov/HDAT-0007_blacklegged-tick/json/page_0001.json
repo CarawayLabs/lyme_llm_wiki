@@ -1,0 +1,1527 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:47.188458Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "HDAT-0007",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.us.socrata.com/api/catalog/v1",
+    "search_term": "blacklegged tick",
+    "search_expression": "blacklegged tick",
+    "parameters": {
+      "search_context": "healthdata.gov",
+      "q": "blacklegged tick",
+      "limit": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "HEALTHDATA_SOCRATA_APP_TOKEN",
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "HealthData.gov / Socrata Catalog",
+    "catalog_slug": "healthdata_gov",
+    "source_type": "health_metadata_catalog",
+    "organization": "U.S. General Services Administration",
+    "docs_url": "https://dev.socrata.com/foundry/healthdata.gov/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:46.111720Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 722,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 6,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 6,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+      "sha256": "3cd26f34725a4d4aebf26ee7a6e6d0930461b098a0402c2d145fa9be67c9b699",
+      "byte_count": 44902
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "healthdata_gov:HDAT-0007-0",
+      "source_record_id": "HDAT-0007-0",
+      "record_type": "dataset_metadata",
+      "title": "Risk of Infected Blacklegged Tick Encounter: Adults (Oct to Dec): Beginning 2008",
+      "description": "Tick-borne diseases, such as Lyme disease, anaplasmosis and babesiosis, are a significant issue in New York (NY), impacting well over 10,000 individuals yearly. The New York State Department of Health (NYSDOH) has a responsibility to perform surveillance to monitor and track different kinds of tick-borne diseases. While most surveillance is done via reportable cases of human illness, tick-borne diseases can also be monitored by collecting ticks from the environment (called active surveillance) and testing them for bacteria, viruses, and parasites known to cause illness in people (collectively called pathogens). Active surveillance allows local county health departments in NY, excluding New York City (NYC), to have a better understanding of the tick populations present in the state, the species composition of the tick population, and the rate at which ticks are infected with different pathogens. The Department started testing ticks in 2002 in limited areas; testing statewide began in 2008. Further information on NYSDOH active tick surveillance can be found at the URL below and in the Data Methodology section below.\nhttps://www.health.ny.gov/diseases/communicable/lyme/",
+      "summary": null,
+      "source_url": "https://healthdata.gov/State/Risk-of-Infected-Blacklegged-Tick-Encounter-Adults/fy3e-4edw",
+      "retrieved_at": "2026-06-08T00:02:46.111720Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "health.data.ny.gov",
+      "organizations": [
+        {
+          "name": "health.data.ny.gov",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "HDAT-0007-0"
+      },
+      "topics": [],
+      "conditions": [
+        "blacklegged tick"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "healthdata_gov",
+        "search_id": "HDAT-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+        "raw_record_sha256": "592ba9b1b591b263a9fe1bb335ba869fa7d25e65d769c5fe9cca1836bd955f12"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Risk of Infected Blacklegged Tick Encounter: Adults (Oct to Dec): Beginning 2008",
+          "id": "fy3e-4edw",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "Tick-borne diseases, such as Lyme disease, anaplasmosis and babesiosis, are a significant issue in New York (NY), impacting well over 10,000 individuals yearly. The New York State Department of Health (NYSDOH) has a responsibility to perform surveillance to monitor and track different kinds of tick-borne diseases. While most surveillance is done via reportable cases of human illness, tick-borne diseases can also be monitored by collecting ticks from the environment (called active surveillance) and testing them for bacteria, viruses, and parasites known to cause illness in people (collectively called pathogens). Active surveillance allows local county health departments in NY, excluding New York City (NYC), to have a better understanding of the tick populations present in the state, the species composition of the tick population, and the rate at which ticks are infected with different pathogens. The Department started testing ticks in 2002 in limited areas; testing statewide began in 2008. Further information on NYSDOH active tick surveillance can be found at the URL below and in the Data Methodology section below.\nhttps://www.health.ny.gov/diseases/communicable/lyme/",
+          "attribution": "health.data.ny.gov",
+          "attribution_link": null,
+          "contact_email": "no-reply@health.data.ny.gov",
+          "type": "href",
+          "updatedAt": "2025-04-11T04:00:49.000Z",
+          "createdAt": "2025-04-08T14:31:37.000Z",
+          "metadata_updated_at": "2025-04-11T04:00:49.000Z",
+          "data_updated_at": "2025-04-08T14:31:37.000Z",
+          "page_views": {
+            "page_views_last_week": 2,
+            "page_views_last_month": 12,
+            "page_views_total": 97,
+            "page_views_last_week_log": 1.5849625007211563,
+            "page_views_last_month_log": 3.700439718141092,
+            "page_views_total_log": 6.614709844115209
+          },
+          "columns_name": [],
+          "columns_field_name": [],
+          "columns_datatype": [],
+          "columns_description": [],
+          "columns_format": [],
+          "download_count": 0,
+          "provenance": "official",
+          "lens_view_type": "href",
+          "lens_display_type": "href",
+          "locked": false,
+          "backend": "not_a_dataset",
+          "blob_mime_type": null,
+          "hide_from_data_json": true,
+          "publication_date": "2025-04-08T14:31:37.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "State",
+          "domain_tags": [
+            "adult",
+            "lyme",
+            "region",
+            "risk",
+            "tick",
+            "ticks"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Archive_Archive-Repository",
+              "value": "https://healthdata.gov/d/w8x5-7ewy"
+            },
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "no-reply@health.data.ny.gov"
+            },
+            {
+              "key": "Common-Core_Last-Update",
+              "value": "2025-04-10"
+            },
+            {
+              "key": "Common-Core_License",
+              "value": "http://opendefinition.org/licenses/odc-odbl/"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Unique-Identifier",
+              "value": "https://health.data.ny.gov/api/views/sy3m-5gti"
+            },
+            {
+              "key": "Common-Core_Publisher",
+              "value": "State of New York"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://health.data.ny.gov/d/sy3m-5gti"
+            },
+            {
+              "key": "Common-Core_Theme",
+              "value": "Health"
+            },
+            {
+              "key": "Common-Core_Issued",
+              "value": "2025-04-10"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Open Data NY - DOH"
+            },
+            {
+              "key": "Harvest-Source_Is-Harvested-Data",
+              "value": "Yes"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-URI",
+              "value": "https://health.data.ny.gov/data.json"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-Title",
+              "value": "health.data.ny.gov"
+            },
+            {
+              "key": "Harvest-Source_Last-Harvest-Performed",
+              "value": "2025-04-11T04:00:47.554493Z"
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "healthdata.gov",
+          "additional_access_points": [
+            {
+              "urls": {
+                "text/csv": "https://health.data.ny.gov/api/views/sy3m-5gti/rows.csv?accessType=DOWNLOAD"
+              }
+            },
+            {
+              "urls": {
+                "application/rdf+xml": "https://health.data.ny.gov/api/views/sy3m-5gti/rows.rdf?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/sy3m-5gti/columns.rdf",
+              "described_by_type": "application/rdf+xml"
+            },
+            {
+              "urls": {
+                "application/json": "https://health.data.ny.gov/api/views/sy3m-5gti/rows.json?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/sy3m-5gti/columns.json",
+              "described_by_type": "application/json"
+            },
+            {
+              "urls": {
+                "application/xml": "https://health.data.ny.gov/api/views/sy3m-5gti/rows.xml?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/sy3m-5gti/columns.xml",
+              "described_by_type": "application/xml"
+            }
+          ]
+        },
+        "permalink": "https://healthdata.gov/d/fy3e-4edw",
+        "link": "https://healthdata.gov/State/Risk-of-Infected-Blacklegged-Tick-Encounter-Adults/fy3e-4edw",
+        "owner": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        },
+        "creator": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        }
+      }
+    },
+    {
+      "normalized_id": "healthdata_gov:HDAT-0007-1",
+      "source_record_id": "HDAT-0007-1",
+      "record_type": "dataset_metadata",
+      "title": "Risk of Infected Blacklegged Tick Encounter: Nymphs (May to Sep): Beginning 2008",
+      "description": "Tick-borne diseases, such as Lyme disease, anaplasmosis and babesiosis, are a significant issue in New York (NY), impacting well over 10,000 individuals yearly. The New York State Department of Health (NYSDOH) has a responsibility to perform surveillance to monitor and track different kinds of tick-borne diseases. While most surveillance is done via reportable cases of human illness, tick-borne diseases can also be monitored by collecting ticks from the environment (called active surveillance) and testing them for bacteria, viruses, and parasites known to cause illness in people (collectively called pathogens). Active surveillance allows local county health departments in NY, excluding New York City (NYC), to have a better understanding of the tick populations present in the state, the species composition of the tick population, and the rate at which ticks are infected with different pathogens. The Department started testing ticks in 2002 in limited areas; testing statewide began in 2008. Further information on NYSDOH active tick surveillance  can be found at the URL below and in the Data Methodology section below.\nhttps://www.health.ny.gov/diseases/communicable/lyme/",
+      "summary": null,
+      "source_url": "https://healthdata.gov/State/Risk-of-Infected-Blacklegged-Tick-Encounter-Nymphs/pij9-fpn5",
+      "retrieved_at": "2026-06-08T00:02:46.111720Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "health.data.ny.gov",
+      "organizations": [
+        {
+          "name": "health.data.ny.gov",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "HDAT-0007-1"
+      },
+      "topics": [],
+      "conditions": [
+        "blacklegged tick"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "healthdata_gov",
+        "search_id": "HDAT-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+        "raw_record_sha256": "d3987f523d09bda28d0305a8b84c0a7448a9f6d2219fdf457990bf6bc0498eeb"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Risk of Infected Blacklegged Tick Encounter: Nymphs (May to Sep): Beginning 2008",
+          "id": "pij9-fpn5",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "Tick-borne diseases, such as Lyme disease, anaplasmosis and babesiosis, are a significant issue in New York (NY), impacting well over 10,000 individuals yearly. The New York State Department of Health (NYSDOH) has a responsibility to perform surveillance to monitor and track different kinds of tick-borne diseases. While most surveillance is done via reportable cases of human illness, tick-borne diseases can also be monitored by collecting ticks from the environment (called active surveillance) and testing them for bacteria, viruses, and parasites known to cause illness in people (collectively called pathogens). Active surveillance allows local county health departments in NY, excluding New York City (NYC), to have a better understanding of the tick populations present in the state, the species composition of the tick population, and the rate at which ticks are infected with different pathogens. The Department started testing ticks in 2002 in limited areas; testing statewide began in 2008. Further information on NYSDOH active tick surveillance  can be found at the URL below and in the Data Methodology section below.\nhttps://www.health.ny.gov/diseases/communicable/lyme/",
+          "attribution": "health.data.ny.gov",
+          "attribution_link": null,
+          "contact_email": "no-reply@health.data.ny.gov",
+          "type": "href",
+          "updatedAt": "2026-06-03T04:01:57.000Z",
+          "createdAt": "2025-04-08T14:30:22.000Z",
+          "metadata_updated_at": "2026-06-03T04:01:57.000Z",
+          "data_updated_at": "2025-04-08T14:30:22.000Z",
+          "page_views": {
+            "page_views_last_week": 1,
+            "page_views_last_month": 4,
+            "page_views_total": 21,
+            "page_views_last_week_log": 1.0,
+            "page_views_last_month_log": 2.321928094887362,
+            "page_views_total_log": 4.459431618637297
+          },
+          "columns_name": [],
+          "columns_field_name": [],
+          "columns_datatype": [],
+          "columns_description": [],
+          "columns_format": [],
+          "download_count": 0,
+          "provenance": "official",
+          "lens_view_type": "href",
+          "lens_display_type": "href",
+          "locked": false,
+          "backend": "not_a_dataset",
+          "blob_mime_type": null,
+          "hide_from_data_json": true,
+          "publication_date": "2025-04-08T14:30:22.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "State",
+          "domain_tags": [
+            "lyme",
+            "nymph",
+            "region",
+            "risk",
+            "tick",
+            "ticks"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Archive_Archive-Repository",
+              "value": "https://healthdata.gov/d/p8vi-e6xx"
+            },
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "no-reply@health.data.ny.gov"
+            },
+            {
+              "key": "Common-Core_Last-Update",
+              "value": "2026-06-02"
+            },
+            {
+              "key": "Common-Core_License",
+              "value": "http://opendefinition.org/licenses/odc-odbl/"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Unique-Identifier",
+              "value": "https://health.data.ny.gov/api/views/m7dw-h7zj"
+            },
+            {
+              "key": "Common-Core_Publisher",
+              "value": "State of New York"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://health.data.ny.gov/d/m7dw-h7zj"
+            },
+            {
+              "key": "Common-Core_Theme",
+              "value": "Health"
+            },
+            {
+              "key": "Common-Core_Issued",
+              "value": "2026-06-02"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Open Data NY - DOH"
+            },
+            {
+              "key": "Harvest-Source_Is-Harvested-Data",
+              "value": "Yes"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-URI",
+              "value": "https://health.data.ny.gov/data.json"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-Title",
+              "value": "health.data.ny.gov"
+            },
+            {
+              "key": "Harvest-Source_Last-Harvest-Performed",
+              "value": "2026-06-03T04:01:52.886470Z"
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "healthdata.gov",
+          "additional_access_points": [
+            {
+              "urls": {
+                "text/csv": "https://health.data.ny.gov/api/views/m7dw-h7zj/rows.csv?accessType=DOWNLOAD"
+              }
+            },
+            {
+              "urls": {
+                "application/rdf+xml": "https://health.data.ny.gov/api/views/m7dw-h7zj/rows.rdf?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/m7dw-h7zj/columns.rdf",
+              "described_by_type": "application/rdf+xml"
+            },
+            {
+              "urls": {
+                "application/json": "https://health.data.ny.gov/api/views/m7dw-h7zj/rows.json?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/m7dw-h7zj/columns.json",
+              "described_by_type": "application/json"
+            },
+            {
+              "urls": {
+                "application/xml": "https://health.data.ny.gov/api/views/m7dw-h7zj/rows.xml?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/m7dw-h7zj/columns.xml",
+              "described_by_type": "application/xml"
+            }
+          ]
+        },
+        "permalink": "https://healthdata.gov/d/pij9-fpn5",
+        "link": "https://healthdata.gov/State/Risk-of-Infected-Blacklegged-Tick-Encounter-Nymphs/pij9-fpn5",
+        "owner": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        },
+        "creator": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        }
+      }
+    },
+    {
+      "normalized_id": "healthdata_gov:HDAT-0007-2",
+      "source_record_id": "HDAT-0007-2",
+      "record_type": "dataset_metadata",
+      "title": "Deer Tick Surveillance: Adults (Oct to Dec) Powassan Virus Only: Beginning 2009",
+      "description": "This dataset provides the results from collecting and testing adult deer ticks, also known as blacklegged ticks, or by their scientific name Ixodes scapularis. Collection and testing take place across New York State (excluding New York City) from October to December, when adult deer ticks are most commonly seen. \r\n\r\nAdult deer ticks are tested in “pools”, or groups of up to ten adult ticks per pool, for the Powassan virus, also known as Deer tick virus. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases.\r\n\r\nThese data only provide adult tick minimum infection rates at a precise location and at a point in time. Both measures, tick population density and minimum infection percentages, can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+      "summary": null,
+      "source_url": "https://healthdata.gov/State/Deer-Tick-Surveillance-Adults-Oct-to-Dec-Powassan-/av55-ukxh",
+      "retrieved_at": "2026-06-08T00:02:46.111720Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "health.data.ny.gov",
+      "organizations": [
+        {
+          "name": "health.data.ny.gov",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "HDAT-0007-2"
+      },
+      "topics": [],
+      "conditions": [
+        "blacklegged tick"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "healthdata_gov",
+        "search_id": "HDAT-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+        "raw_record_sha256": "10bc34df748a7e8a636657352351d55809e82b9b18dbc84d991d298113b53d73"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Deer Tick Surveillance: Adults (Oct to Dec) Powassan Virus Only: Beginning 2009",
+          "id": "av55-ukxh",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "This dataset provides the results from collecting and testing adult deer ticks, also known as blacklegged ticks, or by their scientific name Ixodes scapularis. Collection and testing take place across New York State (excluding New York City) from October to December, when adult deer ticks are most commonly seen. \r\n\r\nAdult deer ticks are tested in “pools”, or groups of up to ten adult ticks per pool, for the Powassan virus, also known as Deer tick virus. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases.\r\n\r\nThese data only provide adult tick minimum infection rates at a precise location and at a point in time. Both measures, tick population density and minimum infection percentages, can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+          "attribution": "health.data.ny.gov",
+          "attribution_link": null,
+          "contact_email": "no-reply@health.data.ny.gov",
+          "type": "href",
+          "updatedAt": "2026-04-23T04:02:11.000Z",
+          "createdAt": "2025-04-08T14:31:40.000Z",
+          "metadata_updated_at": "2026-04-23T04:02:11.000Z",
+          "data_updated_at": "2025-04-08T14:31:40.000Z",
+          "page_views": {
+            "page_views_last_week": 1,
+            "page_views_last_month": 21,
+            "page_views_total": 39,
+            "page_views_last_week_log": 1.0,
+            "page_views_last_month_log": 4.459431618637297,
+            "page_views_total_log": 5.321928094887363
+          },
+          "columns_name": [],
+          "columns_field_name": [],
+          "columns_datatype": [],
+          "columns_description": [],
+          "columns_format": [],
+          "download_count": 0,
+          "provenance": "official",
+          "lens_view_type": "href",
+          "lens_display_type": "href",
+          "locked": false,
+          "backend": "not_a_dataset",
+          "blob_mime_type": null,
+          "hide_from_data_json": true,
+          "publication_date": "2025-04-08T14:31:40.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "State",
+          "domain_tags": [
+            "ixodes",
+            "deer tick virus",
+            "community health and chronic disease",
+            "ticks",
+            "tick",
+            "scapularis",
+            "powassanonly",
+            "powassan"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Archive_Archive-Repository",
+              "value": "https://healthdata.gov/d/hxr6-gfhz"
+            },
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "no-reply@health.data.ny.gov"
+            },
+            {
+              "key": "Common-Core_Last-Update",
+              "value": "2026-04-22"
+            },
+            {
+              "key": "Common-Core_License",
+              "value": "http://opendefinition.org/licenses/odc-odbl/"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Unique-Identifier",
+              "value": "https://health.data.ny.gov/api/views/syny-pj3r"
+            },
+            {
+              "key": "Common-Core_Publisher",
+              "value": "State of New York"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://health.data.ny.gov/d/syny-pj3r"
+            },
+            {
+              "key": "Common-Core_Theme",
+              "value": "Health"
+            },
+            {
+              "key": "Common-Core_Issued",
+              "value": "2025-01-14"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Open Data NY - DOH"
+            },
+            {
+              "key": "Harvest-Source_Is-Harvested-Data",
+              "value": "Yes"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-URI",
+              "value": "https://health.data.ny.gov/data.json"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-Title",
+              "value": "health.data.ny.gov"
+            },
+            {
+              "key": "Harvest-Source_Last-Harvest-Performed",
+              "value": "2026-04-23T04:02:07.968318Z"
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "healthdata.gov",
+          "additional_access_points": [
+            {
+              "urls": {
+                "text/csv": "https://health.data.ny.gov/api/views/syny-pj3r/rows.csv?accessType=DOWNLOAD"
+              }
+            },
+            {
+              "urls": {
+                "application/rdf+xml": "https://health.data.ny.gov/api/views/syny-pj3r/rows.rdf?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/syny-pj3r/columns.rdf",
+              "described_by_type": "application/rdf+xml"
+            },
+            {
+              "urls": {
+                "application/json": "https://health.data.ny.gov/api/views/syny-pj3r/rows.json?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/syny-pj3r/columns.json",
+              "described_by_type": "application/json"
+            },
+            {
+              "urls": {
+                "application/xml": "https://health.data.ny.gov/api/views/syny-pj3r/rows.xml?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/syny-pj3r/columns.xml",
+              "described_by_type": "application/xml"
+            }
+          ]
+        },
+        "permalink": "https://healthdata.gov/d/av55-ukxh",
+        "link": "https://healthdata.gov/State/Deer-Tick-Surveillance-Adults-Oct-to-Dec-Powassan-/av55-ukxh",
+        "owner": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        },
+        "creator": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        }
+      }
+    },
+    {
+      "normalized_id": "healthdata_gov:HDAT-0007-3",
+      "source_record_id": "HDAT-0007-3",
+      "record_type": "dataset_metadata",
+      "title": "Deer Tick Surveillance: Nymphs (May to Sept) Powassan Virus Only: Beginning 2009",
+      "description": "This dataset provides the results from collecting and testing nymph deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from May to September, when nymph deer ticks are most commonly seen. \r\n\r\nNymph deer ticks are tested in “pools”, or groups of up to ten adult ticks per pool, for the Powassan virus, also known as Deer tick virus. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases.\r\n\r\nThese data only provide nymph tick minimum infection rates at a precise location and at one point in time. Both measures, tick population density and minimum infection percentages, can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+      "summary": null,
+      "source_url": "https://healthdata.gov/State/Deer-Tick-Surveillance-Nymphs-May-to-Sept-Powassan/abpu-g9az",
+      "retrieved_at": "2026-06-08T00:02:46.111720Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "health.data.ny.gov",
+      "organizations": [
+        {
+          "name": "health.data.ny.gov",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "HDAT-0007-3"
+      },
+      "topics": [],
+      "conditions": [
+        "blacklegged tick"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "healthdata_gov",
+        "search_id": "HDAT-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+        "raw_record_sha256": "768a261f5c813b088dd374a45afe55901f22a3ebc6bff92ac5e5883e022ab7fe"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Deer Tick Surveillance: Nymphs (May to Sept) Powassan Virus Only: Beginning 2009",
+          "id": "abpu-g9az",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "This dataset provides the results from collecting and testing nymph deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from May to September, when nymph deer ticks are most commonly seen. \r\n\r\nNymph deer ticks are tested in “pools”, or groups of up to ten adult ticks per pool, for the Powassan virus, also known as Deer tick virus. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases.\r\n\r\nThese data only provide nymph tick minimum infection rates at a precise location and at one point in time. Both measures, tick population density and minimum infection percentages, can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+          "attribution": "health.data.ny.gov",
+          "attribution_link": null,
+          "contact_email": "no-reply@health.data.ny.gov",
+          "type": "href",
+          "updatedAt": "2026-04-22T04:00:53.000Z",
+          "createdAt": "2025-04-08T14:29:00.000Z",
+          "metadata_updated_at": "2026-04-22T04:00:53.000Z",
+          "data_updated_at": "2025-04-08T14:29:00.000Z",
+          "page_views": {
+            "page_views_last_week": 1,
+            "page_views_last_month": 7,
+            "page_views_total": 53,
+            "page_views_last_week_log": 1.0,
+            "page_views_last_month_log": 3.0,
+            "page_views_total_log": 5.754887502163469
+          },
+          "columns_name": [],
+          "columns_field_name": [],
+          "columns_datatype": [],
+          "columns_description": [],
+          "columns_format": [],
+          "download_count": 0,
+          "provenance": "official",
+          "lens_view_type": "href",
+          "lens_display_type": "href",
+          "locked": false,
+          "backend": "not_a_dataset",
+          "blob_mime_type": null,
+          "hide_from_data_json": true,
+          "publication_date": "2025-04-08T14:29:00.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "State",
+          "domain_tags": [
+            "community health and chronic disease",
+            "deer tick virus",
+            "ixodes",
+            "powassan",
+            "powassanonly",
+            "scapularis",
+            "tick",
+            "ticks"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Archive_Archive-Repository",
+              "value": "https://healthdata.gov/d/53u5-p4ku"
+            },
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "no-reply@health.data.ny.gov"
+            },
+            {
+              "key": "Common-Core_Last-Update",
+              "value": "2026-04-21"
+            },
+            {
+              "key": "Common-Core_License",
+              "value": "http://opendefinition.org/licenses/odc-odbl/"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Unique-Identifier",
+              "value": "https://health.data.ny.gov/api/views/h8af-37at"
+            },
+            {
+              "key": "Common-Core_Publisher",
+              "value": "State of New York"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://health.data.ny.gov/d/h8af-37at"
+            },
+            {
+              "key": "Common-Core_Theme",
+              "value": "Health"
+            },
+            {
+              "key": "Common-Core_Issued",
+              "value": "2019-05-17"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Open Data NY - DOH"
+            },
+            {
+              "key": "Harvest-Source_Is-Harvested-Data",
+              "value": "Yes"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-URI",
+              "value": "https://health.data.ny.gov/data.json"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-Title",
+              "value": "health.data.ny.gov"
+            },
+            {
+              "key": "Harvest-Source_Last-Harvest-Performed",
+              "value": "2026-04-22T04:00:51.479455Z"
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "healthdata.gov",
+          "additional_access_points": [
+            {
+              "urls": {
+                "text/csv": "https://health.data.ny.gov/api/views/h8af-37at/rows.csv?accessType=DOWNLOAD"
+              }
+            },
+            {
+              "urls": {
+                "application/rdf+xml": "https://health.data.ny.gov/api/views/h8af-37at/rows.rdf?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/h8af-37at/columns.rdf",
+              "described_by_type": "application/rdf+xml"
+            },
+            {
+              "urls": {
+                "application/json": "https://health.data.ny.gov/api/views/h8af-37at/rows.json?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/h8af-37at/columns.json",
+              "described_by_type": "application/json"
+            },
+            {
+              "urls": {
+                "application/xml": "https://health.data.ny.gov/api/views/h8af-37at/rows.xml?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/h8af-37at/columns.xml",
+              "described_by_type": "application/xml"
+            }
+          ]
+        },
+        "permalink": "https://healthdata.gov/d/abpu-g9az",
+        "link": "https://healthdata.gov/State/Deer-Tick-Surveillance-Nymphs-May-to-Sept-Powassan/abpu-g9az",
+        "owner": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        },
+        "creator": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        }
+      }
+    },
+    {
+      "normalized_id": "healthdata_gov:HDAT-0007-4",
+      "source_record_id": "HDAT-0007-4",
+      "record_type": "dataset_metadata",
+      "title": "Deer Tick Surveillance: Adults (Oct to Dec) excluding Powassan virus: Beginning 2008",
+      "description": "This dataset provides the results from collecting and testing adult deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from October to December, when adult deer ticks are most commonly seen. \r\n\r\nAdult deer ticks are individually tested for different bacteria and parasites, which includes the bacteria responsible for Lyme disease. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases. \r\n\r\nThese data only provide adult tick infections at a precise location and at one point in time. Both measures, tick population density and percentage, of ticks infected with the specified bacteria or parasite can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+      "summary": null,
+      "source_url": "https://healthdata.gov/State/Deer-Tick-Surveillance-Adults-Oct-to-Dec-excluding/fws3-hxxq",
+      "retrieved_at": "2026-06-08T00:02:46.111720Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "health.data.ny.gov",
+      "organizations": [
+        {
+          "name": "health.data.ny.gov",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "HDAT-0007-4"
+      },
+      "topics": [],
+      "conditions": [
+        "blacklegged tick"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "healthdata_gov",
+        "search_id": "HDAT-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+        "raw_record_sha256": "37f98bea5aa5b4b0538c00e8e3600efa9f1418b10fd476a526985a10eafe88ae"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Deer Tick Surveillance: Adults (Oct to Dec) excluding Powassan virus: Beginning 2008",
+          "id": "fws3-hxxq",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "This dataset provides the results from collecting and testing adult deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from October to December, when adult deer ticks are most commonly seen. \r\n\r\nAdult deer ticks are individually tested for different bacteria and parasites, which includes the bacteria responsible for Lyme disease. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases. \r\n\r\nThese data only provide adult tick infections at a precise location and at one point in time. Both measures, tick population density and percentage, of ticks infected with the specified bacteria or parasite can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+          "attribution": "health.data.ny.gov",
+          "attribution_link": null,
+          "contact_email": "no-reply@health.data.ny.gov",
+          "type": "href",
+          "updatedAt": "2026-04-23T04:02:11.000Z",
+          "createdAt": "2025-04-08T14:32:19.000Z",
+          "metadata_updated_at": "2026-04-23T04:02:11.000Z",
+          "data_updated_at": "2025-04-08T14:32:19.000Z",
+          "page_views": {
+            "page_views_last_week": 2,
+            "page_views_last_month": 9,
+            "page_views_total": 47,
+            "page_views_last_week_log": 1.5849625007211563,
+            "page_views_last_month_log": 3.3219280948873626,
+            "page_views_total_log": 5.584962500721157
+          },
+          "columns_name": [],
+          "columns_field_name": [],
+          "columns_datatype": [],
+          "columns_description": [],
+          "columns_format": [],
+          "download_count": 0,
+          "provenance": "official",
+          "lens_view_type": "href",
+          "lens_display_type": "href",
+          "locked": false,
+          "backend": "not_a_dataset",
+          "blob_mime_type": null,
+          "hide_from_data_json": true,
+          "publication_date": "2025-04-08T14:32:19.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "State",
+          "domain_tags": [
+            "anaplasma",
+            "anaplasmosis",
+            "babesia",
+            "babesiosis",
+            "borrelia",
+            "burgdorferi",
+            "community health and chronic disease",
+            "consumer resources",
+            "environmental health",
+            "ixodes",
+            "lyme",
+            "microti",
+            "miyamotoi",
+            "phagocytophilum",
+            "scapularis",
+            "tick",
+            "ticks"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Archive_Archive-Repository",
+              "value": "https://healthdata.gov/d/jtuc-62c7"
+            },
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "no-reply@health.data.ny.gov"
+            },
+            {
+              "key": "Common-Core_Last-Update",
+              "value": "2026-04-22"
+            },
+            {
+              "key": "Common-Core_License",
+              "value": "http://opendefinition.org/licenses/odc-odbl/"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Unique-Identifier",
+              "value": "https://health.data.ny.gov/api/views/vzbp-i2d4"
+            },
+            {
+              "key": "Common-Core_Publisher",
+              "value": "State of New York"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://health.data.ny.gov/d/vzbp-i2d4"
+            },
+            {
+              "key": "Common-Core_Theme",
+              "value": "Health"
+            },
+            {
+              "key": "Common-Core_Issued",
+              "value": "2019-05-30"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Open Data NY - DOH"
+            },
+            {
+              "key": "Harvest-Source_Is-Harvested-Data",
+              "value": "Yes"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-URI",
+              "value": "https://health.data.ny.gov/data.json"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-Title",
+              "value": "health.data.ny.gov"
+            },
+            {
+              "key": "Harvest-Source_Last-Harvest-Performed",
+              "value": "2026-04-23T04:02:08.063385Z"
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "healthdata.gov",
+          "additional_access_points": [
+            {
+              "urls": {
+                "text/csv": "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.csv?accessType=DOWNLOAD"
+              }
+            },
+            {
+              "urls": {
+                "application/rdf+xml": "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.rdf?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/vzbp-i2d4/columns.rdf",
+              "described_by_type": "application/rdf+xml"
+            },
+            {
+              "urls": {
+                "application/json": "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.json?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/vzbp-i2d4/columns.json",
+              "described_by_type": "application/json"
+            },
+            {
+              "urls": {
+                "application/xml": "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.xml?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/vzbp-i2d4/columns.xml",
+              "described_by_type": "application/xml"
+            }
+          ]
+        },
+        "permalink": "https://healthdata.gov/d/fws3-hxxq",
+        "link": "https://healthdata.gov/State/Deer-Tick-Surveillance-Adults-Oct-to-Dec-excluding/fws3-hxxq",
+        "owner": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        },
+        "creator": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        }
+      }
+    },
+    {
+      "normalized_id": "healthdata_gov:HDAT-0007-5",
+      "source_record_id": "HDAT-0007-5",
+      "record_type": "dataset_metadata",
+      "title": "Deer Tick Surveillance: Nymphs (May to Sept) excluding Powassan virus: Beginning 2008",
+      "description": "This dataset provides the results from collecting and testing nymph deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from May to September, when nymph deer ticks are most commonly seen. \r\n\r\nNymph deer ticks are individually tested for different bacteria and parasites, which includes the bacteria responsible for Lyme disease. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases. \r\n\r\nThese data only provide nymph tick infections at a precise location and at one point in time. Both measures, tick population density and percentage, of ticks infected with the specified bacteria or parasite can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+      "summary": null,
+      "source_url": "https://healthdata.gov/State/Deer-Tick-Surveillance-Nymphs-May-to-Sept-excludin/gu3x-g6sz",
+      "retrieved_at": "2026-06-08T00:02:46.111720Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "health.data.ny.gov",
+      "organizations": [
+        {
+          "name": "health.data.ny.gov",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "HDAT-0007-5"
+      },
+      "topics": [],
+      "conditions": [
+        "blacklegged tick"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use X-App-Token when available. Some results are links to other HHS systems rather than row-level datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "healthdata_gov",
+        "search_id": "HDAT-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\healthdata_gov\\HDAT-0007_blacklegged-tick\\raw\\page_0001.json",
+        "raw_record_sha256": "7711b472451428510edfd9902f2dc902a1bbad256b85599d93c08214e1f0e18f"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Deer Tick Surveillance: Nymphs (May to Sept) excluding Powassan virus: Beginning 2008",
+          "id": "gu3x-g6sz",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "This dataset provides the results from collecting and testing nymph deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from May to September, when nymph deer ticks are most commonly seen. \r\n\r\nNymph deer ticks are individually tested for different bacteria and parasites, which includes the bacteria responsible for Lyme disease. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases. \r\n\r\nThese data only provide nymph tick infections at a precise location and at one point in time. Both measures, tick population density and percentage, of ticks infected with the specified bacteria or parasite can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+          "attribution": "health.data.ny.gov",
+          "attribution_link": null,
+          "contact_email": "no-reply@health.data.ny.gov",
+          "type": "href",
+          "updatedAt": "2026-04-22T04:00:53.000Z",
+          "createdAt": "2025-04-08T14:30:08.000Z",
+          "metadata_updated_at": "2026-04-22T04:00:53.000Z",
+          "data_updated_at": "2025-04-08T14:30:08.000Z",
+          "page_views": {
+            "page_views_last_week": 1,
+            "page_views_last_month": 3,
+            "page_views_total": 30,
+            "page_views_last_week_log": 1.0,
+            "page_views_last_month_log": 2.0,
+            "page_views_total_log": 4.954196310386876
+          },
+          "columns_name": [],
+          "columns_field_name": [],
+          "columns_datatype": [],
+          "columns_description": [],
+          "columns_format": [],
+          "download_count": 0,
+          "provenance": "official",
+          "lens_view_type": "href",
+          "lens_display_type": "href",
+          "locked": false,
+          "backend": "not_a_dataset",
+          "blob_mime_type": null,
+          "hide_from_data_json": true,
+          "publication_date": "2025-04-08T14:30:08.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "State",
+          "domain_tags": [
+            "community health and chronic disease",
+            "consumer resources",
+            "environmental health",
+            "ixodes",
+            "lyme",
+            "microti",
+            "miyamotoi",
+            "nymph",
+            "phagocytophilum",
+            "scapularis",
+            "tick",
+            "ticks",
+            "anaplasma",
+            "anaplasmosis",
+            "babesia",
+            "babesiosis",
+            "borrelia",
+            "burgdorferi"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Archive_Archive-Repository",
+              "value": "https://healthdata.gov/d/2h8p-4z77"
+            },
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "no-reply@health.data.ny.gov"
+            },
+            {
+              "key": "Common-Core_Last-Update",
+              "value": "2026-04-21"
+            },
+            {
+              "key": "Common-Core_License",
+              "value": "http://opendefinition.org/licenses/odc-odbl/"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Unique-Identifier",
+              "value": "https://health.data.ny.gov/api/views/kibp-u2ip"
+            },
+            {
+              "key": "Common-Core_Publisher",
+              "value": "State of New York"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://health.data.ny.gov/d/kibp-u2ip"
+            },
+            {
+              "key": "Common-Core_Theme",
+              "value": "Health"
+            },
+            {
+              "key": "Common-Core_Issued",
+              "value": "2019-05-17"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Open Data NY - DOH"
+            },
+            {
+              "key": "Harvest-Source_Is-Harvested-Data",
+              "value": "Yes"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-URI",
+              "value": "https://health.data.ny.gov/data.json"
+            },
+            {
+              "key": "Harvest-Source_Harvest-Source-Title",
+              "value": "health.data.ny.gov"
+            },
+            {
+              "key": "Harvest-Source_Last-Harvest-Performed",
+              "value": "2026-04-22T04:00:51.606021Z"
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "healthdata.gov",
+          "additional_access_points": [
+            {
+              "urls": {
+                "text/csv": "https://health.data.ny.gov/api/views/kibp-u2ip/rows.csv?accessType=DOWNLOAD"
+              }
+            },
+            {
+              "urls": {
+                "application/rdf+xml": "https://health.data.ny.gov/api/views/kibp-u2ip/rows.rdf?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/kibp-u2ip/columns.rdf",
+              "described_by_type": "application/rdf+xml"
+            },
+            {
+              "urls": {
+                "application/json": "https://health.data.ny.gov/api/views/kibp-u2ip/rows.json?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/kibp-u2ip/columns.json",
+              "described_by_type": "application/json"
+            },
+            {
+              "urls": {
+                "application/xml": "https://health.data.ny.gov/api/views/kibp-u2ip/rows.xml?accessType=DOWNLOAD"
+              },
+              "described_by": "https://health.data.ny.gov/api/views/kibp-u2ip/columns.xml",
+              "described_by_type": "application/xml"
+            }
+          ]
+        },
+        "permalink": "https://healthdata.gov/d/gu3x-g6sz",
+        "link": "https://healthdata.gov/State/Deer-Tick-Surveillance-Nymphs-May-to-Sept-excludin/gu3x-g6sz",
+        "owner": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        },
+        "creator": {
+          "id": "taan-vh9z",
+          "user_type": "team",
+          "display_name": "HHS Office of the Chief Data Officer"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "Optional credential HEALTHDATA_SOCRATA_APP_TOKEN was not found; request used anonymous/public access."
+  ],
+  "errors": []
+}

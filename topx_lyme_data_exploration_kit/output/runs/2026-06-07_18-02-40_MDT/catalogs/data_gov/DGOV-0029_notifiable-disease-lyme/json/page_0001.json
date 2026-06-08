@@ -1,0 +1,645 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:43.971905Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "DGOV-0029",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.gsa.gov/technology/datagov/v4/search",
+    "search_term": "notifiable disease Lyme",
+    "search_expression": "notifiable disease Lyme",
+    "parameters": {
+      "q": "notifiable disease Lyme",
+      "sort": "relevance",
+      "per_page": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "required",
+      "credential_alias": "DATA_GOV_API_KEY",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.gov Catalog API",
+    "catalog_slug": "data_gov",
+    "source_type": "federal_metadata_catalog",
+    "organization": "U.S. General Services Administration",
+    "docs_url": "https://resources.data.gov/catalog-api/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:43.592277Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 325,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 3,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 3,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0029_notifiable-disease-lyme\\raw\\page_0001.json",
+      "sha256": "da023db70737d1982ef07ac70132751eb73d406eeb34a10979eee3a02bc8f7e1",
+      "byte_count": 19933
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "data_gov:https://data.cdc.gov/api/views/7pb7-w9us",
+      "source_record_id": "https://data.cdc.gov/api/views/7pb7-w9us",
+      "record_type": "dataset_metadata",
+      "title": "NNDSS - Table II. Lyme disease to Meningococcal",
+      "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2015.In this Table, provisional cases of selected notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed.The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.    NP: Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Three low incidence conditions, rubella, rubella congenital, and tetanus, have been moved to Table 2 to facilitate case count verification with reporting jurisdictions. ��� Case counts for reporting year 2015 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. �� Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:43.592277Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://data.cdc.gov/api/views/7pb7-w9us"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0029",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0029_notifiable-disease-lyme\\raw\\page_0001.json",
+        "raw_record_sha256": "4e2c2e8c69df2db1f30820ecc77b569c8eaf8520d43d1423aad0d0f41783aee7"
+      },
+      "raw_metadata": {
+        "_score": 81.016785,
+        "_sort": [
+          81.016785,
+          0,
+          "41d9f853-90bc-4682-8164-d3fa4d9f7eee"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "CDC INFO",
+            "hasEmail": "mailto:cdcinfo@cdc.gov"
+          },
+          "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2015.In this Table, provisional cases of selected notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed.The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.    NP: Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Three low incidence conditions, rubella, rubella congenital, and tetanus, have been moved to Table 2 to facilitate case count verification with reporting jurisdictions. ��� Case counts for reporting year 2015 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. �� Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.csv?accessType=DOWNLOAD",
+              "mediaType": "text/csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.json?accessType=DOWNLOAD",
+              "mediaType": "application/json"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.rdf?accessType=DOWNLOAD",
+              "mediaType": "application/rdf+xml"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.xml?accessType=DOWNLOAD",
+              "mediaType": "application/xml"
+            }
+          ],
+          "identifier": "https://data.cdc.gov/api/views/7pb7-w9us",
+          "issued": "2016-01-07",
+          "keyword": [
+            "2015",
+            "all serogroups",
+            "invasive",
+            "lyme disease",
+            "malaria",
+            "meningococcal disease",
+            "mmwr",
+            "nedss",
+            "netss",
+            "nndss",
+            "wonder"
+          ],
+          "landingPage": "https://data.cdc.gov/d/7pb7-w9us",
+          "license": "http://opendefinition.org/licenses/odc-odbl/",
+          "modified": "2016-01-07",
+          "programCode": [
+            "009:020"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Centers for Disease Control and Prevention"
+          },
+          "theme": [
+            "NNDSS"
+          ],
+          "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+        },
+        "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2015.In this Table, provisional cases of selected notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed.The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.    NP: Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Three low incidence conditions, rubella, rubella congenital, and tetanus, have been moved to Table 2 to facilitate case count verification with reporting jurisdictions. ��� Case counts for reporting year 2015 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. �� Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/1956cf81-6e4f-421f-88dd-7b3720a352ab",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/1956cf81-6e4f-421f-88dd-7b3720a352ab/raw",
+        "has_spatial": false,
+        "identifier": "https://data.cdc.gov/api/views/7pb7-w9us",
+        "keyword": [
+          "2015",
+          "all serogroups",
+          "invasive",
+          "lyme disease",
+          "malaria",
+          "meningococcal disease",
+          "mmwr",
+          "nedss",
+          "netss",
+          "nndss",
+          "wonder"
+        ],
+        "last_harvested_date": "2025-08-09T02:56:42.207183",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Centers for Disease Control and Prevention",
+        "slug": "nndss-table-ii-lyme-disease-to-meningococcal",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NNDSS"
+        ],
+        "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://data.cdc.gov/api/views/93k9-hy54",
+      "source_record_id": "https://data.cdc.gov/api/views/93k9-hy54",
+      "record_type": "dataset_metadata",
+      "title": "NNDSS - Table II. Lyme disease to Meningococcal",
+      "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2016. In this Table, provisional* cases of selected† notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed. The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories.\r\n\r\nNote:\r\nThese are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. \r\n\r\nCase counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. \r\n\r\nFootnotes:\r\nC.N.M.I.: Commonwealth of Northern Mariana Islands. \r\nU: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.  NP:  Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum.\r\n\r\n* Case counts for reporting year 2016 are provisional and subject to change.   For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. \r\n† Three low incidence conditions, rubella, rubella congenital, and tetanus, are in Table II to facilitate case count verification with reporting jurisdictions.\r\n§ Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:43.592277Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://data.cdc.gov/api/views/93k9-hy54"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0029",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0029_notifiable-disease-lyme\\raw\\page_0001.json",
+        "raw_record_sha256": "f5a97e2c4b98e9db72dfceb5c0afc541ca6bed2acca5c1d902c6ba6544d9fc25"
+      },
+      "raw_metadata": {
+        "_score": 80.92451,
+        "_sort": [
+          80.92451,
+          0,
+          "adff1cc9-83ec-4976-bd73-67ad65c7b22d"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "CDC INFO",
+            "hasEmail": "mailto:cdcinfo@cdc.gov"
+          },
+          "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2016. In this Table, provisional* cases of selected† notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed. The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories.\r\n\r\nNote:\r\nThese are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. \r\n\r\nCase counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. \r\n\r\nFootnotes:\r\nC.N.M.I.: Commonwealth of Northern Mariana Islands. \r\nU: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.  NP:  Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum.\r\n\r\n* Case counts for reporting year 2016 are provisional and subject to change.   For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. \r\n† Three low incidence conditions, rubella, rubella congenital, and tetanus, are in Table II to facilitate case count verification with reporting jurisdictions.\r\n§ Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.csv?accessType=DOWNLOAD",
+              "mediaType": "text/csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.json?accessType=DOWNLOAD",
+              "mediaType": "application/json"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.rdf?accessType=DOWNLOAD",
+              "mediaType": "application/rdf+xml"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.xml?accessType=DOWNLOAD",
+              "mediaType": "application/xml"
+            }
+          ],
+          "identifier": "https://data.cdc.gov/api/views/93k9-hy54",
+          "issued": "2017-01-05",
+          "keyword": [
+            "2016",
+            "all serogroups",
+            "invasive",
+            "lyme disease",
+            "malaria",
+            "meningococcal disease",
+            "mmwr",
+            "nedss",
+            "netss",
+            "nndss",
+            "wonder"
+          ],
+          "landingPage": "https://data.cdc.gov/d/93k9-hy54",
+          "license": "http://opendefinition.org/licenses/odc-odbl/",
+          "modified": "2017-01-05",
+          "programCode": [
+            "009:020"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Centers for Disease Control and Prevention"
+          },
+          "theme": [
+            "NNDSS"
+          ],
+          "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+        },
+        "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2016. In this Table, provisional* cases of selected† notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed. The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories.\r\n\r\nNote:\r\nThese are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. \r\n\r\nCase counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. \r\n\r\nFootnotes:\r\nC.N.M.I.: Commonwealth of Northern Mariana Islands. \r\nU: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.  NP:  Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum.\r\n\r\n* Case counts for reporting year 2016 are provisional and subject to change.   For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. \r\n† Three low incidence conditions, rubella, rubella congenital, and tetanus, are in Table II to facilitate case count verification with reporting jurisdictions.\r\n§ Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/9d0610cf-760b-4d53-bbbb-5b84693c2857",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/9d0610cf-760b-4d53-bbbb-5b84693c2857/raw",
+        "has_spatial": false,
+        "identifier": "https://data.cdc.gov/api/views/93k9-hy54",
+        "keyword": [
+          "2016",
+          "all serogroups",
+          "invasive",
+          "lyme disease",
+          "malaria",
+          "meningococcal disease",
+          "mmwr",
+          "nedss",
+          "netss",
+          "nndss",
+          "wonder"
+        ],
+        "last_harvested_date": "2025-08-08T18:05:41.654319",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Centers for Disease Control and Prevention",
+        "slug": "nndss-table-ii-lyme-disease-to-meningococcal-dbcee",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NNDSS"
+        ],
+        "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://data.cdc.gov/api/views/y6uv-t34t",
+      "source_record_id": "https://data.cdc.gov/api/views/y6uv-t34t",
+      "record_type": "dataset_metadata",
+      "title": "NNDSS - Table II. Lyme disease to Meningococcal",
+      "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2014In this Table, all conditions with a 5-year average annual national total of more than or equals 1,000 cases but less than or equals 10,000 cases will be displayed (��� 1,000 and ��_ 10,000). The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Case counts for reporting years 2013 and 2014 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. ��� Data for meningococcal disease, invasive caused by serogroups A, C, Y, & W-135; serogroup B; other serogroup; and unknown serogroup are available in Table I.More information on NNDSS is available at http://wwwn.cdc.gov/nndss/.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:43.592277Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://data.cdc.gov/api/views/y6uv-t34t"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0029",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0029_notifiable-disease-lyme\\raw\\page_0001.json",
+        "raw_record_sha256": "d32f61c3e44596766f388cdd6ea6dd070847471623b0e45b5bc35f069e72f52f"
+      },
+      "raw_metadata": {
+        "_score": 74.1081,
+        "_sort": [
+          74.1081,
+          0,
+          "cb495486-1e8c-4c65-8a77-147b00272407"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "CDC INFO",
+            "hasEmail": "mailto:cdcinfo@cdc.gov"
+          },
+          "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2014In this Table, all conditions with a 5-year average annual national total of more than or equals 1,000 cases but less than or equals 10,000 cases will be displayed (��� 1,000 and ��_ 10,000). The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Case counts for reporting years 2013 and 2014 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. ��� Data for meningococcal disease, invasive caused by serogroups A, C, Y, & W-135; serogroup B; other serogroup; and unknown serogroup are available in Table I.More information on NNDSS is available at http://wwwn.cdc.gov/nndss/.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.csv?accessType=DOWNLOAD",
+              "mediaType": "text/csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.json?accessType=DOWNLOAD",
+              "mediaType": "application/json"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.rdf?accessType=DOWNLOAD",
+              "mediaType": "application/rdf+xml"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.xml?accessType=DOWNLOAD",
+              "mediaType": "application/xml"
+            }
+          ],
+          "identifier": "https://data.cdc.gov/api/views/y6uv-t34t",
+          "issued": "2015-01-08",
+          "keyword": [
+            "2014",
+            "lyme disease",
+            "malaria",
+            "meningococcal invasive all serogroups",
+            "mmwr",
+            "nedss",
+            "netss",
+            "nndss",
+            "wonder"
+          ],
+          "landingPage": "https://data.cdc.gov/d/y6uv-t34t",
+          "license": "http://opendefinition.org/licenses/odc-odbl/",
+          "modified": "2015-08-27",
+          "programCode": [
+            "009:020"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Centers for Disease Control and Prevention"
+          },
+          "theme": [
+            "NNDSS"
+          ],
+          "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+        },
+        "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2014In this Table, all conditions with a 5-year average annual national total of more than or equals 1,000 cases but less than or equals 10,000 cases will be displayed (��� 1,000 and ��_ 10,000). The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Case counts for reporting years 2013 and 2014 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. ��� Data for meningococcal disease, invasive caused by serogroups A, C, Y, & W-135; serogroup B; other serogroup; and unknown serogroup are available in Table I.More information on NNDSS is available at http://wwwn.cdc.gov/nndss/.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/be8961fe-c0f1-4b8a-b8ac-f1bfae94905c",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/be8961fe-c0f1-4b8a-b8ac-f1bfae94905c/raw",
+        "has_spatial": false,
+        "identifier": "https://data.cdc.gov/api/views/y6uv-t34t",
+        "keyword": [
+          "2014",
+          "lyme disease",
+          "malaria",
+          "meningococcal invasive all serogroups",
+          "mmwr",
+          "nedss",
+          "netss",
+          "nndss",
+          "wonder"
+        ],
+        "last_harvested_date": "2025-08-09T01:30:08.856822",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Centers for Disease Control and Prevention",
+        "slug": "nndss-table-ii-lyme-disease-to-meningococcal-65f3e",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NNDSS"
+        ],
+        "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

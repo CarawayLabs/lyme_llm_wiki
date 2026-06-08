@@ -1,0 +1,304 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:58.533579Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "RXN-0005",
+    "query_mode": "terminology_lookup",
+    "method": "GET",
+    "endpoint": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json",
+    "search_term": "azithromycin",
+    "search_expression": "azithromycin",
+    "parameters": {
+      "term": "azithromycin",
+      "maxEntries": 20,
+      "option": 1
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NLM RxNorm API",
+    "catalog_slug": "rxnorm",
+    "source_type": "medication_terminology",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:57.778485Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 401,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0005_azithromycin\\raw\\page_0001.json",
+      "sha256": "aba545de9103c9d3ef698c6ba97e0ff3594b6089ec5a5365b5e3b4d96d481e5e",
+      "byte_count": 2312
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "rxnorm:RXN-0005-0",
+      "source_record_id": "RXN-0005-0",
+      "record_type": "medication_concept",
+      "title": "azithromycin",
+      "description": null,
+      "summary": null,
+      "source_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=azithromycin&maxEntries=20&option=1",
+      "retrieved_at": "2026-06-08T00:04:57.778485Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "rxcui": "RXN-0005-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "azithromycin"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "rxnorm",
+        "search_id": "RXN-0005",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=azithromycin&maxEntries=20&option=1",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0005_azithromycin\\raw\\page_0001.json",
+        "raw_record_sha256": "d192ad265d7a03cb9db2f698b527b6c2fe8656c7e3fadc948bd83713d3eea232"
+      },
+      "raw_metadata": {
+        "approximateGroup": {
+          "inputTerm": null,
+          "candidate": [
+            {
+              "rxcui": "18631",
+              "rxaui": "10284286",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "name": "Azithromycin",
+              "source": "USP"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "10325703",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "source": "GS"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "12253989",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "name": "azithromycin",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "2068014",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "name": "AZITHROMYCIN",
+              "source": "VANDF"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "2361937",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "source": "MMSL"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "3719794",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "source": "NDDF"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "388489",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "source": "MMSL"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "5478774",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "name": "azithromycin",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "5478775",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "name": "azithromycin",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "18631",
+              "rxaui": "8503573",
+              "score": "12.516611099243164",
+              "rank": "1",
+              "name": "Azithromycin",
+              "source": "DRUGBANK"
+            },
+            {
+              "rxcui": "1668237",
+              "rxaui": "12256861",
+              "score": "12.095963534355164",
+              "rank": "11",
+              "name": "azithromycin Injection",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1155012",
+              "rxaui": "12288379",
+              "score": "12.095963534355164",
+              "rank": "11",
+              "name": "azithromycin Pill",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "370975",
+              "rxaui": "12257647",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Oral Suspension",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "370976",
+              "rxaui": "12257648",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Oral Tablet",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "370974",
+              "rxaui": "12257881",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Oral Capsule",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "706867",
+              "rxaui": "12265247",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Ophthalmic Solution",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1155009",
+              "rxaui": "12285426",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Ophthalmic Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1155008",
+              "rxaui": "12288377",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Injectable Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1155011",
+              "rxaui": "12288378",
+              "score": "11.736163620609046",
+              "rank": "13",
+              "name": "azithromycin Oral Product",
+              "source": "RXNORM"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

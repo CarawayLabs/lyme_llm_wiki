@@ -1,0 +1,4206 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:10.905120Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0010",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "diagnostic delay Lyme disease",
+    "search_expression": "diagnostic delay Lyme disease",
+    "parameters": {
+      "query.cond": "Lyme Disease",
+      "query.term": "diagnostic delay Lyme disease",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:10.230438Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 316,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": 1,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0010_diagnostic-delay-lyme-disease\\raw\\page_0001.bin",
+      "sha256": "bbabc9464256ee86c8eb0759dc7bddd06d93ef76582a658d9b98901bd7a14f08",
+      "byte_count": 58248
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0010-0",
+      "source_record_id": "CTG-0010-0",
+      "record_type": "clinical_trial",
+      "title": "diagnostic delay Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=diagnostic+delay+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:10.230438Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0010-0"
+      },
+      "topics": [],
+      "conditions": [
+        "diagnostic delay Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0010",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=diagnostic+delay+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0010_diagnostic-delay-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "9dbb0923e16fdd38707d0b5b429631cad85114c562ea532f2cdc5073ba5a3d29"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT04038346",
+            "orgStudyIdInfo": {
+              "id": "STUDY20040185"
+            },
+            "organization": {
+              "fullName": "University of Pittsburgh",
+              "class": "OTHER"
+            },
+            "briefTitle": "Symptomatic Management of Lyme Arthritis",
+            "officialTitle": "Symptomatic Management of Lyme Arthritis"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2025-11",
+            "overallStatus": "TERMINATED",
+            "whyStopped": "Study with overlapping patient population",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2019-10-01",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2025-05-12",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2025-05-12",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2019-07-15",
+            "studyFirstSubmitQcDate": "2019-07-26",
+            "studyFirstPostDateStruct": {
+              "date": "2019-07-30",
+              "type": "ACTUAL"
+            },
+            "resultsFirstSubmitDate": "2025-06-05",
+            "resultsFirstSubmitQcDate": "2025-11-03",
+            "resultsFirstPostDateStruct": {
+              "date": "2025-11-17",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2025-11-03",
+            "lastUpdatePostDateStruct": {
+              "date": "2025-11-17",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR_INVESTIGATOR",
+              "investigatorFullName": "Desiree Neville, MD",
+              "investigatorTitle": "Assistant Professor of Pediatric Emergency Medicine",
+              "investigatorAffiliation": "University of Pittsburgh"
+            },
+            "leadSponsor": {
+              "name": "Desiree Neville, MD",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": true,
+            "isFdaRegulatedDrug": true,
+            "isFdaRegulatedDevice": false,
+            "isUsExport": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Lyme arthritis resolves with appropriate antimicrobial treatment in a majority of patients, but 10-20% of patients develop antibiotic-refractory Lyme arthritis with prolonged arthritis symptoms and treatment courses. Excessive up-regulation of the inflammatory process has been shown in patients with antibiotic-refractory Lyme arthritis. The over-expressed pro-inflammatory cell mediators are downstream of NSAID inhibition, which would suggest initial inflammatory inhibition may be beneficial in these patients. While NSAIDs are known to reduce pro-inflammatory cell mediators early in the course of inflammation, research has shown that there are other cytokines that play a role in the healing after inflammation that are also inhibited by NSAIDs, and that NSAID use can delay healing.\n\nIt is not known if scheduled NSAID therapy will reduce, increase, or have no effect on the occurrence of refractory Lyme arthritis cases. The hypothesis of the study is that prescribing scheduled NSAIDs at the time of diagnosis of Lyme arthritis can prevent the development of the excessive inflammatory phase and decrease the number of patients with antibiotic-refractory Lyme arthritis, or at least decrease the duration of persistent Lyme arthritis symptoms.\n\nThe pilot study design randomizes patients to scheduled NSAIDs, scheduled acetaminophen, or scheduled NSAIDs x 1 week than acetaminophen. Primary outcomes are duration of arthritis symptoms, number of refractory cases, side effects and compliance.",
+            "detailedDescription": "Specific Aims:\n\n1. Demonstrate feasibility to ensure adequate patient enrollment and symptomatic follow-up of patients with Lyme arthritis.\n2. Develop pilot data necessary for sample size and power calculations:\n\nThe purpose of the research study is to evaluate whether there is symptomatic benefit of schedule NSAID therapy in patients with Lyme arthritis diagnosis.\n\n1. Quantification of antibiotic-refractory Lyme arthritis in our population\n2. Symptomatic outcomes of patients with Lyme arthritis on scheduled NSAIDs versus those not placed on scheduled NSAIDs (duration to resolution and number of patients with resistant arthritis)\n3. Assess side effects of patients with Lyme arthritis placed on scheduled NSAIDs versus those not placed on scheduled NSAIDs\n4. Assess changes in resources (follow-up visits, further prescriptions) required for patients taking scheduled NSAIDs versus not taking scheduled NSAIDs\n\nBackground:\n\nLyme disease is the systemic tick-borne disease caused by Borrelia burgdorferi infection, and is endemic to an expanding portion of the United States. Lyme arthritis is a common presentation of Lyme disease. While Lyme arthritis resolves with appropriate antimicrobial treatment in a majority of patients, 10-20% of patients develop antibiotic-refractory Lyme arthritis with prolonged inflammatory arthritis. Research suggests excessive up-regulation of the inflammatory process in patients with prolonged symptoms. The over-expressed pro- inflammatory cell mediators are downstream of NSAID inhibition, which would suggest NSAIDs may be beneficial in these patients. In fact, there is data that NSAIDs and/or disease-modifying anti-rheumatic drugs (DMARDs) may be beneficial in refractory Lyme arthritis cases, once diagnosed as refractory.\n\nThe hypothesis of the study is that prescribing scheduled NSAIDs at the time of diagnosis can prevent the development of the excessive inflammatory phase and decrease the number of patients with antibiotic-refractory Lyme arthritis, or at least decrease the duration of persistent Lyme arthritis symptoms. There are no known methods to identify patients who will develop antibiotic-refractory Lyme arthritis. This work is important to delineate optimal timing and duration of NSAIDs given the research that shows the anti- inflammatory effects during healing can potentially delay recovery.\n\nSignificance:\n\nWhile antibiotic-refractory Lyme arthritis has been studied at a microbiologic/cytokine level as well as evaluated in terms of treatment once patients have been deemed antibiotic refractory, to our knowledge there are no published studies evaluating prevention.\n\nWith no literature looking at the question of NSAIDs for the prevention of antibiotic- refractory Lyme arthritis, this pilot study is needed to adequately calculate sample size and power calculations for a large-scale multicenter study. There is anecdotal data from the Rheumatology and Infectious Disease departments at the UPMC Children's Hospital of Pittsburgh that early scheduled NSAIDs may decrease refractory cases, but there has been no formal evaluation into this question. Retrospective evaluation is challenging since the medications in question (NSAIDs) are over the counter, and clinicians may recommend scheduled or intermittent NSAID therapy without documentation, and certainly without prescriptions in the medical record. Many patients with refractory Lyme arthritis are placed on NSAIDs, but given the question of delayed healing with inhibition of prostaglandins during the healing phase of inflammation, the question of whether NSAIDs are beneficial in patients to prevent refractory arthritis is worthwhile rather than the current process of variable NSAID prescription."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Arthritis",
+              "Lyme Disease",
+              "Arthritis"
+            ],
+            "keywords": [
+              "Lyme Arthritis",
+              "Lyme",
+              "Lyme Disease",
+              "Arthritis",
+              "NSAID"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "PHASE3"
+            ],
+            "designInfo": {
+              "allocation": "RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "interventionModelDescription": "Prospective, randomized, controlled, non blinded",
+              "primaryPurpose": "TREATMENT",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 3,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "NSAID",
+                "type": "EXPERIMENTAL",
+                "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve",
+                "interventionNames": [
+                  "Drug: Naproxen"
+                ]
+              },
+              {
+                "label": "Acetaminophen",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve",
+                "interventionNames": [
+                  "Drug: Acetaminophen"
+                ]
+              },
+              {
+                "label": "NSAID first, then Acetaminophen",
+                "type": "EXPERIMENTAL",
+                "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve",
+                "interventionNames": [
+                  "Drug: Naproxen",
+                  "Drug: Acetaminophen"
+                ]
+              },
+              {
+                "label": "Standard Care",
+                "type": "NO_INTERVENTION",
+                "description": "Symptom observation only"
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Naproxen",
+                "description": "Patients will be randomized to an NSAID (naproxen)",
+                "armGroupLabels": [
+                  "NSAID",
+                  "NSAID first, then Acetaminophen"
+                ],
+                "otherNames": [
+                  "naprosyn, aleve, anaprox"
+                ]
+              },
+              {
+                "type": "DRUG",
+                "name": "Acetaminophen",
+                "description": "Patients will be randomized to acetaminophen",
+                "armGroupLabels": [
+                  "Acetaminophen",
+                  "NSAID first, then Acetaminophen"
+                ],
+                "otherNames": [
+                  "tylenol"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Joint Pain Reported by Serial Visual Analog Scale (VAS) for Pain Via Text Surveys",
+                "description": "0-100 scale (no pain to worst pain - higher score, worse outcome), slide bar in text survey",
+                "timeFrame": "days 0(enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score will be collected"
+              },
+              {
+                "measure": "Joint Redness Reported by Serial Visual Analog Scale for Joint Redness Via Text Surveys",
+                "description": "0-100 scale (no redness to maximal redness- higher score, worse outcome), slide bar in text survey",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score for join redness will be collected"
+              },
+              {
+                "measure": "Joint Movement Reported by Serial Visual Analog Scale for Joint Movement Via Text Surveys",
+                "description": "0-100 scale (no joint movement to normal joint movement- higher score, better outcome), slide bar in text survey",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score for joint movement will be collected"
+              },
+              {
+                "measure": "Overall Function Reported by Serial Visual Analog Scale for Overall Function Via Text Surveys",
+                "description": "0-100 scale (severely impaired function to normal function- higher score, better outcome), slide bar in text survey",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score will be collected"
+              },
+              {
+                "measure": "Time to Complete Symptom Resolution as Collected by a Yes/no Question on the Text Survey",
+                "description": "If patient answers yes to symptoms completely resolved, the time frame from enrollment will be the days to symptom resolution",
+                "timeFrame": "Symptom resolution recorded (days 0, 1, 3, 7, 10, 14, 21, 28, 60) once they enter \"yes\" to symptoms completely resolved"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Medication Compliance as Determined by Question in Serial Text Survey",
+                "description": "Parents enter number of days patient has taken the medication in the past day as well as per day since the last survey in two questions on the text survey with their response being a drop down number list on the text survey- medication compliance will be compared to the number of doses that would be full compliance for that treatment arm",
+                "timeFrame": "days 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)"
+              },
+              {
+                "measure": "The Number of Participants With Reported Medication Side Effects as Determined by Question in Serial Text Survey",
+                "description": "survey asks parents to describe any medication side effects they feel their child has had - descriptive outcome only",
+                "timeFrame": "days 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)"
+              },
+              {
+                "measure": "The Number of Participants Who Reported Taking Other Medications as Determined by Question in Serial Text Survey",
+                "description": "Parents are asked to list any medications in addition to their study drug and the prescribed antibiotic that their child has taken- descriptive outcome only",
+                "timeFrame": "days 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)"
+              },
+              {
+                "measure": "Number of Participants Who Reported Fever as Determined by Question in Serial Text Survey",
+                "description": "Parents are asked if their child had fever in the 24 hours prior to taking the text survey",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)"
+              }
+            ],
+            "otherOutcomes": [
+              {
+                "measure": "Need for Further Care as Determined by Medical Record Review as Mean Number of Visits in the System for Lyme Arthritis Symptoms During Each Time Frame",
+                "description": "Mean repeat medical visits for Lyme arthritis will be compared between treatment arms based on medical record review",
+                "timeFrame": "30 days, 60 days, 120 days, 1 year"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Arthritis\n* Undergoing Lyme disease testing (Lyme test positive)\n\nExclusion Criteria:\n\n* Patients will be secondarily withdrawn from analysis and instructed to stop study medication if their Lyme test is negative.\n\nUnderlying diagnosis of rheumatoid or recurrent arthritis Already on scheduled NSAIDs\n\nAnything that restricts the prescription of naproxen or acetaminophen:\n\n* Hypersensitivity to naproxen (for example: anaphylactic reactions, serious skin reactions) or any component of the formulation; history of aspirin induced asthma, urticaria, or allergic-type reactions after taking aspirin or other NSAIDs, underlying kidney or liver impairment\n* Already taking daily NSAIDs (naproxen or ibuprofen) or daily acetaminophen\n* Hypersensitivity to acetaminophen or any component of the formulation; severe liver impairment or severe active liver disease",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "3 Years",
+            "maximumAge": "17 Years",
+            "stdAges": [
+              "CHILD"
+            ]
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Desiree NW Neville, MD",
+                "affiliation": "University of Pittsburgh",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Children's Hospital of Pittsburgh of UPMC",
+                "city": "Pittsburgh",
+                "state": "Pennsylvania",
+                "zip": "15224",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.44062,
+                  "lon": -79.99589
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+          }
+        },
+        "resultsSection": {
+          "participantFlowModule": {
+            "groups": [
+              {
+                "id": "FG000",
+                "title": "NSAID",
+                "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+              },
+              {
+                "id": "FG001",
+                "title": "Acetaminophen",
+                "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+              },
+              {
+                "id": "FG002",
+                "title": "NSAID First, Then Acetaminophen",
+                "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+              },
+              {
+                "id": "FG003",
+                "title": "Standard Care",
+                "description": "Symptom observation only"
+              }
+            ],
+            "periods": [
+              {
+                "title": "Overall Study",
+                "milestones": [
+                  {
+                    "type": "STARTED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "1"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "2"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG003",
+                        "numSubjects": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "COMPLETED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "1"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "2"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG003",
+                        "numSubjects": "0"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "NOT COMPLETED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG003",
+                        "numSubjects": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "baselineCharacteristicsModule": {
+            "populationDescription": "3 patients were enrolled in two arms before enrollment pause.",
+            "groups": [
+              {
+                "id": "BG000",
+                "title": "NSAID",
+                "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+              },
+              {
+                "id": "BG001",
+                "title": "Acetaminophen",
+                "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+              },
+              {
+                "id": "BG002",
+                "title": "NSAID First, Then Acetaminophen",
+                "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+              },
+              {
+                "id": "BG003",
+                "title": "Standard Care",
+                "description": "Symptom observation only"
+              },
+              {
+                "id": "BG004",
+                "title": "Total",
+                "description": "Total of all reporting groups"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "BG000",
+                    "value": "1"
+                  },
+                  {
+                    "groupId": "BG001",
+                    "value": "2"
+                  },
+                  {
+                    "groupId": "BG002",
+                    "value": "0"
+                  },
+                  {
+                    "groupId": "BG003",
+                    "value": "0"
+                  },
+                  {
+                    "groupId": "BG004",
+                    "value": "3"
+                  }
+                ]
+              }
+            ],
+            "measures": [
+              {
+                "title": "Age, Categorical",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "3"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "title": "<=18 years",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "3"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Between 18 and 65 years",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": ">=65 years",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Age, Continuous",
+                "paramType": "MEAN",
+                "dispersionType": "FULL_RANGE",
+                "unitOfMeasure": "years",
+                "classes": [
+                  {
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "3"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "9",
+                            "lowerLimit": "9",
+                            "upperLimit": "9"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "6",
+                            "lowerLimit": "6",
+                            "upperLimit": "6"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "7",
+                            "lowerLimit": "6",
+                            "upperLimit": "9"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Sex: Female, Male",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "3"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "title": "Female",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "2"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Male",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Race and Ethnicity Not Collected",
+                "populationDescription": "Race and Ethnicity were not collected from any participant.",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "outcomeMeasuresModule": {
+            "outcomeMeasures": [
+              {
+                "type": "PRIMARY",
+                "title": "Joint Pain Reported by Serial Visual Analog Scale (VAS) for Pain Via Text Surveys",
+                "description": "0-100 scale (no pain to worst pain - higher score, worse outcome), slide bar in text survey",
+                "populationDescription": "VAS score for pain across all groups",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "score on a scale",
+                "timeFrame": "days 0(enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score will be collected",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Enrollment, Day 0",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "62",
+                            "lowerLimit": "62",
+                            "upperLimit": "62"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "58",
+                            "lowerLimit": "58",
+                            "upperLimit": "58"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "50",
+                            "lowerLimit": "50",
+                            "upperLimit": "50"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "49.5",
+                            "lowerLimit": "49",
+                            "upperLimit": "50"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "16",
+                            "lowerLimit": "16",
+                            "upperLimit": "16"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "26",
+                            "lowerLimit": "26",
+                            "upperLimit": "26"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 10",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "20",
+                            "lowerLimit": "20",
+                            "upperLimit": "20"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 60",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Joint Redness Reported by Serial Visual Analog Scale for Joint Redness Via Text Surveys",
+                "description": "0-100 scale (no redness to maximal redness- higher score, worse outcome), slide bar in text survey",
+                "populationDescription": "There was not 100% follow-up with text surveys",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "score on a scale",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score for join redness will be collected",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Enrollment, Day 0",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "61",
+                            "lowerLimit": "61",
+                            "upperLimit": "61"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "20",
+                            "lowerLimit": "20",
+                            "upperLimit": "20"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "38",
+                            "lowerLimit": "38",
+                            "upperLimit": "38"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "22.5",
+                            "lowerLimit": "12",
+                            "upperLimit": "33"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "7",
+                            "lowerLimit": "7",
+                            "upperLimit": "7"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "19",
+                            "lowerLimit": "19",
+                            "upperLimit": "19"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 60",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Joint Movement Reported by Serial Visual Analog Scale for Joint Movement Via Text Surveys",
+                "description": "0-100 scale (no joint movement to normal joint movement- higher score, better outcome), slide bar in text survey",
+                "populationDescription": "Not all text survey instances completed.",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "score on a scale",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score for joint movement will be collected",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Enrollment, Day 0",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "35",
+                            "lowerLimit": "35",
+                            "upperLimit": "35"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "50",
+                            "lowerLimit": "50",
+                            "upperLimit": "50"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "50",
+                            "lowerLimit": "50",
+                            "upperLimit": "50"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "47",
+                            "lowerLimit": "37",
+                            "upperLimit": "57"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "86",
+                            "lowerLimit": "86",
+                            "upperLimit": "86"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "78",
+                            "lowerLimit": "78",
+                            "upperLimit": "78"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "84",
+                            "lowerLimit": "84",
+                            "upperLimit": "84"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 60",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Overall Function Reported by Serial Visual Analog Scale for Overall Function Via Text Surveys",
+                "description": "0-100 scale (severely impaired function to normal function- higher score, better outcome), slide bar in text survey",
+                "populationDescription": "Not all text surveys completed.",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "score on a scale",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 the VAS score will be collected",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Enrollment, Day 0",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "50",
+                            "lowerLimit": "50",
+                            "upperLimit": "50"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "50",
+                            "lowerLimit": "50",
+                            "upperLimit": "50"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "65",
+                            "lowerLimit": "65",
+                            "upperLimit": "65"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "55.5",
+                            "lowerLimit": "50",
+                            "upperLimit": "61"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "85",
+                            "lowerLimit": "85",
+                            "upperLimit": "85"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "89",
+                            "lowerLimit": "89",
+                            "upperLimit": "89"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 10",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "83",
+                            "lowerLimit": "83",
+                            "upperLimit": "83"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 60",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Time to Complete Symptom Resolution as Collected by a Yes/no Question on the Text Survey",
+                "description": "If patient answers yes to symptoms completely resolved, the time frame from enrollment will be the days to symptom resolution",
+                "populationDescription": "3 enrolled patients - none of the acetaminophen patients continued until resolution",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "days since enrollment",
+                "timeFrame": "Symptom resolution recorded (days 0, 1, 3, 7, 10, 14, 21, 28, 60) once they enter \"yes\" to symptoms completely resolved",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "6",
+                            "lowerLimit": "6",
+                            "upperLimit": "6"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "Medication Compliance as Determined by Question in Serial Text Survey",
+                "description": "Parents enter number of days patient has taken the medication in the past day as well as per day since the last survey in two questions on the text survey with their response being a drop down number list on the text survey- medication compliance will be compared to the number of doses that would be full compliance for that treatment arm",
+                "populationDescription": "Randomized participants, report percentage of medication doses taken that were available. (while still reporting symptoms)",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "percentage of available med doses taken",
+                "timeFrame": "days 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "75",
+                            "lowerLimit": "75",
+                            "upperLimit": "75"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 10",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "100",
+                            "lowerLimit": "100",
+                            "upperLimit": "100"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "25",
+                            "lowerLimit": "25",
+                            "upperLimit": "25"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "The Number of Participants With Reported Medication Side Effects as Determined by Question in Serial Text Survey",
+                "description": "survey asks parents to describe any medication side effects they feel their child has had - descriptive outcome only",
+                "populationDescription": "Randomized patients",
+                "reportingStatus": "POSTED",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "timeFrame": "days 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 10",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "The Number of Participants Who Reported Taking Other Medications as Determined by Question in Serial Text Survey",
+                "description": "Parents are asked to list any medications in addition to their study drug and the prescribed antibiotic that their child has taken- descriptive outcome only",
+                "populationDescription": "randomized participants",
+                "reportingStatus": "POSTED",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "timeFrame": "days 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 10",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 60",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "SECONDARY",
+                "title": "Number of Participants Who Reported Fever as Determined by Question in Serial Text Survey",
+                "description": "Parents are asked if their child had fever in the 24 hours prior to taking the text survey",
+                "populationDescription": "All enrolled patients",
+                "reportingStatus": "POSTED",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "timeFrame": "days 0 (enrollment), 1, 3, 7, 10, 14, 21, 28, 60 (collected until symptom resolution)",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Day 0 (Enrollment)",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 1",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 3",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 7",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 10",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 14",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 21",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Day 28",
+                    "denoms": [
+                      {
+                        "units": "Participants",
+                        "counts": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ],
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "OTHER_PRE_SPECIFIED",
+                "title": "Need for Further Care as Determined by Medical Record Review as Mean Number of Visits in the System for Lyme Arthritis Symptoms During Each Time Frame",
+                "description": "Mean repeat medical visits for Lyme arthritis will be compared between treatment arms based on medical record review",
+                "populationDescription": "All patients were analyzed for return visits by: 30 days, 60 days, 120 days, 1 year",
+                "reportingStatus": "POSTED",
+                "paramType": "MEAN",
+                "dispersionType": "Full Range",
+                "unitOfMeasure": "return visits for Lyme arthritis symptom",
+                "timeFrame": "30 days, 60 days, 120 days, 1 year",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "NSAID",
+                    "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve"
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Acetaminophen",
+                    "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve"
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "NSAID First, Then Acetaminophen",
+                    "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Standard Care",
+                    "description": "Symptom observation only"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "2"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "0"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "0"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "30 days",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "60 days",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "120 days",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "1 year",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0",
+                            "lowerLimit": "0",
+                            "upperLimit": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "adverseEventsModule": {
+            "frequencyThreshold": "0",
+            "timeFrame": "Collected by text surveys at days from enrollment: 0, 1, 3, 7, 10, 14, 21, 28, 60 until asymptomatic.",
+            "description": "Collected by text surveys at days from enrollment: 0, 1, 3, 7, 10, 14, 21, 28, 60. Question: Have you noticed any medication side-effects.",
+            "eventGroups": [
+              {
+                "id": "EG000",
+                "title": "NSAID",
+                "description": "Naproxen at weight based standard dose given bid daily until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 1,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 1,
+                "otherNumAffected": 1,
+                "otherNumAtRisk": 1
+              },
+              {
+                "id": "EG001",
+                "title": "Acetaminophen",
+                "description": "Acetaminophen at weight based standard dose given qid until symptoms resolve\n\nAcetaminophen: Patients will be randomized to acetaminophen",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 2,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 2,
+                "otherNumAffected": 0,
+                "otherNumAtRisk": 2
+              },
+              {
+                "id": "EG002",
+                "title": "NSAID First, Then Acetaminophen",
+                "description": "Naproxen at weight based standard dose given bid for one week, then acetaminophen at weight based standard dose given qid until symptoms resolve\n\nNaproxen: Patients will be randomized to an NSAID (naproxen)\n\nAcetaminophen: Patients will be randomized to acetaminophen",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 0,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 0,
+                "otherNumAffected": 0,
+                "otherNumAtRisk": 0
+              },
+              {
+                "id": "EG003",
+                "title": "Standard Care",
+                "description": "Symptom observation only",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 0,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 0,
+                "otherNumAffected": 0,
+                "otherNumAtRisk": 0
+              }
+            ],
+            "otherEvents": [
+              {
+                "term": "Emesis",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "notes": "one episode of emesis reported on day 7 survey",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numEvents": 1,
+                    "numAffected": 1,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numEvents": 0,
+                    "numAffected": 0,
+                    "numAtRisk": 2
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numEvents": 0,
+                    "numAffected": 0,
+                    "numAtRisk": 0
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numEvents": 0,
+                    "numAffected": 0,
+                    "numAtRisk": 0
+                  }
+                ]
+              }
+            ]
+          },
+          "moreInfoModule": {
+            "limitationsAndCaveats": {
+              "description": "The study was stopped prematurely due to Covid research pause and then overlapping study populations."
+            },
+            "certainAgreement": {
+              "piSponsorEmployee": true
+            },
+            "pointOfContact": {
+              "title": "Desiree Neville",
+              "organization": "University of Pittsburgh Children's Hospital of Pittsburgh",
+              "email": "desiree.neville@chp.edu",
+              "phone": "412-692-7692"
+            }
+          }
+        },
+        "documentSection": {
+          "largeDocumentModule": {
+            "noSap": true,
+            "largeDocs": [
+              {
+                "typeAbbrev": "Prot",
+                "hasProtocol": true,
+                "hasSap": false,
+                "hasIcf": false,
+                "label": "Study Protocol",
+                "date": "2024-04-03",
+                "uploadDate": "2025-09-22T09:36",
+                "filename": "Prot_001.pdf",
+                "size": 119467
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05",
+            "submissionTracking": {
+              "firstMcpInfo": {
+                "postDateStruct": {
+                  "date": "2025-06-22",
+                  "type": "ACTUAL"
+                }
+              }
+            }
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D001168",
+                "term": "Arthritis"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D007592",
+                "term": "Joint Diseases"
+              },
+              {
+                "id": "D009140",
+                "term": "Musculoskeletal Diseases"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D009288",
+                "term": "Naproxen"
+              },
+              {
+                "id": "D000082",
+                "term": "Acetaminophen"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D009280",
+                "term": "Naphthaleneacetic Acids"
+              },
+              {
+                "id": "D009281",
+                "term": "Naphthalenes"
+              },
+              {
+                "id": "D011084",
+                "term": "Polycyclic Aromatic Hydrocarbons"
+              },
+              {
+                "id": "D006841",
+                "term": "Hydrocarbons, Aromatic"
+              },
+              {
+                "id": "D006844",
+                "term": "Hydrocarbons, Cyclic"
+              },
+              {
+                "id": "D006838",
+                "term": "Hydrocarbons"
+              },
+              {
+                "id": "D009930",
+                "term": "Organic Chemicals"
+              },
+              {
+                "id": "D011083",
+                "term": "Polycyclic Compounds"
+              },
+              {
+                "id": "D000083",
+                "term": "Acetanilides"
+              },
+              {
+                "id": "D000813",
+                "term": "Anilides"
+              },
+              {
+                "id": "D000577",
+                "term": "Amides"
+              },
+              {
+                "id": "D000814",
+                "term": "Aniline Compounds"
+              },
+              {
+                "id": "D000588",
+                "term": "Amines"
+              }
+            ]
+          }
+        },
+        "hasResults": true
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,4394 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:20.424413Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "PUBM-0011",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "search_term": "Lyme disease diagnosis",
+    "search_expression": "(\"Lyme disease diagnosis\"[Title/Abstract]) AND humans[MeSH Terms]",
+    "parameters": {
+      "db": "pubmed",
+      "term": "(\"Lyme disease diagnosis\"[Title/Abstract]) AND humans[MeSH Terms]",
+      "retmode": "json",
+      "retmax": 100,
+      "usehistory": "y",
+      "sort": "pub date",
+      "tool": "topx_lyme_explorer"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "NCBI_API_KEY",
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NCBI PubMed E-utilities",
+    "catalog_slug": "pubmed",
+    "source_type": "biomedical_citation_database",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:17.554151Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "duration_ms": 274,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 56,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 56,
+    "total_count": 56,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+      "sha256": "873ab1e67df92a5e9e04c13715f8d2e822e5d9326c8920fee2b6a1077b9d6dca",
+      "byte_count": 954
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "pubmed:41153450",
+      "source_record_id": "41153450",
+      "record_type": "publication_citation",
+      "title": "41153450",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "41153450"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "7b261dc076d2c7f90243584e4836b7d60435693f13e65ca91a480f9957fc7dc1"
+      },
+      "raw_metadata": {
+        "id": "41153450",
+        "title": "41153450"
+      }
+    },
+    {
+      "normalized_id": "pubmed:40831390",
+      "source_record_id": "40831390",
+      "record_type": "publication_citation",
+      "title": "40831390",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "40831390"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "6b7ca3ae8447118a386512606cdc9326b5eb6f30373df6c8ee5aad0445d2db1e"
+      },
+      "raw_metadata": {
+        "id": "40831390",
+        "title": "40831390"
+      }
+    },
+    {
+      "normalized_id": "pubmed:40866929",
+      "source_record_id": "40866929",
+      "record_type": "publication_citation",
+      "title": "40866929",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "40866929"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "171c910d27aaea158af7530d2bbf2a1dbed8c786cbc43d85c5be07c805d32416"
+      },
+      "raw_metadata": {
+        "id": "40866929",
+        "title": "40866929"
+      }
+    },
+    {
+      "normalized_id": "pubmed:40590992",
+      "source_record_id": "40590992",
+      "record_type": "publication_citation",
+      "title": "40590992",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "40590992"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "4304775071aa4dacc24af7a2a2e00e1a48412b48147a1f66c6ea3992ff01de20"
+      },
+      "raw_metadata": {
+        "id": "40590992",
+        "title": "40590992"
+      }
+    },
+    {
+      "normalized_id": "pubmed:39770294",
+      "source_record_id": "39770294",
+      "record_type": "publication_citation",
+      "title": "39770294",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "39770294"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "53fb8592827bd5a3142c9bf5453ef3e84c7758e1f963e0d3a12284bb66f77154"
+      },
+      "raw_metadata": {
+        "id": "39770294",
+        "title": "39770294"
+      }
+    },
+    {
+      "normalized_id": "pubmed:39567874",
+      "source_record_id": "39567874",
+      "record_type": "publication_citation",
+      "title": "39567874",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "39567874"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "5dfe6277efc6fc8f978ea7db0d096a19de2213a71560b5ae6c343909f2f5fbb0"
+      },
+      "raw_metadata": {
+        "id": "39567874",
+        "title": "39567874"
+      }
+    },
+    {
+      "normalized_id": "pubmed:39248571",
+      "source_record_id": "39248571",
+      "record_type": "publication_citation",
+      "title": "39248571",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "39248571"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 6,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "64886b67793e0bc266e36e43608d4697c1a41867365f9c1e3657f50f57a12c60"
+      },
+      "raw_metadata": {
+        "id": "39248571",
+        "title": "39248571"
+      }
+    },
+    {
+      "normalized_id": "pubmed:38735346",
+      "source_record_id": "38735346",
+      "record_type": "publication_citation",
+      "title": "38735346",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "38735346"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 7,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "b1b37c5e165b85181863e5c09ad90c0b3d606854500160a5cae18efd553f35b1"
+      },
+      "raw_metadata": {
+        "id": "38735346",
+        "title": "38735346"
+      }
+    },
+    {
+      "normalized_id": "pubmed:37882186",
+      "source_record_id": "37882186",
+      "record_type": "publication_citation",
+      "title": "37882186",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "37882186"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 8,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "44f2b57ced4b8412d845ed0d3f2e40aede452148bab9c86ffde423aa70b54e1a"
+      },
+      "raw_metadata": {
+        "id": "37882186",
+        "title": "37882186"
+      }
+    },
+    {
+      "normalized_id": "pubmed:38441498",
+      "source_record_id": "38441498",
+      "record_type": "publication_citation",
+      "title": "38441498",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "38441498"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 9,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "74ba2f86218975b37b2ffddf5d515c516f459e567a98771f2428af31fe481dc2"
+      },
+      "raw_metadata": {
+        "id": "38441498",
+        "title": "38441498"
+      }
+    },
+    {
+      "normalized_id": "pubmed:37644525",
+      "source_record_id": "37644525",
+      "record_type": "publication_citation",
+      "title": "37644525",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "37644525"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 10,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "a11b2d4491f2748f6b32ba15e7a92d4e382c67d3501604685aef262b9ca29f24"
+      },
+      "raw_metadata": {
+        "id": "37644525",
+        "title": "37644525"
+      }
+    },
+    {
+      "normalized_id": "pubmed:35716134",
+      "source_record_id": "35716134",
+      "record_type": "publication_citation",
+      "title": "35716134",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "35716134"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 11,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "a4cb9513a6984ad8612d91ef47bb52dc4b4dbec084a56a15f2877383cb2c1851"
+      },
+      "raw_metadata": {
+        "id": "35716134",
+        "title": "35716134"
+      }
+    },
+    {
+      "normalized_id": "pubmed:36301959",
+      "source_record_id": "36301959",
+      "record_type": "publication_citation",
+      "title": "36301959",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "36301959"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 12,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "e09272e1a407f5867ab62508dbe4eb80e6ed4b4ba0e922a1051fe1e500fa0bb2"
+      },
+      "raw_metadata": {
+        "id": "36301959",
+        "title": "36301959"
+      }
+    },
+    {
+      "normalized_id": "pubmed:36116839",
+      "source_record_id": "36116839",
+      "record_type": "publication_citation",
+      "title": "36116839",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "36116839"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 13,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "02c2eab289f6e5fd5c21f4caa7222b4def30d8c51b6c6bc33c05561177a02aa3"
+      },
+      "raw_metadata": {
+        "id": "36116839",
+        "title": "36116839"
+      }
+    },
+    {
+      "normalized_id": "pubmed:35104673",
+      "source_record_id": "35104673",
+      "record_type": "publication_citation",
+      "title": "35104673",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "35104673"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 14,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "df79c0a55b99e00120792a862a5ee3b061a758e20204ef872d249dba16f369a1"
+      },
+      "raw_metadata": {
+        "id": "35104673",
+        "title": "35104673"
+      }
+    },
+    {
+      "normalized_id": "pubmed:35320297",
+      "source_record_id": "35320297",
+      "record_type": "publication_citation",
+      "title": "35320297",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "35320297"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 15,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "1b485a5a19248054c2ca1a716bfa8ebe238458375f54b9d1fe9928c23235de3b"
+      },
+      "raw_metadata": {
+        "id": "35320297",
+        "title": "35320297"
+      }
+    },
+    {
+      "normalized_id": "pubmed:35265109",
+      "source_record_id": "35265109",
+      "record_type": "publication_citation",
+      "title": "35265109",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "35265109"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 16,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "0e494d9769a082b32ba38178173ed45e352b8b4784f76aaef98a13683dbc8b00"
+      },
+      "raw_metadata": {
+        "id": "35265109",
+        "title": "35265109"
+      }
+    },
+    {
+      "normalized_id": "pubmed:34610255",
+      "source_record_id": "34610255",
+      "record_type": "publication_citation",
+      "title": "34610255",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "34610255"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 17,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "179ec265e7086ffca94ba94c95e3924fef07bf9e2bc6ad3b6e2992a70c43d5d6"
+      },
+      "raw_metadata": {
+        "id": "34610255",
+        "title": "34610255"
+      }
+    },
+    {
+      "normalized_id": "pubmed:34499659",
+      "source_record_id": "34499659",
+      "record_type": "publication_citation",
+      "title": "34499659",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "34499659"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 18,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "49a127853eb7c22b34019f9fe98194cd41e4dd000d50b90cca776a07296e8c28"
+      },
+      "raw_metadata": {
+        "id": "34499659",
+        "title": "34499659"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33541229",
+      "source_record_id": "33541229",
+      "record_type": "publication_citation",
+      "title": "33541229",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33541229"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 19,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "c77ad531eaf51bbedb710b029bbbda626cde31f6296af96fbb2d2c9932951ffe"
+      },
+      "raw_metadata": {
+        "id": "33541229",
+        "title": "33541229"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33794698",
+      "source_record_id": "33794698",
+      "record_type": "publication_citation",
+      "title": "33794698",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33794698"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 20,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "61224f392946dc2842515839e862e48c1f0e022c5490cb17d6a866534f4f23a9"
+      },
+      "raw_metadata": {
+        "id": "33794698",
+        "title": "33794698"
+      }
+    },
+    {
+      "normalized_id": "pubmed:31739768",
+      "source_record_id": "31739768",
+      "record_type": "publication_citation",
+      "title": "31739768",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "31739768"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 21,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "2a0139df8c5b69162adb03974e91c3bca02a1e11b4ce0f1ae8c0945dfc388246"
+      },
+      "raw_metadata": {
+        "id": "31739768",
+        "title": "31739768"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33515521",
+      "source_record_id": "33515521",
+      "record_type": "publication_citation",
+      "title": "33515521",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33515521"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 22,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "b5ddef058e49eac601f515da8499d56049f337ceb3c967d55d8ca76eadbe0870"
+      },
+      "raw_metadata": {
+        "id": "33515521",
+        "title": "33515521"
+      }
+    },
+    {
+      "normalized_id": "pubmed:34338452",
+      "source_record_id": "34338452",
+      "record_type": "publication_citation",
+      "title": "34338452",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "34338452"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 23,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "177cbcac534ea8c8ebd84f6018420bc9c08dfe09c1951ea28e8f8b47fac12891"
+      },
+      "raw_metadata": {
+        "id": "34338452",
+        "title": "34338452"
+      }
+    },
+    {
+      "normalized_id": "pubmed:32141956",
+      "source_record_id": "32141956",
+      "record_type": "publication_citation",
+      "title": "32141956",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "32141956"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 24,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "562aa361c23fc7a9b03745b1e71a0176da6c07a9790274ff77657ba693c25bbd"
+      },
+      "raw_metadata": {
+        "id": "32141956",
+        "title": "32141956"
+      }
+    },
+    {
+      "normalized_id": "pubmed:32299372",
+      "source_record_id": "32299372",
+      "record_type": "publication_citation",
+      "title": "32299372",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "32299372"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 25,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "df6f765abaaf919aa72129ef80a3c28aac9615f5fe13b0d46b83e3c562c0807c"
+      },
+      "raw_metadata": {
+        "id": "32299372",
+        "title": "32299372"
+      }
+    },
+    {
+      "normalized_id": "pubmed:32239836",
+      "source_record_id": "32239836",
+      "record_type": "publication_citation",
+      "title": "32239836",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "32239836"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 26,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "0823da66192318621229f0bd70939d399a2f114dedb33922a4a036baeb5a3c59"
+      },
+      "raw_metadata": {
+        "id": "32239836",
+        "title": "32239836"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33861032",
+      "source_record_id": "33861032",
+      "record_type": "publication_citation",
+      "title": "33861032",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33861032"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 27,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "9941115b0c65b6d034575fa8065c354758227cd445d9a8586aa493fb6b07ea59"
+      },
+      "raw_metadata": {
+        "id": "33861032",
+        "title": "33861032"
+      }
+    },
+    {
+      "normalized_id": "pubmed:31465993",
+      "source_record_id": "31465993",
+      "record_type": "publication_citation",
+      "title": "31465993",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "31465993"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 28,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "be136050382dde9e0ef606c4290eb31ff28a73f910d04a22f07f92ea1bd07499"
+      },
+      "raw_metadata": {
+        "id": "31465993",
+        "title": "31465993"
+      }
+    },
+    {
+      "normalized_id": "pubmed:30686500",
+      "source_record_id": "30686500",
+      "record_type": "publication_citation",
+      "title": "30686500",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "30686500"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 29,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "53ec250f6ef1002ec603b8b79acc2b5393b3c0455c26d210b558998e93c21498"
+      },
+      "raw_metadata": {
+        "id": "30686500",
+        "title": "30686500"
+      }
+    },
+    {
+      "normalized_id": "pubmed:30420251",
+      "source_record_id": "30420251",
+      "record_type": "publication_citation",
+      "title": "30420251",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "30420251"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 30,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "83f157ee386a35254a287584413866c9c4c535357a5830df0dcbac69745cea59"
+      },
+      "raw_metadata": {
+        "id": "30420251",
+        "title": "30420251"
+      }
+    },
+    {
+      "normalized_id": "pubmed:30282764",
+      "source_record_id": "30282764",
+      "record_type": "publication_citation",
+      "title": "30282764",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "30282764"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 31,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "cc8b307e1273ec1c3c135715e41c1616d9d0f47d9ead7dfc1812d877f3b19b5f"
+      },
+      "raw_metadata": {
+        "id": "30282764",
+        "title": "30282764"
+      }
+    },
+    {
+      "normalized_id": "pubmed:29955850",
+      "source_record_id": "29955850",
+      "record_type": "publication_citation",
+      "title": "29955850",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "29955850"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 32,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "a2dbf8b1c86edcb674253884a42d31a46895588b2e93a5c5c5c51e8c117e12a9"
+      },
+      "raw_metadata": {
+        "id": "29955850",
+        "title": "29955850"
+      }
+    },
+    {
+      "normalized_id": "pubmed:29543607",
+      "source_record_id": "29543607",
+      "record_type": "publication_citation",
+      "title": "29543607",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "29543607"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 33,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "ec5b8561cab5e41616645910e9afa6478560ae62730351872573ba5544f40f6a"
+      },
+      "raw_metadata": {
+        "id": "29543607",
+        "title": "29543607"
+      }
+    },
+    {
+      "normalized_id": "pubmed:29408088",
+      "source_record_id": "29408088",
+      "record_type": "publication_citation",
+      "title": "29408088",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "29408088"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 34,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "e150f23d01d4d77ab9bc929d3cb51ef3aa41209a12c338f8303681d5b2fe660c"
+      },
+      "raw_metadata": {
+        "id": "29408088",
+        "title": "29408088"
+      }
+    },
+    {
+      "normalized_id": "pubmed:28532428",
+      "source_record_id": "28532428",
+      "record_type": "publication_citation",
+      "title": "28532428",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "28532428"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 35,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "fe11091e3f84d502a78cdc8b7f903de05968991f40e77d65ab95b2a6d6d66e1c"
+      },
+      "raw_metadata": {
+        "id": "28532428",
+        "title": "28532428"
+      }
+    },
+    {
+      "normalized_id": "pubmed:28396367",
+      "source_record_id": "28396367",
+      "record_type": "publication_citation",
+      "title": "28396367",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "28396367"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 36,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "aee7c461485fd0c5ee8045d4c332a6c265eaf0a91747cd2985e3b7f9303ffd62"
+      },
+      "raw_metadata": {
+        "id": "28396367",
+        "title": "28396367"
+      }
+    },
+    {
+      "normalized_id": "pubmed:28440258",
+      "source_record_id": "28440258",
+      "record_type": "publication_citation",
+      "title": "28440258",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "28440258"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 37,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "63ac9ac02c1df58a3c9ae61ccceaf29b462dca88424cacf9cb70482b5f123dfd"
+      },
+      "raw_metadata": {
+        "id": "28440258",
+        "title": "28440258"
+      }
+    },
+    {
+      "normalized_id": "pubmed:26593258",
+      "source_record_id": "26593258",
+      "record_type": "publication_citation",
+      "title": "26593258",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "26593258"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 38,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "8932ddcd818a5ae7ac78c3f8ab2baeffdb34115c0742326d3b03a3efa199c483"
+      },
+      "raw_metadata": {
+        "id": "26593258",
+        "title": "26593258"
+      }
+    },
+    {
+      "normalized_id": "pubmed:26175640",
+      "source_record_id": "26175640",
+      "record_type": "publication_citation",
+      "title": "26175640",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "26175640"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 39,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "d7f306f03a98050019f023a45942bfb979c5cbcc93fac5741544e4193e856cfb"
+      },
+      "raw_metadata": {
+        "id": "26175640",
+        "title": "26175640"
+      }
+    },
+    {
+      "normalized_id": "pubmed:24986703",
+      "source_record_id": "24986703",
+      "record_type": "publication_citation",
+      "title": "24986703",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "24986703"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 40,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "6689e1fbba4867b4a95d93dcdbff5169a971c194e3d56652f5e3ea95b52240e7"
+      },
+      "raw_metadata": {
+        "id": "24986703",
+        "title": "24986703"
+      }
+    },
+    {
+      "normalized_id": "pubmed:21367982",
+      "source_record_id": "21367982",
+      "record_type": "publication_citation",
+      "title": "21367982",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "21367982"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 41,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "44c223d0f80292f72e3cb263e584db55345e52b7216d597d553a329c39ca49a4"
+      },
+      "raw_metadata": {
+        "id": "21367982",
+        "title": "21367982"
+      }
+    },
+    {
+      "normalized_id": "pubmed:21196901",
+      "source_record_id": "21196901",
+      "record_type": "publication_citation",
+      "title": "21196901",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "21196901"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 42,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "2b9d4a8d84bc4484a514e17a26b56f81875b29c44151e01535868b4c0d19a2e0"
+      },
+      "raw_metadata": {
+        "id": "21196901",
+        "title": "21196901"
+      }
+    },
+    {
+      "normalized_id": "pubmed:19367218",
+      "source_record_id": "19367218",
+      "record_type": "publication_citation",
+      "title": "19367218",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "19367218"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 43,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "582512c80c166524fc3ca51f0e984a220a8a99765e5225ecaf5e8be2877a791a"
+      },
+      "raw_metadata": {
+        "id": "19367218",
+        "title": "19367218"
+      }
+    },
+    {
+      "normalized_id": "pubmed:18508142",
+      "source_record_id": "18508142",
+      "record_type": "publication_citation",
+      "title": "18508142",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "18508142"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 44,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "e2b97daf4879602fcd938b0e613bcd5538a8449095b08064f67fe54a4bd46a7d"
+      },
+      "raw_metadata": {
+        "id": "18508142",
+        "title": "18508142"
+      }
+    },
+    {
+      "normalized_id": "pubmed:18274096",
+      "source_record_id": "18274096",
+      "record_type": "publication_citation",
+      "title": "18274096",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "18274096"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 45,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "001dfe823ce8fb87e6527d76b712f706ac6f4995f725b09a5df5b087d433e487"
+      },
+      "raw_metadata": {
+        "id": "18274096",
+        "title": "18274096"
+      }
+    },
+    {
+      "normalized_id": "pubmed:17058717",
+      "source_record_id": "17058717",
+      "record_type": "publication_citation",
+      "title": "17058717",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "17058717"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 46,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "58d9b566151041f90dcaa9c63fef43bfef30d843ddf0b4b90e1ae8e4c807c2fa"
+      },
+      "raw_metadata": {
+        "id": "17058717",
+        "title": "17058717"
+      }
+    },
+    {
+      "normalized_id": "pubmed:16207966",
+      "source_record_id": "16207966",
+      "record_type": "publication_citation",
+      "title": "16207966",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "16207966"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 47,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "08b6f521522fb682df3e0b3313f832267b16fddf53ff1848eaf2d2ffa9cc9e33"
+      },
+      "raw_metadata": {
+        "id": "16207966",
+        "title": "16207966"
+      }
+    },
+    {
+      "normalized_id": "pubmed:15482219",
+      "source_record_id": "15482219",
+      "record_type": "publication_citation",
+      "title": "15482219",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "15482219"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 48,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "d26e970ca89fd5834ab1538df4fab26694d75c03edada0a37835a94094387b60"
+      },
+      "raw_metadata": {
+        "id": "15482219",
+        "title": "15482219"
+      }
+    },
+    {
+      "normalized_id": "pubmed:12458782",
+      "source_record_id": "12458782",
+      "record_type": "publication_citation",
+      "title": "12458782",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "12458782"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 49,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "67f402379e90bc5be2d3a4b000a9dc5baaff78c4e2568cfbffe87ff16b46b43c"
+      },
+      "raw_metadata": {
+        "id": "12458782",
+        "title": "12458782"
+      }
+    },
+    {
+      "normalized_id": "pubmed:11257206",
+      "source_record_id": "11257206",
+      "record_type": "publication_citation",
+      "title": "11257206",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "11257206"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 50,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "c1f7f98cf881853a3a16cc17d844af868197cf6c72f37ccfda2b07018644cd2b"
+      },
+      "raw_metadata": {
+        "id": "11257206",
+        "title": "11257206"
+      }
+    },
+    {
+      "normalized_id": "pubmed:9559249",
+      "source_record_id": "9559249",
+      "record_type": "publication_citation",
+      "title": "9559249",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "9559249"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 51,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "90104db395c0f95b27e1bb1ca27caa0cc35d37cdaec1da78e7a7a8e059156f5a"
+      },
+      "raw_metadata": {
+        "id": "9559249",
+        "title": "9559249"
+      }
+    },
+    {
+      "normalized_id": "pubmed:8999457",
+      "source_record_id": "8999457",
+      "record_type": "publication_citation",
+      "title": "8999457",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "8999457"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 52,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "e43a98f2c14d597c0fd17dde91cd85a93ec4301ffcadd35b29dea3cdff340dac"
+      },
+      "raw_metadata": {
+        "id": "8999457",
+        "title": "8999457"
+      }
+    },
+    {
+      "normalized_id": "pubmed:8284588",
+      "source_record_id": "8284588",
+      "record_type": "publication_citation",
+      "title": "8284588",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "8284588"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 53,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "9d619a653ae74f366a381d36acdc7a27963247255ce291ae474846c33e57377f"
+      },
+      "raw_metadata": {
+        "id": "8284588",
+        "title": "8284588"
+      }
+    },
+    {
+      "normalized_id": "pubmed:2743543",
+      "source_record_id": "2743543",
+      "record_type": "publication_citation",
+      "title": "2743543",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "2743543"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 54,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "e790e8cbe8a60625131a297e927c06284a10b630f02c3fbcbb8acc33ea70bbab"
+      },
+      "raw_metadata": {
+        "id": "2743543",
+        "title": "2743543"
+      }
+    },
+    {
+      "normalized_id": "pubmed:2426315",
+      "source_record_id": "2426315",
+      "record_type": "publication_citation",
+      "title": "2426315",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:17.554151Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "2426315"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease diagnosis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0011",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 55,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0011_lyme-disease-diagnosis\\raw\\page_0001.json",
+        "raw_record_sha256": "367708c5758b9b823387953a081f6425888d27861bb8804a6dd82b235d59e85c"
+      },
+      "raw_metadata": {
+        "id": "2426315",
+        "title": "2426315"
+      }
+    }
+  ],
+  "warnings": [
+    "Optional credential NCBI_API_KEY was not found; request used anonymous/public access."
+  ],
+  "errors": []
+}

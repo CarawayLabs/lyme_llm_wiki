@@ -1,0 +1,1776 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:25.610563Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "PUBM-0028",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "search_term": "Lyme disease treatment",
+    "search_expression": "(\"Lyme disease treatment\"[Title/Abstract]) AND humans[MeSH Terms]",
+    "parameters": {
+      "db": "pubmed",
+      "term": "(\"Lyme disease treatment\"[Title/Abstract]) AND humans[MeSH Terms]",
+      "retmode": "json",
+      "retmax": 100,
+      "usehistory": "y",
+      "sort": "pub date",
+      "tool": "topx_lyme_explorer"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "NCBI_API_KEY",
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NCBI PubMed E-utilities",
+    "catalog_slug": "pubmed",
+    "source_type": "biomedical_citation_database",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:24.941545Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "duration_ms": 257,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 22,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 22,
+    "total_count": 22,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+      "sha256": "7119927466f32b73c88bc754a71892b78137bc8bce909312b04f2d00621223d3",
+      "byte_count": 583
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "pubmed:40541248",
+      "source_record_id": "40541248",
+      "record_type": "publication_citation",
+      "title": "40541248",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "40541248"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "649c568a7959670598f39ea8cdc1b3bb72027f0dccd65ddc57b7693982962cb1"
+      },
+      "raw_metadata": {
+        "id": "40541248",
+        "title": "40541248"
+      }
+    },
+    {
+      "normalized_id": "pubmed:38456098",
+      "source_record_id": "38456098",
+      "record_type": "publication_citation",
+      "title": "38456098",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "38456098"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "d9edac7a62939ff1c0c9dd85afc9fbb4e541face025d59fdefd19a9fc8e7ea23"
+      },
+      "raw_metadata": {
+        "id": "38456098",
+        "title": "38456098"
+      }
+    },
+    {
+      "normalized_id": "pubmed:37907464",
+      "source_record_id": "37907464",
+      "record_type": "publication_citation",
+      "title": "37907464",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "37907464"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "5599a9c920240ddda9f1e61318ae139841a908883f1f7a0b97e7aa8a1b71042f"
+      },
+      "raw_metadata": {
+        "id": "37907464",
+        "title": "37907464"
+      }
+    },
+    {
+      "normalized_id": "pubmed:34716444",
+      "source_record_id": "34716444",
+      "record_type": "publication_citation",
+      "title": "34716444",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "34716444"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "fe32926bbb3c085dc79a7d353ddb68bdeecfb8275de0c1df8e903ba5ed2c24b8"
+      },
+      "raw_metadata": {
+        "id": "34716444",
+        "title": "34716444"
+      }
+    },
+    {
+      "normalized_id": "pubmed:32202156",
+      "source_record_id": "32202156",
+      "record_type": "publication_citation",
+      "title": "32202156",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "32202156"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "16502594cfaab5939efac03e88beb58fc547c97884d9ab301be7d56da47cb3ca"
+      },
+      "raw_metadata": {
+        "id": "32202156",
+        "title": "32202156"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33541229",
+      "source_record_id": "33541229",
+      "record_type": "publication_citation",
+      "title": "33541229",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33541229"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "c77ad531eaf51bbedb710b029bbbda626cde31f6296af96fbb2d2c9932951ffe"
+      },
+      "raw_metadata": {
+        "id": "33541229",
+        "title": "33541229"
+      }
+    },
+    {
+      "normalized_id": "pubmed:31912251",
+      "source_record_id": "31912251",
+      "record_type": "publication_citation",
+      "title": "31912251",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "31912251"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 6,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "482c81c21a303c29977e93b3125a9ac26b9bbcaff6bfa691c787df15168990fa"
+      },
+      "raw_metadata": {
+        "id": "31912251",
+        "title": "31912251"
+      }
+    },
+    {
+      "normalized_id": "pubmed:30802651",
+      "source_record_id": "30802651",
+      "record_type": "publication_citation",
+      "title": "30802651",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "30802651"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 7,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "214a962f537661830c836af41f37e9d5f1bfb38ef356a42276a7a89f3d99f422"
+      },
+      "raw_metadata": {
+        "id": "30802651",
+        "title": "30802651"
+      }
+    },
+    {
+      "normalized_id": "pubmed:30458921",
+      "source_record_id": "30458921",
+      "record_type": "publication_citation",
+      "title": "30458921",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "30458921"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 8,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "8b39dec734733023b92dc6406d11e9d5f190d9559916d7019ec5750ea3106142"
+      },
+      "raw_metadata": {
+        "id": "30458921",
+        "title": "30458921"
+      }
+    },
+    {
+      "normalized_id": "pubmed:28431674",
+      "source_record_id": "28431674",
+      "record_type": "publication_citation",
+      "title": "28431674",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "28431674"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 9,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "386f6a1d047e21eba58839d84ca01e654ce0db166edfbc058667c304e561147c"
+      },
+      "raw_metadata": {
+        "id": "28431674",
+        "title": "28431674"
+      }
+    },
+    {
+      "normalized_id": "pubmed:26593256",
+      "source_record_id": "26593256",
+      "record_type": "publication_citation",
+      "title": "26593256",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "26593256"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 10,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "c5fb8633e70defd28c4a7a8fd97974ac658b2f244d02126758a9ce5596a2719d"
+      },
+      "raw_metadata": {
+        "id": "26593256",
+        "title": "26593256"
+      }
+    },
+    {
+      "normalized_id": "pubmed:20529367",
+      "source_record_id": "20529367",
+      "record_type": "publication_citation",
+      "title": "20529367",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "20529367"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 11,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "e8d8449a9007eb679c8565c8902c757ea755ec76d39178902b3beb5c1ccea28b"
+      },
+      "raw_metadata": {
+        "id": "20529367",
+        "title": "20529367"
+      }
+    },
+    {
+      "normalized_id": "pubmed:19180683",
+      "source_record_id": "19180683",
+      "record_type": "publication_citation",
+      "title": "19180683",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "19180683"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 12,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "46e96e7917db1e7f750aafeb74508aa149286dddd52c75c255e4f985e5ce8ad8"
+      },
+      "raw_metadata": {
+        "id": "19180683",
+        "title": "19180683"
+      }
+    },
+    {
+      "normalized_id": "pubmed:19180682",
+      "source_record_id": "19180682",
+      "record_type": "publication_citation",
+      "title": "19180682",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "19180682"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 13,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "e6eb9fe37793948eba438804440c9709843fb7d051944e54adf22d1d482089bf"
+      },
+      "raw_metadata": {
+        "id": "19180682",
+        "title": "19180682"
+      }
+    },
+    {
+      "normalized_id": "pubmed:19171842",
+      "source_record_id": "19171842",
+      "record_type": "publication_citation",
+      "title": "19171842",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "19171842"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 14,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "3db2586bde4aec2709583fb0b2d7c507b79e5699236c9936eb3f4b143364e500"
+      },
+      "raw_metadata": {
+        "id": "19171842",
+        "title": "19171842"
+      }
+    },
+    {
+      "normalized_id": "pubmed:18949828",
+      "source_record_id": "18949828",
+      "record_type": "publication_citation",
+      "title": "18949828",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "18949828"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 15,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "8e105d4d4f1772ce86e11a9fa26ad75954a767d13c417ea0b98a3cb14d930529"
+      },
+      "raw_metadata": {
+        "id": "18949828",
+        "title": "18949828"
+      }
+    },
+    {
+      "normalized_id": "pubmed:18936433",
+      "source_record_id": "18936433",
+      "record_type": "publication_citation",
+      "title": "18936433",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "18936433"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 16,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "5b02a7145a5d8ce9057318a820b6b25163e68ac64bd5d4d22e5db7bf3f296b4a"
+      },
+      "raw_metadata": {
+        "id": "18936433",
+        "title": "18936433"
+      }
+    },
+    {
+      "normalized_id": "pubmed:17692941",
+      "source_record_id": "17692941",
+      "record_type": "publication_citation",
+      "title": "17692941",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "17692941"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 17,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "3eb927c17711718bb641ee91a999c6ee3ec7c9b9635563fd89f1e3a4a2cee115"
+      },
+      "raw_metadata": {
+        "id": "17692941",
+        "title": "17692941"
+      }
+    },
+    {
+      "normalized_id": "pubmed:17928578",
+      "source_record_id": "17928578",
+      "record_type": "publication_citation",
+      "title": "17928578",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "17928578"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 18,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "a06333302a58825481e71ec011a6229a0c6870bafbe000c4d2a77f885bf6b8d0"
+      },
+      "raw_metadata": {
+        "id": "17928578",
+        "title": "17928578"
+      }
+    },
+    {
+      "normalized_id": "pubmed:11252114",
+      "source_record_id": "11252114",
+      "record_type": "publication_citation",
+      "title": "11252114",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "11252114"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 19,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "55288cc3f9260110d1ee5c6d8f04a4d25be189cae20ed8b0782d6cf9fc59a785"
+      },
+      "raw_metadata": {
+        "id": "11252114",
+        "title": "11252114"
+      }
+    },
+    {
+      "normalized_id": "pubmed:8388627",
+      "source_record_id": "8388627",
+      "record_type": "publication_citation",
+      "title": "8388627",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "8388627"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 20,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "07c45e62945583a51baa641eacc25b1eb1b41e4a5087877b5cf48f1c4780f890"
+      },
+      "raw_metadata": {
+        "id": "8388627",
+        "title": "8388627"
+      }
+    },
+    {
+      "normalized_id": "pubmed:3347018",
+      "source_record_id": "3347018",
+      "record_type": "publication_citation",
+      "title": "3347018",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:24.941545Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "3347018"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "Lyme disease treatment"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0028",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 21,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0028_lyme-disease-treatment\\raw\\page_0001.json",
+        "raw_record_sha256": "be72f3112572e22a6dd79b50bb322ac1f49c77bb8f8bea66b8655bdd55e5ad99"
+      },
+      "raw_metadata": {
+        "id": "3347018",
+        "title": "3347018"
+      }
+    }
+  ],
+  "warnings": [
+    "Optional credential NCBI_API_KEY was not found; request used anonymous/public access."
+  ],
+  "errors": []
+}

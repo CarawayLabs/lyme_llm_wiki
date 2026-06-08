@@ -1,0 +1,29 @@
+# PUBM-0031: cefuroxime Lyme disease
+
+- Catalog: NCBI PubMed E-utilities (`pubmed`)
+- Query mode: `record_search`
+- Priority/theme: `P1` / `treatment`
+- Endpoint: `GET https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi`
+- Retrieval URL: `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22cefuroxime+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer`
+- Auth alias: `NCBI_API_KEY`; credential sent: no
+- HTTP status: `200`
+- Records normalized from this page: `0`
+- Raw response: `C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\catalogs\pubmed\PUBM-0031_cefuroxime-lyme-disease\raw\page_0001.json`
+- JSON envelope: `C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\catalogs\pubmed\PUBM-0031_cefuroxime-lyme-disease\json\page_0001.json`
+
+## Search Intent
+
+Interventions, medications, treatment duration, comparative effectiveness, outcomes, and safety evidence.
+
+## Downstream Use
+
+Map current interventions, evidence gaps, safety signals, and treatment-navigation needs.
+
+## Pagination And Rate Notes
+
+- Pagination: Use WebEnv/query_key history plus retstart/retmax; retrieve details in batched ESummary/EFetch calls.
+- Rate limit note: Without a key stay at or below 3 requests/second; with a key the default supported limit is 10 requests/second.
+
+## Interpretation Notes
+
+Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers.

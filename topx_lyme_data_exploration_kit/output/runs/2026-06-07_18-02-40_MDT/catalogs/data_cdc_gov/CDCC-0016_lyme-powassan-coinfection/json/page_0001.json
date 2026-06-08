@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:53.853148Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CDCC-0016",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.us.socrata.com/api/catalog/v1",
+    "search_term": "Lyme Powassan coinfection",
+    "search_expression": "Lyme Powassan coinfection",
+    "parameters": {
+      "search_context": "data.cdc.gov",
+      "q": "Lyme Powassan coinfection",
+      "limit": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "CDC_SOCRATA_APP_TOKEN",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.CDC.gov / Socrata Catalog",
+    "catalog_slug": "data_cdc_gov",
+    "source_type": "public_health_data_catalog",
+    "organization": "Centers for Disease Control and Prevention",
+    "docs_url": "https://dev.socrata.com/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:53.300359Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 484,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_cdc_gov\\CDCC-0016_lyme-powassan-coinfection\\raw\\page_0001.json",
+      "sha256": "86daa666734c147d81f9e18d14a146dff3012e8544365bad628a11d7a3f860e8",
+      "byte_count": 130
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

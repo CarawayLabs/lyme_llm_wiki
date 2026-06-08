@@ -1,0 +1,1735 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:12.995734Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0017",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "amoxicillin Lyme disease",
+    "search_expression": "amoxicillin Lyme disease",
+    "parameters": {
+      "query.cond": "Lyme Disease",
+      "query.term": "amoxicillin Lyme disease",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:12.337551Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 303,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 4,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 4,
+    "total_count": 4,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0017_amoxicillin-lyme-disease\\raw\\page_0001.bin",
+      "sha256": "5874a1fb492eb8c421740004d52038741b9922a1e4b1c3f616a082f124700bf3",
+      "byte_count": 35759
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0017-0",
+      "source_record_id": "CTG-0017-0",
+      "record_type": "clinical_trial",
+      "title": "amoxicillin Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.337551Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0017-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "amoxicillin Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0017",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0017_amoxicillin-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "72d87565fc9633744b8ade50720b99efbc52cd6d87fb9e226f0d29b455ae871e"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT01368341",
+            "orgStudyIdInfo": {
+              "id": "EUDRACT 2010-023747"
+            },
+            "organization": {
+              "fullName": "University of Oslo",
+              "class": "OTHER"
+            },
+            "briefTitle": "Comparing 3 Antibiotic Regimes for Erythema Migrans in General Practice",
+            "officialTitle": "Tick Borne Diseases in Norwegian General Practice. A Randomized, Controlled Trial for Treatment of Erythema Migrans in Norwegian General Practice. A Comparison of Phenoxymethylpenicillin, Amoxicillin and Doxycycline.",
+            "acronym": "NorTick_EM"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2014-12",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2011-06"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2013-12",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2014-12",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2011-06-06",
+            "studyFirstSubmitQcDate": "2011-06-06",
+            "studyFirstPostDateStruct": {
+              "date": "2011-06-07",
+              "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2014-12-11",
+            "lastUpdatePostDateStruct": {
+              "date": "2014-12-12",
+              "type": "ESTIMATED"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR_INVESTIGATOR",
+              "investigatorFullName": "Morten Lindbaek",
+              "investigatorTitle": "Professor",
+              "investigatorAffiliation": "University of Oslo"
+            },
+            "leadSponsor": {
+              "name": "Morten Lindbaek",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "Norwegian Institute of Public Health",
+                "class": "OTHER_GOV"
+              },
+              {
+                "name": "Sorlandet Hospital HF",
+                "class": "OTHER_GOV"
+              },
+              {
+                "name": "Norwegian University of Life Sciences",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": true
+          },
+          "descriptionModule": {
+            "briefSummary": "Tick borne diseases are increasing in Norway. Lyme borreliosis is the most common infection. Erythema migrans is mainly diagnosed and treated in general practice. There is disagreement about what antibiotic treatment that should be given. An RCT with the three most common antibiotics used, will support data for revision of national guidelines.",
+            "detailedDescription": "Comparison of phenoxymethylpenicillin, doxycycline and amoxicillin for Erythema migrans in Norwegian general practice. Every patient receives 14 days of antibiotic treatment. There are blood samples for measurement of Borrelia antibody level at day 1, 14 and 90 and questionnaires on subjective health complaints (SHC) at day 1, 90 and 360. Side symptoms and side effects are registered. For volunteers there is an additional PCR-analysis on punch biopsy from the EM for subgrouping of the Borrelia bacteria. TBE-antibodies are measured on day 14. Antibody levels and SHC-scores are compared to healthy blood donors."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans",
+              "Erythema Chronicum Migrans",
+              "Borreliosis",
+              "Lyme Disease",
+              "Early Lyme Disease"
+            ],
+            "keywords": [
+              "Antibiotics",
+              "General Practice",
+              "Erythema migrans",
+              "Borrelia",
+              "Ticks"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "PHASE4"
+            ],
+            "designInfo": {
+              "allocation": "RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "primaryPurpose": "TREATMENT",
+              "maskingInfo": {
+                "masking": "TRIPLE",
+                "whoMasked": [
+                  "CARE_PROVIDER",
+                  "INVESTIGATOR",
+                  "OUTCOMES_ASSESSOR"
+                ]
+              }
+            },
+            "enrollmentInfo": {
+              "count": 225,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Doxycycline",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Doxycycline, 100 mg, tablets, b.i.d., 14 days",
+                "interventionNames": [
+                  "Drug: Doxycycline"
+                ]
+              },
+              {
+                "label": "Penicillin",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Phenoxymethylpenicillin tablets 650 mg. 2 tablets t.i.d. 14 days",
+                "interventionNames": [
+                  "Drug: Phenoxymethylpenicillin"
+                ]
+              },
+              {
+                "label": "Amoxicillin",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Amoxicillin 500 mg capsula, t.i.d., 14 days",
+                "interventionNames": [
+                  "Drug: Amoxicillin"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Doxycycline",
+                "description": "1 tablet, 100 mg, b.i.d. 14 days",
+                "armGroupLabels": [
+                  "Doxycycline"
+                ],
+                "otherNames": [
+                  "Doksycycline 100 mg HEXAL, no. 30"
+                ]
+              },
+              {
+                "type": "DRUG",
+                "name": "Phenoxymethylpenicillin",
+                "description": "Tablet 650 mg, 2 tablets, t.i.d., 14 days",
+                "armGroupLabels": [
+                  "Penicillin"
+                ],
+                "otherNames": [
+                  "Weifapenin 650 mg, WEIFA, no. 100"
+                ]
+              },
+              {
+                "type": "DRUG",
+                "name": "Amoxicillin",
+                "description": "Capsula, 500 mg, t.i.d., 14 days",
+                "armGroupLabels": [
+                  "Amoxicillin"
+                ],
+                "otherNames": [
+                  "Amoxicillin 500 mg MYLAN, no. 30 + 20."
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Duration of Erythema migrans (EM)",
+                "description": "On day 1 duration until first the consulation is registered. Day 1-14 the EM is registered in a patient diary. On day 14 the doctor is asked whether the EM has disseapeared. If not the patient is followed by phone from the researchers. On day 90 they are additionally asked for how long it lasted.",
+                "timeFrame": "1-90 days"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Subjective Health Complaints (SHC)",
+                "description": "By questionnaire on day 1, day 90 and day 360 the patients are asked about their SHC which is a standardized set of parametres. The 3 treatment groups are compaired to each other and to 1200 healthy blood donors receiving the same questionnaire. There are 29 standardized and 3 Lyme disease related subjects to be measured.",
+                "timeFrame": "1 year"
+              },
+              {
+                "measure": "Borrelia antibodies",
+                "description": "Normally antibody production is not measured for EM as it is a clinical diagnosis, and less than 50 percent of EM-patients are expected to develop antibodies in the first period. However antibodies are here measured on day 1, day 14 and day 90 to see whether there are differences between the groups. Also the results will be compared to the blood donors.",
+                "timeFrame": "1-90 days"
+              },
+              {
+                "measure": "Side symptoms",
+                "description": "The EM in it self is often asymptomatic, and fever, headache and nerval palsy can be a sign of disseminated disease or co-infection. On the quiestionnaire to the pasient and doctor on day 1, in the patient diary day 1-14 and on the questionnaire to the doctor on day 14 these side symptoms are registered.\n\nIn a potential case, where it turns out that the patient suffers from disseminated disease this will be regostered as treatment failure in the study and the patient treated and/or referred as normal.",
+                "timeFrame": "1-14 days"
+              },
+              {
+                "measure": "Side effects",
+                "description": "The antibiotic tretments are expected to be non-inferior to each other. Potensial side effects as nausea, diarrhea etc. are registered in the patients diary day 1-14 and in the doctors quiestionnaire on day 14.",
+                "timeFrame": "1-14 days"
+              },
+              {
+                "measure": "Subgrouping and TBE",
+                "description": "For volunteers there is an additional PCR-analysis on punch biopsy from the EM for subgroupring of the Borrelia bacteria. TBE-antibodies are measured on day 14.",
+                "timeFrame": "1-14 days"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Clinical diagnosis of Erythema migrans\n* Over the age of 18\n* Signing an concent form after information in writing\n\nExclusion Criteria:\n\n* Allergic to any of the three drugs in the study\n* Under the age of 18\n* Pregnancy\n* Dementia or known drug abuse\n* Antibiotic treatment last 14 days\n* Concommitant Chemotherapy or immunomodulating therapy\n* Concommitant use of medicine with potential interaction (defined in protocol)",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Morten Lindbak, Professor",
+                "affiliation": "University of Oslo",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Antibiotic Centre for Primary Care, University of Oslo",
+                "city": "Oslo",
+                "zip": "0318",
+                "country": "Norway",
+                "geoPoint": {
+                  "lat": 59.91273,
+                  "lon": 10.74609
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "29505880",
+                "type": "DERIVED",
+                "citation": "Eliassen KE, Reiso H, Berild D, Lindbaek M. Comparison of phenoxymethylpenicillin, amoxicillin, and doxycycline for erythema migrans in general practice. A randomized controlled trial with a 1-year follow-up. Clin Microbiol Infect. 2018 Dec;24(12):1290-1296. doi: 10.1016/j.cmi.2018.02.028. Epub 2018 Mar 2."
+              }
+            ],
+            "seeAlsoLinks": [
+              {
+                "label": "Information from the Antibiotic Centre for Primary Care",
+                "url": "http://www.antibiotikasenteret.no"
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              },
+              {
+                "id": "D015787",
+                "term": "Erythema Chronicum Migrans"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017192",
+                "term": "Skin Diseases, Bacterial"
+              },
+              {
+                "id": "D012874",
+                "term": "Skin Diseases, Infectious"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D004890",
+                "term": "Erythema"
+              },
+              {
+                "id": "D012871",
+                "term": "Skin Diseases"
+              },
+              {
+                "id": "D017437",
+                "term": "Skin and Connective Tissue Diseases"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D004318",
+                "term": "Doxycycline"
+              },
+              {
+                "id": "D010404",
+                "term": "Penicillin V"
+              },
+              {
+                "id": "D000658",
+                "term": "Amoxicillin"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D013754",
+                "term": "Tetracyclines"
+              },
+              {
+                "id": "D009279",
+                "term": "Naphthacenes"
+              },
+              {
+                "id": "D011084",
+                "term": "Polycyclic Aromatic Hydrocarbons"
+              },
+              {
+                "id": "D006841",
+                "term": "Hydrocarbons, Aromatic"
+              },
+              {
+                "id": "D006844",
+                "term": "Hydrocarbons, Cyclic"
+              },
+              {
+                "id": "D006838",
+                "term": "Hydrocarbons"
+              },
+              {
+                "id": "D009930",
+                "term": "Organic Chemicals"
+              },
+              {
+                "id": "D011083",
+                "term": "Polycyclic Compounds"
+              },
+              {
+                "id": "D010406",
+                "term": "Penicillins"
+              },
+              {
+                "id": "D047090",
+                "term": "beta-Lactams"
+              },
+              {
+                "id": "D007769",
+                "term": "Lactams"
+              },
+              {
+                "id": "D000577",
+                "term": "Amides"
+              },
+              {
+                "id": "D013457",
+                "term": "Sulfur Compounds"
+              },
+              {
+                "id": "D006574",
+                "term": "Heterocyclic Compounds, 2-Ring"
+              },
+              {
+                "id": "D000072471",
+                "term": "Heterocyclic Compounds, Fused-Ring"
+              },
+              {
+                "id": "D006571",
+                "term": "Heterocyclic Compounds"
+              },
+              {
+                "id": "D000667",
+                "term": "Ampicillin"
+              },
+              {
+                "id": "D010400",
+                "term": "Penicillin G"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0017-1",
+      "source_record_id": "CTG-0017-1",
+      "record_type": "clinical_trial",
+      "title": "amoxicillin Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.337551Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0017-1"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "amoxicillin Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0017",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0017_amoxicillin-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "2b0394854ab4ab608d7465ccb7d4d2b65715b033cb8d63195e419c54c5c9a4e7"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT06451913",
+            "orgStudyIdInfo": {
+              "id": "SUBLYME - Sb 241"
+            },
+            "secondaryIdInfos": [
+              {
+                "id": "2023-508694-80-01",
+                "type": "CTIS"
+              }
+            ],
+            "organization": {
+              "fullName": "Biocodex",
+              "class": "INDUSTRY"
+            },
+            "briefTitle": "Effect of Saccharomyces Boulardii CNCM I-745 on Gut Microbiota in Patients Undergoing Antibiotic Therapy (in the Context of Erythema Migrans (Early Skin Form of Lyme Borreliosis))",
+            "officialTitle": "Effect of Saccharomyces Boulardii CNCM I-745 on Gut Microbiota in Patients Undergoing Antibiotic Therapy (in the Context of Erythema Migrans (Early Skin Form of Lyme Borreliosis))",
+            "acronym": "SUBLYME"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2025-08",
+            "overallStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2025-07-16",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2026-12",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2026-12",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2024-04-23",
+            "studyFirstSubmitQcDate": "2024-06-07",
+            "studyFirstPostDateStruct": {
+              "date": "2024-06-11",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2025-08-21",
+            "lastUpdatePostDateStruct": {
+              "date": "2025-08-27",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "Biocodex",
+              "class": "INDUSTRY"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false,
+            "isUsExport": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The aim of this study is to assess the effect of Saccharomyces boulardii CNCM I-745 on gut microbiota in patients undergoing antibiotic therapy (in the context of erythema migrans (early skin form of Lyme borreliosis)).",
+            "detailedDescription": "The study is designed to compare the efficacy of Saccharomyces boulardii CNCM-I-745 500 mg bid to a placebo in patients undergoing antibiotic therapy in the context of erythema migrans as the early form of Lyme borreliosis."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans of Lyme Disease"
+            ],
+            "keywords": [
+              "Erythema Migrans",
+              "Lyme Disease",
+              "Gut microbiota",
+              "Saccharomyces boulardii CNCM I-745",
+              "Lyme borreliosis"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "PHASE4"
+            ],
+            "designInfo": {
+              "allocation": "RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "interventionModelDescription": "Randomized, double-blind, placebo-controlled, parallel-group, comparative study",
+              "primaryPurpose": "SUPPORTIVE_CARE",
+              "maskingInfo": {
+                "masking": "QUADRUPLE",
+                "maskingDescription": "The 2 types of investigational products will be checked for blind maintenance before release (capsules will be identical in size, shape, color and appearance). The principal investigator does not have access to the randomization (treatment) code, except in exceptional circumstances for valid medical or safety reason, such as occurrence of a serious adverse event for which the knowledge of the study medication would be considered essential for treating the patient.",
+                "whoMasked": [
+                  "PARTICIPANT",
+                  "CARE_PROVIDER",
+                  "INVESTIGATOR",
+                  "OUTCOMES_ASSESSOR"
+                ]
+              }
+            },
+            "enrollmentInfo": {
+              "count": 120,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Amoxicillin + Saccharomyces boulardii CNCM I-745",
+                "type": "EXPERIMENTAL",
+                "description": "The patients will received oral Amoxicillin (1000 mg capsules bid) for 14 days and oral Saccharomyces boulardii CNCM I-745 (®) 250 mg x 2 capsules twice a day for 21 days.",
+                "interventionNames": [
+                  "Drug: Amoxicillin + Saccharomyces boulardii CNCM I-745",
+                  "Other: Stool samples",
+                  "Other: BSFS : Bristol Stool Form Scale",
+                  "Other: GSRS : Gastrointestinal Symptom Rating Scale"
+                ]
+              },
+              {
+                "label": "Amoxicillin + Placebo",
+                "type": "PLACEBO_COMPARATOR",
+                "description": "The patients will received oral Amoxicillin (1000 mg capsules bid) for 14 days + oral Placebo capsules for 21 days.",
+                "interventionNames": [
+                  "Drug: Amoxicillin + Placebo",
+                  "Other: Stool samples",
+                  "Other: BSFS : Bristol Stool Form Scale",
+                  "Other: GSRS : Gastrointestinal Symptom Rating Scale"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "Amoxicillin + Saccharomyces boulardii CNCM I-745",
+                "description": "At inclusion visit (V1), the Investigator will dispense and ask the subject to take Amoxicillin 1000 mg bid for 14 days + Saccharomyces boulardii 250 mg x 2 twice a day for 21 days",
+                "armGroupLabels": [
+                  "Amoxicillin + Saccharomyces boulardii CNCM I-745"
+                ]
+              },
+              {
+                "type": "DRUG",
+                "name": "Amoxicillin + Placebo",
+                "description": "At inclusion visit (V1),the Investigator will dispense and ask the subject to take Amoxicillin 1000 mg bid for 14 days + a matching placebo bid for 21 days",
+                "armGroupLabels": [
+                  "Amoxicillin + Placebo"
+                ]
+              },
+              {
+                "type": "OTHER",
+                "name": "Stool samples",
+                "description": "The subject will be asked to collect thanks to four OMNIgene® •GUT OMR-200 kits :\n\n* an initial stool collection when returning home at D1 (in any case before any intake of amoxicillin and of the investigational medication and up to 1 day after D1).\n* a stool collection at home after the phone call 1, Day 7 (stool collection up to Day 7 + 1 day)\n* a stool collection at home after the phone call 2, Day 14 (stool collection up to Day 14 + 1 day)\n* at home the day of the Visit 2, Day 21 (stool collection up to Day 21 + 1 day)",
+                "armGroupLabels": [
+                  "Amoxicillin + Placebo",
+                  "Amoxicillin + Saccharomyces boulardii CNCM I-745"
+                ]
+              },
+              {
+                "type": "OTHER",
+                "name": "BSFS : Bristol Stool Form Scale",
+                "description": "All included subjects will have to complete a stool diary BSFS (Bristol Stool Form Scale) daily and at each bowel movement, from Day 1 until the end of study treatment (Day 21). The patient will fill the form with the date, the time, and the stool texture.",
+                "armGroupLabels": [
+                  "Amoxicillin + Placebo",
+                  "Amoxicillin + Saccharomyces boulardii CNCM I-745"
+                ]
+              },
+              {
+                "type": "OTHER",
+                "name": "GSRS : Gastrointestinal Symptom Rating Scale",
+                "description": "All included subjects will have to complete a GSRS (Gastrointestinal Symptom Response Score) questionnaire weekly from Day 1 until the end of the study treatment (Day 21).",
+                "armGroupLabels": [
+                  "Amoxicillin + Placebo",
+                  "Amoxicillin + Saccharomyces boulardii CNCM I-745"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Assessment of the effect of Saccharomyces boulardii CNCM I-745, an antibiotic, and their combination on the gut microbiota of patients receiving antibiotic",
+                "description": "Primary endpoint : analysis of the intestinal microbiota in the patient's stools",
+                "timeFrame": "At Day 1, Day 7, Day 14 and Day 21"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Assessment of the efficacy of Saccharomyces boulardii CNCM I-745 in prevention of antibiotic-associated diarrhoea (AAD) in patients undergoing antibiotic therapy",
+                "description": "Secondary efficacy endpoint : Incidence of AAD (The number of AAD episodes that occurred during the treatment period) will be assessed using the Bristol Stool Form Scale (BSFS) recorded daily.",
+                "timeFrame": "At Day 1, Day 7, Day 14 and Day 21"
+              },
+              {
+                "measure": "Assessment of the efficacy of Saccharomyces boulardii CNCM I-745 on the stools in patients undergoing antibiotic therapy : Recorded stools in the Bristol Stool Form Scale (BSFS)",
+                "description": "Secondary efficacy endpoint : Time frame in hours up to the time of the last liquid or loose stool (defined as types 6 or 7 on Bristol Stool Form Scale (BSFS)) followed by the first 24-hour period with stool consistency improvement (no liquid or loose stool), as recorded by the patients in the stool diary or as collected by the investigator",
+                "timeFrame": "At Day 1, Day 7, Day 14 and Day 21"
+              },
+              {
+                "measure": "Assess the effect of Saccharomyces boulardii CNCM I-745, an antibiotic, and their combination on the gastro-intestinal symptoms of patients receiving antibiotic therapy : Changes from baseline of the GSRS",
+                "description": "Secondary efficacy endpoint : Changes from baseline of the Gastrointestinal Symptom Rating Scale (GSRS) score (total score) and diarrhea sub-scores will be compared weekly between the treatment groups. The questionnaire, which contains 15 items, uses a seven-graded Likert scale, where 1 represents the most positive option and 7 the most negative one.",
+                "timeFrame": "Weekly from Day 1 to Day 21"
+              }
+            ],
+            "otherOutcomes": [
+              {
+                "measure": "Assessment of the safety and tolerability of Saccharomyces boulardii CNCM I-745. Recording adverse events",
+                "description": "Safety endpoint : Recorded adverse events (number of events and number of participants with at least one event), vital signs, and physical examination",
+                "timeFrame": "At each assessment time from baseline (Day 1 to Day 58)"
+              },
+              {
+                "measure": "Assess the effect of Saccharomyces boulardii CNCM I-745, an antibiotic, and their combination on the specific gastro-intestinal symptoms of patients receiving antibiotic therapy : Gastrointestinal Symptom Rating scale (GSRS)",
+                "description": "Exploratory endpoint : Changes from baseline of the GSRS subscores (except diarrhea) will be compared weekly between the treatment groups.The questionnaire, which contains 15 items, uses a seven-graded Likert scale, where 1 represents the most positive option and 7 the most negative one.",
+                "timeFrame": "Weekly from Day 1 to Day 21"
+              },
+              {
+                "measure": "Assess the effect of Saccharomyces boulardii CNCM I-745, an antibiotic, and their combination on the gut resistome of patients receiving antibiotic : Changes on the fecal Antimicrobial Resistance Genes (ARGs)",
+                "description": "Exploratory endpoint : Changes observed on the gut resistome, abundance and diversity of the fecal ARGs will be analysed by treatment group and at each assessment time.",
+                "timeFrame": "At Day 1, Day 7, Day 14 and Day 21"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Adult Patients, ≥18 years old.\n* Who are prescribed antibiotic therapy (as per medical routine practices, amoxicillin 1000 mg bid for 14 days) in the context of erythema migrans (early skin form of Lyme borreliosis).\n* Able to comply with study requirements and to provide signed informed consent before any study procedure.\n* Has no condition that may interfere with the study assessments.\n* Able to fulfil in the diary stool log, according to the physician's opinion.\n* Regular defecation (frequency and stool consistency, with at least about three bowel movements a week).\n* For women of childbearing potential:\n* A negative urine pregnancy test immediately prior to starting the study treatment,\n* Agreement to comply with approved methods of contraception during the whole study: unless they meet the criteria of post-menopausal, i.e. 12 months of spontaneous amenorrhea, women of child-bearing potential, defined as all women physiologically capable of becoming pregnant, including women whose career, lifestyle, or sexual orientation precludes intercourse with a male partner, should use one or more acceptable methods of contraception that should be maintained throughout the study.\n\nExclusion Criteria:\n\n* History of hypersensitivity to the study treatments (active substance or excipients), brewer's or baker's yeast,\n* Contraindication and special warning to the study drugs according to the SmPCs,\n* History of chronic constipation with passage of fewer than 3 spontaneous bowel movements per week on average,\n* History of chronic or recurrent diarrhoea with spontaneous unformed bowel movements equivalent to or more often than 3 times daily,\n* Prior gastrointestinal surgery (apart from appendectomy or cholecystectomy performed at least more than one year ago),\n* History of Clostridium difficile infection,\n* Active gastrointestinal inflammatory disease,\n* Known chronic or recurrent systemic disorder that may interfere with the study drug evaluation,\n* Immunocompromised (organtransplants, leukaemia, malignant tumours, radiotherapy, chemotherapy,prolonged high dose cortisone treatment, immunosuppressant treament) or critically ill patients (such as autoimmune disease, HIV,…), patients with a central venous catheter,\n* Severe hepatic or renal impairment,\n* Systemic antibacterial therapy during the 2 months prior to study enrollment,\n* New prescription medications during the 2 weeks prior to study enrollment,\n* Use of any drug or product that alters gut microbiota or function, such as probiotics, laxatives, antiemetics, cisapride, antisecretory or adsorbent treatments (racecadotril, smectite, activated charcoal), opiates such as loperamide, atropine and other cholinergic agents, 4 weeks prior to study enrollment and during the study,\n* Intake of antifungals within 14 days prior to study enrollment,\n* Substantial changes in eating habits within 30 days prior to receiving the first dose of IMP product, and during the study as assessed by the Investigator,\n* History or presence of drug or alcohol abuse,\n* Heavy smoker (more than 10 cigarettes per day),\n* Breast-feeding woman,\n* Patients enrolled in another interventional clinical trial where they received an investigation treatment within the past 30 days,\n* Any condition or personal circumstance that, in the opinion of the investigator, rendered the subject unlikely or unable to comply with the full study protocol",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Gaëlle MARIAULE",
+                "role": "CONTACT",
+                "phone": "03.44.86.82.28",
+                "phoneExt": "+33",
+                "email": "g.mariaule@biocodex.fr"
+              },
+              {
+                "name": "Carine FRANCOIS",
+                "role": "CONTACT",
+                "phone": "03.44.86.82.28",
+                "phoneExt": "z+33",
+                "email": "c.francois@biocodex.fr"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Oana BERNARD, MD",
+                "affiliation": "Chief Scientific Officer",
+                "role": "STUDY_DIRECTOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "University Medical Centre Ljubljana",
+                "status": "RECRUITING",
+                "city": "Ljubljana",
+                "zip": "1000",
+                "country": "Slovenia",
+                "contacts": [
+                  {
+                    "name": "Martina Jaklič, PhD",
+                    "role": "CONTACT",
+                    "phone": "+386 1 522 2037",
+                    "email": "martina.jaklic@kclj.si"
+                  },
+                  {
+                    "name": "Katarina Ogrinc, DR",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D015787",
+                "term": "Erythema Chronicum Migrans"
+              },
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017192",
+                "term": "Skin Diseases, Bacterial"
+              },
+              {
+                "id": "D012874",
+                "term": "Skin Diseases, Infectious"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D004890",
+                "term": "Erythema"
+              },
+              {
+                "id": "D012871",
+                "term": "Skin Diseases"
+              },
+              {
+                "id": "D017437",
+                "term": "Skin and Connective Tissue Diseases"
+              },
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D000658",
+                "term": "Amoxicillin"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D000667",
+                "term": "Ampicillin"
+              },
+              {
+                "id": "D010400",
+                "term": "Penicillin G"
+              },
+              {
+                "id": "D010406",
+                "term": "Penicillins"
+              },
+              {
+                "id": "D047090",
+                "term": "beta-Lactams"
+              },
+              {
+                "id": "D007769",
+                "term": "Lactams"
+              },
+              {
+                "id": "D000577",
+                "term": "Amides"
+              },
+              {
+                "id": "D009930",
+                "term": "Organic Chemicals"
+              },
+              {
+                "id": "D013457",
+                "term": "Sulfur Compounds"
+              },
+              {
+                "id": "D006574",
+                "term": "Heterocyclic Compounds, 2-Ring"
+              },
+              {
+                "id": "D000072471",
+                "term": "Heterocyclic Compounds, Fused-Ring"
+              },
+              {
+                "id": "D006571",
+                "term": "Heterocyclic Compounds"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0017-2",
+      "source_record_id": "CTG-0017-2",
+      "record_type": "clinical_trial",
+      "title": "amoxicillin Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.337551Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0017-2"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "amoxicillin Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0017",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0017_amoxicillin-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "fb777f232278df0b366df752318133129f4ec1f4b62f6f03b1569a93b9e1d1cd"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT03980015",
+            "orgStudyIdInfo": {
+              "id": "MEM vs EM cyto"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Inflammatory Responses in Solitary and Multiple Erythema Migrans",
+            "officialTitle": "Inflammatory Responses in Borrelia Afzelii Culture Positive Patients With Early Disseminated or Early Localized Lyme Borreliosis"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-06",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2006-06-01",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2016-12-31",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2019-05-31",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2019-06-05",
+            "studyFirstSubmitQcDate": "2019-06-06",
+            "studyFirstPostDateStruct": {
+              "date": "2019-06-10",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2019-06-06",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-06-11",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Daša Stupica",
+              "investigatorTitle": "Prinicipal Investigator",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "University of Ljubljana School of Medicine, Slovenia",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The investigators will evaluate differences in host immune responses (levels of cytokines and chemokines, representative of innate, Th1, and Th17 immune responses) in acute sera from adult patients with solitary or multiple erythema migrans."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "CASE_ONLY",
+              "timePerspective": "RETROSPECTIVE"
+            },
+            "bioSpec": {
+              "retention": "SAMPLES_WITHOUT_DNA",
+              "description": "serum"
+            },
+            "enrollmentInfo": {
+              "count": 134,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "erythema migrans",
+                "description": "patients with erythema migrans",
+                "interventionNames": [
+                  "Other: antibiotic treatment"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "antibiotic treatment",
+                "description": "Patients were treated with: ceftriaxone intravenously 2 g OD for 14 days or doxycycline orally 100 mg bid for 10 to 14 days or cefuroxime axetil orally 500 mg bid for 14 days or amoxicillin orally 500 mg tid for 14 days",
+                "armGroupLabels": [
+                  "erythema migrans"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "inflammatory proteins in erythema migrans patients",
+                "description": "The inflammatory immune profiles will be assessed using Luminex to measure the expression of cytokines and chemokines representative of innate and adaptive TH1, TH2, TH17, and B cell responses in serum of patients at enrollment (during active infection).",
+                "timeFrame": "at enrollment"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* erythema migrans in patients \\> 18 years\n* Borrelia afzelii isolated from skin\n\nExclusion Criteria:\n\n* pregnancy or immunocompromising conditions\n* taking antibiotic with antiborrelial activity within 10 days",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ],
+            "studyPopulation": "Adult patients with erythema migrans",
+            "samplingMethod": "NON_PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Daša Stupica, MD PhD",
+                "affiliation": "University Medical Centre Ljubljana",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "University Medical Centre Ljubljana",
+                "city": "Ljubljana",
+                "country": "Slovenia",
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "UNDECIDED"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0017-3",
+      "source_record_id": "CTG-0017-3",
+      "record_type": "clinical_trial",
+      "title": "amoxicillin Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:12.337551Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0017-3"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "amoxicillin Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0017",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0017_amoxicillin-lyme-disease\\raw\\page_0001.bin",
+        "raw_record_sha256": "14c38ea0bf1d4d1690d546bdef7089d998070dd26785093884cafefd5514a0b5"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT02147249",
+            "orgStudyIdInfo": {
+              "id": "EM-0613"
+            },
+            "organization": {
+              "fullName": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "briefTitle": "Cytokines and Chemokines in Erythema Migrans",
+            "officialTitle": "Inflammatory Proteins, Gene Polymorphisms, and Transcriptome Profiles in Patients With Erythema Migrans"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2019-04",
+            "overallStatus": "UNKNOWN",
+            "lastKnownStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2013-07"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2020-12-31",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2020-12-31",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2013-06-24",
+            "studyFirstSubmitQcDate": "2014-05-23",
+            "studyFirstPostDateStruct": {
+              "date": "2014-05-26",
+              "type": "ESTIMATED"
+            },
+            "lastUpdateSubmitDate": "2019-04-19",
+            "lastUpdatePostDateStruct": {
+              "date": "2019-04-22",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "Franc Strle",
+              "investigatorTitle": "MD, PhD",
+              "investigatorAffiliation": "University Medical Centre Ljubljana"
+            },
+            "leadSponsor": {
+              "name": "University Medical Centre Ljubljana",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "University of Ljubljana School of Medicine, Slovenia",
+                "class": "OTHER"
+              },
+              {
+                "name": "Medical University of Vienna",
+                "class": "OTHER"
+              },
+              {
+                "name": "Harvard University",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": false
+          },
+          "descriptionModule": {
+            "briefSummary": "The main objective of this study is to characterize the inflammatory proteins, gene polymorphisms, and transcriptome profiles in patients with erythema migrans to gain better insight into pathogenesis of early Lyme borreliosis and to define new immune modulators that could serve as biomarkers of disease activity."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Erythema Migrans"
+            ],
+            "keywords": [
+              "erythema migrans",
+              "Lyme borreliosis",
+              "inflammation",
+              "outcome"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "primaryPurpose": "BASIC_SCIENCE",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 150,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "erythema migrans patients treated with antibiotics",
+                "type": "EXPERIMENTAL",
+                "description": "adult patients with erythema migrans will be treated with oral antibiotics",
+                "interventionNames": [
+                  "Drug: antibiotic treatment"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DRUG",
+                "name": "antibiotic treatment",
+                "description": "Patient will be treated with: doxycycline orally, 100 mg, bid, 14 days or cefuroxime axetil orally, 500 mg, bid, 14 days or amoxicillin orally, 500 mg, tid, 14 days",
+                "armGroupLabels": [
+                  "erythema migrans patients treated with antibiotics"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "inflammatory proteins in erythema migrans patients",
+                "description": "The inflammatory immune profiles will be assessed using Luminex to measure the expression of cytokines and chemokines representative of innate and adaptive TH1, TH2, TH17, and B cell responses in serum and if available, skin, of patients during active infection and after treatment.",
+                "timeFrame": "up to 12 months follow-up"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "gene polymorphisms in erythema migrans patients",
+                "description": "The expression of disease-relevant genomic variants will be assessed using ImmunoChip.",
+                "timeFrame": "at enrollment"
+              }
+            ],
+            "otherOutcomes": [
+              {
+                "measure": "transcriptome profiles in erythema migrans patients",
+                "description": "We will use RNA sequencing of individual immune cell subtypes from patients to determine their transcriptome.",
+                "timeFrame": "at 6 month follow-up"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* erythema migrans in patients \\> 18 years\n\nExclusion Criteria:\n\n* pregnancy or lactation\n* taking antibiotic with antiborrelial activity within 10 days",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Dasa Stupica, MD,PhD",
+                "role": "CONTACT",
+                "phone": "+386 1 5222110",
+                "email": "cerar.dasa@gmail.com"
+              },
+              {
+                "name": "Franc Strle, MD, PhD",
+                "role": "CONTACT",
+                "phone": "+386 1 5222610",
+                "email": "franc.strle@kclj.si"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Franc Strle, MD, PhD",
+                "affiliation": "UMC Ljubljana",
+                "role": "STUDY_CHAIR"
+              },
+              {
+                "name": "Dasa Stupica, MD, PhD",
+                "affiliation": "UMC Ljubljana",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "UMC Ljubljana, Department of Infectious Diseases",
+                "status": "RECRUITING",
+                "city": "Ljubljana",
+                "zip": "1525",
+                "country": "Slovenia",
+                "contacts": [
+                  {
+                    "name": "Dasa Stupica, MD,PhD",
+                    "role": "CONTACT",
+                    "phone": "+386 1 5222110",
+                    "email": "cerar.dasa@gmail.com"
+                  },
+                  {
+                    "name": "Franc Strle, MD,PhD",
+                    "role": "CONTACT",
+                    "phone": "+386 1 522 2610",
+                    "email": "franc.strle@kclj.si"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 46.05108,
+                  "lon": 14.50513
+                }
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D005929",
+                "term": "Glossitis, Benign Migratory"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D007249",
+                "term": "Inflammation"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D005928",
+                "term": "Glossitis"
+              },
+              {
+                "id": "D014060",
+                "term": "Tongue Diseases"
+              },
+              {
+                "id": "D009059",
+                "term": "Mouth Diseases"
+              },
+              {
+                "id": "D009057",
+                "term": "Stomatognathic Diseases"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D010335",
+                "term": "Pathologic Processes"
+              },
+              {
+                "id": "D013568",
+                "term": "Pathological Conditions, Signs and Symptoms"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

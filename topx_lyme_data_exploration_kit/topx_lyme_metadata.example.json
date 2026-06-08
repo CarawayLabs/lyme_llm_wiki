@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-07T16:00:00Z",
+    "completed_at": "2026-06-07T16:00:01Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-explorer",
+      "version": "0.1.0",
+      "git_commit": null
+    },
+    "environment": {
+      "python": "3.12",
+      "credential_alias": "CDC_SOCRATA_APP_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CDCC-0001",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.us.socrata.com/api/catalog/v1",
+    "search_term": "Lyme disease",
+    "search_expression": "Lyme disease",
+    "parameters": {
+      "search_context": "data.cdc.gov",
+      "q": "Lyme disease",
+      "limit": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "CDC_SOCRATA_APP_TOKEN",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.CDC.gov / Socrata Catalog",
+    "catalog_slug": "data_cdc_gov",
+    "source_type": "public_health_data_catalog",
+    "organization": "Centers for Disease Control and Prevention",
+    "docs_url": "https://dev.socrata.com/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Preserve dataset-specific caveats and footnotes.",
+      "Do not interpret aggregated surveillance data as individual diagnostic data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-07T16:00:01Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 482,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 100,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": 0,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": 1,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "output/raw/data_cdc_gov/CDCC-0001/page_0001.json",
+      "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "byte_count": 12345
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "data_cdc_gov:x5j9-wybp",
+      "source_record_id": "x5j9-wybp",
+      "record_type": "dataset_metadata",
+      "title": "Lyme disease public use aggregated data with geography, 2022-2023",
+      "description": "Public-use aggregated Lyme disease surveillance data with geographic fields.",
+      "summary": "A high-priority human-disease outcome dataset for geographic and temporal exploration.",
+      "source_url": "https://data.cdc.gov/resource/x5j9-wybp",
+      "retrieved_at": "2026-06-07T16:00:01Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": "https://www.cdc.gov/"
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "socrata_dataset_id": "x5j9-wybp",
+        "doi": null,
+        "pmid": null,
+        "pmcid": null,
+        "nct_id": null,
+        "project_number": null,
+        "npi": null,
+        "rxcui": null,
+        "county_fips": null,
+        "tract_geoid": null
+      },
+      "topics": [
+        "Lyme disease",
+        "surveillance",
+        "public health"
+      ],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [
+        "Borrelia burgdorferi"
+      ],
+      "vectors": [
+        "Ixodes scapularis",
+        "Ixodes pacificus"
+      ],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States",
+          "state_fips": null,
+          "county_fips": null,
+          "geoid": null,
+          "latitude": null,
+          "longitude": null,
+          "geometry": null
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": "2022-01-01",
+        "end_date": "2023-12-31",
+        "years": [
+          2022,
+          2023
+        ],
+        "vintage": "2022-2023",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": true,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": null,
+        "license_url": null,
+        "rights_notes": "Apply dataset-specific CDC caveats and public-use restrictions."
+      },
+      "distributions": [
+        {
+          "url": "https://data.cdc.gov/resource/x5j9-wybp.json",
+          "format": "JSON",
+          "media_type": "application/json",
+          "description": "Socrata row API",
+          "byte_size": null,
+          "sha256": null
+        },
+        {
+          "url": "https://data.cdc.gov/api/views/x5j9-wybp/rows.csv?accessType=DOWNLOAD",
+          "format": "CSV",
+          "media_type": "text/csv",
+          "description": "Full dataset download",
+          "byte_size": null,
+          "sha256": null
+        }
+      ],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": true,
+        "known_limitations": [
+          "Surveillance data are subject to underreporting and misclassification.",
+          "Residence geography may differ from exposure geography.",
+          "Case definitions can change over time."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": true
+      },
+      "provenance": {
+        "source_catalog": "Data.CDC.gov",
+        "search_id": "CDCC-0001",
+        "normalization_version": "1.0.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme%20disease&limit=100",
+        "raw_file_path": "output/raw/data_cdc_gov/CDCC-0001/page_0001.json",
+        "raw_record_sha256": null
+      },
+      "raw_metadata": {
+        "resource": {
+          "id": "x5j9-wybp",
+          "name": "Lyme disease public use aggregated data with geography, 2022-2023"
+        }
+      }
+    }
+  ],
+  "warnings": [
+    "This example contains illustrative normalized fields; the script should preserve the actual source payload in raw_metadata."
+  ],
+  "errors": []
+}

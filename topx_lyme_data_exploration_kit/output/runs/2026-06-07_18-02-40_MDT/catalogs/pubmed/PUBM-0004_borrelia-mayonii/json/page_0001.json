@@ -1,0 +1,1622 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:17.502229Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "PUBM-0004",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+    "search_term": "Borrelia mayonii",
+    "search_expression": "(\"Borrelia mayonii\"[Title/Abstract]) AND humans[MeSH Terms]",
+    "parameters": {
+      "db": "pubmed",
+      "term": "(\"Borrelia mayonii\"[Title/Abstract]) AND humans[MeSH Terms]",
+      "retmode": "json",
+      "retmax": 100,
+      "usehistory": "y",
+      "sort": "pub date",
+      "tool": "topx_lyme_explorer"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "NCBI_API_KEY",
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NCBI PubMed E-utilities",
+    "catalog_slug": "pubmed",
+    "source_type": "biomedical_citation_database",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:14.651038Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=UTF-8",
+    "duration_ms": 256,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 20,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 20,
+    "total_count": 20,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+      "sha256": "a61af1b8316814073fce1bb348cdeb2f9219a9ae80c6bb1d1f50d56112608e66",
+      "byte_count": 557
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "pubmed:41659854",
+      "source_record_id": "41659854",
+      "record_type": "publication_citation",
+      "title": "41659854",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "41659854"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "3dfb20929ea1fdce4213e0c558dfe2ba41d504e1998057d25f4c00492335cdaf"
+      },
+      "raw_metadata": {
+        "id": "41659854",
+        "title": "41659854"
+      }
+    },
+    {
+      "normalized_id": "pubmed:39436129",
+      "source_record_id": "39436129",
+      "record_type": "publication_citation",
+      "title": "39436129",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "39436129"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "be41510fff1fb12834b748d859ee62edd6f83ae979f6145aa0c359c7f044d8b4"
+      },
+      "raw_metadata": {
+        "id": "39436129",
+        "title": "39436129"
+      }
+    },
+    {
+      "normalized_id": "pubmed:37703795",
+      "source_record_id": "37703795",
+      "record_type": "publication_citation",
+      "title": "37703795",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "37703795"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "d9e87573febf8bc3dc3986330b0ce223fa4a6e484e60feb351852b35c24c8ca5"
+      },
+      "raw_metadata": {
+        "id": "37703795",
+        "title": "37703795"
+      }
+    },
+    {
+      "normalized_id": "pubmed:37115992",
+      "source_record_id": "37115992",
+      "record_type": "publication_citation",
+      "title": "37115992",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "37115992"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "3d6ef5daed6ca2eea461d8b9aa94500d626fe7d576acd589a2f0cce069923fa1"
+      },
+      "raw_metadata": {
+        "id": "37115992",
+        "title": "37115992"
+      }
+    },
+    {
+      "normalized_id": "pubmed:36116843",
+      "source_record_id": "36116843",
+      "record_type": "publication_citation",
+      "title": "36116843",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "36116843"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "ebfcb0eb43688e11f3594ed349af6ac97c69a7d0d0f5f51c9bfe90b0b2c8cda6"
+      },
+      "raw_metadata": {
+        "id": "36116843",
+        "title": "36116843"
+      }
+    },
+    {
+      "normalized_id": "pubmed:35583265",
+      "source_record_id": "35583265",
+      "record_type": "publication_citation",
+      "title": "35583265",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "35583265"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "4186aeb42d7d8ec94a9837a9850f588c22b8e1a492bd6a7f8b01bbd5a5e19520"
+      },
+      "raw_metadata": {
+        "id": "35583265",
+        "title": "35583265"
+      }
+    },
+    {
+      "normalized_id": "pubmed:34325064",
+      "source_record_id": "34325064",
+      "record_type": "publication_citation",
+      "title": "34325064",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "34325064"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 6,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "12bcfc94c5c09a1203e978c1e8cf8d9a955930a88219543ff1f9943c9b1e4e0d"
+      },
+      "raw_metadata": {
+        "id": "34325064",
+        "title": "34325064"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33360805",
+      "source_record_id": "33360805",
+      "record_type": "publication_citation",
+      "title": "33360805",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33360805"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 7,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "f635895b70152ee78a2b37b6113c330c734e1f657ae9abb18fd0d9e361dad0aa"
+      },
+      "raw_metadata": {
+        "id": "33360805",
+        "title": "33360805"
+      }
+    },
+    {
+      "normalized_id": "pubmed:33479281",
+      "source_record_id": "33479281",
+      "record_type": "publication_citation",
+      "title": "33479281",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "33479281"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 8,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "2c590425a84f250f9c357ece54bee33c6a35401d2900b89bf5c1dc1cd2a2bdab"
+      },
+      "raw_metadata": {
+        "id": "33479281",
+        "title": "33479281"
+      }
+    },
+    {
+      "normalized_id": "pubmed:31896541",
+      "source_record_id": "31896541",
+      "record_type": "publication_citation",
+      "title": "31896541",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "31896541"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 9,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "ace1852aff6cf5556f5aa067f3d556f6ead0bd2dbb54cc930e72ef175b2d6434"
+      },
+      "raw_metadata": {
+        "id": "31896541",
+        "title": "31896541"
+      }
+    },
+    {
+      "normalized_id": "pubmed:31849943",
+      "source_record_id": "31849943",
+      "record_type": "publication_citation",
+      "title": "31849943",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "31849943"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 10,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "b668cf8db4962bb6b58bac42665a0ba1ac0c635e218df332a8148359c67abbf9"
+      },
+      "raw_metadata": {
+        "id": "31849943",
+        "title": "31849943"
+      }
+    },
+    {
+      "normalized_id": "pubmed:31484700",
+      "source_record_id": "31484700",
+      "record_type": "publication_citation",
+      "title": "31484700",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "31484700"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 11,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "9e82cf8aef99a3a6cb786aba56a4cb3fdcfb952ad9a2e3bdc425ac3eefa8ce83"
+      },
+      "raw_metadata": {
+        "id": "31484700",
+        "title": "31484700"
+      }
+    },
+    {
+      "normalized_id": "pubmed:30207871",
+      "source_record_id": "30207871",
+      "record_type": "publication_citation",
+      "title": "30207871",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "30207871"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 12,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "67d26bc8172fd28f7237dc90b5bd069ee2ad24beb5c08fba5f14312fa0b6acce"
+      },
+      "raw_metadata": {
+        "id": "30207871",
+        "title": "30207871"
+      }
+    },
+    {
+      "normalized_id": "pubmed:29637876",
+      "source_record_id": "29637876",
+      "record_type": "publication_citation",
+      "title": "29637876",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "29637876"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 13,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "5b79b143a79b5ddab3b39348270e70e73dd975b6ab6d2d99388329f569c044bd"
+      },
+      "raw_metadata": {
+        "id": "29637876",
+        "title": "29637876"
+      }
+    },
+    {
+      "normalized_id": "pubmed:29398603",
+      "source_record_id": "29398603",
+      "record_type": "publication_citation",
+      "title": "29398603",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "29398603"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 14,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "1d6f9272541e58d211b9a11a3f3c17e157ce914b9e5b93924d8c85dbdfe17152"
+      },
+      "raw_metadata": {
+        "id": "29398603",
+        "title": "29398603"
+      }
+    },
+    {
+      "normalized_id": "pubmed:28583197",
+      "source_record_id": "28583197",
+      "record_type": "publication_citation",
+      "title": "28583197",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "28583197"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 15,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "d76d509472631b11dcadab6c6cca66c1ca0501a50843db21b225a64b2ec3dd34"
+      },
+      "raw_metadata": {
+        "id": "28583197",
+        "title": "28583197"
+      }
+    },
+    {
+      "normalized_id": "pubmed:27558626",
+      "source_record_id": "27558626",
+      "record_type": "publication_citation",
+      "title": "27558626",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "27558626"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 16,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "63da9e03586f6b5631cda8ba4fe263d8b80629caaa3252e227d33293f492d1a5"
+      },
+      "raw_metadata": {
+        "id": "27558626",
+        "title": "27558626"
+      }
+    },
+    {
+      "normalized_id": "pubmed:27301919",
+      "source_record_id": "27301919",
+      "record_type": "publication_citation",
+      "title": "27301919",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "27301919"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 17,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "c50b5b56b6bd103181ad1e87edc06f6c375ac099a80301dbb546c8d0bcc11a8c"
+      },
+      "raw_metadata": {
+        "id": "27301919",
+        "title": "27301919"
+      }
+    },
+    {
+      "normalized_id": "pubmed:27301918",
+      "source_record_id": "27301918",
+      "record_type": "publication_citation",
+      "title": "27301918",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "27301918"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 18,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "0bc02c014a7097b577e504d8fee061e5cd06b706175f1c2a5a91efd076df8350"
+      },
+      "raw_metadata": {
+        "id": "27301918",
+        "title": "27301918"
+      }
+    },
+    {
+      "normalized_id": "pubmed:26856777",
+      "source_record_id": "26856777",
+      "record_type": "publication_citation",
+      "title": "26856777",
+      "description": null,
+      "summary": null,
+      "source_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+      "retrieved_at": "2026-06-08T00:03:14.651038Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "pmid": "26856777"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia mayonii"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Do not assume all abstracts or full text are reusable. Capture publication type, retraction/correction status, and linked identifiers."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "pubmed",
+        "search_id": "PUBM-0004",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 19,
+        "retrieval_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\pubmed\\PUBM-0004_borrelia-mayonii\\raw\\page_0001.json",
+        "raw_record_sha256": "734f1d37473acfb8e54d0b585e577d82bb77f95924ed64b7afc3cbcedd0398c5"
+      },
+      "raw_metadata": {
+        "id": "26856777",
+        "title": "26856777"
+      }
+    }
+  ],
+  "warnings": [
+    "Optional credential NCBI_API_KEY was not found; request used anonymous/public access."
+  ],
+  "errors": []
+}

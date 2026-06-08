@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import logging
 from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 from dataclasses import dataclass
@@ -51,6 +52,7 @@ def run_workflow(
     gemini_settings: GeminiSettings,
     openai_settings: OpenAISettings,
     workflow_config: WorkflowConfig,
+    resume_from_summary: Path | None = None,
 ) -> WorkflowOutcome:
     """Run a dependency-aware workflow with parallel ready-node execution."""
 
@@ -66,6 +68,18 @@ def run_workflow(
     reports: list[WrittenReport] = []
     failures: list[dict[str, Any]] = []
     skipped: list[dict[str, Any]] = []
+
+    if resume_from_summary:
+        resumed_reports, resumed_artifacts = _load_resume_artifacts(resume_from_summary, node_map)
+        reports.extend(resumed_reports)
+        completed.update(resumed_artifacts)
+        pending.difference_update(resumed_artifacts)
+        logger.info(
+            "Resuming workflow %s from %s with %s completed artifact(s)",
+            workflow_config.name,
+            resume_from_summary,
+            len(resumed_artifacts),
+        )
 
     logger.info("Running workflow %s with %s enabled node(s)", workflow_config.name, len(nodes))
     with ThreadPoolExecutor(max_workers=min(workflow_config.max_parallel, len(nodes))) as executor:
@@ -87,7 +101,7 @@ def run_workflow(
                     workflow_config.output_dir,
                     workflow_config.rendered_prompt_dir,
                     node,
-                    completed,
+                    completed.copy(),
                 )
                 running[future] = node
 
@@ -133,6 +147,62 @@ def run_workflow(
         skipped=skipped,
         summary_path=summary_path,
     )
+
+
+def _load_resume_artifacts(
+    summary_path: Path,
+    node_map: dict[str, WorkflowNode],
+) -> tuple[list[WrittenReport], dict[str, Artifact]]:
+    """Load completed workflow artifacts from an earlier run summary."""
+
+    if not summary_path.exists():
+        raise FileNotFoundError(f"Resume summary not found: {summary_path}")
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    completed_entries = summary.get("completed", [])
+    if not isinstance(completed_entries, list):
+        raise ValueError(f"Resume summary {summary_path} field 'completed' must be a list.")
+
+    reports: list[WrittenReport] = []
+    artifacts: dict[str, Artifact] = {}
+    for entry in completed_entries:
+        if not isinstance(entry, dict):
+            raise ValueError(f"Resume summary {summary_path} has a non-object completed entry.")
+
+        node_id = str(entry.get("job_id", "")).strip()
+        if node_id not in node_map:
+            logger.warning("Ignoring completed artifact for unknown workflow node %s", node_id)
+            continue
+
+        output_file = Path(str(entry.get("output_file", "")))
+        if not output_file.exists():
+            raise FileNotFoundError(
+                f"Resume artifact for node {node_id} not found: {output_file}"
+            )
+
+        provider = str(entry.get("provider", "unknown"))
+        interaction_id = str(entry.get("interaction_id", "unknown"))
+        input_file = str(entry.get("input_file", node_map[node_id].input_file))
+        markdown = output_file.read_text(encoding="utf-8")
+
+        reports.append(
+            WrittenReport(
+                job_id=node_id,
+                interaction_id=interaction_id,
+                input_file=input_file,
+                output_file=str(output_file),
+                provider=provider,
+            )
+        )
+        artifacts[node_id] = Artifact(
+            node_id=node_id,
+            label=node_map[node_id].label,
+            provider=provider,
+            markdown=markdown,
+            output_file=str(output_file),
+        )
+
+    return reports, artifacts
 
 
 def _run_node(

@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:44.162374Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "NIHR-0018",
+    "query_mode": "record_search",
+    "method": "POST",
+    "endpoint": "https://api.reporter.nih.gov/v2/projects/search",
+    "search_term": "blacklegged tick habitat",
+    "search_expression": "blacklegged tick habitat",
+    "parameters": {
+      "criteria": {
+        "advanced_text_search": {
+          "operator": "and",
+          "search_field": "projecttitle,terms,abstracttext",
+          "search_text": "blacklegged tick habitat"
+        },
+        "include_active_projects": true,
+        "exclude_subprojects": true,
+        "use_relevance": true
+      },
+      "offset": 0,
+      "limit": 500,
+      "sort_field": "award_notice_date",
+      "sort_order": "desc"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NIH RePORTER API v2",
+    "catalog_slug": "nih_reporter",
+    "source_type": "research_grant_portfolio",
+    "organization": "NIH RePORTER API v2",
+    "docs_url": "https://api.reporter.nih.gov/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:43.459896Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "duration_ms": 350,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0018_blacklegged-tick-habitat\\raw\\page_0001.json",
+      "sha256": "68c1d8473594f6ead8ac9ae06299bd2302e71df8c35a461f3494c6bf77451435",
+      "byte_count": 259
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

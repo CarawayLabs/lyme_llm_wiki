@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:47.014847Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CMSP-0001",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://data.cms.gov/provider-data/",
+    "search_term": "infectious disease physician",
+    "search_expression": "infectious disease physician",
+    "parameters": {
+      "provider_or_facility_focus": "infectious disease physician",
+      "follow_access_api_link": true
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "CMS Provider Data Catalog",
+    "catalog_slug": "cms_provider_data",
+    "source_type": "provider_and_facility_directory",
+    "organization": "CMS Provider Data Catalog",
+    "docs_url": "https://data.cms.gov/provider-data/docs",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Open provider data may be incomplete or stale for certain navigation uses. Record data vintage and verify specialty/location fields."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:46.426222Z",
+    "http_status": 200,
+    "content_type": "text/html",
+    "duration_ms": 236,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\cms_provider_data\\CMSP-0001_infectious-disease-physician\\raw\\page_0001.html",
+      "sha256": "a67cfe4a4eba2111b7f9843ba6baa7d2595fb3393b53cdc2d75fd1934825e98d",
+      "byte_count": 2195
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

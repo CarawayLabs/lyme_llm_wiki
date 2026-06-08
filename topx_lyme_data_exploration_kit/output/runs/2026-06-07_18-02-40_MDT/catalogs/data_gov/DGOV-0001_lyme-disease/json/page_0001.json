@@ -1,0 +1,3987 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:40.883130Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "DGOV-0001",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.gsa.gov/technology/datagov/v4/search",
+    "search_term": "Lyme disease",
+    "search_expression": "Lyme disease",
+    "parameters": {
+      "q": "Lyme disease",
+      "sort": "relevance",
+      "per_page": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "required",
+      "credential_alias": "DATA_GOV_API_KEY",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.gov Catalog API",
+    "catalog_slug": "data_gov",
+    "source_type": "federal_metadata_catalog",
+    "organization": "U.S. General Services Administration",
+    "docs_url": "https://resources.data.gov/catalog-api/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:40.392106Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 429,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 17,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 17,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+      "sha256": "f5cec9b5f99be97bd28fb7fac76dd34b3754d6c24f27d349b8926c8e10a2df4b",
+      "byte_count": 87370
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/2gqk-jj5s",
+      "source_record_id": "https://healthdata.gov/api/views/2gqk-jj5s",
+      "record_type": "dataset_metadata",
+      "title": "Lyme disease and current aspects of immunization",
+      "description": "Lyme disease is a tick-borne multisystem disease that affects primarily the skin, nervous system, heart and joints. At least three species of Borrelia burgdorferi sensu lato, namely Borrelia burgdorferi sensu stricto, Borrelia garinii, and Borrelia afzelii, can cause the disease. This review will focus mainly on the pathophysiology of Lyme arthritis, the long-term outcome of Lyme disease, and the recently licensed vaccine against Lyme disease.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "National Institutes of Health",
+      "organizations": [
+        {
+          "name": "National Institutes of Health",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/2gqk-jj5s"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "f085c1b6c090ee6efd5d99e6581016c319f4d5ae406d63f99fb957ae95cf327d"
+      },
+      "raw_metadata": {
+        "_score": 268.8174,
+        "_sort": [
+          268.8174,
+          3,
+          "c0f0c17e-0564-43ba-a58c-3371293228f5"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:25"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "NIH",
+            "hasEmail": "mailto:info@nih.gov"
+          },
+          "description": "Lyme disease is a tick-borne multisystem disease that affects primarily the skin, nervous system, heart and joints. At least three species of Borrelia burgdorferi sensu lato, namely Borrelia burgdorferi sensu stricto, Borrelia garinii, and Borrelia afzelii, can cause the disease. This review will focus mainly on the pathophysiology of Lyme arthritis, the long-term outcome of Lyme disease, and the recently licensed vaccine against Lyme disease.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "description": "Visit the original government dataset for complete information, documentation, and data access.",
+              "downloadURL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC128914/",
+              "mediaType": "text/html",
+              "title": "Official Government Data Source"
+            }
+          ],
+          "identifier": "https://healthdata.gov/api/views/2gqk-jj5s",
+          "issued": "2025-07-14",
+          "keyword": [
+            "lyme-arthritis",
+            "lyme-disease",
+            "lyme-vaccine",
+            "nih",
+            "tick-borne-disease"
+          ],
+          "landingPage": "https://healthdata.gov/d/2gqk-jj5s",
+          "modified": "2025-09-06",
+          "programCode": [
+            "009:037"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "National Institutes of Health"
+          },
+          "theme": [
+            "NIH"
+          ],
+          "title": "Lyme disease and current aspects of immunization"
+        },
+        "description": "Lyme disease is a tick-borne multisystem disease that affects primarily the skin, nervous system, heart and joints. At least three species of Borrelia burgdorferi sensu lato, namely Borrelia burgdorferi sensu stricto, Borrelia garinii, and Borrelia afzelii, can cause the disease. This review will focus mainly on the pathophysiology of Lyme arthritis, the long-term outcome of Lyme disease, and the recently licensed vaccine against Lyme disease.",
+        "distribution_titles": [
+          "Official Government Data Source"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/3d341c8b-2b35-4bd3-9c26-9f138bdb1176",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/3d341c8b-2b35-4bd3-9c26-9f138bdb1176/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/2gqk-jj5s",
+        "keyword": [
+          "lyme-arthritis",
+          "lyme-disease",
+          "lyme-vaccine",
+          "nih",
+          "tick-borne-disease"
+        ],
+        "last_harvested_date": "2025-09-07T07:04:47.985708",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 3,
+        "publisher": "National Institutes of Health",
+        "slug": "lyme-disease-and-current-aspects-of-immunization",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NIH"
+        ],
+        "title": "Lyme disease and current aspects of immunization"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/nzib-2iwc",
+      "source_record_id": "https://healthdata.gov/api/views/nzib-2iwc",
+      "record_type": "dataset_metadata",
+      "title": "IFNγ production in peripheral blood of early Lyme disease patients to hLFAα",
+      "description": "Background\n          It has been proposed that outer surface protein A (OspA) of Borrelia burgdorferi sensu stricto contains a T helper 1 (Th1) cell epitope that could play a role in an autoimmune response to hLFA1.\n        \n        \n          Methods\n          We used two peptides, hLFAαL (aa326-345) and Borrelia burgdorferi OspAB31 (aa164-183), as stimulating antigens to measure Th1 proinflammatory IFNγ cytokine production in peripheral blood of Lyme disease patients presenting with EM without history of arthritis, as well as in peripheral blood of healthy individuals.\n        \n        \n          Results\n          IFNγ responses to hLFA1 peptide were observed in 11 of 19 Lyme disease patients and in 3 of 15 healthy controls. In contrast, only 2 of 19 of the Lyme disease patients and none of the controls responded to the homologous OspAB31 peptide.\n        \n        \n          Conclusions\n          IFNγ was produced in response to stimulation with peptide hLFAαL (aa326-345) in peripheral blood of 58% of patients with early Lyme disease without signs of arthritis, as well as in peripheral blood of 20% of healthy individuals, but not in response to stimulation with the homologous OspAB31 (aa164-183) peptide (p < 0.05). Our results suggest that reactivity to the hLFA1 peptide in peripheral blood may be the result of T cell degeneracy.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "National Institutes of Health",
+      "organizations": [
+        {
+          "name": "National Institutes of Health",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/nzib-2iwc"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "7fd613c775b9c767e6068a9f3451704b83c5487ec482fbb69b532bd18f03781a"
+      },
+      "raw_metadata": {
+        "_score": 226.73518,
+        "_sort": [
+          226.73518,
+          0,
+          "46910467-80fb-46f6-bed2-650415c3a9d7"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:25"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "NIH",
+            "hasEmail": "mailto:info@nih.gov"
+          },
+          "description": "Background\n          It has been proposed that outer surface protein A (OspA) of Borrelia burgdorferi sensu stricto contains a T helper 1 (Th1) cell epitope that could play a role in an autoimmune response to hLFA1.\n        \n        \n          Methods\n          We used two peptides, hLFAαL (aa326-345) and Borrelia burgdorferi OspAB31 (aa164-183), as stimulating antigens to measure Th1 proinflammatory IFNγ cytokine production in peripheral blood of Lyme disease patients presenting with EM without history of arthritis, as well as in peripheral blood of healthy individuals.\n        \n        \n          Results\n          IFNγ responses to hLFA1 peptide were observed in 11 of 19 Lyme disease patients and in 3 of 15 healthy controls. In contrast, only 2 of 19 of the Lyme disease patients and none of the controls responded to the homologous OspAB31 peptide.\n        \n        \n          Conclusions\n          IFNγ was produced in response to stimulation with peptide hLFAαL (aa326-345) in peripheral blood of 58% of patients with early Lyme disease without signs of arthritis, as well as in peripheral blood of 20% of healthy individuals, but not in response to stimulation with the homologous OspAB31 (aa164-183) peptide (p < 0.05). Our results suggest that reactivity to the hLFA1 peptide in peripheral blood may be the result of T cell degeneracy.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "description": "Visit the original government dataset for complete information, documentation, and data access.",
+              "downloadURL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC134469/",
+              "mediaType": "text/html",
+              "title": "Official Government Data Source"
+            }
+          ],
+          "identifier": "https://healthdata.gov/api/views/nzib-2iwc",
+          "issued": "2025-07-14",
+          "keyword": [
+            "hla-lfa1",
+            "ifn-production",
+            "lyme-disease",
+            "nih",
+            "peripheral-blood"
+          ],
+          "landingPage": "https://healthdata.gov/d/nzib-2iwc",
+          "modified": "2025-09-06",
+          "programCode": [
+            "009:033"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "National Institutes of Health"
+          },
+          "theme": [
+            "NIH"
+          ],
+          "title": "IFNγ production in peripheral blood of early Lyme disease patients to hLFAα"
+        },
+        "description": "Background\n          It has been proposed that outer surface protein A (OspA) of Borrelia burgdorferi sensu stricto contains a T helper 1 (Th1) cell epitope that could play a role in an autoimmune response to hLFA1.\n        \n        \n          Methods\n          We used two peptides, hLFAαL (aa326-345) and Borrelia burgdorferi OspAB31 (aa164-183), as stimulating antigens to measure Th1 proinflammatory IFNγ cytokine production in peripheral blood of Lyme disease patients presenting with EM without history of arthritis, as well as in peripheral blood of healthy individuals.\n        \n        \n          Results\n          IFNγ responses to hLFA1 peptide were observed in 11 of 19 Lyme disease patients and in 3 of 15 healthy controls. In contrast, only 2 of 19 of the Lyme disease patients and none of the controls responded to the homologous OspAB31 peptide.\n        \n        \n          Conclusions\n          IFNγ was produced in response to stimulation with peptide hLFAαL (aa326-345) in peripheral blood of 58% of patients with early Lyme disease without signs of arthritis, as well as in peripheral blood of 20% of healthy individuals, but not in response to stimulation with the homologous OspAB31 (aa164-183) peptide (p < 0.05). Our results suggest that reactivity to the hLFA1 peptide in peripheral blood may be the result of T cell degeneracy.",
+        "distribution_titles": [
+          "Official Government Data Source"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/2e9fcfd3-3eec-4dab-a5f7-dd03d27a9b0a",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/2e9fcfd3-3eec-4dab-a5f7-dd03d27a9b0a/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/nzib-2iwc",
+        "keyword": [
+          "hla-lfa1",
+          "ifn-production",
+          "lyme-disease",
+          "nih",
+          "peripheral-blood"
+        ],
+        "last_harvested_date": "2025-09-07T18:13:36.052180",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "National Institutes of Health",
+        "slug": "ifn-production-in-peripheral-blood-of-early-lyme-disease-patients-to-hlfa",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NIH"
+        ],
+        "title": "IFNγ production in peripheral blood of early Lyme disease patients to hLFAα"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://data.cdc.gov/api/views/93k9-hy54",
+      "source_record_id": "https://data.cdc.gov/api/views/93k9-hy54",
+      "record_type": "dataset_metadata",
+      "title": "NNDSS - Table II. Lyme disease to Meningococcal",
+      "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2016. In this Table, provisional* cases of selected† notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed. The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories.\r\n\r\nNote:\r\nThese are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. \r\n\r\nCase counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. \r\n\r\nFootnotes:\r\nC.N.M.I.: Commonwealth of Northern Mariana Islands. \r\nU: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.  NP:  Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum.\r\n\r\n* Case counts for reporting year 2016 are provisional and subject to change.   For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. \r\n† Three low incidence conditions, rubella, rubella congenital, and tetanus, are in Table II to facilitate case count verification with reporting jurisdictions.\r\n§ Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://data.cdc.gov/api/views/93k9-hy54"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "2cae66b8ac1b9167ae38a56357f326d63caf45db2823e21b7dd8efe5a02fa175"
+      },
+      "raw_metadata": {
+        "_score": 209.97054,
+        "_sort": [
+          209.97054,
+          0,
+          "adff1cc9-83ec-4976-bd73-67ad65c7b22d"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "CDC INFO",
+            "hasEmail": "mailto:cdcinfo@cdc.gov"
+          },
+          "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2016. In this Table, provisional* cases of selected† notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed. The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories.\r\n\r\nNote:\r\nThese are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. \r\n\r\nCase counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. \r\n\r\nFootnotes:\r\nC.N.M.I.: Commonwealth of Northern Mariana Islands. \r\nU: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.  NP:  Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum.\r\n\r\n* Case counts for reporting year 2016 are provisional and subject to change.   For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. \r\n† Three low incidence conditions, rubella, rubella congenital, and tetanus, are in Table II to facilitate case count verification with reporting jurisdictions.\r\n§ Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.csv?accessType=DOWNLOAD",
+              "mediaType": "text/csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.json?accessType=DOWNLOAD",
+              "mediaType": "application/json"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.rdf?accessType=DOWNLOAD",
+              "mediaType": "application/rdf+xml"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/93k9-hy54/rows.xml?accessType=DOWNLOAD",
+              "mediaType": "application/xml"
+            }
+          ],
+          "identifier": "https://data.cdc.gov/api/views/93k9-hy54",
+          "issued": "2017-01-05",
+          "keyword": [
+            "2016",
+            "all serogroups",
+            "invasive",
+            "lyme disease",
+            "malaria",
+            "meningococcal disease",
+            "mmwr",
+            "nedss",
+            "netss",
+            "nndss",
+            "wonder"
+          ],
+          "landingPage": "https://data.cdc.gov/d/93k9-hy54",
+          "license": "http://opendefinition.org/licenses/odc-odbl/",
+          "modified": "2017-01-05",
+          "programCode": [
+            "009:020"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Centers for Disease Control and Prevention"
+          },
+          "theme": [
+            "NNDSS"
+          ],
+          "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+        },
+        "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2016. In this Table, provisional* cases of selected† notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed. The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories.\r\n\r\nNote:\r\nThese are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. \r\n\r\nCase counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. \r\n\r\nFootnotes:\r\nC.N.M.I.: Commonwealth of Northern Mariana Islands. \r\nU: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.  NP:  Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum.\r\n\r\n* Case counts for reporting year 2016 are provisional and subject to change.   For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. \r\n† Three low incidence conditions, rubella, rubella congenital, and tetanus, are in Table II to facilitate case count verification with reporting jurisdictions.\r\n§ Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/9d0610cf-760b-4d53-bbbb-5b84693c2857",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/9d0610cf-760b-4d53-bbbb-5b84693c2857/raw",
+        "has_spatial": false,
+        "identifier": "https://data.cdc.gov/api/views/93k9-hy54",
+        "keyword": [
+          "2016",
+          "all serogroups",
+          "invasive",
+          "lyme disease",
+          "malaria",
+          "meningococcal disease",
+          "mmwr",
+          "nedss",
+          "netss",
+          "nndss",
+          "wonder"
+        ],
+        "last_harvested_date": "2025-08-08T18:05:41.654319",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Centers for Disease Control and Prevention",
+        "slug": "nndss-table-ii-lyme-disease-to-meningococcal-dbcee",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NNDSS"
+        ],
+        "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://data.cdc.gov/api/views/7pb7-w9us",
+      "source_record_id": "https://data.cdc.gov/api/views/7pb7-w9us",
+      "record_type": "dataset_metadata",
+      "title": "NNDSS - Table II. Lyme disease to Meningococcal",
+      "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2015.In this Table, provisional cases of selected notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed.The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.    NP: Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Three low incidence conditions, rubella, rubella congenital, and tetanus, have been moved to Table 2 to facilitate case count verification with reporting jurisdictions. ��� Case counts for reporting year 2015 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. �� Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://data.cdc.gov/api/views/7pb7-w9us"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "1e90624cd2d419c578ebfb9103ae82dbc22e2c2f104717543837a8092a2ca3a2"
+      },
+      "raw_metadata": {
+        "_score": 205.78258,
+        "_sort": [
+          205.78258,
+          0,
+          "41d9f853-90bc-4682-8164-d3fa4d9f7eee"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "CDC INFO",
+            "hasEmail": "mailto:cdcinfo@cdc.gov"
+          },
+          "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2015.In this Table, provisional cases of selected notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed.The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.    NP: Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Three low incidence conditions, rubella, rubella congenital, and tetanus, have been moved to Table 2 to facilitate case count verification with reporting jurisdictions. ��� Case counts for reporting year 2015 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. �� Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.csv?accessType=DOWNLOAD",
+              "mediaType": "text/csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.json?accessType=DOWNLOAD",
+              "mediaType": "application/json"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.rdf?accessType=DOWNLOAD",
+              "mediaType": "application/rdf+xml"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/7pb7-w9us/rows.xml?accessType=DOWNLOAD",
+              "mediaType": "application/xml"
+            }
+          ],
+          "identifier": "https://data.cdc.gov/api/views/7pb7-w9us",
+          "issued": "2016-01-07",
+          "keyword": [
+            "2015",
+            "all serogroups",
+            "invasive",
+            "lyme disease",
+            "malaria",
+            "meningococcal disease",
+            "mmwr",
+            "nedss",
+            "netss",
+            "nndss",
+            "wonder"
+          ],
+          "landingPage": "https://data.cdc.gov/d/7pb7-w9us",
+          "license": "http://opendefinition.org/licenses/odc-odbl/",
+          "modified": "2016-01-07",
+          "programCode": [
+            "009:020"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Centers for Disease Control and Prevention"
+          },
+          "theme": [
+            "NNDSS"
+          ],
+          "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+        },
+        "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2015.In this Table, provisional cases of selected notifiable diseases (≥1,000 cases reported during the preceding year), and selected low frequency diseases are displayed.The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable.    NP: Nationally notifiable but not published.    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Three low incidence conditions, rubella, rubella congenital, and tetanus, have been moved to Table 2 to facilitate case count verification with reporting jurisdictions. ��� Case counts for reporting year 2015 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. �� Data for meningococcal disease, invasive caused by serogroups ACWY; serogroup B; other serogroup; and unknown serogroup are available in Table I.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/1956cf81-6e4f-421f-88dd-7b3720a352ab",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/1956cf81-6e4f-421f-88dd-7b3720a352ab/raw",
+        "has_spatial": false,
+        "identifier": "https://data.cdc.gov/api/views/7pb7-w9us",
+        "keyword": [
+          "2015",
+          "all serogroups",
+          "invasive",
+          "lyme disease",
+          "malaria",
+          "meningococcal disease",
+          "mmwr",
+          "nedss",
+          "netss",
+          "nndss",
+          "wonder"
+        ],
+        "last_harvested_date": "2025-08-09T02:56:42.207183",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Centers for Disease Control and Prevention",
+        "slug": "nndss-table-ii-lyme-disease-to-meningococcal",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NNDSS"
+        ],
+        "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://doi.org/10.23719/1530485",
+      "source_record_id": "https://doi.org/10.23719/1530485",
+      "record_type": "dataset_metadata",
+      "title": "By-degree Health and Economic Impacts of Lyme Disease, Eastern and Midwestern United States",
+      "description": "Data for \"By-degree Health and Economic Impacts of Lyme Disease, Eastern and Midwestern United States\", published March 2024. The datasets show cases by state,\tfips code,\tcase status, sex, age (by 5-year increments), and frequency. Citation information for this dataset can be found in Data.gov's References section.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "U.S. Environmental Protection Agency",
+      "organizations": [
+        {
+          "name": "U.S. Environmental Protection Agency",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://doi.org/10.23719/1530485"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "3b920e885c18cde2efecc8a2d960a5a97490d8d63f46e2cb6f58c69dd98d8656"
+      },
+      "raw_metadata": {
+        "_score": 202.51964,
+        "_sort": [
+          202.51964,
+          3,
+          "a1cbdbcf-e978-43f4-b234-63773d4606b0"
+        ],
+        "dcat": {
+          "accessLevel": "public",
+          "bureauCode": [
+            "020:00"
+          ],
+          "contactPoint": {
+            "fn": "Caitlin Gould",
+            "hasEmail": "mailto:gould.caitlin@epa.gov"
+          },
+          "description": "Data for \"By-degree Health and Economic Impacts of Lyme Disease, Eastern and Midwestern United States\", published March 2024. The datasets show cases by state,\tfips code,\tcase status, sex, age (by 5-year increments), and frequency. Citation information for this dataset can be found in Data.gov's References section.",
+          "distribution": [
+            {
+              "downloadURL": "https://pasteur.epa.gov/uploads/10.23719/1530485/aggregate_withgeog_1992_2007_epa.xlsx",
+              "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "title": "aggregate_withgeog_1992_2007_epa.xlsx"
+            },
+            {
+              "downloadURL": "https://pasteur.epa.gov/uploads/10.23719/1530485/aggregate_withgeog_2008_2019_epa.xlsx",
+              "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+              "title": "aggregate_withgeog_2008_2019_epa.xlsx"
+            }
+          ],
+          "identifier": "https://doi.org/10.23719/1530485",
+          "keyword": [
+            "Animal Tick Borne Diseases",
+            "Animal Tick-Borne Diseases",
+            "Animal Vector-Borne Diseases",
+            "Lyme Disease",
+            "climate change",
+            "eastern US",
+            "midwestern US"
+          ],
+          "license": "https://pasteur.epa.gov/license/sciencehub-license-non-epa-generated.html",
+          "modified": "2023-11-30",
+          "programCode": [
+            "020:000"
+          ],
+          "publisher": {
+            "name": "U.S. Environmental Protection Agency",
+            "subOrganizationOf": {
+              "name": "U.S. Government"
+            }
+          },
+          "references": [
+            "https://dx.doi.org/10.1007/s10393-024-01676-9"
+          ],
+          "rights": null,
+          "title": "By-degree Health and Economic Impacts of Lyme Disease, Eastern and Midwestern United States"
+        },
+        "description": "Data for \"By-degree Health and Economic Impacts of Lyme Disease, Eastern and Midwestern United States\", published March 2024. The datasets show cases by state,\tfips code,\tcase status, sex, age (by 5-year increments), and frequency. Citation information for this dataset can be found in Data.gov's References section.",
+        "distribution_titles": [
+          "aggregate_withgeog_1992_2007_epa.xlsx",
+          "aggregate_withgeog_2008_2019_epa.xlsx"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/71823f18-8b1e-43d6-911e-b3653148f4a8",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/71823f18-8b1e-43d6-911e-b3653148f4a8/raw",
+        "has_spatial": false,
+        "identifier": "https://doi.org/10.23719/1530485",
+        "keyword": [
+          "Animal Tick Borne Diseases",
+          "Animal Tick-Borne Diseases",
+          "Animal Vector-Borne Diseases",
+          "Lyme Disease",
+          "climate change",
+          "eastern US",
+          "midwestern US"
+        ],
+        "last_harvested_date": "2026-04-21T20:05:11.835391",
+        "organization": {
+          "aliases": [
+            "US"
+          ],
+          "description": null,
+          "id": "82b85475-f85d-404a-b95b-89d1a42e9f6b",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/epa.png",
+          "name": "U.S. Environmental Protection Agency",
+          "organization_type": "Federal Government",
+          "slug": "epa"
+        },
+        "popularity": 3,
+        "publisher": "U.S. Environmental Protection Agency",
+        "slug": "by-degree-health-and-economic-impacts-of-lyme-disease-eastern-and-midwestern-united-states",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "By-degree Health and Economic Impacts of Lyme Disease, Eastern and Midwestern United States"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://data.cdc.gov/api/views/y6uv-t34t",
+      "source_record_id": "https://data.cdc.gov/api/views/y6uv-t34t",
+      "record_type": "dataset_metadata",
+      "title": "NNDSS - Table II. Lyme disease to Meningococcal",
+      "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2014In this Table, all conditions with a 5-year average annual national total of more than or equals 1,000 cases but less than or equals 10,000 cases will be displayed (��� 1,000 and ��_ 10,000). The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Case counts for reporting years 2013 and 2014 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. ��� Data for meningococcal disease, invasive caused by serogroups A, C, Y, & W-135; serogroup B; other serogroup; and unknown serogroup are available in Table I.More information on NNDSS is available at http://wwwn.cdc.gov/nndss/.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Centers for Disease Control and Prevention",
+      "organizations": [
+        {
+          "name": "Centers for Disease Control and Prevention",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://data.cdc.gov/api/views/y6uv-t34t"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "8bbb4b3e0d5c7f03e5af4a3b3dba369818d888d42849744ddfbc8396d988553c"
+      },
+      "raw_metadata": {
+        "_score": 199.31671,
+        "_sort": [
+          199.31671,
+          0,
+          "cb495486-1e8c-4c65-8a77-147b00272407"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "CDC INFO",
+            "hasEmail": "mailto:cdcinfo@cdc.gov"
+          },
+          "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2014In this Table, all conditions with a 5-year average annual national total of more than or equals 1,000 cases but less than or equals 10,000 cases will be displayed (��� 1,000 and ��_ 10,000). The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Case counts for reporting years 2013 and 2014 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. ��� Data for meningococcal disease, invasive caused by serogroups A, C, Y, & W-135; serogroup B; other serogroup; and unknown serogroup are available in Table I.More information on NNDSS is available at http://wwwn.cdc.gov/nndss/.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.csv?accessType=DOWNLOAD",
+              "mediaType": "text/csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.json?accessType=DOWNLOAD",
+              "mediaType": "application/json"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.rdf?accessType=DOWNLOAD",
+              "mediaType": "application/rdf+xml"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.cdc.gov/api/views/y6uv-t34t/rows.xml?accessType=DOWNLOAD",
+              "mediaType": "application/xml"
+            }
+          ],
+          "identifier": "https://data.cdc.gov/api/views/y6uv-t34t",
+          "issued": "2015-01-08",
+          "keyword": [
+            "2014",
+            "lyme disease",
+            "malaria",
+            "meningococcal invasive all serogroups",
+            "mmwr",
+            "nedss",
+            "netss",
+            "nndss",
+            "wonder"
+          ],
+          "landingPage": "https://data.cdc.gov/d/y6uv-t34t",
+          "license": "http://opendefinition.org/licenses/odc-odbl/",
+          "modified": "2015-08-27",
+          "programCode": [
+            "009:020"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Centers for Disease Control and Prevention"
+          },
+          "theme": [
+            "NNDSS"
+          ],
+          "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+        },
+        "description": "NNDSS - Table II. Lyme disease to Meningococcal - 2014In this Table, all conditions with a 5-year average annual national total of more than or equals 1,000 cases but less than or equals 10,000 cases will be displayed (��� 1,000 and ��_ 10,000). The Table includes total number of cases reported in the United States, by region and by states, in accordance with the current method of displaying MMWR data.  Data on United States exclude counts from US territories. Note:These are provisional cases of selected national notifiable diseases, from the National Notifiable Diseases Surveillance System (NNDSS). NNDSS data reported by the 50 states, New York City, the District of Columbia, and the U.S. territories are collated and published weekly as numbered tables printed in the back of the Morbidity and Mortality Weekly Report (MMWR). Cases reported by state health departments to CDC for weekly publication are provisional because of ongoing revision of information and delayed reporting. Case counts in this table are presented as they were published in the MMWR issues. Therefore, numbers listed in later MMWR weeks may reflect changes made to these counts as additional information becomes available. Footnotes:C.N.M.I.: Commonwealth of Northern Mariana Islands. U: Unavailable.    -: No reported cases.    N: Not reportable.    NN: Not Nationally Notifiable    Cum: Cumulative year-to-date counts.    Med: Median.    Max: Maximum. * Case counts for reporting years 2013 and 2014 are provisional and subject to change. For further information on interpretation of these data, see http://wwwn.cdc.gov/nndss/document/ProvisionalNationaNotifiableDiseasesSurveillanceData20100927.pdf. Data for TB are displayed in Table IV, which appears quarterly. ��� Data for meningococcal disease, invasive caused by serogroups A, C, Y, & W-135; serogroup B; other serogroup; and unknown serogroup are available in Table I.More information on NNDSS is available at http://wwwn.cdc.gov/nndss/.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/be8961fe-c0f1-4b8a-b8ac-f1bfae94905c",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/be8961fe-c0f1-4b8a-b8ac-f1bfae94905c/raw",
+        "has_spatial": false,
+        "identifier": "https://data.cdc.gov/api/views/y6uv-t34t",
+        "keyword": [
+          "2014",
+          "lyme disease",
+          "malaria",
+          "meningococcal invasive all serogroups",
+          "mmwr",
+          "nedss",
+          "netss",
+          "nndss",
+          "wonder"
+        ],
+        "last_harvested_date": "2025-08-09T01:30:08.856822",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Centers for Disease Control and Prevention",
+        "slug": "nndss-table-ii-lyme-disease-to-meningococcal-65f3e",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "NNDSS"
+        ],
+        "title": "NNDSS - Table II. Lyme disease to Meningococcal"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/9jfi-bqmw",
+      "source_record_id": "https://healthdata.gov/api/views/9jfi-bqmw",
+      "record_type": "dataset_metadata",
+      "title": "LymeX Visible Voices Prize",
+      "description": "With new Lyme diagnostics emerging, how might we make Lyme and other tickborne disease diagnoses more visible and transparent so patients and clinicians can understand and act on complex information—and learn from real voices?",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Office of Chief Data Officer",
+      "organizations": [
+        {
+          "name": "Office of Chief Data Officer",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/9jfi-bqmw"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 6,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "fb1df5a2de2e6799cc08a6190e2e2185db34ccbb4e9244378791bc51dc219394"
+      },
+      "raw_metadata": {
+        "_score": 119.36217,
+        "_sort": [
+          119.36217,
+          0,
+          "1175e076-8d8d-4853-9613-f9dd7e983304"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Office of Chief Data Officer",
+            "hasEmail": "mailto:healthdata@hhs.gov"
+          },
+          "description": "With new Lyme diagnostics emerging, how might we make Lyme and other tickborne disease diagnoses more visible and transparent so patients and clinicians can understand and act on complex information—and learn from real voices?",
+          "identifier": "https://healthdata.gov/api/views/9jfi-bqmw",
+          "issued": "2026-05-28",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://healthdata.gov/d/9jfi-bqmw",
+          "modified": "2026-05-28",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Office of Chief Data Officer"
+          },
+          "title": "LymeX Visible Voices Prize"
+        },
+        "description": "With new Lyme diagnostics emerging, how might we make Lyme and other tickborne disease diagnoses more visible and transparent so patients and clinicians can understand and act on complex information—and learn from real voices?",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/ac54ded0-2856-419b-a2e3-5d3d3844650c",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/ac54ded0-2856-419b-a2e3-5d3d3844650c/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/9jfi-bqmw",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2026-05-30T17:20:41.653636",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Office of Chief Data Officer",
+        "slug": "lymex-visible-voices-prize",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "LymeX Visible Voices Prize"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/ptv7-cs49",
+      "source_record_id": "https://healthdata.gov/api/views/ptv7-cs49",
+      "record_type": "dataset_metadata",
+      "title": "LymeX Healthathon Innovation Sprint",
+      "description": "Too many people living with Lyme disease and related tickborne conditions struggle to find answers, navigate care, and identify what works. The LymeX Healthathon invites patients, caregivers, clinicians, and communities to turn lived experience into real-world insight and action.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Office of Chief Data Officer",
+      "organizations": [
+        {
+          "name": "Office of Chief Data Officer",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/ptv7-cs49"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 7,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "b8a332738848d8e1548cdf923a1bf39ded4060f854f568a047b55db6f6b01c5c"
+      },
+      "raw_metadata": {
+        "_score": 110.155685,
+        "_sort": [
+          110.155685,
+          0,
+          "9854890e-e96f-415e-ab3b-8f66bcdbbf1c"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Office of Chief Data Officer",
+            "hasEmail": "mailto:healthdata@hhs.gov"
+          },
+          "description": "Too many people living with Lyme disease and related tickborne conditions struggle to find answers, navigate care, and identify what works. The LymeX Healthathon invites patients, caregivers, clinicians, and communities to turn lived experience into real-world insight and action.",
+          "identifier": "https://healthdata.gov/api/views/ptv7-cs49",
+          "issued": "2026-05-28",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://healthdata.gov/d/ptv7-cs49",
+          "modified": "2026-05-28",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Office of Chief Data Officer"
+          },
+          "title": "LymeX Healthathon Innovation Sprint"
+        },
+        "description": "Too many people living with Lyme disease and related tickborne conditions struggle to find answers, navigate care, and identify what works. The LymeX Healthathon invites patients, caregivers, clinicians, and communities to turn lived experience into real-world insight and action.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/95e93ae4-993e-422d-98bb-b3df8958dc6c",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/95e93ae4-993e-422d-98bb-b3df8958dc6c/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/ptv7-cs49",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2026-05-30T17:35:11.026849",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Office of Chief Data Officer",
+        "slug": "lymex-healthathon-innovation-sprint",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "LymeX Healthathon Innovation Sprint"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/53h2-usu6",
+      "source_record_id": "https://healthdata.gov/api/views/53h2-usu6",
+      "record_type": "dataset_metadata",
+      "title": "Living Clinical Guidelines for Infection-Associated Chronic Conditions and Illnesses (IACCIs)",
+      "description": "Join HHS and LymeX collaborators in the <a href=\"https://invisibleillness.crowdicity.com/hubbub/communitypage/23445\">Living Clinical Guidelines for IACCIs</a> ecosystem to cocreate solutions with patients as partners for Long COVID, Lyme disease, ME/CFS, and other complex chronic conditions that are often invisible illnesses.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "HHS OCDO",
+      "organizations": [
+        {
+          "name": "HHS OCDO",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/53h2-usu6"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 8,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "67997b1156a434184992933af7320747f338134e3581170b337e4b6bf6d7a6d3"
+      },
+      "raw_metadata": {
+        "_score": 109.82878,
+        "_sort": [
+          109.82878,
+          0,
+          "5ed9c1b3-a63c-49ba-8fa3-5098353c8aa8"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "HHS OCDO",
+            "hasEmail": "mailto:healthdata@hhs.gov"
+          },
+          "description": "Join HHS and LymeX collaborators in the <a href=\"https://invisibleillness.crowdicity.com/hubbub/communitypage/23445\">Living Clinical Guidelines for IACCIs</a> ecosystem to cocreate solutions with patients as partners for Long COVID, Lyme disease, ME/CFS, and other complex chronic conditions that are often invisible illnesses.",
+          "identifier": "https://healthdata.gov/api/views/53h2-usu6",
+          "issued": "2025-12-19",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://invisibleillness.crowdicity.com/hubbub/communitypage/23445",
+          "modified": "2025-12-19",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "HHS OCDO"
+          },
+          "theme": [
+            "HHS"
+          ],
+          "title": "Living Clinical Guidelines for Infection-Associated Chronic Conditions and Illnesses (IACCIs)"
+        },
+        "description": "Join HHS and LymeX collaborators in the <a href=\"https://invisibleillness.crowdicity.com/hubbub/communitypage/23445\">Living Clinical Guidelines for IACCIs</a> ecosystem to cocreate solutions with patients as partners for Long COVID, Lyme disease, ME/CFS, and other complex chronic conditions that are often invisible illnesses.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/e6599292-1012-444b-b612-977106c34b8a",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/e6599292-1012-444b-b612-977106c34b8a/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/53h2-usu6",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2025-12-20T09:29:20.640566",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "HHS OCDO",
+        "slug": "living-clinical-guidelines-for-infection-associated-chronic-conditions-and-illnesses-iacci",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "HHS"
+        ],
+        "title": "Living Clinical Guidelines for Infection-Associated Chronic Conditions and Illnesses (IACCIs)"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/pqy7-8jtq",
+      "source_record_id": "https://healthdata.gov/api/views/pqy7-8jtq",
+      "record_type": "dataset_metadata",
+      "title": "TOPx HHS Tech Sprint for AI and Invisible Illness",
+      "description": "TOPx HHS 2026 Challenge: How might we use U.S. open data and AI to turn fragmented signals into trusted insights, so people living with Lyme disease, Long COVID, and other complex, chronic conditions are believed earlier, diagnosed faster, and supported with care that works?",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "HHS Office of the Chief Data Officer",
+      "organizations": [
+        {
+          "name": "HHS Office of the Chief Data Officer",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/pqy7-8jtq"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 9,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "0bad6cbc9337543028c75cab8345e92fc2bef596412cc52887ed44cbe50e94e1"
+      },
+      "raw_metadata": {
+        "_score": 108.28345,
+        "_sort": [
+          108.28345,
+          0,
+          "2540a6a5-3cf3-4657-b888-ca1374d6be22"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "HHS Office of the Chief Data Officer",
+            "hasEmail": "mailto:Healthdata@hhs.gov"
+          },
+          "description": "TOPx HHS 2026 Challenge: How might we use U.S. open data and AI to turn fragmented signals into trusted insights, so people living with Lyme disease, Long COVID, and other complex, chronic conditions are believed earlier, diagnosed faster, and supported with care that works?",
+          "identifier": "https://healthdata.gov/api/views/pqy7-8jtq",
+          "issued": "2026-05-28",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://healthdata.gov/d/pqy7-8jtq",
+          "modified": "2026-05-28",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "HHS Office of the Chief Data Officer"
+          },
+          "title": "TOPx HHS Tech Sprint for AI and Invisible Illness"
+        },
+        "description": "TOPx HHS 2026 Challenge: How might we use U.S. open data and AI to turn fragmented signals into trusted insights, so people living with Lyme disease, Long COVID, and other complex, chronic conditions are believed earlier, diagnosed faster, and supported with care that works?",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/87c5a3ee-8e84-43dc-86ba-3d5f31487c23",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/87c5a3ee-8e84-43dc-86ba-3d5f31487c23/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/pqy7-8jtq",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2026-05-30T17:35:06.990203",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "HHS Office of the Chief Data Officer",
+        "slug": "topx-hhs-tech-sprint-for-ai-and-invisible-illness",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "TOPx HHS Tech Sprint for AI and Invisible Illness"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/w6hy-npne",
+      "source_record_id": "https://healthdata.gov/api/views/w6hy-npne",
+      "record_type": "dataset_metadata",
+      "title": "Invisible Illness — TOPx HHS 2026 Focus Area",
+      "description": "The Invisible Illness focus area is intentionally broad and inclusive. Invisible illness may include, but is not limited to, autoimmune conditions, mental health and behavioral health conditions, suicide prevention, Long COVID, myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), infection-associated chronic conditions (IACCs), Lyme disease and other tickborne diseases, and other conditions that may not be immediately visible or outwardly apparent.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Office of the Chief Data Officer",
+      "organizations": [
+        {
+          "name": "Office of the Chief Data Officer",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/w6hy-npne"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 10,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "fc6e3eba77ff0abe900d8fd71acc85178d4029f0dd89f38a7a6e130317bbb415"
+      },
+      "raw_metadata": {
+        "_score": 106.68097,
+        "_sort": [
+          106.68097,
+          0,
+          "6547f017-5e52-4d72-9043-d1012b617f9e"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Office of the Chief Data Officer",
+            "hasEmail": "mailto:healthdata@hhs.gov"
+          },
+          "description": "The Invisible Illness focus area is intentionally broad and inclusive. Invisible illness may include, but is not limited to, autoimmune conditions, mental health and behavioral health conditions, suicide prevention, Long COVID, myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), infection-associated chronic conditions (IACCs), Lyme disease and other tickborne diseases, and other conditions that may not be immediately visible or outwardly apparent.",
+          "identifier": "https://healthdata.gov/api/views/w6hy-npne",
+          "issued": "2026-05-28",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://healthdata.gov/d/w6hy-npne",
+          "modified": "2026-05-28",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Office of the Chief Data Officer"
+          },
+          "title": "Invisible Illness — TOPx HHS 2026 Focus Area"
+        },
+        "description": "The Invisible Illness focus area is intentionally broad and inclusive. Invisible illness may include, but is not limited to, autoimmune conditions, mental health and behavioral health conditions, suicide prevention, Long COVID, myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), infection-associated chronic conditions (IACCs), Lyme disease and other tickborne diseases, and other conditions that may not be immediately visible or outwardly apparent.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/74024eb0-69a4-4da5-a87e-f2371881d8e4",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/74024eb0-69a4-4da5-a87e-f2371881d8e4/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/w6hy-npne",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2026-05-30T17:39:53.497826",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Office of the Chief Data Officer",
+        "slug": "invisible-illness-topx-hhs-2026-focus-area",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "Invisible Illness — TOPx HHS 2026 Focus Area"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/x6rf-trdy",
+      "source_record_id": "https://healthdata.gov/api/views/x6rf-trdy",
+      "record_type": "dataset_metadata",
+      "title": "Lyme Innovation — TOPx HHS 2026 Focus Area",
+      "description": "The TOPx HHS Tech Sprint for AI and Invisible Illness in 2026 is a four-month national competition with a $2,000,000 prize pool that puts U.S. open data in the hands of the public—mobilizing data enthusiasts, AI experts, technologists, entrepreneurs, and communities to build real-world tools using government data, American innovation, and AI to address the urgent health challenge with Lyme disease, alpha gal syndrome (AGS, the “meat allergy”), and other tickborne conditions.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Office of the Chief Data Officer",
+      "organizations": [
+        {
+          "name": "Office of the Chief Data Officer",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/x6rf-trdy"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 11,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "8890c8b737d476987543de838a188967ffbbed0f27929e08473f26b5ca5a8d35"
+      },
+      "raw_metadata": {
+        "_score": 103.63158,
+        "_sort": [
+          103.63158,
+          0,
+          "8e1ff89c-7f1a-4342-8293-4ae8eba7a299"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Office of the Chief Data Officer",
+            "hasEmail": "mailto:Healthdata@hhs.gov"
+          },
+          "description": "The TOPx HHS Tech Sprint for AI and Invisible Illness in 2026 is a four-month national competition with a $2,000,000 prize pool that puts U.S. open data in the hands of the public—mobilizing data enthusiasts, AI experts, technologists, entrepreneurs, and communities to build real-world tools using government data, American innovation, and AI to address the urgent health challenge with Lyme disease, alpha gal syndrome (AGS, the “meat allergy”), and other tickborne conditions.",
+          "identifier": "https://healthdata.gov/api/views/x6rf-trdy",
+          "issued": "2026-05-28",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://healthdata.gov/d/x6rf-trdy",
+          "modified": "2026-05-28",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Office of the Chief Data Officer"
+          },
+          "title": "Lyme Innovation — TOPx HHS 2026 Focus Area"
+        },
+        "description": "The TOPx HHS Tech Sprint for AI and Invisible Illness in 2026 is a four-month national competition with a $2,000,000 prize pool that puts U.S. open data in the hands of the public—mobilizing data enthusiasts, AI experts, technologists, entrepreneurs, and communities to build real-world tools using government data, American innovation, and AI to address the urgent health challenge with Lyme disease, alpha gal syndrome (AGS, the “meat allergy”), and other tickborne conditions.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/afbcd6d7-b2cd-4a7c-a219-63ef2f650031",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/afbcd6d7-b2cd-4a7c-a219-63ef2f650031/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/x6rf-trdy",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2026-05-30T17:40:31.037300",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Office of the Chief Data Officer",
+        "slug": "lyme-innovation-topx-hhs-2026-focus-area",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "Lyme Innovation — TOPx HHS 2026 Focus Area"
+      }
+    },
+    {
+      "normalized_id": "data_gov:http://datainventory.doi.gov/id/dataset/USGS_637cfb9bd34ed907bf73c08c",
+      "source_record_id": "http://datainventory.doi.gov/id/dataset/USGS_637cfb9bd34ed907bf73c08c",
+      "record_type": "dataset_metadata",
+      "title": "Blacklegged tick nymph densities, tickborne pathogen prevalence, and white-tailed deer densities in eight national parks in the eastern United States from 2014-2022",
+      "description": "The data presented here are blacklegged tick nymph densities, white-tailed deer densities, and Borrelia burgdorferi (causative agent of Lyme disease) prevalences for eight national parks in the eastern United States from 2014-2022.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "U.S. Geological Survey",
+      "organizations": [
+        {
+          "name": "U.S. Geological Survey",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "http://datainventory.doi.gov/id/dataset/USGS_637cfb9bd34ed907bf73c08c"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 12,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "9f76e8f546a7267ccda3d4b560da99baf8b54e210a25f337e369ec012a9d9259"
+      },
+      "raw_metadata": {
+        "_score": 68.58277,
+        "_sort": [
+          68.58277,
+          6,
+          "2a77aa2c-101e-48be-8860-4fd680d605bf"
+        ],
+        "dcat": {
+          "accessLevel": "public",
+          "bureauCode": [
+            "010:12"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Alynn M Martin",
+            "hasEmail": "mailto:alynnmartin@usgs.gov"
+          },
+          "description": "The data presented here are blacklegged tick nymph densities, white-tailed deer densities, and Borrelia burgdorferi (causative agent of Lyme disease) prevalences for eight national parks in the eastern United States from 2014-2022.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "accessURL": "https://doi.org/10.5066/P9LSI8K9",
+              "description": "Landing page for access to the data",
+              "format": "XML",
+              "mediaType": "application/http",
+              "title": "Digital Data"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "description": "The metadata original format",
+              "downloadURL": "https://data.usgs.gov/datacatalog/metadata/USGS.637cfb9bd34ed907bf73c08c.xml",
+              "format": "XML",
+              "mediaType": "text/xml",
+              "title": "Original Metadata"
+            }
+          ],
+          "identifier": "http://datainventory.doi.gov/id/dataset/USGS_637cfb9bd34ed907bf73c08c",
+          "keyword": [
+            "Catoctin Mountain Park",
+            "Chesapeake and Ohio Canal National Historical Park",
+            "District of Columbia",
+            "Fire Island National Seashore",
+            "Gettysburg National Military Park",
+            "Manassas National Battlefield Park",
+            "Maryland",
+            "Mid Atlantic",
+            "New York",
+            "Pennsylvania",
+            "Prince William Forest Park",
+            "Rock Creek Park",
+            "USGS:637cfb9bd34ed907bf73c08c",
+            "Virginia",
+            "biota",
+            "disease vectors",
+            "health",
+            "wildlife disease",
+            "wildlife population management",
+            "zoonotic diseases"
+          ],
+          "modified": "2023-12-14T00:00:00Z",
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "U.S. Geological Survey"
+          },
+          "spatial": "-80.0000, 37.6000, -71.0000, 41.3000",
+          "theme": [
+            "geospatial"
+          ],
+          "title": "Blacklegged tick nymph densities, tickborne pathogen prevalence, and white-tailed deer densities in eight national parks in the eastern United States from 2014-2022"
+        },
+        "description": "The data presented here are blacklegged tick nymph densities, white-tailed deer densities, and Borrelia burgdorferi (causative agent of Lyme disease) prevalences for eight national parks in the eastern United States from 2014-2022.",
+        "distribution_titles": [
+          "Digital Data",
+          "Original Metadata"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/d9b4d57e-dfd0-4eac-9fd0-2baca2edeb5b",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/d9b4d57e-dfd0-4eac-9fd0-2baca2edeb5b/raw",
+        "has_spatial": true,
+        "identifier": "http://datainventory.doi.gov/id/dataset/USGS_637cfb9bd34ed907bf73c08c",
+        "keyword": [
+          "Catoctin Mountain Park",
+          "Chesapeake and Ohio Canal National Historical Park",
+          "District of Columbia",
+          "Fire Island National Seashore",
+          "Gettysburg National Military Park",
+          "Manassas National Battlefield Park",
+          "Maryland",
+          "Mid Atlantic",
+          "New York",
+          "Pennsylvania",
+          "Prince William Forest Park",
+          "Rock Creek Park",
+          "USGS:637cfb9bd34ed907bf73c08c",
+          "Virginia",
+          "biota",
+          "disease vectors",
+          "health",
+          "wildlife disease",
+          "wildlife population management",
+          "zoonotic diseases"
+        ],
+        "last_harvested_date": "2026-05-05T20:43:21.669829",
+        "organization": {
+          "aliases": [
+            "dept"
+          ],
+          "description": null,
+          "id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/master/doi.png",
+          "name": "Department of the Interior",
+          "organization_type": "Federal Government",
+          "slug": "doi"
+        },
+        "popularity": 6,
+        "publisher": "U.S. Geological Survey",
+        "slug": "blacklegged-tick-nymph-densities-tickborne-pathogen-prevalence-and-white-tailed--2014-2022",
+        "spatial_centroid": {
+          "lat": 39.08,
+          "lon": -76.4
+        },
+        "spatial_shape": {
+          "coordinates": [
+            [
+              [
+                -80.0,
+                37.6
+              ],
+              [
+                -80.0,
+                41.3
+              ],
+              [
+                -71.0,
+                41.3
+              ],
+              [
+                -71.0,
+                37.6
+              ],
+              [
+                -80.0,
+                37.6
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "theme": [
+          "geospatial"
+        ],
+        "title": "Blacklegged tick nymph densities, tickborne pathogen prevalence, and white-tailed deer densities in eight national parks in the eastern United States from 2014-2022"
+      }
+    },
+    {
+      "normalized_id": "data_gov:https://healthdata.gov/api/views/pfij-y4nm",
+      "source_record_id": "https://healthdata.gov/api/views/pfij-y4nm",
+      "record_type": "dataset_metadata",
+      "title": "Cost of Illness — TOPx HHS 2026 Focus Area",
+      "description": "The Cost of Illness focus area explores both the economic and human burden of chronic disease and invisible illness. Participants may examine direct and indirect costs associated with delayed diagnosis, reduced workforce participation, care fragmentation, disability, caregiving, mental health burden, and barriers to accessing care and support services.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Office of Chief Data Officer",
+      "organizations": [
+        {
+          "name": "Office of Chief Data Officer",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "https://healthdata.gov/api/views/pfij-y4nm"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 13,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "dfa10d549e3b00fcac77cd72e365a9a4d2cf25133933af85a87f4f48c31dd562"
+      },
+      "raw_metadata": {
+        "_score": 43.33329,
+        "_sort": [
+          43.33329,
+          0,
+          "243be427-fdba-428e-83d1-905d26dc0dbd"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "bureauCode": [
+            "009:00"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Office of Chief Data Officer",
+            "hasEmail": "mailto:healthdata@hhs.gov"
+          },
+          "description": "The Cost of Illness focus area explores both the economic and human burden of chronic disease and invisible illness. Participants may examine direct and indirect costs associated with delayed diagnosis, reduced workforce participation, care fragmentation, disability, caregiving, mental health burden, and barriers to accessing care and support services.",
+          "identifier": "https://healthdata.gov/api/views/pfij-y4nm",
+          "issued": "2026-05-28",
+          "keyword": [
+            "accelerator",
+            "adaptive",
+            "ai",
+            "artificial intelligence",
+            "challenge",
+            "chronic",
+            "chronic condition",
+            "chronic conditions",
+            "citizen science",
+            "clinical guidelines",
+            "co-creation",
+            "cocreate",
+            "cost",
+            "crowdsource",
+            "diagnostic",
+            "diagnostics",
+            "evidence-based",
+            "exponential",
+            "grand-prize challenge",
+            "iacc",
+            "iacci",
+            "iaci",
+            "infection-associated chronic condition",
+            "infection-associated chronic conditions",
+            "infection-associated chronic conditions and illnesses",
+            "infection-associated chronic illness",
+            "infection-associated chronic illnesses",
+            "innovation",
+            "invisible illness",
+            "invisible illnesses",
+            "living clinical guidelines",
+            "living evidence",
+            "living guidelines",
+            "lyme",
+            "lyme ai",
+            "lyme disease",
+            "lyme innovation",
+            "lymex",
+            "lymex ai",
+            "next-gen",
+            "next-generation",
+            "open data",
+            "open gov",
+            "open government",
+            "open innovation",
+            "open science",
+            "open source",
+            "partnership",
+            "partnerships",
+            "persistent symptoms",
+            "post-treatment",
+            "post-treatment lyme disease syndrome",
+            "prize",
+            "ptlds",
+            "public-private",
+            "tick",
+            "tick-borne",
+            "tickborne",
+            "transparency",
+            "vector",
+            "vector-borne"
+          ],
+          "landingPage": "https://healthdata.gov/d/pfij-y4nm",
+          "modified": "2026-05-29",
+          "programCode": [
+            "009:000"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Office of Chief Data Officer"
+          },
+          "title": "Cost of Illness — TOPx HHS 2026 Focus Area"
+        },
+        "description": "The Cost of Illness focus area explores both the economic and human burden of chronic disease and invisible illness. Participants may examine direct and indirect costs associated with delayed diagnosis, reduced workforce participation, care fragmentation, disability, caregiving, mental health burden, and barriers to accessing care and support services.",
+        "distribution_titles": [],
+        "harvest_record": "https://catalog.data.gov/harvest_record/0d2defcd-82a7-4558-930f-a7d57238e84a",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/0d2defcd-82a7-4558-930f-a7d57238e84a/raw",
+        "has_spatial": false,
+        "identifier": "https://healthdata.gov/api/views/pfij-y4nm",
+        "keyword": [
+          "accelerator",
+          "adaptive",
+          "ai",
+          "artificial intelligence",
+          "challenge",
+          "chronic",
+          "chronic condition",
+          "chronic conditions",
+          "citizen science",
+          "clinical guidelines",
+          "co-creation",
+          "cocreate",
+          "cost",
+          "crowdsource",
+          "diagnostic",
+          "diagnostics",
+          "evidence-based",
+          "exponential",
+          "grand-prize challenge",
+          "iacc",
+          "iacci",
+          "iaci",
+          "infection-associated chronic condition",
+          "infection-associated chronic conditions",
+          "infection-associated chronic conditions and illnesses",
+          "infection-associated chronic illness",
+          "infection-associated chronic illnesses",
+          "innovation",
+          "invisible illness",
+          "invisible illnesses",
+          "living clinical guidelines",
+          "living evidence",
+          "living guidelines",
+          "lyme",
+          "lyme ai",
+          "lyme disease",
+          "lyme innovation",
+          "lymex",
+          "lymex ai",
+          "next-gen",
+          "next-generation",
+          "open data",
+          "open gov",
+          "open government",
+          "open innovation",
+          "open science",
+          "open source",
+          "partnership",
+          "partnerships",
+          "persistent symptoms",
+          "post-treatment",
+          "post-treatment lyme disease syndrome",
+          "prize",
+          "ptlds",
+          "public-private",
+          "tick",
+          "tick-borne",
+          "tickborne",
+          "transparency",
+          "vector",
+          "vector-borne"
+        ],
+        "last_harvested_date": "2026-05-30T17:34:53.724982",
+        "organization": {
+          "aliases": [
+            "US",
+            "dept"
+          ],
+          "description": null,
+          "id": "2c2fc21f-21d0-4450-af01-cf8c69b44156",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/hhs.png",
+          "name": "U.S. Department of Health & Human Services",
+          "organization_type": "Federal Government",
+          "slug": "hhs"
+        },
+        "popularity": 0,
+        "publisher": "Office of Chief Data Officer",
+        "slug": "cost-of-illness-topx-hhs-2026-focus-area",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "Cost of Illness — TOPx HHS 2026 Focus Area"
+      }
+    },
+    {
+      "normalized_id": "data_gov:http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+      "source_record_id": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+      "record_type": "dataset_metadata",
+      "title": "Genetic analysis of microbiota and mycobiota associated with Ixodes scapularis ticks collected from Wisconsin in 2022",
+      "description": "This metadata presents a dataset of bacterial (microbiota), and fungal (mycobiota) communities associated with Ixodes scapularis ticks collected from hunter-harvested white-tailed deer during the 2022 fall hunting season in Wisconsin. Deer were hunted across eleven counties in Wisconsin. Engorged ticks were collected from deer at the deer-weighing station in Fort McCoy in Monroe County, Wisconsin. Nucleic acid was extracted from individual ticks and used for high-throughput sequencing of the 16S rRNA gene and ITS2 region to characterize bacterial and fungal diversity, respectively. This dataset provides raw sequence reads associated with the individual tick samples to facilitate the study of tick microbial dynamics in response to natural infection.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "U.S. Geological Survey",
+      "organizations": [
+        {
+          "name": "U.S. Geological Survey",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 14,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "e1db77a1396ab80ca26e06a03c549001d2398a8de22ab9863dbd2b6a612e499f"
+      },
+      "raw_metadata": {
+        "_score": 41.353886,
+        "_sort": [
+          41.353886,
+          0,
+          "89d108cf-554d-4ac4-b7f8-59ff73ebea02"
+        ],
+        "dcat": {
+          "accessLevel": "public",
+          "bureauCode": [
+            "010:12"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Patil Tawidian",
+            "hasEmail": "mailto:ptawidian@usgs.gov"
+          },
+          "description": "This metadata presents a dataset of bacterial (microbiota), and fungal (mycobiota) communities associated with Ixodes scapularis ticks collected from hunter-harvested white-tailed deer during the 2022 fall hunting season in Wisconsin. Deer were hunted across eleven counties in Wisconsin. Engorged ticks were collected from deer at the deer-weighing station in Fort McCoy in Monroe County, Wisconsin. Nucleic acid was extracted from individual ticks and used for high-throughput sequencing of the 16S rRNA gene and ITS2 region to characterize bacterial and fungal diversity, respectively. This dataset provides raw sequence reads associated with the individual tick samples to facilitate the study of tick microbial dynamics in response to natural infection.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "accessURL": "https://doi.org/10.5066/P13OPBRU",
+              "description": "Landing page for access to the data",
+              "format": "XML",
+              "mediaType": "application/http",
+              "title": "Digital Data"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "description": "The metadata original format",
+              "downloadURL": "https://data.usgs.gov/datacatalog/metadata/USGS.68645690d4be025fd24f0308.xml",
+              "format": "XML",
+              "mediaType": "text/xml",
+              "title": "Original Metadata"
+            }
+          ],
+          "identifier": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+          "keyword": [
+            "Clark County, Wisconsin",
+            "Columbia County, Wisconsin",
+            "Dane County, Wisconsin",
+            "Dunn County, Wisconsin",
+            "Green County, Wisconsin",
+            "La Crosse County, Wisconsin",
+            "Lyme disease",
+            "Marquette County, Wisconsin",
+            "Monroe County, Wisconsin",
+            "Richland County, Wisconsin",
+            "Sauk County, Wisconsin",
+            "USGS:68645690d4be025fd24f0308",
+            "Wisconsin",
+            "Wood County, Wisconsin",
+            "arachnids",
+            "biota",
+            "disease vectors",
+            "genetics",
+            "microbiota",
+            "mycobiota",
+            "tick holobiont",
+            "tick-borne disease",
+            "wildlife disease"
+          ],
+          "modified": "2025-11-19T00:00:00Z",
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "U.S. Geological Survey"
+          },
+          "spatial": "-92.8125, 42.4964, -88.5718, 45.3058",
+          "theme": [
+            "geospatial"
+          ],
+          "title": "Genetic analysis of microbiota and mycobiota associated with Ixodes scapularis ticks collected from Wisconsin in 2022"
+        },
+        "description": "This metadata presents a dataset of bacterial (microbiota), and fungal (mycobiota) communities associated with Ixodes scapularis ticks collected from hunter-harvested white-tailed deer during the 2022 fall hunting season in Wisconsin. Deer were hunted across eleven counties in Wisconsin. Engorged ticks were collected from deer at the deer-weighing station in Fort McCoy in Monroe County, Wisconsin. Nucleic acid was extracted from individual ticks and used for high-throughput sequencing of the 16S rRNA gene and ITS2 region to characterize bacterial and fungal diversity, respectively. This dataset provides raw sequence reads associated with the individual tick samples to facilitate the study of tick microbial dynamics in response to natural infection.",
+        "distribution_titles": [
+          "Digital Data",
+          "Original Metadata"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/e523f473-b0cf-40fb-b549-6c22dcf21a5d",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/e523f473-b0cf-40fb-b549-6c22dcf21a5d/raw",
+        "has_spatial": true,
+        "identifier": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+        "keyword": [
+          "Clark County, Wisconsin",
+          "Columbia County, Wisconsin",
+          "Dane County, Wisconsin",
+          "Dunn County, Wisconsin",
+          "Green County, Wisconsin",
+          "La Crosse County, Wisconsin",
+          "Lyme disease",
+          "Marquette County, Wisconsin",
+          "Monroe County, Wisconsin",
+          "Richland County, Wisconsin",
+          "Sauk County, Wisconsin",
+          "USGS:68645690d4be025fd24f0308",
+          "Wisconsin",
+          "Wood County, Wisconsin",
+          "arachnids",
+          "biota",
+          "disease vectors",
+          "genetics",
+          "microbiota",
+          "mycobiota",
+          "tick holobiont",
+          "tick-borne disease",
+          "wildlife disease"
+        ],
+        "last_harvested_date": "2026-05-05T21:32:10.483440",
+        "organization": {
+          "aliases": [
+            "dept"
+          ],
+          "description": null,
+          "id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/master/doi.png",
+          "name": "Department of the Interior",
+          "organization_type": "Federal Government",
+          "slug": "doi"
+        },
+        "popularity": 0,
+        "publisher": "U.S. Geological Survey",
+        "slug": "genetic-analysis-of-microbiota-and-mycobiota-associated-with-ixodes-scapularis-ticks--2022",
+        "spatial_centroid": {
+          "lat": 43.62016,
+          "lon": -91.11622
+        },
+        "spatial_shape": {
+          "coordinates": [
+            [
+              [
+                -92.8125,
+                42.4964
+              ],
+              [
+                -92.8125,
+                45.3058
+              ],
+              [
+                -88.5718,
+                45.3058
+              ],
+              [
+                -88.5718,
+                42.4964
+              ],
+              [
+                -92.8125,
+                42.4964
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "theme": [
+          "geospatial"
+        ],
+        "title": "Genetic analysis of microbiota and mycobiota associated with Ixodes scapularis ticks collected from Wisconsin in 2022"
+      }
+    },
+    {
+      "normalized_id": "data_gov:10.15482/USDA.ADC/1526489",
+      "source_record_id": "10.15482/USDA.ADC/1526489",
+      "record_type": "dataset_metadata",
+      "title": "Data from: Deer keds and blacklegged ticks infesting ungulates in the United States: molecular detection of Bartonella spp., Rickettsia spp., Anaplasma spp., and Borrelia spp.",
+      "description": "<p>Deer keds are blood-feeding flies from which several human and animal pathogens have been detected, including the causative agent of Lyme Disease (<em>Borrelia burgdorferi</em>). Cervids, which are the primary hosts of deer keds, are not natural reservoirs of <em>B. burgdorferi</em>, and it has been suggested that deer keds may acquire bacterial pathogens by co-feeding near ticks that are infected with the bacteria. We tested this hypothesis by using a molecular assay to screen for presence of <em>Anaplasma</em> spp., <em>Bartonella</em> spp., <em>Borrelia</em> spp., and <em>Rickettsia</em> spp. in specimens of European deer keds (n=306) and blacklegged ticks (n=315) collected from 38 individual white-tailed deer in Pennsylvania. There was limited similarity in the bacterial DNA detected between these ectoparasites per host, suggesting that co-feeding may not be a mechanism by which deer keds acquire these bacteria. We discuss these results in relation to deer ked feeding biology, life history, and collection timepoints. In addition, we screened specimens of European deer keds (n=410), Neotropical deer keds (n=13), Western American deer keds (n=10), and Pacific deer keds (n=14) for these same bacterial pathogens. </p><div><br>Resources in this dataset:</div><br><ul><li><p>Resource Title: Borrelia spp. flaB from Ixodes scapularis.</p> <p>File Name: Borrelia_flaB_Iscapularis_Olafsonetal.csv</p><p>Resource Description: A PCR assay targeting Borrelia spp. flagellin (flaB, 650 bp; (Barbour et al. 1996)) was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n<em>Barbour, A. G., G. O. Maupin, G. J. Teltow, C. J. Carter, and J. Piesman. 1996. Identification of an uncultivable Borrelia species in the hard tick Amblyomma americanum: possible agent of a Lyme disease-like illness. J Infect Dis 173: 403-409</em></p></li><em><br></em><li><em><p>Resource Title: Bartonella ribC from Lipoptena spp and Neolipoptena ferrisi.</p> <p>File Name: Bartonella_ribC_DeerKed_Olafsonetal_2.csv</p></em><p><em>Resource Description: A PCR assay targeting Bartonella spp. riboflavin synthase (ribC, 575 bp; (Johnson et al. 2003) was used to detect presence of this bacterium in DNAs isolated from field-collected deer ked samples.\n</em>Johnson, G., M. Ayers, S. C. McClure, S. E. Richardson, and R. Tellier. 2003. Detection and identification of Bartonella species pathogenic for humans by PCR amplification targeting the riboflavin synthase gene (ribC). J Clin Microbiol 41: 1069-1072.\n</p></li><br><li><p>Resource Title: Rickettsia spp. sca0 from Lipoptena cervi and Ixodes scapularis.</p> <p>File Name: Rickettsia_sca0_DeerKed-Iscap_Olafsonetal_1.csv</p><p>Resource Description: A PCR assay targeting Rickettsia sp. surface cell antigen, sca0 (rompA, 525 bp; (Regnery et al. 1991)) was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n<em>Regnery, R. L., C. L. Spruill, and B. D. Plikaytis. 1991. Genotypic identification of rickettsiae and estimation of intraspecies sequence divergence for portions of two rickettsial genes. J Bacteriol 173: 1576-1589.\n</em></p></li><em><br></em><li><em><p>Resource Title: Anaplasma spp. groEL from Lipoptena cervi and Ixodes scapularis.</p> <p>File Name: Anaplasma_groEL_Lcervi-Iscap_Olafson_0.csv</p></em><p><em>Resource Description: A PCR assay targeting the Anaplasmataceae family heat shock protein (groEL, 350 bp; (Tabara et al. 2007), was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n</em>Tabara, K., S. Arai, T. Kawabuchi, A. Itagaki, C. Ishihara, H. Satoh, N. Okabe, and M. Tsuji. 2007. Molecular survey of Babesia microti, Ehrlichia species and Candidatus Neoehrlichia mikurensis in wild rodents from Shimane Prefecture, Japan. Microbiol Immunol 51: 359-367\n</p></li></ul><p></p>",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "Agricultural Research Service",
+      "organizations": [
+        {
+          "name": "Agricultural Research Service",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "10.15482/USDA.ADC/1526489"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 15,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "26868a3bc0846c24f658a782afcc3927222f7e906546c8ccdd54a600d9e84863"
+      },
+      "raw_metadata": {
+        "_score": 34.543728,
+        "_sort": [
+          34.543728,
+          8,
+          "d4c5df78-1fe4-4673-918d-260e209c183b"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "accrualPeriodicity": "irregular",
+          "bureauCode": [
+            "005:18"
+          ],
+          "contactPoint": {
+            "fn": "Olafson, Pia Untalan",
+            "hasEmail": "mailto:pia.olafson@usda.gov"
+          },
+          "description": "<p>Deer keds are blood-feeding flies from which several human and animal pathogens have been detected, including the causative agent of Lyme Disease (<em>Borrelia burgdorferi</em>). Cervids, which are the primary hosts of deer keds, are not natural reservoirs of <em>B. burgdorferi</em>, and it has been suggested that deer keds may acquire bacterial pathogens by co-feeding near ticks that are infected with the bacteria. We tested this hypothesis by using a molecular assay to screen for presence of <em>Anaplasma</em> spp., <em>Bartonella</em> spp., <em>Borrelia</em> spp., and <em>Rickettsia</em> spp. in specimens of European deer keds (n=306) and blacklegged ticks (n=315) collected from 38 individual white-tailed deer in Pennsylvania. There was limited similarity in the bacterial DNA detected between these ectoparasites per host, suggesting that co-feeding may not be a mechanism by which deer keds acquire these bacteria. We discuss these results in relation to deer ked feeding biology, life history, and collection timepoints. In addition, we screened specimens of European deer keds (n=410), Neotropical deer keds (n=13), Western American deer keds (n=10), and Pacific deer keds (n=14) for these same bacterial pathogens. </p><div><br>Resources in this dataset:</div><br><ul><li><p>Resource Title: Borrelia spp. flaB from Ixodes scapularis.</p> <p>File Name: Borrelia_flaB_Iscapularis_Olafsonetal.csv</p><p>Resource Description: A PCR assay targeting Borrelia spp. flagellin (flaB, 650 bp; (Barbour et al. 1996)) was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n<em>Barbour, A. G., G. O. Maupin, G. J. Teltow, C. J. Carter, and J. Piesman. 1996. Identification of an uncultivable Borrelia species in the hard tick Amblyomma americanum: possible agent of a Lyme disease-like illness. J Infect Dis 173: 403-409</em></p></li><em><br></em><li><em><p>Resource Title: Bartonella ribC from Lipoptena spp and Neolipoptena ferrisi.</p> <p>File Name: Bartonella_ribC_DeerKed_Olafsonetal_2.csv</p></em><p><em>Resource Description: A PCR assay targeting Bartonella spp. riboflavin synthase (ribC, 575 bp; (Johnson et al. 2003) was used to detect presence of this bacterium in DNAs isolated from field-collected deer ked samples.\n</em>Johnson, G., M. Ayers, S. C. McClure, S. E. Richardson, and R. Tellier. 2003. Detection and identification of Bartonella species pathogenic for humans by PCR amplification targeting the riboflavin synthase gene (ribC). J Clin Microbiol 41: 1069-1072.\n</p></li><br><li><p>Resource Title: Rickettsia spp. sca0 from Lipoptena cervi and Ixodes scapularis.</p> <p>File Name: Rickettsia_sca0_DeerKed-Iscap_Olafsonetal_1.csv</p><p>Resource Description: A PCR assay targeting Rickettsia sp. surface cell antigen, sca0 (rompA, 525 bp; (Regnery et al. 1991)) was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n<em>Regnery, R. L., C. L. Spruill, and B. D. Plikaytis. 1991. Genotypic identification of rickettsiae and estimation of intraspecies sequence divergence for portions of two rickettsial genes. J Bacteriol 173: 1576-1589.\n</em></p></li><em><br></em><li><em><p>Resource Title: Anaplasma spp. groEL from Lipoptena cervi and Ixodes scapularis.</p> <p>File Name: Anaplasma_groEL_Lcervi-Iscap_Olafson_0.csv</p></em><p><em>Resource Description: A PCR assay targeting the Anaplasmataceae family heat shock protein (groEL, 350 bp; (Tabara et al. 2007), was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n</em>Tabara, K., S. Arai, T. Kawabuchi, A. Itagaki, C. Ishihara, H. Satoh, N. Okabe, and M. Tsuji. 2007. Molecular survey of Babesia microti, Ehrlichia species and Candidatus Neoehrlichia mikurensis in wild rodents from Shimane Prefecture, Japan. Microbiol Immunol 51: 359-367\n</p></li></ul><p></p>",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://ndownloader.figshare.com/files/44531915",
+              "format": "csv",
+              "mediaType": "application/csv",
+              "title": "Bartonella_ribC_DeerKed_Olafsonetal_2_0.csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://ndownloader.figshare.com/files/44531918",
+              "format": "csv",
+              "mediaType": "text/plain",
+              "title": "Rickettsia_sca0_DeerKed-Iscap_Olafsonetal_1_0.csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://ndownloader.figshare.com/files/44531921",
+              "format": "csv",
+              "mediaType": "application/csv",
+              "title": "Anaplasma_groEL_Lcervi-Iscap_Olafson_0_0.csv"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://ndownloader.figshare.com/files/44531924",
+              "format": "csv",
+              "mediaType": "text/plain",
+              "title": "Borrelia_flaB_Iscapularis_Olafsonetal.csv"
+            }
+          ],
+          "identifier": "10.15482/USDA.ADC/1526489",
+          "keyword": [
+            "ARS",
+            "Anaplasma phagocytophilum",
+            "Bartonella spp.",
+            "NP104",
+            "Rickettsia buchneri",
+            "data.gov",
+            "deer ked"
+          ],
+          "license": "https://www.usa.gov/publicdomain/label/1.0/",
+          "modified": "2025-11-21",
+          "programCode": [
+            "005:040"
+          ],
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "Agricultural Research Service"
+          },
+          "spatial": "{\"type\": \"MultiPoint\", \"coordinates\": [[-77.893205881119, 41.049822984975], [-78.409458696842, 37.669879311719], [-76.657180935144, 39.37963934341], [-86.484986543655, 35.734930275212], [-120.27315706015, 37.574584950551], [-125.51133692265, 49.844887696621]]}",
+          "temporal": "2018-10-05/2019-12-31",
+          "title": "Data from: Deer keds and blacklegged ticks infesting ungulates in the United States: molecular detection of Bartonella spp., Rickettsia spp., Anaplasma spp., and Borrelia spp."
+        },
+        "description": "<p>Deer keds are blood-feeding flies from which several human and animal pathogens have been detected, including the causative agent of Lyme Disease (<em>Borrelia burgdorferi</em>). Cervids, which are the primary hosts of deer keds, are not natural reservoirs of <em>B. burgdorferi</em>, and it has been suggested that deer keds may acquire bacterial pathogens by co-feeding near ticks that are infected with the bacteria. We tested this hypothesis by using a molecular assay to screen for presence of <em>Anaplasma</em> spp., <em>Bartonella</em> spp., <em>Borrelia</em> spp., and <em>Rickettsia</em> spp. in specimens of European deer keds (n=306) and blacklegged ticks (n=315) collected from 38 individual white-tailed deer in Pennsylvania. There was limited similarity in the bacterial DNA detected between these ectoparasites per host, suggesting that co-feeding may not be a mechanism by which deer keds acquire these bacteria. We discuss these results in relation to deer ked feeding biology, life history, and collection timepoints. In addition, we screened specimens of European deer keds (n=410), Neotropical deer keds (n=13), Western American deer keds (n=10), and Pacific deer keds (n=14) for these same bacterial pathogens. </p><div><br>Resources in this dataset:</div><br><ul><li><p>Resource Title: Borrelia spp. flaB from Ixodes scapularis.</p> <p>File Name: Borrelia_flaB_Iscapularis_Olafsonetal.csv</p><p>Resource Description: A PCR assay targeting Borrelia spp. flagellin (flaB, 650 bp; (Barbour et al. 1996)) was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n<em>Barbour, A. G., G. O. Maupin, G. J. Teltow, C. J. Carter, and J. Piesman. 1996. Identification of an uncultivable Borrelia species in the hard tick Amblyomma americanum: possible agent of a Lyme disease-like illness. J Infect Dis 173: 403-409</em></p></li><em><br></em><li><em><p>Resource Title: Bartonella ribC from Lipoptena spp and Neolipoptena ferrisi.</p> <p>File Name: Bartonella_ribC_DeerKed_Olafsonetal_2.csv</p></em><p><em>Resource Description: A PCR assay targeting Bartonella spp. riboflavin synthase (ribC, 575 bp; (Johnson et al. 2003) was used to detect presence of this bacterium in DNAs isolated from field-collected deer ked samples.\n</em>Johnson, G., M. Ayers, S. C. McClure, S. E. Richardson, and R. Tellier. 2003. Detection and identification of Bartonella species pathogenic for humans by PCR amplification targeting the riboflavin synthase gene (ribC). J Clin Microbiol 41: 1069-1072.\n</p></li><br><li><p>Resource Title: Rickettsia spp. sca0 from Lipoptena cervi and Ixodes scapularis.</p> <p>File Name: Rickettsia_sca0_DeerKed-Iscap_Olafsonetal_1.csv</p><p>Resource Description: A PCR assay targeting Rickettsia sp. surface cell antigen, sca0 (rompA, 525 bp; (Regnery et al. 1991)) was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n<em>Regnery, R. L., C. L. Spruill, and B. D. Plikaytis. 1991. Genotypic identification of rickettsiae and estimation of intraspecies sequence divergence for portions of two rickettsial genes. J Bacteriol 173: 1576-1589.\n</em></p></li><em><br></em><li><em><p>Resource Title: Anaplasma spp. groEL from Lipoptena cervi and Ixodes scapularis.</p> <p>File Name: Anaplasma_groEL_Lcervi-Iscap_Olafson_0.csv</p></em><p><em>Resource Description: A PCR assay targeting the Anaplasmataceae family heat shock protein (groEL, 350 bp; (Tabara et al. 2007), was used to detect presence of this bacterium in DNAs isolated from field-collected samples.\n</em>Tabara, K., S. Arai, T. Kawabuchi, A. Itagaki, C. Ishihara, H. Satoh, N. Okabe, and M. Tsuji. 2007. Molecular survey of Babesia microti, Ehrlichia species and Candidatus Neoehrlichia mikurensis in wild rodents from Shimane Prefecture, Japan. Microbiol Immunol 51: 359-367\n</p></li></ul><p></p>",
+        "distribution_titles": [
+          "Bartonella_ribC_DeerKed_Olafsonetal_2_0.csv",
+          "Rickettsia_sca0_DeerKed-Iscap_Olafsonetal_1_0.csv",
+          "Anaplasma_groEL_Lcervi-Iscap_Olafson_0_0.csv",
+          "Borrelia_flaB_Iscapularis_Olafsonetal.csv"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/70847f03-db89-4676-8187-e3b875c46b4a",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/70847f03-db89-4676-8187-e3b875c46b4a/raw",
+        "has_spatial": true,
+        "identifier": "10.15482/USDA.ADC/1526489",
+        "keyword": [
+          "ARS",
+          "Anaplasma phagocytophilum",
+          "Bartonella spp.",
+          "NP104",
+          "Rickettsia buchneri",
+          "data.gov",
+          "deer ked"
+        ],
+        "last_harvested_date": "2026-05-05T23:47:41.539503",
+        "organization": {
+          "aliases": [
+            "dept"
+          ],
+          "description": null,
+          "id": "352b4532-793d-4075-a03f-05b778a3c43a",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/usda.png",
+          "name": "Department of Agriculture",
+          "organization_type": "Federal Government",
+          "slug": "usda"
+        },
+        "popularity": 8,
+        "publisher": "Agricultural Research Service",
+        "slug": "data-from-deer-keds-and-blacklegged-ticks-infesting-ungulates-in-the-united-states-molecul",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [],
+        "title": "Data from: Deer keds and blacklegged ticks infesting ungulates in the United States: molecular detection of Bartonella spp., Rickettsia spp., Anaplasma spp., and Borrelia spp."
+      }
+    },
+    {
+      "normalized_id": "data_gov:ab8df6e9-5023-4b2b-9b57-dbd631b3835b",
+      "source_record_id": "ab8df6e9-5023-4b2b-9b57-dbd631b3835b",
+      "record_type": "dataset_metadata",
+      "title": "Infectious Diseases by Disease, County, Year, and Sex",
+      "description": "These data contain case counts and rates for selected communicable diseases—listed in the data dictionary—that met the surveillance case definition for that disease and was reported for California residents, by disease, county, year, and sex. The data represent cases with an estimated illness onset date from 2001 through the last year indicated from California Confidential Morbidity Reports and/or Laboratory Reports. Data captured represent reportable case counts as of the date indicated in the “Temporal Coverage” section below, so the data presented may differ from previous publications due to delays inherent to case reporting, laboratory reporting, and epidemiologic investigation.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:40.392106Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "California Department of Public Health",
+      "organizations": [
+        {
+          "name": "California Department of Public Health",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "ab8df6e9-5023-4b2b-9b57-dbd631b3835b"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme disease"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0001",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 16,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0001_lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "fc70e9f54077f985d5015a6965d30706f97f32d99c237f398ef378b540c3f86c"
+      },
+      "raw_metadata": {
+        "_score": 27.617569,
+        "_sort": [
+          27.617569,
+          0,
+          "9d8f350f-89ae-4d16-8d3e-ee2afc28e6d7"
+        ],
+        "dcat": {
+          "@type": "dcat:Dataset",
+          "accessLevel": "public",
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "California Department of Public Health/Center for Infectious Diseases/Division of Communicable Disease Control/Infectious Diseases Branch/Surveillance and Statistics Section",
+            "hasEmail": "mailto:opendata@cdph.ca.gov"
+          },
+          "description": "These data contain case counts and rates for selected communicable diseases—listed in the data dictionary—that met the surveillance case definition for that disease and was reported for California residents, by disease, county, year, and sex. The data represent cases with an estimated illness onset date from 2001 through the last year indicated from California Confidential Morbidity Reports and/or Laboratory Reports. Data captured represent reportable case counts as of the date indicated in the “Temporal Coverage” section below, so the data presented may differ from previous publications due to delays inherent to case reporting, laboratory reporting, and epidemiologic investigation.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "describedBy": "https://data.ca.gov/api/action/datastore_search?resource_id=193a4a6f-c83c-4ea0-8874-8fe58c96d039&limit=0",
+              "describedByType": "application/json",
+              "downloadURL": "https://data.chhs.ca.gov/dataset/03e61434-7db8-4a53-a3e2-1d4d36d6848d/resource/75019f89-b349-4d5e-825d-8b5960fc028c/download/odp_idb_2001-2023_ddg_compliant.csv",
+              "format": "CSV",
+              "mediaType": "text/csv",
+              "title": "Infectious Diseases by County, Year and Sex"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "downloadURL": "https://data.chhs.ca.gov/dataset/03e61434-7db8-4a53-a3e2-1d4d36d6848d/resource/6055f382-39c1-4d7e-a06d-6cc81b564d44/download/infectious-disease-ntmk1xfy.zip",
+              "format": "ZIP",
+              "mediaType": "application/zip",
+              "title": "All resource data"
+            }
+          ],
+          "identifier": "ab8df6e9-5023-4b2b-9b57-dbd631b3835b",
+          "issued": "2019-05-31T15:41:15.018994",
+          "keyword": [
+            "Botulism",
+            "CID",
+            "CJD",
+            "Creutzfeldt-Jakob Disease and other Transmissible Spongiform Encephalopathies",
+            "Cysticercosis or Taeniasis",
+            "E. coli O157",
+            "E. coli Other STEC non-O157",
+            "Ehrlichiosis",
+            "Flavivirus Infection of Undetermined Species",
+            "HUS",
+            "Hansens Disease",
+            "Hantavirus Infection",
+            "Hepatitis E",
+            "IDB",
+            "Other",
+            "Paratyphoid Fever",
+            "Plague",
+            "Rabies",
+            "SSS",
+            "STEC",
+            "Shiga Toxin Positive Feces",
+            "Shiga toxin-producing E. coli",
+            "Shigellosis",
+            "Streptococcal Infection cases in food and dairy workers",
+            "Surveillance and statistics section",
+            "Typhoid Fever",
+            "Vibrio Infection non-Cholera",
+            "Viral Hemorrhagic Fevers",
+            "Wound",
+            "acute infection",
+            "amebiasis",
+            "anaplasmosis",
+            "anthrax",
+            "babesiosis",
+            "botulism",
+            "brucellosis",
+            "california department of public health",
+            "campylobacteriosis",
+            "case",
+            "chikungunya virus infection",
+            "cholera",
+            "ciguatera fish poisoning",
+            "cocci",
+            "coccidioidomycosis",
+            "cryptosporidiosis",
+            "cyclosporiasis",
+            "dengue",
+            "disease surveillance",
+            "domoic acid poisoning",
+            "foodborne",
+            "foodborne botulism",
+            "giardiasis",
+            "hemolytic uremic syndrome",
+            "human",
+            "infectious diseases",
+            "legionellosis",
+            "leprosy",
+            "leptospirosis",
+            "listeriosis",
+            "lyme disease",
+            "malaria",
+            "paralytic shellfish poisoning",
+            "psittacosis",
+            "q fever",
+            "relapsing fever",
+            "salmonellosis",
+            "scombroid fish poisoning",
+            "spotted fever rickettsiosis",
+            "trichinosis",
+            "tularemia",
+            "typhus fever",
+            "valley fever",
+            "wound botulism",
+            "yellow fever",
+            "yersiniosis",
+            "zika virus infection"
+          ],
+          "license": "http://www.opendefinition.org/licenses/cc-by",
+          "modified": "2025-11-07T02:22:33.663819",
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "California Department of Public Health"
+          },
+          "theme": [
+            "Health and Human Services"
+          ],
+          "title": "Infectious Diseases by Disease, County, Year, and Sex"
+        },
+        "description": "These data contain case counts and rates for selected communicable diseases—listed in the data dictionary—that met the surveillance case definition for that disease and was reported for California residents, by disease, county, year, and sex. The data represent cases with an estimated illness onset date from 2001 through the last year indicated from California Confidential Morbidity Reports and/or Laboratory Reports. Data captured represent reportable case counts as of the date indicated in the “Temporal Coverage” section below, so the data presented may differ from previous publications due to delays inherent to case reporting, laboratory reporting, and epidemiologic investigation.",
+        "distribution_titles": [
+          "Infectious Diseases by County, Year and Sex",
+          "All resource data"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/d74c4295-648d-4532-af00-88165b237535",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/d74c4295-648d-4532-af00-88165b237535/raw",
+        "has_spatial": false,
+        "identifier": "ab8df6e9-5023-4b2b-9b57-dbd631b3835b",
+        "keyword": [
+          "Botulism",
+          "CID",
+          "CJD",
+          "Creutzfeldt-Jakob Disease and other Transmissible Spongiform Encephalopathies",
+          "Cysticercosis or Taeniasis",
+          "E. coli O157",
+          "E. coli Other STEC non-O157",
+          "Ehrlichiosis",
+          "Flavivirus Infection of Undetermined Species",
+          "HUS",
+          "Hansens Disease",
+          "Hantavirus Infection",
+          "Hepatitis E",
+          "IDB",
+          "Other",
+          "Paratyphoid Fever",
+          "Plague",
+          "Rabies",
+          "SSS",
+          "STEC",
+          "Shiga Toxin Positive Feces",
+          "Shiga toxin-producing E. coli",
+          "Shigellosis",
+          "Streptococcal Infection cases in food and dairy workers",
+          "Surveillance and statistics section",
+          "Typhoid Fever",
+          "Vibrio Infection non-Cholera",
+          "Viral Hemorrhagic Fevers",
+          "Wound",
+          "acute infection",
+          "amebiasis",
+          "anaplasmosis",
+          "anthrax",
+          "babesiosis",
+          "botulism",
+          "brucellosis",
+          "california department of public health",
+          "campylobacteriosis",
+          "case",
+          "chikungunya virus infection",
+          "cholera",
+          "ciguatera fish poisoning",
+          "cocci",
+          "coccidioidomycosis",
+          "cryptosporidiosis",
+          "cyclosporiasis",
+          "dengue",
+          "disease surveillance",
+          "domoic acid poisoning",
+          "foodborne",
+          "foodborne botulism",
+          "giardiasis",
+          "hemolytic uremic syndrome",
+          "human",
+          "infectious diseases",
+          "legionellosis",
+          "leprosy",
+          "leptospirosis",
+          "listeriosis",
+          "lyme disease",
+          "malaria",
+          "paralytic shellfish poisoning",
+          "psittacosis",
+          "q fever",
+          "relapsing fever",
+          "salmonellosis",
+          "scombroid fish poisoning",
+          "spotted fever rickettsiosis",
+          "trichinosis",
+          "tularemia",
+          "typhus fever",
+          "valley fever",
+          "wound botulism",
+          "yellow fever",
+          "yersiniosis",
+          "zika virus infection"
+        ],
+        "last_harvested_date": "2026-04-27T19:49:19.807927",
+        "organization": {
+          "aliases": [
+            "ca"
+          ],
+          "description": null,
+          "id": "ae56c24b-46d3-4688-965e-94bdc208164f",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/refs/heads/master/state_CA.png",
+          "name": "State of California",
+          "organization_type": "State Government",
+          "slug": "california"
+        },
+        "popularity": 0,
+        "publisher": "California Department of Public Health",
+        "slug": "infectious-diseases-by-disease-county-year-and-sex",
+        "spatial_centroid": null,
+        "spatial_shape": null,
+        "theme": [
+          "Health and Human Services"
+        ],
+        "title": "Infectious Diseases by Disease, County, Year, and Sex"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

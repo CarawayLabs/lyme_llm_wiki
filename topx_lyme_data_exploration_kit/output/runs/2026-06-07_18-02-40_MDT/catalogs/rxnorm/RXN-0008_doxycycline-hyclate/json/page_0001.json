@@ -1,0 +1,287 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:58.826395Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "RXN-0008",
+    "query_mode": "terminology_lookup",
+    "method": "GET",
+    "endpoint": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json",
+    "search_term": "doxycycline hyclate",
+    "search_expression": "doxycycline hyclate",
+    "parameters": {
+      "term": "doxycycline hyclate",
+      "maxEntries": 20,
+      "option": 1
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NLM RxNorm API",
+    "catalog_slug": "rxnorm",
+    "source_type": "medication_terminology",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:58.050881Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 415,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0008_doxycycline-hyclate\\raw\\page_0001.json",
+      "sha256": "7d659bea8e3c471e77a315af78324b9fdbc73a459b27a290837f40926c69db7d",
+      "byte_count": 2119
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "rxnorm:RXN-0008-0",
+      "source_record_id": "RXN-0008-0",
+      "record_type": "medication_concept",
+      "title": "doxycycline hyclate",
+      "description": null,
+      "summary": null,
+      "source_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=doxycycline+hyclate&maxEntries=20&option=1",
+      "retrieved_at": "2026-06-08T00:04:58.050881Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "rxcui": "RXN-0008-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline hyclate"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "rxnorm",
+        "search_id": "RXN-0008",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=doxycycline+hyclate&maxEntries=20&option=1",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0008_doxycycline-hyclate\\raw\\page_0001.json",
+        "raw_record_sha256": "12d1949036dfe108cbdeaad6a91909425e939f51a9e95d0d18ba03114995005c"
+      },
+      "raw_metadata": {
+        "approximateGroup": {
+          "inputTerm": null,
+          "candidate": [
+            {
+              "rxcui": "23663",
+              "rxaui": "10281585",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "name": "Doxycycline Hyclate",
+              "source": "USP"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "10324047",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "source": "GS"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "2070306",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "name": "DOXYCYCLINE HYCLATE",
+              "source": "VANDF"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "3640268",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "source": "NDDF"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "409851",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "source": "MMSL"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "409852",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "name": "doxycycline hyclate",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "409857",
+              "score": "16.19584846496582",
+              "rank": "1",
+              "source": "MMSL"
+            },
+            {
+              "rxcui": "2649326",
+              "rxaui": "12832249",
+              "score": "15.535322134494782",
+              "rank": "8",
+              "name": "doxycycline hyclate Injection",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2661949",
+              "rxaui": "12845273",
+              "score": "15.535322134494782",
+              "rank": "8",
+              "name": "doxycycline hyclate Pill",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2647075",
+              "rxaui": "12829998",
+              "score": "14.96412487190366",
+              "rank": "10",
+              "name": "doxycycline hyclate Oral Capsule",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2647751",
+              "rxaui": "12830674",
+              "score": "14.96412487190366",
+              "rank": "10",
+              "name": "doxycycline hyclate Oral Gel",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2648109",
+              "rxaui": "12831032",
+              "score": "14.96412487190366",
+              "rank": "10",
+              "name": "doxycycline hyclate Oral Tablet",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2663263",
+              "rxaui": "12844486",
+              "score": "14.96412487190366",
+              "rank": "10",
+              "name": "doxycycline hyclate Oral Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2661232",
+              "rxaui": "12844838",
+              "score": "14.96412487190366",
+              "rank": "10",
+              "name": "doxycycline hyclate Injectable Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "23663",
+              "rxaui": "8235071",
+              "score": "14.758556027770043",
+              "rank": "15",
+              "source": "MMSL"
+            },
+            {
+              "rxcui": "2663675",
+              "rxaui": "12842524",
+              "score": "14.465199887350247",
+              "rank": "16",
+              "name": "doxycycline hyclate Oral Gel Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2658393",
+              "rxaui": "12841316",
+              "score": "14.23014521598816",
+              "rank": "17",
+              "name": "doxycycline hyclate Injection [Doxy]",
+              "source": "RXNORM"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

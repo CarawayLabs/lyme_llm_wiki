@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:14.546526Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0022",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "Lyme anaplasmosis coinfection",
+    "search_expression": "Lyme anaplasmosis coinfection",
+    "parameters": {
+      "query.cond": "Lyme anaplasmosis coinfection",
+      "query.term": "Lyme anaplasmosis coinfection",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:13.921352Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 254,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": 0,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0022_lyme-anaplasmosis-coinfection\\raw\\page_0001.bin",
+      "sha256": "b54968c05ff881a1ef7ce604b6a340248f8e2aee8637bef06da0f5693f520df8",
+      "byte_count": 31
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

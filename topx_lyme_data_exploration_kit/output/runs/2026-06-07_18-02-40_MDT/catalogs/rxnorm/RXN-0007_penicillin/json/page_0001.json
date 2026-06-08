@@ -1,0 +1,281 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:58.599101Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "RXN-0007",
+    "query_mode": "terminology_lookup",
+    "method": "GET",
+    "endpoint": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json",
+    "search_term": "penicillin",
+    "search_expression": "penicillin",
+    "parameters": {
+      "term": "penicillin",
+      "maxEntries": 20,
+      "option": 1
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NLM RxNorm API",
+    "catalog_slug": "rxnorm",
+    "source_type": "medication_terminology",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:57.827842Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 417,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0007_penicillin\\raw\\page_0001.json",
+      "sha256": "ab9c5fe5c2afcc9265bb2f7af78f5d5ce99aa84a785290bd89b73580d7b13ca7",
+      "byte_count": 1987
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "rxnorm:RXN-0007-0",
+      "source_record_id": "RXN-0007-0",
+      "record_type": "medication_concept",
+      "title": "penicillin",
+      "description": null,
+      "summary": null,
+      "source_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=penicillin&maxEntries=20&option=1",
+      "retrieved_at": "2026-06-08T00:04:57.827842Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "rxcui": "RXN-0007-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "penicillin"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "rxnorm",
+        "search_id": "RXN-0007",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=penicillin&maxEntries=20&option=1",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0007_penicillin\\raw\\page_0001.json",
+        "raw_record_sha256": "2fad9bf0b471a7ed6c9e43115c22c939a371d80056d341f1a09bf035cd62c0c5"
+      },
+      "raw_metadata": {
+        "approximateGroup": {
+          "inputTerm": null,
+          "candidate": [
+            {
+              "rxcui": "7984",
+              "rxaui": "10283985",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "name": "Penicillin V",
+              "source": "USP"
+            },
+            {
+              "rxcui": "7984",
+              "rxaui": "11799945",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "source": "GS"
+            },
+            {
+              "rxcui": "7984",
+              "rxaui": "12251627",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "name": "penicillin V",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "7980",
+              "rxaui": "12252191",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "name": "penicillin G",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "7980",
+              "rxaui": "2072834",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "name": "PENICILLIN G",
+              "source": "VANDF"
+            },
+            {
+              "rxcui": "7980",
+              "rxaui": "3746743",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "source": "NDDF"
+            },
+            {
+              "rxcui": "7984",
+              "rxaui": "5942343",
+              "score": "10.454465205574037",
+              "rank": "1",
+              "source": "NDDF"
+            },
+            {
+              "rxcui": "1719795",
+              "rxaui": "12263080",
+              "score": "10.162352755990794",
+              "rank": "8",
+              "name": "penicillin G Injection",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164767",
+              "rxaui": "12292699",
+              "score": "10.162352755990794",
+              "rank": "8",
+              "name": "penicillin G Pill",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164774",
+              "rxaui": "12294330",
+              "score": "10.162352755990794",
+              "rank": "8",
+              "name": "penicillin V Pill",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2671691",
+              "rxaui": "12866531",
+              "score": "9.919438606023789",
+              "rank": "11",
+              "name": "penicillin G Injection [Extencilline]",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2684989",
+              "rxaui": "12893751",
+              "score": "9.919438606023789",
+              "rank": "11",
+              "name": "penicillin G Injection [Lentocilin]",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164771",
+              "rxaui": "12285744",
+              "score": "9.909521647277417",
+              "rank": "13",
+              "name": "penicillin V Ophthalmic Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164766",
+              "rxaui": "12292698",
+              "score": "9.909521647277417",
+              "rank": "13",
+              "name": "penicillin G Oral Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164773",
+              "rxaui": "12292702",
+              "score": "9.909521647277417",
+              "rank": "13",
+              "name": "penicillin V Oral Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164764",
+              "rxaui": "12293756",
+              "score": "9.909521647277417",
+              "rank": "13",
+              "name": "penicillin G Injectable Product",
+              "source": "RXNORM"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

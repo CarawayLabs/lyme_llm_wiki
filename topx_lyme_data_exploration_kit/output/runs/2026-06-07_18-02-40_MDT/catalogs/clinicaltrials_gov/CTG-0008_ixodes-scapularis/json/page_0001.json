@@ -1,0 +1,4363 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:10.938734Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0008",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "Ixodes scapularis",
+    "search_expression": "Ixodes scapularis",
+    "parameters": {
+      "query.cond": "Ixodes scapularis",
+      "query.term": "Ixodes scapularis",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:10.160333Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 408,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 4,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 4,
+    "total_count": 4,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0008_ixodes-scapularis\\raw\\page_0001.bin",
+      "sha256": "f17a05792a9b3b3fbcff5d1e3650b8afc32fa1c8d32b69cfe35c8d2dd959935e",
+      "byte_count": 100485
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0008-0",
+      "source_record_id": "CTG-0008-0",
+      "record_type": "clinical_trial",
+      "title": "Ixodes scapularis",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:10.160333Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0008-0"
+      },
+      "topics": [],
+      "conditions": [
+        "Ixodes scapularis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0008",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0008_ixodes-scapularis\\raw\\page_0001.bin",
+        "raw_record_sha256": "13fb1d828a98615125e5b225db666534abec15b50142dba29d233d510e0cd9f7"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT07479537",
+            "orgStudyIdInfo": {
+              "id": "NL-009527"
+            },
+            "organization": {
+              "fullName": "Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA)",
+              "class": "OTHER"
+            },
+            "briefTitle": "Acquired Tick Resistance in Naturally Exposed Participants",
+            "officialTitle": "The Uninfected Ixodes Scapularis Human Tick Challenge Model - Acquired Tick Resistance in Naturally Exposed Participants",
+            "acronym": "TICK REACT"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2026-03",
+            "overallStatus": "ACTIVE_NOT_RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2025-08-14",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2026-04-01",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2026-06-01",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2025-12-03",
+            "studyFirstSubmitQcDate": "2026-03-15",
+            "studyFirstPostDateStruct": {
+              "date": "2026-03-18",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-03-15",
+            "lastUpdatePostDateStruct": {
+              "date": "2026-03-18",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "prof. J.W.R. Hovius, MD, PhD",
+              "investigatorTitle": "prof. dr.",
+              "investigatorAffiliation": "Amsterdam UMC, location AMC"
+            },
+            "leadSponsor": {
+              "name": "Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA)",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": true,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Tick-borne diseases are increasing worldwide, and there are currently few effective ways to prevent them. One promising new strategy is to develop a vaccine that targets the tick itself (\"anti-tick vaccine\") to block the transmission of multiple pathogens. Some animals naturally develop resistance to ticks after repeated tick bites. There are indications that a similar form of acquired tick resistance (ATR) may also occur in humans who have been heavily exposed to ticks. This study investigates whether humans can naturally develop tick resistance and how this affects tick feeding. The investigators will compare people with a long history of tick bites and self-reported signs of tick resistance to people who are tick-naïve. The investigators will also include a small group of volunteers who previously participated in an experimental human tick challenge to evaluate what their reaction on tickbites is 1-2 years after their initial exposures.",
+            "detailedDescription": "Study Objectives Primary Objective To determine whether humans develop naturally acquired tick resistance by measuring tick feeding success, specifically the weight of ticks after feeding.\n\nSecondary Objectives To measure additional tick feeding parameters (tick mortality, attachment rate, duration of feeding, and molting).\n\nTo assess clinical skin reactions such as itch and redness. To study immune responses (antibodies and immune cells) against tick saliva proteins in all groups.\n\nTo identify tick salivary antigens that may be useful for future anti-tick vaccine development.\n\nStudy Design Single-center, open-label human experimental tick challenge study.\n\nThree groups:\n\nATR group: 11 adults with extensive prior tick exposure and self-reported signs of tick resistance.\n\nControl group: 11 adults with no significant tick exposure. Follow-up challenge group: Up to 4 adults previously challenged in the \"TICK ME\" study.\n\nOutcome measures Primary Outcome Measure Post-feeding tick weight\n\nSecondary Outcome Measures Tick mortality, attachment rate, days attached, and molting success Clinical skin responses (itch, redness) Immune responses to tick salivary proteins Skin biopsy analyses"
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Tick Bites",
+              "Tick Resistance"
+            ],
+            "keywords": [
+              "Tick resistance in naturally exposed individuals",
+              "tick resistance in tick-naive individuals"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NON_RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "primaryPurpose": "BASIC_SCIENCE",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 24,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Tick naive individuals",
+                "type": "EXPERIMENTAL",
+                "description": "Individuals who have never been bitten by ticks before (as far as known)",
+                "interventionNames": [
+                  "Other: Tick challenge"
+                ]
+              },
+              {
+                "label": "Supposed tick immune individuals",
+                "type": "EXPERIMENTAL",
+                "description": "Individuals who have been bitten by a lot of ticks before and experience a local reaction after each tickbite.",
+                "interventionNames": [
+                  "Other: Tick challenge"
+                ]
+              },
+              {
+                "label": "Previous TICK ME participants",
+                "type": "EXPERIMENTAL",
+                "description": "Individuals who have participated in the TICK ME study",
+                "interventionNames": [
+                  "Other: Tick challenge"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "Tick challenge",
+                "description": "uninfected ixodes scapularis ticks will be placed underneath a closed dressing",
+                "armGroupLabels": [
+                  "Previous TICK ME participants",
+                  "Supposed tick immune individuals",
+                  "Tick naive individuals"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Tick feeding: tick weight",
+                "description": "Tick weight measured in mg after complete feeding of the tick",
+                "timeFrame": "From the start of the tick challenge until feeding to repletion of the ticks (max 10 days)"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Tick feeding: tick mortality",
+                "description": "Tick mortality in % of fed ticks",
+                "timeFrame": "From the start of the tick challenge until feeding to repletion of the ticks (max 10 days)"
+              },
+              {
+                "measure": "Host reaction: redness",
+                "description": "Redness (using a standardized clinical erythema (CEA) score (scale 0-4) which is scored by physicians using photographs of tick bite lesions)",
+                "timeFrame": "Redness will be monitored at day 2 and the last day of the tick challenge"
+              },
+              {
+                "measure": "Host reaction: itch",
+                "description": "Itch (using Visual Analogue Scale 0-100) as a sign of a clinical reaction of the host",
+                "timeFrame": "Itch is measures daily during the tick challenge (From the start of the tick challenge until feeding to repletion of the ticks (max 10 days)"
+              },
+              {
+                "measure": "Host immune response: humoral",
+                "description": "Humoral (qualitative by characterizing antibodies recognizing anti-tick antigens using a yeast surface display expressing tick salivary gland proteins)",
+                "timeFrame": "From the start of the challenge, day 2, day 5, final day of challenge (day 5-10) depending upon tick feeding, 3-5 weeks after the challenge and 10-12 weeks after the challenge"
+              },
+              {
+                "measure": "Host immune response: cellular",
+                "description": "Cellular (immunophenotyping of the different immune subsets in collected PBMCs at the specified time points) of immune responses in blood",
+                "timeFrame": "From the start of the challenge, day 2, day 5, final day of challenge (day 5-10) depending upon tick feeding, 3-5 weeks after the challenge and 10-12 weeks after the challenge"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\nNaturally acquired self-reported tick resistant individuals:\n\n* Age: 18 - 70 years;\n* History of repeated tick bites\n* Local reaction (like redness or itch) at place of previous tick bites and/or signs of impaired tick feeding after bite (anamnestic)\n\nControls:\n\n• Age: 18 years - 70 years;\n\nExperimentally acquired tick resistant individuals:\n\n* Previous participant in the TICK ME study that has completed all 4 challenges\n* Age: 18 years - 70 years;\n\nExclusion Criteria:\n\n* Current suspicion of any tick-borne disease\n* Diagnosed with tick-borne disease within the last year\n* Chronic skin condition affecting the skin of the arm;\n* Inability to maintain the dressing for any reason;\n* Known immunodeficiency or autoimmune disease;\n* Use of systemic immunomodulating drugs or chemotherapy, current or in the past;\n* Chronic use of antibiotics;\n* Unable to give informed consent or do not have a thorough command of the Dutch language;\n* Refusal to participate in specimen collection and storage for future study related use;\n* Pregnant or breastfeeding women;\n* Not willing to use adequate contraception during the study period;\n* Red meat allergy (both medically confirmed and self-reported);\n* Use of investigational therapy and devices during the time of the study;\n* Any other condition that, in the opinion of the investigator, would make the patient unsuitable for enrolment or could interfere with the patient participating in and completing the study.\n\nAdditional exclusion criteria for controls:\n\n* Known history of tick bites;\n* Positive Borrelia serology (VlsE1/PepC10 ELISA);\n* Known history or current suspicion on any tick-borne disease\n\nAdditional exclusion criteria for experimentally acquired tick resistant individuals:\n\n* History of tick bites acquired outside of TICK ME study;\n* Positive Borrelia serology (VlsE1/PepC10 ELISA);\n* Known history or current suspicion on any tick-borne disease",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "maximumAge": "70 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Joppe W Hovius, Prof. Dr.",
+                "affiliation": "Amsterdam UMC",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Amsterdam UMC",
+                "city": "Amsterdam",
+                "state": "North Holland",
+                "zip": "1105AZ",
+                "country": "Netherlands",
+                "geoPoint": {
+                  "lat": 52.37403,
+                  "lon": 4.88969
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "UNDECIDED",
+            "description": "The descision about sharing the IPD will follow"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D064927",
+                "term": "Tick Bites"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D001733",
+                "term": "Bites and Stings"
+              },
+              {
+                "id": "D011041",
+                "term": "Poisoning"
+              },
+              {
+                "id": "D064419",
+                "term": "Chemically-Induced Disorders"
+              },
+              {
+                "id": "D014947",
+                "term": "Wounds and Injuries"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0008-1",
+      "source_record_id": "CTG-0008-1",
+      "record_type": "clinical_trial",
+      "title": "Ixodes scapularis",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:10.160333Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0008-1"
+      },
+      "topics": [],
+      "conditions": [
+        "Ixodes scapularis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0008",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0008_ixodes-scapularis\\raw\\page_0001.bin",
+        "raw_record_sha256": "12c974f10d0e5b359f186393a9d4a80fac8e32cf07de13ba450ffd5210210ab5"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT05965635",
+            "orgStudyIdInfo": {
+              "id": "NL81259.018.22"
+            },
+            "organization": {
+              "fullName": "Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA)",
+              "class": "OTHER"
+            },
+            "briefTitle": "The Uninfected Ixodes Scapularis Human Tick Challenge Model",
+            "officialTitle": "The Uninfected Ixodes Scapularis Human Tick Challenge Model",
+            "acronym": "TICKME"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2026-03",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2023-07-25",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2026-03-02",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2026-03-02",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2023-03-28",
+            "studyFirstSubmitQcDate": "2023-07-19",
+            "studyFirstPostDateStruct": {
+              "date": "2023-07-28",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-03-20",
+            "lastUpdatePostDateStruct": {
+              "date": "2026-03-24",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "PRINCIPAL_INVESTIGATOR",
+              "investigatorFullName": "prof. J.W.R. Hovius, MD, PhD",
+              "investigatorTitle": "PI",
+              "investigatorAffiliation": "Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA)"
+            },
+            "leadSponsor": {
+              "name": "Academisch Medisch Centrum - Universiteit van Amsterdam (AMC-UvA)",
+              "class": "OTHER"
+            },
+            "collaborators": [
+              {
+                "name": "ZonMw: The Netherlands Organisation for Health Research and Development",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": true,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "An innovative way to prevent multiple tick-borne diseases is an anti-tick vaccine, i.e. targeting the vector to prevent transmission of pathogens from the tick to the host. The rationale for an anti-tick vaccine stems from a phenomenon coined tick immunity. This study aims to show proof of concept that humans indeed develop immunity to ticks. Therefore subjects will be challenged three to four times with ticks reared in colony from a designated laboratory and that are exhaustively tested negative for various known tick-borne pathogens. Several tick feeding parameters will be evaluated to assess the development of tick immunity in the subjects. To this end, a total amount of ten ticks per challenge will be placed under a dressing placed on the forearm. The primary study endpoint is the tick feeding phenotype. Secondary parameters are signs of an immune response in the host; itch, redness, or other signs of a (local) immune response (blood and skin biopsies). All parameters, except for the skin biopsies, will be collected/evaluated after each tick challenge.",
+            "detailedDescription": "This will be an, single centre, experimental study. The design of the study is similar to a human challenge trial, with the important exception that the subjects in this study are not experimentally infected with a pathogen, but are exposed to well-characterized laboratory-reared uninfected nymphal Ixodes scapularis ticks.\n\nSeven healthy human volunteers of \\>18 years old who have no history of known tick-bites or tick-borne diseases will be recruited. Subjects will undergo three to four tick challenges, consisting of five to six days per challenge with two weeks between the consecutive challenges. The total duration of participation is approximately five months for each subject. By making use of ticks from a laboratory-reared tick colony that have been, and are being, used in xenodiagnosis and tick challenge models in the USA and that are well tolerated minimizing the risks of the tick challenges. Regardless, the tick challenge can cause some discomfort because of possible local reactions and because the dressing must be kept dry for five to six days. The risk of infection with a tick-borne pathogen is negligible due to the fact that these ticks are exhaustively tested for various known tick-borne pathogens. Finally, risks are considerated of development of a red meat allergy or other allergic reactions negligible because no clear associations are known of I. scapularis ticks and red meat allergy. No serious adverse events (such as human infections or red meat allergy) have resulted from more than \\>100 challenges in the United States using this tick colony. There are no direct benefits of participation."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Tick Bites",
+              "Immunity to Ticks"
+            ],
+            "keywords": [
+              "Tick bites",
+              "Ixodus scapularis",
+              "Tick Challenge model",
+              "Tick borne diseases",
+              "Tick immunity"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "interventionModelDescription": "Single centre, experimental study",
+              "primaryPurpose": "BASIC_SCIENCE",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 11,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Experimental",
+                "type": "EXPERIMENTAL",
+                "interventionNames": [
+                  "Other: Ixodus scapularis nymphs"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "OTHER",
+                "name": "Ixodus scapularis nymphs",
+                "description": "Tick challenge",
+                "armGroupLabels": [
+                  "Experimental"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Tick weight",
+                "description": "Tick weight in mg",
+                "timeFrame": "Up to 1 week"
+              },
+              {
+                "measure": "Tick feeding molting success",
+                "description": "Molting success rate",
+                "timeFrame": "Up to 1 week"
+              },
+              {
+                "measure": "Tick survival",
+                "description": "tick survival rate",
+                "timeFrame": "Up to 1 week"
+              },
+              {
+                "measure": "Tick attachment",
+                "description": "tick attachment rate",
+                "timeFrame": "Up to 1 week"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Signs of an immune response in the host: Itch",
+                "description": "Itch",
+                "timeFrame": "Up to 1 week"
+              },
+              {
+                "measure": "Signs of an immune response in the host: redness",
+                "description": "Redness",
+                "timeFrame": "Up to 1 week"
+              },
+              {
+                "measure": "Signs of an immune response in the host: other",
+                "description": "Other signs of a local immune response (in blood)",
+                "timeFrame": "3 weeks"
+              },
+              {
+                "measure": "Signs of an immune response in the host: biopsies",
+                "description": "Other signs of a local immune response (in skin biopsies)",
+                "timeFrame": "9 weeks"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Age: 18 years and older;\n* Negative Borrelia VlsE1/pepC10 ELISA.\n\nExclusion Criteria:\n\n* Known history of tick bites;\n* Positive Borrelia serology (VlsE1/PepC10 ELISA);\n* Known history or current suspicion on any tick-borne disease;\n* Chronic skin condition affecting the arm skin;\n* Inability to maintain the dressing for any reason;\n* Known immunodeficiency or autoimmune disease;\n* Use of systemic immunomodulating drugs or chemotherapy, current or in the past;\n* Chronic use of antibiotics;\n* Unable to give informed consent or do not have a thorough command of the Dutch language;\n* Refusal to participate in specimen collection and storage for future study related use;\n* Pregnant or breastfeeding women;\n* Not willing to use adequate contraception during the study period;\n* Red meat allergy (both medically confirmed and self-reported);\n* Use of investigational therapy and devices during the time of the study;\n* Any other condition that, in the opinion of the investigator, would make the patient unsuitable for enrolment or could interfere with the patient participating in and completing the study.",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "locations": [
+              {
+                "facility": "AUMC location AMC",
+                "city": "Amsterdam-Zuidoost",
+                "state": "North Holland",
+                "zip": "1105 AZ",
+                "country": "Netherlands",
+                "geoPoint": {
+                  "lat": 52.3075,
+                  "lon": 4.97222
+                }
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "NO"
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D064927",
+                "term": "Tick Bites"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D001733",
+                "term": "Bites and Stings"
+              },
+              {
+                "id": "D011041",
+                "term": "Poisoning"
+              },
+              {
+                "id": "D064419",
+                "term": "Chemically-Induced Disorders"
+              },
+              {
+                "id": "D014947",
+                "term": "Wounds and Injuries"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0008-2",
+      "source_record_id": "CTG-0008-2",
+      "record_type": "clinical_trial",
+      "title": "Ixodes scapularis",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:10.160333Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0008-2"
+      },
+      "topics": [],
+      "conditions": [
+        "Ixodes scapularis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0008",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0008_ixodes-scapularis\\raw\\page_0001.bin",
+        "raw_record_sha256": "4ac4feb4de3aef7cfb70cfa61cd6646eb3d0d2b52d1d642ef56e99841a888dbc"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT05036707",
+            "orgStudyIdInfo": {
+              "id": "10000331"
+            },
+            "secondaryIdInfos": [
+              {
+                "id": "000331-I"
+              }
+            ],
+            "organization": {
+              "fullName": "National Institutes of Health Clinical Center (CC)",
+              "class": "NIH"
+            },
+            "briefTitle": "Human Immune Response to Ixodes Scapularis Tick Bites",
+            "officialTitle": "Investigating the Human Immune Response to Ixodes Scapularis Tick Bites"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2026-05-04",
+            "overallStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2022-02-28",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2028-06-30",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2028-06-30",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2021-09-04",
+            "studyFirstSubmitQcDate": "2021-09-07",
+            "studyFirstPostDateStruct": {
+              "date": "2021-09-08",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-05-05",
+            "lastUpdatePostDateStruct": {
+              "date": "2026-05-06",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+              "class": "NIH"
+            }
+          },
+          "oversightModule": {
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": true,
+            "isUnapprovedDevice": true
+          },
+          "descriptionModule": {
+            "briefSummary": "Background:\n\nEach year, the number of cases of tick-borne diseases increases. The deer tick (Ixodes scapularis) is the vector of at least 7 pathogens that cause human diseases, including Lyme disease. Researchers want to learn more to help them develop vaccines against ticks in the future.\n\nObjective:\n\nTo learn how people s bodies, particularly the skin, respond to tick bites.\n\nEligibility:\n\nHealthy adults aged 18 years and older who have no known history of a tick-borne disease or tick bite exposure.\n\nDesign:\n\nParticipants will be screened with a medical history, physical exam, and blood tests.\n\nParticipants will have 2 skin punch biopsies of healthy skin. For this, a sharp instrument will be used to remove a round plug of skin about the size of a pencil eraser. Participants will then have 10 clean laboratory-bred ticks placed at 2 different sites on their skin (20 ticks total). The ticks will be removed from the first site 1 day after placement and from the second site 2-4 days after placement. Participants will complete symptom diary cards. They will answer questions about itching at the tick feeding sites. They will give blood samples. Photos will be taken of the tick feeding sites. Skin punch biopsies will be collected at the sites of the tick bites.\n\nParticipants will repeat the tick feeding procedures 2 times, each 2-8 weeks apart. For the 2nd and 3rd procedures, 10 clean laboratory-bred ticks will be placed at 1 site. The ticks will be removed 2-3 days after tick placement. They will have telephone follow-up visits after each procedure.\n\nAfter the final tick removal, participants will have follow-up visits in 4-6 weeks and again in 3 months. They will give blood samples and discuss how they are feeling.\n\nParticipation will last about 5-7 months.",
+            "detailedDescription": "Study Description:\n\nThis study aims to develop a model for acquired tick resistance in humans, characterize the acquisition of tick-associated skin immunity, and monitor the innate and adaptive immune response of Ixodes scapularis tick bites. The study will be a prospective, non-randomized, single-center study performed at the National Institutes of Health (NIH) Clinical Center. It will be performed under Investigational Device Exemption (IDE) G210153, and will be monitored as per National Institute of Allergy and Infectious Diseases (NIAID) and NIH regulations. Participants (35 adult healthy volunteers) will undergo up to 3 tick feeding placements, 2 to 8 weeks\n\napart. One to two punch skin biopsies (2-3 mm) from the tick bite sites will be collected at 1 day (early) and 2-4 days (late) after the first tick placement procedure. Skin biopsies of an unaffected site will be performed as a control. One to two punch skin biopsies (2-3 mm) from the tick bite sites will be collected at day 2-3 after the 2nd and 3rd tick placement procedures. Additionally, blood will be collected to evaluate systemic immune response to tick salivary proteins. Ticks will also be collected at each timepoint and gene expression will be analyzed to determine the effect of the human skin response on ticks.\n\nChanges in resistance to tick bites can be evaluated by:\n\n* Local reaction to the tick bite\n\n  * pruritus\n  * site reactions\n  * Blood flow index as measured by laser speckle contrast imaging\n* Number of fed ticks\n\nChanges in the immune response and cellular recruitment in the skin can be evaluated using:\n\nDifferential expression of immune transcripts and other skin associated transcripts using RNAseq or other high-throughput profiling of cells\n\nConventional histology and immunohistochemistry\n\nDigital Spatial Profiling to determine cell type and other immune markers using a high-plex platform\n\nChanges in the systemic immune response will be evaluated by:\n\nMeasurement of antibodies against tick salivary proteins will be assessed by enzyme-linked immunosorbent assay (ELISA) and\n\nwestern blot\n\nNovel state-of-the-art high resolution technologies to deeply characterize the immune response to tick bites over time, both phenotypically and functionally.\n\nChanges in tick transcriptomic profile will be assessed by:\n\nRNAseq: Ribonucleic acid (RNA) will be isolated from tick after they have been removed from subjects and unexposed ticks.\n\nDifferential expression profile will be performed and validated by NanoString\n\nObjectives:\n\nPrimary Objectives:\n\n1. Develop a model of acquired tick resistance in humans\n2. Continue to assess the safety of tick feeding using laboratory-reared Ixodes scapularis larva in humans\n\nExploratory Objectives:\n\n1. Comparison of the early and late immune response in the skin site of the bite of Ixodes scapularis after a single tick exposure.\n2. Determine the effects of repeated tick feeding on the immune response at the tick bite site in human skin and development of tick resistance.\n3. Analyze the evolution of the systemic immune response to tick bite in participants after multiple tick exposures and validate development of reliable biomarkers of tick exposure.\n4. Analyze gene expression of Ixodes scapularis larvae feeding on humans and determine the effects of immune response of subjects\n\nrepeatedly bitten on larvae gene expression.\n\nEndpoints:\n\nPrimary Endpoints:\n\n1. Pruritus at the site of tick attachment in the first 24 hours of tick placement over the three placements as measured by a positive slope\n\n   over the three placements of the numerical rating score. The slope of other pruritus scores at 24 hours and at Day 2-4, and the number of attached ticks collected from participants over the three placements will also be measured.\n2. Monitor safety adverse events (AEs) using reporting tools and Sponsor safety monitors.\n\nExploratory Endpoints:\n\n1. Compare the results from the skin biopsies acquired with the first tick placement. Our hypothesis is that there will be differential phenotypic, transcriptomic, and immunohistochemical differences between:\n\n   * Exposed (bitten skin at day 1) and unexposed (unbitten skin)\n   * Exposed (bitten skin at day 2-4) and unexposed (unbitten skin)\n   * Exposed (bitten skin at day 1) and exposed (bitten skin at day 2-4)\n\n   Measurement of changes will be assessed by:\n   * Differential expression of immune transcripts and other skin associated transcripts using RNAseq\n   * Conventional histology and immunohistochemistry\n   * Digital Spatial Profiling to determine cell type and other immune markers using a high-plex platform\n2. Compare the changes in the local immune response and cellular recruitment between the 1st, 2nd and the 3rd tick exposures and correlate with measures of itching, blood flow index and number of attached ticks and the feeding status.\n\n   We postulate that differences between the timepoints will become more marked with multiple exposures. We hypothesize that there will be differential phenotypic and transcriptomic differences between:\n\n   Exposed (bitten skin at day 2-3, exposure 2) and exposed (bitten skin at day 2-3, exposure 3)\n\n   Correlate these changes with measures of resistance to tick feeding (itching, number and level of feeding of attached ticks, blood flow index).\n3. Compare the development of antibody responses against Ixodes scapularis salivary protein antigens between the 1st, 2nd, and the 3rd tick exposures and correlate antibodies against tick salivary proteins with measures of resistance (itching, erythema, blood flow index, number of fed ticks).\n\n   Explore the development of the host response in blood using high resolution technologies such as immunophenotyping, proteomics and\n\n   transcriptomics and compare the responses between the 1st, 2nd, and the 3rd tick exposures.\n4. Using RNAseq technology, measure changes in gene expression of ticks fed at early timepoint (1 day) vs late timepoint (2-4 days) vs unfed ticks and of ticks fed at 1st, 2nd, and 3rd placements. Correlation of pruritus and changes in tick gene expression."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Tick-borne Diseases",
+              "Tick Resistance",
+              "Lyme Disease"
+            ],
+            "keywords": [
+              "Tick Immunity",
+              "Tick-borne diseases",
+              "Vaccines",
+              "Lyme Disease"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "PHASE1",
+              "PHASE2"
+            ],
+            "designInfo": {
+              "allocation": "NA",
+              "interventionModel": "SINGLE_GROUP",
+              "primaryPurpose": "DIAGNOSTIC",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 60,
+              "type": "ESTIMATED"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "1",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Healthy Volunteer",
+                "interventionNames": [
+                  "Device: Xenodiagnosis Ticks",
+                  "Procedure: skin biopsy",
+                  "Procedure: blood draw"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "DEVICE",
+                "name": "Xenodiagnosis Ticks",
+                "description": "Larval ticks will be obtained from Dr. Sam Telford from a laboratory maintained tick colony at Tufts Veterinary School. These ticks are hatched from eggs laid by ticks that have fed only on specific pathogen free laboratory animals that were purchased from established vendors.",
+                "armGroupLabels": [
+                  "1"
+                ]
+              },
+              {
+                "type": "PROCEDURE",
+                "name": "skin biopsy",
+                "description": "2-3 mm skin punch biopsies will be performed.",
+                "armGroupLabels": [
+                  "1"
+                ]
+              },
+              {
+                "type": "PROCEDURE",
+                "name": "blood draw",
+                "description": "Peripheral blood draws will be performed.",
+                "armGroupLabels": [
+                  "1"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Assessment of Safety of the device. Use toxicity tables and safety monitoring as specified in the protocol.",
+                "description": "Ongoing assessment of safety.",
+                "timeFrame": "continuous"
+              },
+              {
+                "measure": "Develop a model of acquired tick resistance in humans. Use validated pruritus scales, numerical rating system, verbal rating system, and visual analogue system.",
+                "description": "Clinical measures of tick immunity.",
+                "timeFrame": "end of study"
+              }
+            ],
+            "secondaryOutcomes": [
+              {
+                "measure": "Exploratory: Determine the effects of repeated tick feeding on immune response at tick bite site and the development of resistance. Use RNASeq,histology, immunohistochemistry, digital spatial profiling, clinical itch scales, site reactions, tick...",
+                "description": "Compare changes in early and late local immune response and cellular recruitment between the 1st and 3rd tick exposures.",
+                "timeFrame": "continuous"
+              },
+              {
+                "measure": "Exploratory: Analyze gene expression of Ixodes scapularis after feeding on humans using RNASeq.",
+                "description": "Measure changes in gene expression of ticks fed at the various time points.",
+                "timeFrame": "continuous"
+              },
+              {
+                "measure": "Exploratory: Compare early and late immune response in skin after Ixodes scapularis bite. Use RNASeq, histology, immunohistochemistry, digital spatial profiling to explore.",
+                "description": "Compare early and late immune response in the skin using skin biopsies collected at Day 1 and Day 4.",
+                "timeFrame": "continuous"
+              },
+              {
+                "measure": "Exploratory: Analyze the evolution of the systemic immune response to tick bite by measuring antibodies response (ELISA and western blot) against Ixodes scapularis salivary protein antigens.",
+                "description": "Compare the development of antibody responses against Ixodes scapularis salivary antigens between the 1st, 2nd, and 3rd tick feedings.",
+                "timeFrame": "continous"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "* INCLUSION CRITERIA:\n\nIn order to be eligible to participate in this study, an individual must meet all of the following criteria:\n\n1. Stated willingness to comply with all study procedures and availability for the duration of the study.\n2. Age 18 years or older.\n3. In good general health as evidenced by medical history.\n4. No history of TBD.\n5. No known tick bite.\n6. Serum IgE level within Clinical Center Department of Laboratory Medicine normal range.\n\n   https://ccinternal2.cc.nih.gov/LTGRA/UL/public\\_labtest\\_detail.aspx?next\\_flg=Y\\&test\\_id=4731\\&id\\_order=53\n7. Serum tryptase level within Clinical Center Department of Laboratory Medicine normal range.\n\n   https://ccinternal2.cc.nih.gov/LTGRA/UL/public\\_labtest\\_detail.aspx?next\\_flg=Y\\&test\\_id=1157\\&id\\_order=1\n8. For participants of child-bearing potential: use of effective contraception for at least 1 month prior to tick placement, and agreement to use such a method during study participation and for an additional 3 months after the removal of the last ticks. Types of contraception include abstinence, surgical methods (sterilization, implants, intrauterine device, partner with vasectomy), hormonal methods (birth control pill, patch, ring, injection), or barrier methods (diaphragm plus spermicide, male condom plus spermicide)\n9. For males of reproductive potential: use of condoms or other methods to ensure effective contraception with partner.\n10. Agree to not participate in other clinical studies requiring investigational interventions for the duration of the study.\n11. Minimum hemoglobin of 13.0 g/dL for males and 12 g/dL for females\n\nEXCLUSION CRITERIA:\n\nAn individual who meets any of the following criteria will be excluded from participation in this study:\n\n1. History of forming large thick scars (keloids) after skin injuries.\n2. History of excessive bleeding after cuts or procedures.\n3. History of taking anticoagulants in the past 28 days.\n4. History of allergic reaction to lidocaine.\n5. History of allergic reaction to tape, adhesive bandages, or dressings.\n6. Inability to maintain the dressing for any reason.\n7. Pregnancy or lactation.\n8. Treatment with another investigational drug or other intervention within the past 30 days.\n9. Oral or intravenous (IV) steroids in the 2 weeks prior to each tick placement procedure (topical, nasal, inhaled, intra-articular, and replacement doses of steroids are not exclusions).\n10. History of reactions to mammalian meat, IgE- mediated food allergies, urticaria or anaphylaxis. Mild pollen-food allergy syndrome is not an exclusion.\n11. History of systemic allergic reaction to venom (bee, wasps and other Hymenoptera stings).\n12. History of clinically significant drug allergies.\n13. History of moderate to severe atopy asthma, atopic dermatitis, allergic rhinitis.\n14. Active severe skin disease, uncontrolled diabetes, cancer other than non-melanoma skin cancers, autoimmune disease requiring immunosuppressive therapy, or history of human immunodeficiency virus (HIV), chronic viral hepatitis, or syphilis.\n15. Refusal to allow storage of samples and data for future usage..\n16. Any other condition that, in the opinion of the investigator, would make the patient unsuitable for enrollment or could interfere with the patient participating in and completing the study.\n\nExclusion of Select Populations:\n\nChildren:\n\nChildren are excluded from this protocol as there is no direct benefit to the participants, the risk from the skin biopsies is small but above minimal, the procedure is invasive and can be stressful for children, and there is concern over their ability to maintain the LeFlap dressing.\n\nPregnant and breastfeeding women:\n\nPregnant and breastfeeding women are excluded from trial participation as there is no direct benefit to the participants.\n\nAdults who lack capacity to consent:\n\nAdults lacking decision-making capacity to provide informed consent are excluded at screening as there is no direct benefit to the participants.\n\nEnrolled participants who permanently lose the ability to consent during participation will be monitored for safety but will have no additional research procedures performed.",
+            "healthyVolunteers": true,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "maximumAge": "99 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Siu-Ping Ng, R.N.",
+                "role": "CONTACT",
+                "phone": "(301) 451-7661",
+                "email": "sturk1@mail.nih.gov"
+              },
+              {
+                "name": "Adriana R Marques, M.D.",
+                "role": "CONTACT",
+                "phone": "(301) 435-7244",
+                "email": "amarques@niaid.nih.gov"
+              }
+            ],
+            "overallOfficials": [
+              {
+                "name": "Adriana R Marques, M.D.",
+                "affiliation": "National Institute of Allergy and Infectious Diseases (NIAID)",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "National Institutes of Health Clinical Center",
+                "status": "RECRUITING",
+                "city": "Bethesda",
+                "state": "Maryland",
+                "zip": "20892",
+                "country": "United States",
+                "contacts": [
+                  {
+                    "name": "For more information at the NIH Clinical Center contact Office of Patient Recruitment (OPR)",
+                    "role": "CONTACT",
+                    "phone": "800-411-1222",
+                    "phoneExt": "TTY8664111010",
+                    "email": "prpl@cc.nih.gov"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 38.98067,
+                  "lon": -77.10026
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "24523212",
+                "type": "BACKGROUND",
+                "citation": "Marques A, Telford SR 3rd, Turk SP, Chung E, Williams C, Dardick K, Krause PJ, Brandeburg C, Crowder CD, Carolan HE, Eshoo MW, Shaw PA, Hu LT. Xenodiagnosis to detect Borrelia burgdorferi infection: a first-in-human study. Clin Infect Dis. 2014 Apr;58(7):937-45. doi: 10.1093/cid/cit939. Epub 2014 Feb 11."
+              },
+              {
+                "pmid": "16431279",
+                "type": "BACKGROUND",
+                "citation": "Ribeiro JM, Alarcon-Chaidez F, Francischetti IM, Mans BJ, Mather TN, Valenzuela JG, Wikel SK. An annotated catalog of salivary gland transcripts from Ixodes scapularis ticks. Insect Biochem Mol Biol. 2006 Feb;36(2):111-29. doi: 10.1016/j.ibmb.2005.11.005. Epub 2005 Dec 20."
+              },
+              {
+                "pmid": "15938506",
+                "type": "BACKGROUND",
+                "citation": "Valenzuela JG. Exploring tick saliva: from biochemistry to 'sialomes' and functional genomics. Parasitology. 2004;129 Suppl:S83-94. doi: 10.1017/s0031182004005189."
+              }
+            ],
+            "seeAlsoLinks": [
+              {
+                "label": "NIH Clinical Center Detailed Web Page",
+                "url": "https://clinicalstudies.info.nih.gov/cgi/detail.cgi?A_000331-I.html"
+              }
+            ]
+          },
+          "ipdSharingStatementModule": {
+            "ipdSharing": "UNDECIDED",
+            "description": "It is not yet known if the research results will reveal a need to disclose IPD, therefore it is undecided if we plan to make IPD available."
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D001800",
+                "term": "Blood Specimen Collection"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D013048",
+                "term": "Specimen Handling"
+              },
+              {
+                "id": "D019411",
+                "term": "Clinical Laboratory Techniques"
+              },
+              {
+                "id": "D019937",
+                "term": "Diagnostic Techniques and Procedures"
+              },
+              {
+                "id": "D003933",
+                "term": "Diagnosis"
+              },
+              {
+                "id": "D011677",
+                "term": "Punctures"
+              },
+              {
+                "id": "D013514",
+                "term": "Surgical Procedures, Operative"
+              },
+              {
+                "id": "D008919",
+                "term": "Investigative Techniques"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    },
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0008-3",
+      "source_record_id": "CTG-0008-3",
+      "record_type": "clinical_trial",
+      "title": "Ixodes scapularis",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:10.160333Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0008-3"
+      },
+      "topics": [],
+      "conditions": [
+        "Ixodes scapularis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0008",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0008_ixodes-scapularis\\raw\\page_0001.bin",
+        "raw_record_sha256": "4005386101b01c9a8052618333dec0fc193d1c97d2e89f14c26ee5d712d4c45f"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT02446626",
+            "orgStudyIdInfo": {
+              "id": "150131"
+            },
+            "secondaryIdInfos": [
+              {
+                "id": "15-I-0131"
+              }
+            ],
+            "organization": {
+              "fullName": "National Institutes of Health Clinical Center (CC)",
+              "class": "NIH"
+            },
+            "briefTitle": "Xenodiagnosis After Antibiotic Treatment for Lyme Disease",
+            "officialTitle": "Xenodiagnosis After Antibiotic Treatment for Lyme Disease - Phase II Study"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2022-05-05",
+            "overallStatus": "COMPLETED",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2015-07-24",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2022-05-04",
+              "type": "ACTUAL"
+            },
+            "completionDateStruct": {
+              "date": "2022-05-04",
+              "type": "ACTUAL"
+            },
+            "studyFirstSubmitDate": "2015-05-13",
+            "studyFirstSubmitQcDate": "2015-05-13",
+            "studyFirstPostDateStruct": {
+              "date": "2015-05-18",
+              "type": "ESTIMATED"
+            },
+            "resultsFirstSubmitDate": "2024-04-29",
+            "resultsFirstSubmitQcDate": "2024-05-30",
+            "resultsFirstPostDateStruct": {
+              "date": "2024-06-03",
+              "type": "ACTUAL"
+            },
+            "dispFirstSubmitDate": "2023-03-02",
+            "dispFirstPostDateStruct": {
+              "date": "2023-03-28",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2024-05-30",
+            "lastUpdatePostDateStruct": {
+              "date": "2024-06-03",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "National Institute of Allergy and Infectious Diseases (NIAID)",
+              "class": "NIH"
+            },
+            "collaborators": [
+              {
+                "name": "Stony Brook University",
+                "class": "OTHER"
+              },
+              {
+                "name": "Mansfield Family Practice LLC",
+                "class": "OTHER"
+              },
+              {
+                "name": "Tufts Medical Center",
+                "class": "OTHER"
+              },
+              {
+                "name": "New York Medical College",
+                "class": "OTHER"
+              }
+            ]
+          },
+          "oversightModule": {
+            "oversightHasDmc": true,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": true,
+            "isUnapprovedDevice": true
+          },
+          "descriptionModule": {
+            "briefSummary": "Background:\n\nThe most common tick-borne illness in the United States, Lyme disease is caused by Borrelia burgdorferi bacteria that are transmitted to people by Ixodes scapularis ticks. Most cases of Lyme disease are cured by antibiotics, but some patients continue to experience symptoms despite the absence of detectable Lyme bacteria. Xenodiagnosis uses a vector to detect the presence of a disease-causing microbe. Researchers will use live, laboratory-bred ticks to see if Lyme disease bacteria can be detected in people after completing antibiotic therapy and if that is more common in people who continue to experience symptoms such as fatigue and joint pain.\n\nObjectives:\n\n\\- To see if ticks can be used to detect B. burgdorferi in people who have had Lyme disease and received antibiotic therapy and if it correlates with persistent symptoms.\n\nEligibility:\n\n* Adults at least 18 years old who have:\n* Untreated erythema migrans (the Lyme disease rash); OR\n* Untreated Lyme arthritis; OR\n* Continuing symptoms after treatment for Lyme disease; OR\n* Had Lyme disease and antibiotic treatment within the past 12 months.\n* Healthy volunteers\n\nDesign:\n\n* Participants will be screened with medical history, physical exam, and blood tests.\n* Visit 1:\n* Blood and urine tests, health questionnaire.\n* Up to 30 laboratory-bred, pathogen-free, larval ticks (each smaller than a poppy seed) will be placed under a dressing.\n* Participants may have two small biopsies of skin .\n* 4 6 days later, Visit 2:\n* Dressing will be removed and ticks will be collected.\n* Participants will answer symptom questions.\n* If many ticks are still attached, participants will have to come back the next day. If not enough ticks feed successfully, the procedure may be repeated.\n* Participants will keep a diary of symptoms for 30 days. Over 3 months, they will be return to the clinic 3 times to see how they feel and answer questionnaires. Test results will be discussed.",
+            "detailedDescription": "Lyme disease is the most common vector borne disease in the United States. Although antibiotic therapy is clinically effective in treating the symptoms of Lyme disease for most patients early in the course of disease, a significant number of patients who receive therapy report persistent symptoms. The cause of persistent symptoms after antibiotic therapy for Lyme disease is an area of great controversy. Recent studies have shown that the organism (Borrelia burgdorferi) may persist in animals after antibiotic therapy and can be detected by using the natural tick vector (Ixodes scapularis) to acquire the organism through feeding (xenodiagnosis). Whether this occurs in humans is unknown. Currently available tests for human Lyme disease do not allow determination of persistent infection after antibiotic therapy.\n\nWe performed the first study of the use of I. scapularis larva for the xenodiagnosis of B. burgdorferi infection in humans. Our pilot study showed that xenodiagnosis was well tolerated with no severe adverse events (AEs). The most common AE was mild itching at the site. In this small pilot study, xenodiagnosis for B. burgdorferi was positive in 2 participants and indeterminate in 2 participants. Further studies are needed to determine the sensitivity of xenodiagnosis in evaluating the infection status of Lyme disease patients.\n\nIn this proposal, we want to further investigate the utility of xenodiagnosis for identifying persistence of infection with B. burgdorferi in treated human Lyme disease. Our objectives include assessing the link between detection of B. burgdorferi by xenodiagnosis and persistence of symptoms in patients diagnosed with Lyme disease, within 1 year, post therapy; compare the rate of detection of B. burgdorferi by xenodiagnosis after therapy in participants with posttreatment Lyme disease symptoms; identify subject characteristics related to the likelihood of detecting B. burgdorferi by xenodiagnosis including: time from infection, time between infection and therapy, time from therapy; and continue to assess the safety of xenodiagnosis in humans.\n\nThe results of study have the potential to resolve this long-standing controversy in Lyme disease pathogenesis. While xenodiagnosis is unlikely to be widely used in clinical practice due to the labor intensity and speed of testing, if our study shows a linkage between positive xenodiagnostic testing and persistence of symptoms after B. burgdorferi infection, it may prove to be a useful tool for testing new strategies for treatment and for correlation with more generally applicable diagnostic markers. Understanding the pathogenesis of persistent symptoms following Lyme disease, and identifying reliable diagnostic tests for determining the success of antibiotic therapy, is critical to the medical management of these patients."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Lyme Disease"
+            ],
+            "keywords": [
+              "Lyme Disease",
+              "Ixodes scapularis",
+              "Borrelia Burgdorferi",
+              "Post treatment",
+              "Tick bite"
+            ]
+          },
+          "designModule": {
+            "studyType": "INTERVENTIONAL",
+            "phases": [
+              "NA"
+            ],
+            "designInfo": {
+              "allocation": "NON_RANDOMIZED",
+              "interventionModel": "PARALLEL",
+              "primaryPurpose": "DIAGNOSTIC",
+              "maskingInfo": {
+                "masking": "NONE"
+              }
+            },
+            "enrollmentInfo": {
+              "count": 72,
+              "type": "ACTUAL"
+            }
+          },
+          "armsInterventionsModule": {
+            "armGroups": [
+              {
+                "label": "Cohort #1: Patients with Lyme disease, post-therapy",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Participants with Lyme disease, post-therapy had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.",
+                "interventionNames": [
+                  "Procedure: Skin biopsy",
+                  "Procedure: Blood draw",
+                  "Device: Xenodiagnosis"
+                ]
+              },
+              {
+                "label": "Cohort #2: Patients with post-Lyme disease symptoms (PTLDs)",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Participants with post-treatment Lyme disease symptoms (PTLDS) at least 12-months from initial treatment had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.",
+                "interventionNames": [
+                  "Procedure: Skin biopsy",
+                  "Procedure: Blood draw",
+                  "Device: Xenodiagnosis"
+                ]
+              },
+              {
+                "label": "Cohort #3: New Acute Erythema Migrans",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Participant with new onset of acute erythema migrans had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nAcute erythema migrans participant (possible positive control)",
+                "interventionNames": [
+                  "Procedure: Skin biopsy",
+                  "Procedure: Blood draw",
+                  "Device: Xenodiagnosis"
+                ]
+              },
+              {
+                "label": "Cohort #4: Untreated Lyme Arthritis",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Participant with untreated Lyme arthritis had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nLyme Arthritis participant (possible positive control)",
+                "interventionNames": [
+                  "Procedure: Skin biopsy",
+                  "Procedure: Blood draw",
+                  "Device: Xenodiagnosis"
+                ]
+              },
+              {
+                "label": "Cohort #5: Healthy Volunteers",
+                "type": "ACTIVE_COMPARATOR",
+                "description": "Healthy volunteers with no history of Lyme disease had 25-30 clean laboratory-reared larval ticks applied to a body site that was comfortable for participant. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nHealthy Volunteers (negative control)",
+                "interventionNames": [
+                  "Procedure: Skin biopsy",
+                  "Procedure: Blood draw",
+                  "Device: Xenodiagnosis"
+                ]
+              }
+            ],
+            "interventions": [
+              {
+                "type": "PROCEDURE",
+                "name": "Skin biopsy",
+                "description": "Optional 2-3mm skin punch biopsies will be performed.",
+                "armGroupLabels": [
+                  "Cohort #1: Patients with Lyme disease, post-therapy",
+                  "Cohort #2: Patients with post-Lyme disease symptoms (PTLDs)",
+                  "Cohort #3: New Acute Erythema Migrans",
+                  "Cohort #4: Untreated Lyme Arthritis",
+                  "Cohort #5: Healthy Volunteers"
+                ]
+              },
+              {
+                "type": "PROCEDURE",
+                "name": "Blood draw",
+                "description": "Peripheral blood draws will be performed.",
+                "armGroupLabels": [
+                  "Cohort #1: Patients with Lyme disease, post-therapy",
+                  "Cohort #2: Patients with post-Lyme disease symptoms (PTLDs)",
+                  "Cohort #3: New Acute Erythema Migrans",
+                  "Cohort #4: Untreated Lyme Arthritis",
+                  "Cohort #5: Healthy Volunteers"
+                ]
+              },
+              {
+                "type": "DEVICE",
+                "name": "Xenodiagnosis",
+                "description": "Larval ticks will be obtained from Dr. Sam Telford from a laboratory maintained tick colony at Tufts Veterinary School. These ticks are hatched from eggs laid by ticks that have fed only on specific pathogen free laboratory animals that were purchased from established vendors. Between 25-30 larval ticks that have been aged and are known to be ready to attach will be placed on the study participant.",
+                "armGroupLabels": [
+                  "Cohort #1: Patients with Lyme disease, post-therapy",
+                  "Cohort #2: Patients with post-Lyme disease symptoms (PTLDs)",
+                  "Cohort #3: New Acute Erythema Migrans",
+                  "Cohort #4: Untreated Lyme Arthritis",
+                  "Cohort #5: Healthy Volunteers"
+                ]
+              }
+            ]
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Detection of Borrelia Burgdorferi in Ticks After Xenodiagnosis Procedure",
+                "description": "Recovered ticks after feeding on research participants were tested for presence of B. burgdorferi using at least one of three procedures:\n\n1. Test ticks by polymerase chain reaction (PCR) and culture - Injection of tick lysate into severe combined immunodeficiency (SCID) mice with subsequent PCR and culture testing\n2. Test ticks using isothermal amplification reaction included in the PCR electrospray ionization mass spectroscopy\n3. Test ticks by PCR using the Tick-borne disease Capture Sequencing Assay (TBDCapSeq)",
+                "timeFrame": "3-6 days post tick placement"
+              },
+              {
+                "measure": "Participants With Adverse Event Related to the Application of Ticks (Xenodiagnosis)",
+                "description": "Safety of xenodiagnosis in humans was assessed by number of participants with adverse event related to the application of ticks. Adverse event was assessed using participants self-reported diary cards and clinical interview.",
+                "timeFrame": "Up to 30-days after tick removal"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "* INCLUSION CRITERIA\n\nCriteria for the diagnosis and therapy for Lyme disease can be found at the clinical assessment, treatment, and prevention of Lyme disease, human granulocytic anaplasmosis, and babesiosis: clinical practice guidelines by the Infectious Diseases Society of America.\n\nPATIENTS WITH LYME DISEASE, POST-THERAPY (N=100)\n\n1. Age 18 or older\n2. Lyme disease diagnosed in the previous 13 months, fulfilling the case definition of confirmed or probable Lyme disease by the US Centers for Disease Control and Prevention (CDC) (https://wwwn.cdc.gov/nndss/conditions/lyme-disease/case-definition/2017/).\n3. Completion of 1 course of antibiotics at least 3 months and up to 12 months between the end of the therapy and the xenodiagnostic procedure.\n4. Antibiotic treatment fulfills the Infectious Diseases Society of America guidelines for the recommended therapy for Lyme disease\n\nPATIENTS WITH POST-LYME DISEASE COMPLAINTS AT LEAST 12 MONTHS FROM INITIAL TREATMENT (N=40)\n\n1. Age 18 or older.\n2. Diagnosed with confirmed or probable Lyme disease fulfilling the case definition of Lyme disease by the CDC (https://wwwn.cdc.gov/nndss/conditions/lyme-disease/case-definition/2017/).\n3. Received recommended antibiotic therapy for Lyme disease 5 at least 12 months between the end of the initial antibiotic therapy and the xenodiagnostic procedure.\n4. Persistent or recurrent symptoms that began or worsened within 6 months of the diagnosis and treatment for Lyme disease.\n\nACUTE EM (N=40)\n\n1. Age 18 or older.\n2. EM diagnosed by the study physician.\n3. Receiving antibiotic therapy for Lyme disease for less than 48 hours.\n\nLYME ARTHRITIS (N=40)\n\n1. Age 18 or older.\n2. Lyme arthritis and have not received antibiotic therapy for the disease.\n\nHEALTHY VOLUNTEERS (N=20)\n\n1. Age 18 or older.\n2. No prior history of Lyme disease.\n3. Negative whole cell enzyme-linked immunosorbent assay (ELISA) or C6-based antibody test for Lyme disease.\n\nPatients with recently diagnosed (acute) EM (within 48 hours of starting antibiotic therapy) and patients with untreated Lyme arthritis will be recruited in an attempt to increase the chances of finding a positive result by xenodiagnosis (an attempt of a positive control) While patients with acute untreated EM would be the best positive control group, it would be unethical to withhold therapy in these patients for the few days required for tick feeding, due to the risk of dissemination of the organism and possible morbidity. Patients with untreated Lyme arthritis will be recruited to establish whether xenodiagnosis can be used to identify infection in late stage Lyme patients where the bacterium is known to be present. These patients have been infected for months and will not be harmed for delaying therapy for a few days. Lyme arthritis is a late manifestation of B. burgdorferi infection, and hematogenous dissemination already occurred at this late stage. Studies have shown that the presence or absence of previous antibiotic treatment is more predictive than the duration of untreated arthritis for the success of antibiotic therapy in Lyme arthritis. Similarly, patients who just started therapy for EM may still have live Borrelia in the skin and xenodiagnosis may be able to recover the bacteria (but culture of skin biopsies from patients with EM become negative very quickly - within one dose - on antibiotic therapy).\n\nWhile treatment for Lyme disease will not be offered under this protocol, it may be available via different clinical research protocols or regular medical care at the study site. If not, treatment will be prescribed by the patient's primary care. For patients with untreated early Lyme disease (erythema migrans), antibiotics can be started at the same day of tick placement. For patients with untreated Lyme arthritis, antibiotics can be started after collection of xenodiagnostic ticks (usually 4-5 days, up to 7 days). For patients with Lyme arthritis, if less than 14 ticks fed successfully and if the participant agrees, antibiotic treatment can be delayed until after the repeat procedure.\n\nPatients with acute EM and untreated Lyme arthritis will be able to re-enroll as Patients with Lyme disease, post-therapy. Therefore, in case of positive results, we will be able to compare between the procedures.\n\nNegative control patients will include healthy volunteers from Lyme endemic areas who have never been diagnosed with Lyme disease and have a negative B. burgdorferi ELISA and C6 antibody titer.\n\nEXCLUSION CRITERIA\n\n1. No antibiotic therapy active against Lyme disease in the previous 3 months (except patients with acute EM). Prophylaxis with a single dose of doxycycline 200 mg is not an exclusion.\n2. History of allergy to surgical tape or dressing.\n3. History of severe reactions to tick bites (granuloma or systemic reactions).\n4. Inability to maintain the dressing for any reason.\n5. Pregnancy or lactation.\n6. Unwillingness to use an effective method of birth control for the duration of participation in the study (women of child-bearing potential only) and for at least 3 months following the last tick placement.\n7. Use of investigational therapy and devices during the time of the study and/or in the month prior to signing the informed consent.\n8. Active severe skin disease, uncontrolled diabetes, cancer other than non-melanoma skin cancers, autoimmune disease requiring immunosuppressive therapy, or history of HIV, chronic viral hepatitis, or syphilis.\n9. Oral or IV steroids in the previous 2 weeks (topical, nasal, inhaled, intra-articular, and replacement doses of steroids are not exclusions).\n10. Any other condition that, in the opinion of the investigator, would make the patient unsuitable for enrollment or could interfere with the patient participating in and completing the study.\n11. Refusal to participate in specimen collection and storage for future study related use.\n\nEXCLUSION FROM SKIN BIOPSY PART OF THE PROTOCOL\n\n1. History of forming large thick scars (keloids) after skin injuries or surgery.\n2. History of excessive bleeding after cuts or procedures.\n3. Currently taking anticoagulants.\n4. History of allergy to lidocaine.",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "18 Years",
+            "stdAges": [
+              "ADULT",
+              "OLDER_ADULT"
+            ]
+          },
+          "contactsLocationsModule": {
+            "overallOfficials": [
+              {
+                "name": "Adriana R Marques, M.D.",
+                "affiliation": "National Institute of Allergy and Infectious Diseases (NIAID)",
+                "role": "PRINCIPAL_INVESTIGATOR"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Mansfield Family Practice",
+                "city": "Storrs",
+                "state": "Connecticut",
+                "zip": "06268",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.80843,
+                  "lon": -72.24952
+                }
+              },
+              {
+                "facility": "National Institutes of Health Clinical Center, 9000 Rockville Pike",
+                "city": "Bethesda",
+                "state": "Maryland",
+                "zip": "20892",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 38.98067,
+                  "lon": -77.10026
+                }
+              },
+              {
+                "facility": "Tufts Medical Center",
+                "city": "Boston",
+                "state": "Massachusetts",
+                "zip": "02111",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 42.35843,
+                  "lon": -71.05977
+                }
+              },
+              {
+                "facility": "Stony Brook University (State University of New York)",
+                "city": "Stony Brook",
+                "state": "New York",
+                "zip": "11794-8153",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 40.92565,
+                  "lon": -73.14094
+                }
+              },
+              {
+                "facility": "New York Medical College",
+                "city": "Valhalla",
+                "state": "New York",
+                "zip": "10595",
+                "country": "United States",
+                "geoPoint": {
+                  "lat": 41.07482,
+                  "lon": -73.77513
+                }
+              }
+            ]
+          },
+          "referencesModule": {
+            "references": [
+              {
+                "pmid": "24523212",
+                "type": "BACKGROUND",
+                "citation": "Marques A, Telford SR 3rd, Turk SP, Chung E, Williams C, Dardick K, Krause PJ, Brandeburg C, Crowder CD, Carolan HE, Eshoo MW, Shaw PA, Hu LT. Xenodiagnosis to detect Borrelia burgdorferi infection: a first-in-human study. Clin Infect Dis. 2014 Apr;58(7):937-45. doi: 10.1093/cid/cit939. Epub 2014 Feb 11."
+              },
+              {
+                "pmid": "25301228",
+                "type": "BACKGROUND",
+                "citation": "Telford SR 3rd, Hu LT, Marques A. Is there a place for xenodiagnosis in the clinic? Expert Rev Anti Infect Ther. 2014 Nov;12(11):1307-10. doi: 10.1586/14787210.2014.966084."
+              },
+              {
+                "pmid": "24466286",
+                "type": "BACKGROUND",
+                "citation": "Hodzic E, Imai D, Feng S, Barthold SW. Resurgence of persisting non-cultivable Borrelia burgdorferi following antibiotic treatment in mice. PLoS One. 2014 Jan 23;9(1):e86907. doi: 10.1371/journal.pone.0086907. eCollection 2014."
+              },
+              {
+                "pmid": "31710647",
+                "type": "RESULT",
+                "citation": "Turk SP, Lumbard K, Liepshutz K, Williams C, Hu L, Dardick K, Wormser GP, Norville J, Scavarda C, McKenna D, Follmann D, Marques A. Post-treatment Lyme disease symptoms score: Developing a new tool for research. PLoS One. 2019 Nov 11;14(11):e0225012. doi: 10.1371/journal.pone.0225012. eCollection 2019."
+              },
+              {
+                "pmid": "41563326",
+                "type": "DERIVED",
+                "citation": "Marques AR, Ng SP, McCarthy JE, Telford SR 3rd, Dardick K, Wormser GP, Marcos LA, Tokarz R, Williams C, Law M, Norville J, Lundt M, Petnicki-Ocwieja T, Scavarda C, McKenna D, Goethert HK, Mateja A, Follman D, Eshoo MW, Hu LT. Xenodiagnosis to search for Borrelia burgdorferi after antibiotic treatment of Lyme disease: a prospective cohort study. Clin Infect Dis. 2026 Jan 21:ciag031. doi: 10.1093/cid/ciag031. Online ahead of print."
+              }
+            ],
+            "seeAlsoLinks": [
+              {
+                "label": "NIH Clinical Center Detailed Web Page",
+                "url": "https://clinicalstudies.info.nih.gov/cgi/detail.cgi?B_2015-I-0131.html"
+              }
+            ]
+          }
+        },
+        "resultsSection": {
+          "participantFlowModule": {
+            "preAssignmentDetails": "Of the 72 participants consented, one participant was screen failure and 71 participants started the study.",
+            "groups": [
+              {
+                "id": "FG000",
+                "title": "Cohort #1: Patients With Lyme Disease, Post-therapy",
+                "description": "Participants with Lyme disease, post-therapy had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+              },
+              {
+                "id": "FG001",
+                "title": "Cohort #2: Patients With Post-treatment Lyme Disease Symptoms (PTLDs)",
+                "description": "Participants with post-treatment Lyme disease symptoms (PTLDS) at least 12-months from initial treatment had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+              },
+              {
+                "id": "FG002",
+                "title": "Cohort #3: New Acute Erythema Migrans",
+                "description": "Participant with new onset of acute erythema migrans had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nAcute erythema migrans participant (possible positive control)"
+              },
+              {
+                "id": "FG003",
+                "title": "Cohort #4: Untreated Lyme Arthritis",
+                "description": "Participant with untreated Lyme arthritis had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nLyme Arthritis participant (possible positive control)"
+              },
+              {
+                "id": "FG004",
+                "title": "Cohort #5: Healthy Volunteers",
+                "description": "Healthy volunteers with no history of Lyme disease had 25-30 clean laboratory-reared larval ticks applied to a body site that was comfortable for participant. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nHealthy Volunteers (negative control)"
+              }
+            ],
+            "periods": [
+              {
+                "title": "Overall Study",
+                "milestones": [
+                  {
+                    "type": "STARTED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "40"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "20"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "1"
+                      },
+                      {
+                        "groupId": "FG003",
+                        "numSubjects": "1"
+                      },
+                      {
+                        "groupId": "FG004",
+                        "numSubjects": "9"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "COMPLETED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "40"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "20"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "1"
+                      },
+                      {
+                        "groupId": "FG003",
+                        "numSubjects": "1"
+                      },
+                      {
+                        "groupId": "FG004",
+                        "numSubjects": "9"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "NOT COMPLETED",
+                    "achievements": [
+                      {
+                        "groupId": "FG000",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG001",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG002",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG003",
+                        "numSubjects": "0"
+                      },
+                      {
+                        "groupId": "FG004",
+                        "numSubjects": "0"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "baselineCharacteristicsModule": {
+            "groups": [
+              {
+                "id": "BG000",
+                "title": "Cohort #1: Patients With Lyme Disease, Post-therapy",
+                "description": "Participants with Lyme disease, post-therapy had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+              },
+              {
+                "id": "BG001",
+                "title": "Cohort #2: Patients With Post-treatment Lyme Disease Symptoms (PTLDs)",
+                "description": "Participants with post-treatment Lyme disease symptoms (PTLDS) at least 12-months from initial treatment had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+              },
+              {
+                "id": "BG002",
+                "title": "Cohort #3: New Acute Erythema Migrans",
+                "description": "Participant with new onset of acute erythema migrans had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nAcute erythema migrans participant (possible positive control)"
+              },
+              {
+                "id": "BG003",
+                "title": "Cohort #4: Untreated Lyme Arthritis",
+                "description": "Participant with untreated Lyme arthritis had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nLyme Arthritis participant (possible positive control)"
+              },
+              {
+                "id": "BG004",
+                "title": "Cohort #5: Healthy Volunteers",
+                "description": "Healthy volunteers with no history of Lyme disease had 25-30 clean laboratory-reared larval ticks applied to a body site that was comfortable for participant. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nHealthy Volunteers (negative control)"
+              },
+              {
+                "id": "BG005",
+                "title": "Total",
+                "description": "Total of all reporting groups"
+              }
+            ],
+            "denoms": [
+              {
+                "units": "Participants",
+                "counts": [
+                  {
+                    "groupId": "BG000",
+                    "value": "40"
+                  },
+                  {
+                    "groupId": "BG001",
+                    "value": "20"
+                  },
+                  {
+                    "groupId": "BG002",
+                    "value": "1"
+                  },
+                  {
+                    "groupId": "BG003",
+                    "value": "1"
+                  },
+                  {
+                    "groupId": "BG004",
+                    "value": "9"
+                  },
+                  {
+                    "groupId": "BG005",
+                    "value": "71"
+                  }
+                ]
+              }
+            ],
+            "measures": [
+              {
+                "title": "Age, Categorical",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "title": "<=18 years",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Between 18 and 65 years",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "33"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "13"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "9"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "57"
+                          }
+                        ]
+                      },
+                      {
+                        "title": ">=65 years",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "7"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "7"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "14"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Sex: Female, Male",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "title": "Female",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "17"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "9"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "4"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "31"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Male",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "23"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "11"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "5"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "40"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Ethnicity (NIH/OMB)",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "title": "Hispanic or Latino",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "3"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "5"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Not Hispanic or Latino",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "37"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "20"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "6"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "65"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Unknown or Not Reported",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "title": "Race (NIH/OMB)",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "classes": [
+                  {
+                    "categories": [
+                      {
+                        "title": "American Indian or Alaska Native",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Asian",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Native Hawaiian or Other Pacific Islander",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Black or African American",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "White",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "39"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "20"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "7"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "68"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "More than one race",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "2"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "3"
+                          }
+                        ]
+                      },
+                      {
+                        "title": "Unknown or Not Reported",
+                        "measurements": [
+                          {
+                            "groupId": "BG000",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG001",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG003",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG004",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "BG005",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "outcomeMeasuresModule": {
+            "outcomeMeasures": [
+              {
+                "type": "PRIMARY",
+                "title": "Detection of Borrelia Burgdorferi in Ticks After Xenodiagnosis Procedure",
+                "description": "Recovered ticks after feeding on research participants were tested for presence of B. burgdorferi using at least one of three procedures:\n\n1. Test ticks by polymerase chain reaction (PCR) and culture - Injection of tick lysate into severe combined immunodeficiency (SCID) mice with subsequent PCR and culture testing\n2. Test ticks using isothermal amplification reaction included in the PCR electrospray ionization mass spectroscopy\n3. Test ticks by PCR using the Tick-borne disease Capture Sequencing Assay (TBDCapSeq)",
+                "populationDescription": "Participants in cohorts 1 \\& 2 as pre-specified in the protocol.",
+                "reportingStatus": "POSTED",
+                "paramType": "COUNT_OF_UNITS",
+                "unitOfMeasure": "Ticks",
+                "timeFrame": "3-6 days post tick placement",
+                "typeUnitsAnalyzed": "Ticks",
+                "denomUnitsSelected": "Ticks",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Cohort #1: Patients With Lyme Disease, Post-therapy",
+                    "description": "Participants with Lyme disease, post-therapy had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cohort #2: Patients With Post-treatment Lyme Disease Symptoms (PTLDs)",
+                    "description": "Participants with post-treatment Lyme disease symptoms (PTLDS) at least 12-months from initial treatment had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "40"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "20"
+                      }
+                    ]
+                  },
+                  {
+                    "units": "Ticks",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "419"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "319"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Positive",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "0"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Negative",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "418"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "319"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "PRIMARY",
+                "title": "Participants With Adverse Event Related to the Application of Ticks (Xenodiagnosis)",
+                "description": "Safety of xenodiagnosis in humans was assessed by number of participants with adverse event related to the application of ticks. Adverse event was assessed using participants self-reported diary cards and clinical interview.",
+                "populationDescription": "All participants in who started the study",
+                "reportingStatus": "POSTED",
+                "paramType": "COUNT_OF_PARTICIPANTS",
+                "unitOfMeasure": "Participants",
+                "timeFrame": "Up to 30-days after tick removal",
+                "groups": [
+                  {
+                    "id": "OG000",
+                    "title": "Cohort #1: Patients With Lyme Disease, Post-therapy",
+                    "description": "Participants with Lyme disease, post-therapy had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+                  },
+                  {
+                    "id": "OG001",
+                    "title": "Cohort #2: Patients With Post-treatment Lyme Disease Symptoms (PTLDs)",
+                    "description": "Participants with post-treatment Lyme disease symptoms (PTLDS) at least 12-months from initial treatment had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement."
+                  },
+                  {
+                    "id": "OG002",
+                    "title": "Cohort #3: New Acute Erythema Migrans",
+                    "description": "Participant with new onset of acute erythema migrans had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nAcute erythema migrans participant (possible positive control)"
+                  },
+                  {
+                    "id": "OG003",
+                    "title": "Cohort #4: Untreated Lyme Arthritis",
+                    "description": "Participant with untreated Lyme arthritis had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nLyme Arthritis participant (possible positive control)"
+                  },
+                  {
+                    "id": "OG004",
+                    "title": "Cohort #5: Healthy Volunteers",
+                    "description": "Healthy volunteers with no history of Lyme disease had 25-30 clean laboratory-reared larval ticks applied to a body site that was comfortable for participant. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nHealthy Volunteers (negative control)"
+                  }
+                ],
+                "denoms": [
+                  {
+                    "units": "Participants",
+                    "counts": [
+                      {
+                        "groupId": "OG000",
+                        "value": "40"
+                      },
+                      {
+                        "groupId": "OG001",
+                        "value": "20"
+                      },
+                      {
+                        "groupId": "OG002",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG003",
+                        "value": "1"
+                      },
+                      {
+                        "groupId": "OG004",
+                        "value": "9"
+                      }
+                    ]
+                  }
+                ],
+                "classes": [
+                  {
+                    "title": "Application site itching",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "24"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "13"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG004",
+                            "value": "5"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "title": "Other application site reaction",
+                    "categories": [
+                      {
+                        "measurements": [
+                          {
+                            "groupId": "OG000",
+                            "value": "13"
+                          },
+                          {
+                            "groupId": "OG001",
+                            "value": "8"
+                          },
+                          {
+                            "groupId": "OG002",
+                            "value": "0"
+                          },
+                          {
+                            "groupId": "OG003",
+                            "value": "1"
+                          },
+                          {
+                            "groupId": "OG004",
+                            "value": "3"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "adverseEventsModule": {
+            "frequencyThreshold": "0",
+            "timeFrame": "Up to 30 days post tick removal",
+            "eventGroups": [
+              {
+                "id": "EG000",
+                "title": "Cohort #1: Patients With Lyme Disease, Post-therapy",
+                "description": "Participants with Lyme disease, post-therapy had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 40,
+                "seriousNumAffected": 1,
+                "seriousNumAtRisk": 40,
+                "otherNumAffected": 35,
+                "otherNumAtRisk": 40
+              },
+              {
+                "id": "EG001",
+                "title": "Cohort #2: Patients With Post-treatment Lyme Disease Symptoms (PTLDs)",
+                "description": "Participants with post-treatment Lyme disease symptoms (PTLDS) at least 12-months from initial treatment had 25-30 clean laboratory-reared larval ticks applied as close as possible to the previous site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 20,
+                "seriousNumAffected": 3,
+                "seriousNumAtRisk": 20,
+                "otherNumAffected": 19,
+                "otherNumAtRisk": 20
+              },
+              {
+                "id": "EG002",
+                "title": "Cohort #3: New Acute Erythema Migrans",
+                "description": "Participant with new onset of acute erythema migrans had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nAcute erythema migrans participant (possible positive control)",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 1,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 1,
+                "otherNumAffected": 1,
+                "otherNumAtRisk": 1
+              },
+              {
+                "id": "EG003",
+                "title": "Cohort #4: Untreated Lyme Arthritis",
+                "description": "Participant with untreated Lyme arthritis had 25-30 clean laboratory-reared larval ticks applied as close as possible to the site of Lyme disease manifestation. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nLyme Arthritis participant (possible positive control)",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 1,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 1,
+                "otherNumAffected": 1,
+                "otherNumAtRisk": 1
+              },
+              {
+                "id": "EG004",
+                "title": "Cohort #5: Healthy Volunteers",
+                "description": "Healthy volunteers with no history of Lyme disease had 25-30 clean laboratory-reared larval ticks applied to a body site that was comfortable for participant. Ticks were secured under a retention dressing and allowed to attach to the research participant. Ticks were removed 3 - 6 days after the placement.\n\nHealthy Volunteers (negative control)",
+                "deathsNumAffected": 0,
+                "deathsNumAtRisk": 9,
+                "seriousNumAffected": 0,
+                "seriousNumAtRisk": 9,
+                "otherNumAffected": 6,
+                "otherNumAtRisk": 9
+              }
+            ],
+            "seriousEvents": [
+              {
+                "term": "Gastroenteritis salmonella",
+                "organSystem": "Infections and infestations",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Infection",
+                "organSystem": "Infections and infestations",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Injury",
+                "organSystem": "Injury, poisoning and procedural complications",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Invasive lobular breast carcinoma",
+                "organSystem": "Neoplasms benign, malignant and unspecified (incl cysts and polyps)",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Headache",
+                "organSystem": "Nervous system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              }
+            ],
+            "otherEvents": [
+              {
+                "term": "Vertigo",
+                "organSystem": "Ear and labyrinth disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 2,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Photophobia",
+                "organSystem": "Eye disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Uveitis",
+                "organSystem": "Eye disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Visual disturbance NOS",
+                "organSystem": "Eye disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Diarrhea",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 2,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 4,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Gastroenteritis",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Nausea",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 6,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 2,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Pyrosis",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Vomiting",
+                "organSystem": "Gastrointestinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application Site Discharge",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site erythema",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 2,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site pain",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 8,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 2,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 2,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application Site Papule",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site pruritus",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 24,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 13,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 1,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 5,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site redness",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site swelling",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site tenderness",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 5,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 6,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 1,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Application site vesicles",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 2,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Fatigue",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 4,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 2,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 1,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Fever",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Malaise",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Pain",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Thirst",
+                "organSystem": "General disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Allergic reaction",
+                "organSystem": "Immune system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Infection",
+                "organSystem": "Infections and infestations",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Upper respiratory tract infection",
+                "organSystem": "Infections and infestations",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 3,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Contusion",
+                "organSystem": "Injury, poisoning and procedural complications",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 2,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Injury",
+                "organSystem": "Injury, poisoning and procedural complications",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 2,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Insect bite NOS",
+                "organSystem": "Injury, poisoning and procedural complications",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Anorexia",
+                "organSystem": "Metabolism and nutrition disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Arthralgia",
+                "organSystem": "Musculoskeletal and connective tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 7,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 3,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 2,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Muscle ache",
+                "organSystem": "Musculoskeletal and connective tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 2,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Myalgia",
+                "organSystem": "Musculoskeletal and connective tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 6,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 3,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 2,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Neck pain",
+                "organSystem": "Musculoskeletal and connective tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Neck stiffness",
+                "organSystem": "Musculoskeletal and connective tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 3,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Cognitive function abnormal",
+                "organSystem": "Nervous system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Headache",
+                "organSystem": "Nervous system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 12,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 4,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 1,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 4,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Paraesthesia",
+                "organSystem": "Nervous system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Sleep disturbances",
+                "organSystem": "Nervous system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Syncope",
+                "organSystem": "Nervous system disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Mood alteration NOS",
+                "organSystem": "Psychiatric disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 2,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Cough",
+                "organSystem": "Respiratory, thoracic and mediastinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Dyspnea",
+                "organSystem": "Respiratory, thoracic and mediastinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Nasal congestion",
+                "organSystem": "Respiratory, thoracic and mediastinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Sore throat",
+                "organSystem": "Respiratory, thoracic and mediastinal disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Night sweats",
+                "organSystem": "Skin and subcutaneous tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 1,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Pruritus",
+                "organSystem": "Skin and subcutaneous tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 4,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 0,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Rash",
+                "organSystem": "Skin and subcutaneous tissue disorders",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 1,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 2,
+                    "numAtRisk": 9
+                  }
+                ]
+              },
+              {
+                "term": "Surgery",
+                "organSystem": "Surgical and medical procedures",
+                "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                "stats": [
+                  {
+                    "groupId": "EG000",
+                    "numAffected": 0,
+                    "numAtRisk": 40
+                  },
+                  {
+                    "groupId": "EG001",
+                    "numAffected": 0,
+                    "numAtRisk": 20
+                  },
+                  {
+                    "groupId": "EG002",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG003",
+                    "numAffected": 0,
+                    "numAtRisk": 1
+                  },
+                  {
+                    "groupId": "EG004",
+                    "numAffected": 1,
+                    "numAtRisk": 9
+                  }
+                ]
+              }
+            ]
+          },
+          "moreInfoModule": {
+            "certainAgreement": {
+              "piSponsorEmployee": false,
+              "restrictiveAgreement": false
+            },
+            "pointOfContact": {
+              "title": "Marques, Adriana",
+              "organization": "National Institute of Allergy and Infectious Diseases",
+              "email": "amarques@niaid.nih.gov",
+              "phone": "+1 301 435 7668"
+            }
+          }
+        },
+        "documentSection": {
+          "largeDocumentModule": {
+            "largeDocs": [
+              {
+                "typeAbbrev": "Prot_SAP",
+                "hasProtocol": true,
+                "hasSap": true,
+                "hasIcf": false,
+                "label": "Study Protocol and Statistical Analysis Plan",
+                "date": "2021-03-22",
+                "uploadDate": "2024-04-23T11:38",
+                "filename": "Prot_SAP_000.pdf",
+                "size": 575426
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              },
+              {
+                "id": "D064927",
+                "term": "Tick Bites"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              },
+              {
+                "id": "D001733",
+                "term": "Bites and Stings"
+              },
+              {
+                "id": "D011041",
+                "term": "Poisoning"
+              },
+              {
+                "id": "D064419",
+                "term": "Chemically-Induced Disorders"
+              },
+              {
+                "id": "D014947",
+                "term": "Wounds and Injuries"
+              }
+            ]
+          },
+          "interventionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D001800",
+                "term": "Blood Specimen Collection"
+              },
+              {
+                "id": "D020525",
+                "term": "Xenodiagnosis"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D013048",
+                "term": "Specimen Handling"
+              },
+              {
+                "id": "D019411",
+                "term": "Clinical Laboratory Techniques"
+              },
+              {
+                "id": "D019937",
+                "term": "Diagnostic Techniques and Procedures"
+              },
+              {
+                "id": "D003933",
+                "term": "Diagnosis"
+              },
+              {
+                "id": "D011677",
+                "term": "Punctures"
+              },
+              {
+                "id": "D013514",
+                "term": "Surgical Procedures, Operative"
+              },
+              {
+                "id": "D008919",
+                "term": "Investigative Techniques"
+              },
+              {
+                "id": "D008828",
+                "term": "Microbiological Techniques"
+              }
+            ]
+          }
+        },
+        "hasResults": true
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

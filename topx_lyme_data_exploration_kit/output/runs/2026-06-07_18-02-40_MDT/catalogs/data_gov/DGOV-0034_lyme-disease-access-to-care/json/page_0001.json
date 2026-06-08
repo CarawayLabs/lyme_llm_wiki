@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:44.380724Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "DGOV-0034",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.gsa.gov/technology/datagov/v4/search",
+    "search_term": "Lyme disease access to care",
+    "search_expression": "Lyme disease access to care",
+    "parameters": {
+      "q": "Lyme disease access to care",
+      "sort": "relevance",
+      "per_page": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "required",
+      "credential_alias": "DATA_GOV_API_KEY",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.gov Catalog API",
+    "catalog_slug": "data_gov",
+    "source_type": "federal_metadata_catalog",
+    "organization": "U.S. General Services Administration",
+    "docs_url": "https://resources.data.gov/catalog-api/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:44.012204Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 301,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0034_lyme-disease-access-to-care\\raw\\page_0001.json",
+      "sha256": "25717bc6d22bf93a59b70d2270227129ca2dfee17980d1bbf391e3ed3cd2e8ca",
+      "byte_count": 34
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

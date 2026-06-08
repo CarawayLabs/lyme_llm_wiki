@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:45.222011Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CMSD-0005",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://data.cms.gov/",
+    "search_term": "antibiotic prescribing",
+    "search_expression": "antibiotic prescribing",
+    "parameters": {
+      "catalog_search_term": "antibiotic prescribing",
+      "follow_access_api_link": true
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "CMS Data Catalog",
+    "catalog_slug": "cms_data",
+    "source_type": "healthcare_provider_utilization_quality_catalog",
+    "organization": "CMS Data Catalog",
+    "docs_url": "https://data.cms.gov/api-docs",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "CMS APIs are dataset-specific. First capture dataset UUID, version, schema, update cadence, and API/download links."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:44.740272Z",
+    "http_status": 200,
+    "content_type": "text/html",
+    "duration_ms": 128,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\cms_data\\CMSD-0005_antibiotic-prescribing\\raw\\page_0001.html",
+      "sha256": "3111e64525ff8e03c500fbd23abc1764498e04d4b59ef97db3e42ea09610dd84",
+      "byte_count": 1203
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

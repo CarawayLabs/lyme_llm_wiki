@@ -1,0 +1,749 @@
+{
+  "results" :
+    [
+      {
+        "resource" :
+          {
+            "name" : "Lyme disease and current aspects of immunization",
+            "id" : "2gqk-jj5s",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Lyme disease is a tick-borne multisystem disease that affects primarily the skin, nervous system, heart and joints. At least three species of Borrelia burgdorferi sensu lato, namely Borrelia burgdorferi sensu stricto, Borrelia garinii, and Borrelia afzelii, can cause the disease. This review will focus mainly on the pathophysiology of Lyme arthritis, the long-term outcome of Lyme disease, and the recently licensed vaccine against Lyme disease.",
+            "attribution" : null,
+            "attribution_link" : null,
+            "contact_email" : "info@nih.gov",
+            "type" : "href",
+            "updatedAt" : "2025-09-06T00:17:29.000Z",
+            "createdAt" : "2025-07-14T06:08:15.000Z",
+            "metadata_updated_at" : "2025-09-06T00:17:29.000Z",
+            "data_updated_at" : "2025-07-14T06:08:15.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 3,
+                "page_views_last_month" : 11,
+                "page_views_total" : 101,
+                "page_views_last_week_log" : 2.0,
+                "page_views_last_month_log" : 3.5849625007211565,
+                "page_views_total_log" : 6.672425341971495
+              },
+            "columns_name" : [],
+            "columns_field_name" : [],
+            "columns_datatype" : [],
+            "columns_description" : [],
+            "columns_format" : [],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "href",
+            "lens_display_type" : "href",
+            "locked" : false,
+            "backend" : "not_a_dataset",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-07-14T06:08:16.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "NIH",
+            "domain_tags" :
+              [
+                "lyme-vaccine",
+                "tick-borne-disease",
+                "lyme-disease",
+                "lyme-arthritis",
+                "nih"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Archive_Archive-Repository",
+                  "value" : "https://healthdata.gov/d/sudm-ayeq"
+                },
+                {
+                  "key" : "DCAT-2.0_Type",
+                  "value" : "ScientificAndStatisticalDataFormats"
+                },
+                { "key" : "DCAT-2.0_Owner", "value" : "NIH" },
+                { "key" : "DCAT-2.0_Language", "value" : "en-US" },
+                {
+                  "key" : "DCAT-2.0_Access-Rights",
+                  "value" : "Public - No restrictions on access"
+                },
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "info@nih.gov"
+                },
+                { "key" : "Common-Core_Program-Code", "value" : "009:037" },
+                {
+                  "key" : "Common-Core_Public-Access-Level",
+                  "value" : "public"
+                },
+                {
+                  "key" : "Common-Core_Publisher",
+                  "value" : "National Institutes of Health"
+                },
+                { "key" : "Common-Core_Bureau-Code", "value" : "009:25" },
+                { "key" : "Common-Core_Contact-Name", "value" : "NIH" },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-URI",
+                  "value" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC128914/"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-Title",
+                  "value" : "pmc.ncbi.nlm.nih.gov"
+                },
+                {
+                  "key" : "Harvest-Source_Last-Harvest-Performed",
+                  "value" : "2025-07-14 06:08:15"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "healthdata.gov",
+            "additional_access_points" :
+              [
+                {
+                  "urls" :
+                    {
+                      "View Publication" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC128914/"
+                    },
+                  "description" : "Visit the original government dataset for complete information, documentation, and data access.",
+                  "title" : "Official Government Data Source"
+                }
+              ],
+            "access_points" :
+              {
+                "View Publication" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC128914/"
+              }
+          },
+        "permalink" : "https://healthdata.gov/d/2gqk-jj5s",
+        "link" : "https://healthdata.gov/NIH/Lyme-disease-and-current-aspects-of-immunization/2gqk-jj5s",
+        "owner" :
+          {
+            "id" : "7hn8-z2at",
+            "user_type" : "team",
+            "display_name" : "National Institute of Health (NIH)"
+          },
+        "creator" :
+          {
+            "id" : "7hn8-z2at",
+            "user_type" : "team",
+            "display_name" : "National Institute of Health (NIH)"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "IFNγ production in peripheral blood of early Lyme disease patients to hLFAα",
+            "id" : "nzib-2iwc",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Background\n          It has been proposed that outer surface protein A (OspA) of Borrelia burgdorferi sensu stricto contains a T helper 1 (Th1) cell epitope that could play a role in an autoimmune response to hLFA1.\n        \n        \n          Methods\n          We used two peptides, hLFAαL (aa326-345) and Borrelia burgdorferi OspAB31 (aa164-183), as stimulating antigens to measure Th1 proinflammatory IFNγ cytokine production in peripheral blood of Lyme disease patients presenting with EM without history of arthritis, as well as in peripheral blood of healthy individuals.\n        \n        \n          Results\n          IFNγ responses to hLFA1 peptide were observed in 11 of 19 Lyme disease patients and in 3 of 15 healthy controls. In contrast, only 2 of 19 of the Lyme disease patients and none of the controls responded to the homologous OspAB31 peptide.\n        \n        \n          Conclusions\n          IFNγ was produced in response to stimulation with peptide hLFAαL (aa326-345) in peripheral blood of 58% of patients with early Lyme disease without signs of arthritis, as well as in peripheral blood of 20% of healthy individuals, but not in response to stimulation with the homologous OspAB31 (aa164-183) peptide (p < 0.05). Our results suggest that reactivity to the hLFA1 peptide in peripheral blood may be the result of T cell degeneracy.",
+            "attribution" : null,
+            "attribution_link" : null,
+            "contact_email" : "info@nih.gov",
+            "type" : "href",
+            "updatedAt" : "2025-09-06T00:15:42.000Z",
+            "createdAt" : "2025-07-14T06:56:15.000Z",
+            "metadata_updated_at" : "2025-09-06T00:15:42.000Z",
+            "data_updated_at" : "2025-07-14T06:56:15.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 4,
+                "page_views_last_month" : 11,
+                "page_views_total" : 70,
+                "page_views_last_week_log" : 2.321928094887362,
+                "page_views_last_month_log" : 3.5849625007211565,
+                "page_views_total_log" : 6.149747119504682
+              },
+            "columns_name" : [],
+            "columns_field_name" : [],
+            "columns_datatype" : [],
+            "columns_description" : [],
+            "columns_format" : [],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "href",
+            "lens_display_type" : "href",
+            "locked" : false,
+            "backend" : "not_a_dataset",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-07-14T06:56:15.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "NIH",
+            "domain_tags" :
+              [
+                "ifn-production",
+                "lyme-disease",
+                "nih",
+                "peripheral-blood",
+                "hla-lfa1"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Archive_Archive-Repository",
+                  "value" : "https://healthdata.gov/d/377c-m9i4"
+                },
+                {
+                  "key" : "DCAT-2.0_Type",
+                  "value" : "ScientificAndStatisticalDataFormats"
+                },
+                { "key" : "DCAT-2.0_Owner", "value" : "NIH" },
+                { "key" : "DCAT-2.0_Language", "value" : "en-US" },
+                {
+                  "key" : "DCAT-2.0_Access-Rights",
+                  "value" : "Public - No restrictions on access"
+                },
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "info@nih.gov"
+                },
+                { "key" : "Common-Core_Program-Code", "value" : "009:033" },
+                {
+                  "key" : "Common-Core_Public-Access-Level",
+                  "value" : "public"
+                },
+                {
+                  "key" : "Common-Core_Publisher",
+                  "value" : "National Institutes of Health"
+                },
+                { "key" : "Common-Core_Bureau-Code", "value" : "009:25" },
+                { "key" : "Common-Core_Contact-Name", "value" : "NIH" },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-URI",
+                  "value" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC134469/"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-Title",
+                  "value" : "pmc.ncbi.nlm.nih.gov"
+                },
+                {
+                  "key" : "Harvest-Source_Last-Harvest-Performed",
+                  "value" : "2025-07-14 06:56:15"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "healthdata.gov",
+            "additional_access_points" :
+              [
+                {
+                  "urls" :
+                    {
+                      "View Publication" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC134469/"
+                    },
+                  "description" : "Visit the original government dataset for complete information, documentation, and data access.",
+                  "title" : "Official Government Data Source"
+                }
+              ],
+            "access_points" :
+              {
+                "View Publication" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC134469/"
+              }
+          },
+        "permalink" : "https://healthdata.gov/d/nzib-2iwc",
+        "link" : "https://healthdata.gov/NIH/IFNγ-production-in-peripheral-blood-of-early-Lyme-/nzib-2iwc",
+        "owner" :
+          {
+            "id" : "7hn8-z2at",
+            "user_type" : "team",
+            "display_name" : "National Institute of Health (NIH)"
+          },
+        "creator" :
+          {
+            "id" : "7hn8-z2at",
+            "user_type" : "team",
+            "display_name" : "National Institute of Health (NIH)"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "High correlation between the turnover of nucleotides under mutational pressure and the DNA composition",
+            "id" : "2egz-vj7u",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "Background\n          Any DNA sequence is a result of compromise between the selection and mutation pressures exerted on it during evolution. It is difficult to estimate the relative influence of each of these pressures on the rate of accumulation of substitutions. However, it is important to discriminate between the effect of mutations, and the effect of selection, when studying the phylogenic relations between taxa.\n        \n        \n          Results\n          We have tested in computer simulations, and analytically, the available substitution matrices for many genomes, and we have found that DNA strands in equilibrium under mutational pressure have unique feature: the fraction of each type of nucleotide is linearly dependent on the time needed for substitution of half of nucleotides of a given type, with a correlation coefficient close to 1. Substitution matrices found for sequences under selection pressure do not have this property. A substitution matrix for the leading strand of the Borrelia burgdorferi genome, having reached equilibrium in computer simulation, gives a DNA sequence with nucleotide composition and asymmetry corresponding precisely to the third positions in codons of protein coding genes located on the leading strand.\n        \n        \n          Conclusions\n          Parameters of mutational pressure allow us to count DNA composition in equilibrium with this mutational pressure. Comparing any real DNA sequence with the sequence in equilibrium it is possible to estimate the distance between these sequences, which could be used as a measure of the selection pressure. Furthermore, the parameters of the mutational pressure enable direct estimation of the relative mutation rates in any DNA sequence in the studied genome.",
+            "attribution" : null,
+            "attribution_link" : null,
+            "contact_email" : "info@nih.gov",
+            "type" : "href",
+            "updatedAt" : "2025-09-06T00:26:17.000Z",
+            "createdAt" : "2025-07-14T02:28:38.000Z",
+            "metadata_updated_at" : "2025-09-06T00:26:17.000Z",
+            "data_updated_at" : "2025-07-14T02:28:38.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 6,
+                "page_views_last_month" : 21,
+                "page_views_total" : 111,
+                "page_views_last_week_log" : 2.807354922057604,
+                "page_views_last_month_log" : 4.459431618637297,
+                "page_views_total_log" : 6.807354922057604
+              },
+            "columns_name" : [],
+            "columns_field_name" : [],
+            "columns_datatype" : [],
+            "columns_description" : [],
+            "columns_format" : [],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "href",
+            "lens_display_type" : "href",
+            "locked" : false,
+            "backend" : "not_a_dataset",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : false,
+            "publication_date" : "2025-07-14T02:28:38.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "NIH",
+            "domain_tags" :
+              [
+                "dna-mutation",
+                "substitution-matrices",
+                "nucleotide-turnover",
+                "dna-composition",
+                "nih"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Archive_Archive-Repository",
+                  "value" : "https://healthdata.gov/d/sc5a-pwz5"
+                },
+                {
+                  "key" : "DCAT-2.0_Type",
+                  "value" : "ScientificAndStatisticalDataFormats"
+                },
+                { "key" : "DCAT-2.0_Owner", "value" : "NIH" },
+                { "key" : "DCAT-2.0_Language", "value" : "en-US" },
+                {
+                  "key" : "DCAT-2.0_Access-Rights",
+                  "value" : "Public - No restrictions on access"
+                },
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "info@nih.gov"
+                },
+                { "key" : "Common-Core_Program-Code", "value" : "009:033" },
+                {
+                  "key" : "Common-Core_Public-Access-Level",
+                  "value" : "public"
+                },
+                {
+                  "key" : "Common-Core_Publisher",
+                  "value" : "National Institutes of Health"
+                },
+                { "key" : "Common-Core_Bureau-Code", "value" : "009:25" },
+                { "key" : "Common-Core_Contact-Name", "value" : "NIH" },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-URI",
+                  "value" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC64649/"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-Title",
+                  "value" : "pmc.ncbi.nlm.nih.gov"
+                },
+                {
+                  "key" : "Harvest-Source_Last-Harvest-Performed",
+                  "value" : "2025-07-14 02:28:38"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "healthdata.gov",
+            "additional_access_points" :
+              [
+                {
+                  "urls" :
+                    {
+                      "View Publication" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC64649/"
+                    },
+                  "description" : "Visit the original government dataset for complete information, documentation, and data access.",
+                  "title" : "Official Government Data Source"
+                }
+              ],
+            "access_points" :
+              {
+                "View Publication" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC64649/"
+              }
+          },
+        "permalink" : "https://healthdata.gov/d/2egz-vj7u",
+        "link" : "https://healthdata.gov/NIH/High-correlation-between-the-turnover-of-nucleotid/2egz-vj7u",
+        "owner" :
+          {
+            "id" : "7hn8-z2at",
+            "user_type" : "team",
+            "display_name" : "National Institute of Health (NIH)"
+          },
+        "creator" :
+          {
+            "id" : "7hn8-z2at",
+            "user_type" : "team",
+            "display_name" : "National Institute of Health (NIH)"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Deer Tick Surveillance: Adults (Oct to Dec) excluding Powassan virus: Beginning 2008",
+            "id" : "fws3-hxxq",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "This dataset provides the results from collecting and testing adult deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from October to December, when adult deer ticks are most commonly seen. \r\n\r\nAdult deer ticks are individually tested for different bacteria and parasites, which includes the bacteria responsible for Lyme disease. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases. \r\n\r\nThese data only provide adult tick infections at a precise location and at one point in time. Both measures, tick population density and percentage, of ticks infected with the specified bacteria or parasite can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+            "attribution" : "health.data.ny.gov",
+            "attribution_link" : null,
+            "contact_email" : "no-reply@health.data.ny.gov",
+            "type" : "href",
+            "updatedAt" : "2026-04-23T04:02:11.000Z",
+            "createdAt" : "2025-04-08T14:32:19.000Z",
+            "metadata_updated_at" : "2026-04-23T04:02:11.000Z",
+            "data_updated_at" : "2025-04-08T14:32:19.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 2,
+                "page_views_last_month" : 9,
+                "page_views_total" : 47,
+                "page_views_last_week_log" : 1.5849625007211563,
+                "page_views_last_month_log" : 3.3219280948873626,
+                "page_views_total_log" : 5.584962500721157
+              },
+            "columns_name" : [],
+            "columns_field_name" : [],
+            "columns_datatype" : [],
+            "columns_description" : [],
+            "columns_format" : [],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "href",
+            "lens_display_type" : "href",
+            "locked" : false,
+            "backend" : "not_a_dataset",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : true,
+            "publication_date" : "2025-04-08T14:32:19.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "State",
+            "domain_tags" :
+              [
+                "anaplasma",
+                "anaplasmosis",
+                "babesia",
+                "babesiosis",
+                "borrelia",
+                "burgdorferi",
+                "community health and chronic disease",
+                "consumer resources",
+                "environmental health",
+                "ixodes",
+                "lyme",
+                "microti",
+                "miyamotoi",
+                "phagocytophilum",
+                "scapularis",
+                "tick",
+                "ticks"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Archive_Archive-Repository",
+                  "value" : "https://healthdata.gov/d/jtuc-62c7"
+                },
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "no-reply@health.data.ny.gov"
+                },
+                { "key" : "Common-Core_Last-Update", "value" : "2026-04-22" },
+                {
+                  "key" : "Common-Core_License",
+                  "value" : "http://opendefinition.org/licenses/odc-odbl/"
+                },
+                {
+                  "key" : "Common-Core_Public-Access-Level",
+                  "value" : "public"
+                },
+                {
+                  "key" : "Common-Core_Unique-Identifier",
+                  "value" : "https://health.data.ny.gov/api/views/vzbp-i2d4"
+                },
+                {
+                  "key" : "Common-Core_Publisher",
+                  "value" : "State of New York"
+                },
+                {
+                  "key" : "Common-Core_Homepage",
+                  "value" : "https://health.data.ny.gov/d/vzbp-i2d4"
+                },
+                { "key" : "Common-Core_Theme", "value" : "Health" },
+                { "key" : "Common-Core_Issued", "value" : "2019-05-30" },
+                {
+                  "key" : "Common-Core_Contact-Name",
+                  "value" : "Open Data NY - DOH"
+                },
+                {
+                  "key" : "Harvest-Source_Is-Harvested-Data",
+                  "value" : "Yes"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-URI",
+                  "value" : "https://health.data.ny.gov/data.json"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-Title",
+                  "value" : "health.data.ny.gov"
+                },
+                {
+                  "key" : "Harvest-Source_Last-Harvest-Performed",
+                  "value" : "2026-04-23T04:02:08.063385Z"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "healthdata.gov",
+            "additional_access_points" :
+              [
+                {
+                  "urls" :
+                    {
+                      "text/csv" : "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.csv?accessType=DOWNLOAD"
+                    }
+                },
+                {
+                  "urls" :
+                    {
+                      "application/rdf+xml" : "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.rdf?accessType=DOWNLOAD"
+                    },
+                  "described_by" : "https://health.data.ny.gov/api/views/vzbp-i2d4/columns.rdf",
+                  "described_by_type" : "application/rdf+xml"
+                },
+                {
+                  "urls" :
+                    {
+                      "application/json" : "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.json?accessType=DOWNLOAD"
+                    },
+                  "described_by" : "https://health.data.ny.gov/api/views/vzbp-i2d4/columns.json",
+                  "described_by_type" : "application/json"
+                },
+                {
+                  "urls" :
+                    {
+                      "application/xml" : "https://health.data.ny.gov/api/views/vzbp-i2d4/rows.xml?accessType=DOWNLOAD"
+                    },
+                  "described_by" : "https://health.data.ny.gov/api/views/vzbp-i2d4/columns.xml",
+                  "described_by_type" : "application/xml"
+                }
+              ]
+          },
+        "permalink" : "https://healthdata.gov/d/fws3-hxxq",
+        "link" : "https://healthdata.gov/State/Deer-Tick-Surveillance-Adults-Oct-to-Dec-excluding/fws3-hxxq",
+        "owner" :
+          {
+            "id" : "taan-vh9z",
+            "user_type" : "team",
+            "display_name" : "HHS Office of the Chief Data Officer"
+          },
+        "creator" :
+          {
+            "id" : "taan-vh9z",
+            "user_type" : "team",
+            "display_name" : "HHS Office of the Chief Data Officer"
+          }
+      },
+      {
+        "resource" :
+          {
+            "name" : "Deer Tick Surveillance: Nymphs (May to Sept) excluding Powassan virus: Beginning 2008",
+            "id" : "gu3x-g6sz",
+            "resource_name" : null,
+            "parent_fxf" : [],
+            "description" : "This dataset provides the results from collecting and testing nymph deer ticks, also known as blacklegged ticks, or by their scientific name <i>Ixodes scapularis</i>. Collection and testing take place across New York State (excluding New York City) from May to September, when nymph deer ticks are most commonly seen. \r\n\r\nNymph deer ticks are individually tested for different bacteria and parasites, which includes the bacteria responsible for Lyme disease. These data should simply be used to educate people that there is a risk of coming in contact with ticks and tick-borne diseases. \r\n\r\nThese data only provide nymph tick infections at a precise location and at one point in time. Both measures, tick population density and percentage, of ticks infected with the specified bacteria or parasite can vary greatly within a very small area and within a county. These data should not be used to broadly predict disease risk for a county.\r\n\r\nFurther below on this page you can find links to tick prevention tips, a video on how to safely remove a tick, and more datasets with tick testing results. Interactive charts and maps provide an easier way to view the data.",
+            "attribution" : "health.data.ny.gov",
+            "attribution_link" : null,
+            "contact_email" : "no-reply@health.data.ny.gov",
+            "type" : "href",
+            "updatedAt" : "2026-04-22T04:00:53.000Z",
+            "createdAt" : "2025-04-08T14:30:08.000Z",
+            "metadata_updated_at" : "2026-04-22T04:00:53.000Z",
+            "data_updated_at" : "2025-04-08T14:30:08.000Z",
+            "page_views" :
+              {
+                "page_views_last_week" : 1,
+                "page_views_last_month" : 3,
+                "page_views_total" : 30,
+                "page_views_last_week_log" : 1.0,
+                "page_views_last_month_log" : 2.0,
+                "page_views_total_log" : 4.954196310386876
+              },
+            "columns_name" : [],
+            "columns_field_name" : [],
+            "columns_datatype" : [],
+            "columns_description" : [],
+            "columns_format" : [],
+            "download_count" : 0,
+            "provenance" : "official",
+            "lens_view_type" : "href",
+            "lens_display_type" : "href",
+            "locked" : false,
+            "backend" : "not_a_dataset",
+            "blob_mime_type" : null,
+            "hide_from_data_json" : true,
+            "publication_date" : "2025-04-08T14:30:08.000Z"
+          },
+        "classification" :
+          {
+            "categories" : [],
+            "tags" : [],
+            "domain_category" : "State",
+            "domain_tags" :
+              [
+                "community health and chronic disease",
+                "consumer resources",
+                "environmental health",
+                "ixodes",
+                "lyme",
+                "microti",
+                "miyamotoi",
+                "nymph",
+                "phagocytophilum",
+                "scapularis",
+                "tick",
+                "ticks",
+                "anaplasma",
+                "anaplasmosis",
+                "babesia",
+                "babesiosis",
+                "borrelia",
+                "burgdorferi"
+              ],
+            "domain_metadata" :
+              [
+                {
+                  "key" : "Archive_Archive-Repository",
+                  "value" : "https://healthdata.gov/d/2h8p-4z77"
+                },
+                {
+                  "key" : "Common-Core_Contact-Email",
+                  "value" : "no-reply@health.data.ny.gov"
+                },
+                { "key" : "Common-Core_Last-Update", "value" : "2026-04-21" },
+                {
+                  "key" : "Common-Core_License",
+                  "value" : "http://opendefinition.org/licenses/odc-odbl/"
+                },
+                {
+                  "key" : "Common-Core_Public-Access-Level",
+                  "value" : "public"
+                },
+                {
+                  "key" : "Common-Core_Unique-Identifier",
+                  "value" : "https://health.data.ny.gov/api/views/kibp-u2ip"
+                },
+                {
+                  "key" : "Common-Core_Publisher",
+                  "value" : "State of New York"
+                },
+                {
+                  "key" : "Common-Core_Homepage",
+                  "value" : "https://health.data.ny.gov/d/kibp-u2ip"
+                },
+                { "key" : "Common-Core_Theme", "value" : "Health" },
+                { "key" : "Common-Core_Issued", "value" : "2019-05-17" },
+                {
+                  "key" : "Common-Core_Contact-Name",
+                  "value" : "Open Data NY - DOH"
+                },
+                {
+                  "key" : "Harvest-Source_Is-Harvested-Data",
+                  "value" : "Yes"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-URI",
+                  "value" : "https://health.data.ny.gov/data.json"
+                },
+                {
+                  "key" : "Harvest-Source_Harvest-Source-Title",
+                  "value" : "health.data.ny.gov"
+                },
+                {
+                  "key" : "Harvest-Source_Last-Harvest-Performed",
+                  "value" : "2026-04-22T04:00:51.606021Z"
+                }
+              ]
+          },
+        "metadata" :
+          {
+            "domain" : "healthdata.gov",
+            "additional_access_points" :
+              [
+                {
+                  "urls" :
+                    {
+                      "text/csv" : "https://health.data.ny.gov/api/views/kibp-u2ip/rows.csv?accessType=DOWNLOAD"
+                    }
+                },
+                {
+                  "urls" :
+                    {
+                      "application/rdf+xml" : "https://health.data.ny.gov/api/views/kibp-u2ip/rows.rdf?accessType=DOWNLOAD"
+                    },
+                  "described_by" : "https://health.data.ny.gov/api/views/kibp-u2ip/columns.rdf",
+                  "described_by_type" : "application/rdf+xml"
+                },
+                {
+                  "urls" :
+                    {
+                      "application/json" : "https://health.data.ny.gov/api/views/kibp-u2ip/rows.json?accessType=DOWNLOAD"
+                    },
+                  "described_by" : "https://health.data.ny.gov/api/views/kibp-u2ip/columns.json",
+                  "described_by_type" : "application/json"
+                },
+                {
+                  "urls" :
+                    {
+                      "application/xml" : "https://health.data.ny.gov/api/views/kibp-u2ip/rows.xml?accessType=DOWNLOAD"
+                    },
+                  "described_by" : "https://health.data.ny.gov/api/views/kibp-u2ip/columns.xml",
+                  "described_by_type" : "application/xml"
+                }
+              ]
+          },
+        "permalink" : "https://healthdata.gov/d/gu3x-g6sz",
+        "link" : "https://healthdata.gov/State/Deer-Tick-Surveillance-Nymphs-May-to-Sept-excludin/gu3x-g6sz",
+        "owner" :
+          {
+            "id" : "taan-vh9z",
+            "user_type" : "team",
+            "display_name" : "HHS Office of the Chief Data Officer"
+          },
+        "creator" :
+          {
+            "id" : "taan-vh9z",
+            "user_type" : "team",
+            "display_name" : "HHS Office of the Chief Data Officer"
+          }
+      }
+    ],
+  "resultSetSize" : 5,
+  "timings" : { "serviceMillis" : 18, "searchMillis" : [ 7, 4 ] },
+  "warnings" : []
+}

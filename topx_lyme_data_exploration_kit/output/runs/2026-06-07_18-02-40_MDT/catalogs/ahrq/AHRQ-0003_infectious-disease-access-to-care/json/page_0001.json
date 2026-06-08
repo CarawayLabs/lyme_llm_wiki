@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:50.666133Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "AHRQ-0003",
+    "query_mode": "download_manifest",
+    "method": "GET",
+    "endpoint": "https://datatools.ahrq.gov/",
+    "search_term": "infectious disease access to care",
+    "search_expression": "infectious disease access to care",
+    "parameters": {
+      "asset_search_term": "infectious disease access to care",
+      "capture_codebook": true
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "AHRQ Data Tools / MEPS / Community-Level Health",
+    "catalog_slug": "ahrq",
+    "source_type": "survey_and_downloadable_context_data",
+    "organization": "AHRQ Data Tools / MEPS / Community-Level Health",
+    "docs_url": "https://datatools.ahrq.gov/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Do not assume HCUP products are fully open. Record licensing, purchase, and data-use restrictions separately."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:49.073517Z",
+    "http_status": 200,
+    "content_type": "text/html; charset=UTF-8",
+    "duration_ms": 1212,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\ahrq\\AHRQ-0003_infectious-disease-access-to-care\\raw\\page_0001.html",
+      "sha256": "c4480cfd4b6d4e095026a2c69e76168b540f6250e56879791d33f36ee2705f2c",
+      "byte_count": 69028
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

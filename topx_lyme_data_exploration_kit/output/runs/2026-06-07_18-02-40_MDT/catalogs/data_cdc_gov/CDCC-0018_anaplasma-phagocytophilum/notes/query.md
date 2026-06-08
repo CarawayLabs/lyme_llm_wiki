@@ -1,0 +1,29 @@
+# CDCC-0018: Anaplasma phagocytophilum
+
+- Catalog: Data.CDC.gov / Socrata Catalog (`data_cdc_gov`)
+- Query mode: `catalog_search`
+- Priority/theme: `P0` / `coinfections`
+- Endpoint: `GET https://api.us.socrata.com/api/catalog/v1`
+- Retrieval URL: `https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Anaplasma+phagocytophilum&limit=100`
+- Auth alias: `CDC_SOCRATA_APP_TOKEN`; credential sent: yes
+- HTTP status: `200`
+- Records normalized from this page: `10`
+- Raw response: `C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\catalogs\data_cdc_gov\CDCC-0018_anaplasma-phagocytophilum\raw\page_0001.json`
+- JSON envelope: `C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\catalogs\data_cdc_gov\CDCC-0018_anaplasma-phagocytophilum\json\page_0001.json`
+
+## Search Intent
+
+Other tickborne pathogens, coinfection patterns, and related surveillance or clinical evidence.
+
+## Downstream Use
+
+Identify where single-disease workflows miss clinically relevant tickborne conditions.
+
+## Pagination And Rate Notes
+
+- Pagination: Increment offset by limit until resultSetSize is exhausted.
+- Rate limit note: Anonymous queries work, but an X-App-Token is recommended for automated exploration.
+
+## Interpretation Notes
+
+After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows.

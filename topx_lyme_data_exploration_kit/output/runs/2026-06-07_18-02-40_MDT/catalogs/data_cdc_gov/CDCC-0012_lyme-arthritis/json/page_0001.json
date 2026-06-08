@@ -1,0 +1,896 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:53.320629Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CDCC-0012",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.us.socrata.com/api/catalog/v1",
+    "search_term": "Lyme arthritis",
+    "search_expression": "Lyme arthritis",
+    "parameters": {
+      "search_context": "data.cdc.gov",
+      "q": "Lyme arthritis",
+      "limit": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "optional_recommended",
+      "credential_alias": "CDC_SOCRATA_APP_TOKEN",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.CDC.gov / Socrata Catalog",
+    "catalog_slug": "data_cdc_gov",
+    "source_type": "public_health_data_catalog",
+    "organization": "Centers for Disease Control and Prevention",
+    "docs_url": "https://dev.socrata.com/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:52.682869Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 579,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 3,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 3,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_cdc_gov\\CDCC-0012_lyme-arthritis\\raw\\page_0001.json",
+      "sha256": "8b1c49598a414e75a6dd619d9b8f1c1c3938e7a9812f914a6203c8bf81ddd8b5",
+      "byte_count": 32712
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "data_cdc_gov:CDCC-0012-0",
+      "source_record_id": "CDCC-0012-0",
+      "record_type": "dataset_metadata",
+      "title": "Lyme disease public use line-listed data without geography, 2022-2023",
+      "description": "Overview:\nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817.\n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments.\n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.\n1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.\n2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context: Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+      "summary": null,
+      "source_url": "https://data.cdc.gov/National-Center-for-Emerging-and-Zoonotic-Infectio/Lyme-disease-public-use-line-listed-data-without-g/9mtj-y2ba",
+      "retrieved_at": "2026-06-08T00:02:52.682869Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "CDC/NCEZID/DVBD",
+      "organizations": [
+        {
+          "name": "CDC/NCEZID/DVBD",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "CDCC-0012-0"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme arthritis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_cdc_gov",
+        "search_id": "CDCC-0012",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+arthritis&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_cdc_gov\\CDCC-0012_lyme-arthritis\\raw\\page_0001.json",
+        "raw_record_sha256": "b809188596da209f2d11db1d529165bb0fb449aeebbd467ac45b1f6bd6f4b64c"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Lyme disease public use line-listed data without geography, 2022-2023",
+          "id": "9mtj-y2ba",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "Overview:\nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817.\n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments.\n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.\n1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.\n2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context: Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+          "attribution": "CDC/NCEZID/DVBD",
+          "attribution_link": null,
+          "contact_email": "bdbepigroup@cdc.gov",
+          "type": "dataset",
+          "updatedAt": "2025-08-19T19:49:27.000Z",
+          "createdAt": "2025-08-19T19:44:34.000Z",
+          "metadata_updated_at": "2025-08-19T19:49:27.000Z",
+          "data_updated_at": "2025-08-19T19:49:05.000Z",
+          "page_views": {
+            "page_views_last_week": 16,
+            "page_views_last_month": 49,
+            "page_views_total": 1868,
+            "page_views_last_week_log": 4.08746284125034,
+            "page_views_last_month_log": 5.643856189774724,
+            "page_views_total_log": 10.868050853745158
+          },
+          "columns_name": [
+            "Race",
+            "Age_cat_yrs",
+            "Onset_month",
+            "Year",
+            "Av_block",
+            "Enceph",
+            "Lymph_men",
+            "Case_status",
+            "EM",
+            "Facial_palsy",
+            "Radiculo",
+            "Ethnicity",
+            "Arthritis",
+            "Sex"
+          ],
+          "columns_field_name": [
+            "race",
+            "age_cat_yrs",
+            "onset_month",
+            "year",
+            "av_block",
+            "enceph",
+            "lymph_men",
+            "case_status",
+            "em",
+            "facial_palsy",
+            "radiculo",
+            "ethnicity",
+            "arthritis",
+            "sex"
+          ],
+          "columns_datatype": [
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text"
+          ],
+          "columns_description": [
+            "Patient race as reported to health authorities, plain text",
+            "Patient age, in 5-year age categories, plain text",
+            "Calendar month of illness onset (1-12), numeric",
+            "Reporting year, plain text",
+            "Presence of acute-onset high-grade atrioventricular conduction defects (heart block) during illness, plain text",
+            "Presence of encephalomyelitis during illness, plain text",
+            "Presence of lymphocytic meningitis during illness, plain text",
+            "Surveillance case classification as determined by local and state public health authorities, plain text",
+            "Presence of erythema migrans rash during illness, plain text",
+            "Presence of cranial neuritis, particularly facial palsy, during illness, plain text",
+            "Presence of radiculoneuropathy during illness, plain text",
+            "Patient ethnicity as reported to health authorities, plain text",
+            "Presence of objective joint swelling in one or a few joints during illness, plain text",
+            "Patient sex as reported to health authorities, plain text"
+          ],
+          "columns_format": [
+            {},
+            {},
+            {},
+            {
+              "decimalSeparator": ".",
+              "groupSeparator": ","
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "download_count": 183,
+          "provenance": "official",
+          "lens_view_type": "tabular",
+          "lens_display_type": "table",
+          "locked": false,
+          "backend": "nbe",
+          "blob_mime_type": null,
+          "hide_from_data_json": false,
+          "publication_date": "2025-08-19T19:49:27.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "National Center for Emerging and Zoonotic Infectious Diseases",
+          "domain_tags": [
+            "surveillance",
+            "lyme disease"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "bdbepigroup@cdc.gov"
+            },
+            {
+              "key": "Common-Core_Collection",
+              "value": "Lyme Disease Public Use Datasets"
+            },
+            {
+              "key": "Common-Core_Program-Code",
+              "value": "009:028"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "non-public"
+            },
+            {
+              "key": "Common-Core_Language",
+              "value": "English"
+            },
+            {
+              "key": "Common-Core_References",
+              "value": "https://ndc.services.cdc.gov/conditions/lyme-disease/"
+            },
+            {
+              "key": "Common-Core_Geographic-Coverage",
+              "value": "United States of America"
+            },
+            {
+              "key": "Common-Core_Update-Frequency",
+              "value": "Annual"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html"
+            },
+            {
+              "key": "Common-Core_Bureau-Code",
+              "value": "009:20"
+            },
+            {
+              "key": "Common-Core_Data-Standard",
+              "value": "NNDSS"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Bacterial Diseases Branch Epidemiology & Surveillance Team"
+            },
+            {
+              "key": "Dataset-Information_Glossary/Methodology",
+              "value": "Data Suppression: Some data are suppressed to protect individual privacy. To prevent release of data that could be used to identify individuals, data cells are suppressed for low frequency (<5 Lyme disease records with the same combinations of certain potentially identifying variables). In these datasets, suppression includes low frequency combinations of month of illness onset and demographic characteristics (sex, age group, race, and ethnicity). Suppressed values are re-coded accordingly with “suppressed” text inserted; records with data suppression are never removed. Missing data or unknown values are indicated accordingly, so as not to be confused with intentionally suppressed data."
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "data.cdc.gov",
+          "license": "Public Domain U.S. Government"
+        },
+        "permalink": "https://data.cdc.gov/d/9mtj-y2ba",
+        "link": "https://data.cdc.gov/National-Center-for-Emerging-and-Zoonotic-Infectio/Lyme-disease-public-use-line-listed-data-without-g/9mtj-y2ba",
+        "owner": {
+          "id": "w6xk-sxm6",
+          "user_type": "interactive",
+          "display_name": "xee5@cdc.gov"
+        },
+        "creator": {
+          "id": "w6xk-sxm6",
+          "user_type": "interactive",
+          "display_name": "xee5@cdc.gov"
+        }
+      }
+    },
+    {
+      "normalized_id": "data_cdc_gov:CDCC-0012-1",
+      "source_record_id": "CDCC-0012-1",
+      "record_type": "dataset_metadata",
+      "title": "Lyme disease public use line-listed data without geography, 2008-2021",
+      "description": "Overview:\nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817.\n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments.\n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.\n1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.\n2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context: Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+      "summary": null,
+      "source_url": "https://data.cdc.gov/National-Center-for-Emerging-and-Zoonotic-Infectio/Lyme-disease-public-use-line-listed-data-without-g/abzs-b3gw",
+      "retrieved_at": "2026-06-08T00:02:52.682869Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "CDC/NCEZID/DVBD",
+      "organizations": [
+        {
+          "name": "CDC/NCEZID/DVBD",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "CDCC-0012-1"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme arthritis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_cdc_gov",
+        "search_id": "CDCC-0012",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+arthritis&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_cdc_gov\\CDCC-0012_lyme-arthritis\\raw\\page_0001.json",
+        "raw_record_sha256": "e089a6777682e79f7b2a1677da6901a11b3b36f8ef4ed7618d73a92e2004e963"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Lyme disease public use line-listed data without geography, 2008-2021",
+          "id": "abzs-b3gw",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "Overview:\nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817.\n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments.\n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.\n1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.\n2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context: Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+          "attribution": "CDC/NCEZID/DVBD",
+          "attribution_link": null,
+          "contact_email": "bdbepigroup@cdc.gov",
+          "type": "dataset",
+          "updatedAt": "2025-08-19T19:56:59.000Z",
+          "createdAt": "2025-08-19T19:50:31.000Z",
+          "metadata_updated_at": "2025-08-19T19:56:59.000Z",
+          "data_updated_at": "2025-08-19T19:56:07.000Z",
+          "page_views": {
+            "page_views_last_week": 4,
+            "page_views_last_month": 14,
+            "page_views_total": 584,
+            "page_views_last_week_log": 2.321928094887362,
+            "page_views_last_month_log": 3.9068905956085187,
+            "page_views_total_log": 9.192292814470768
+          },
+          "columns_name": [
+            "EM",
+            "Facial_palsy",
+            "Radiculo",
+            "Enceph",
+            "Av_block",
+            "Lymph_men",
+            "Arthritis",
+            "Race",
+            "Onset_month",
+            "Age_cat_yrs",
+            "Sex",
+            "Case_status",
+            "Year",
+            "Ethnicity"
+          ],
+          "columns_field_name": [
+            "em",
+            "facial_palsy",
+            "radiculo",
+            "enceph",
+            "av_block",
+            "lymph_men",
+            "arthritis",
+            "race",
+            "onset_month",
+            "age_cat_yrs",
+            "sex",
+            "case_status",
+            "year",
+            "ethnicity"
+          ],
+          "columns_datatype": [
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text"
+          ],
+          "columns_description": [
+            "Presence of erythema migrans rash during illness, plain text",
+            "Presence of cranial neuritis, particularly facial palsy, during illness, plain text",
+            "Presence of radiculoneuropathy during illness, plain text",
+            "Presence of encephalomyelitis during illness, plain text",
+            "Presence of acute-onset high-grade atrioventricular conduction defects (heart block) during illness, plain text",
+            "Presence of lymphocytic meningitis during illness, plain text",
+            "Presence of objective joint swelling in one or a few joints during illness, plain text",
+            "Patient race as reported to health authorities, plain text",
+            "Calendar month of illness onset (1-12), numeric",
+            "Patient age, in 5-year age categories, plain text",
+            "Patient sex as reported to health authorities, plain text",
+            "Surveillance case classification as determined by local and state public health authorities, plain text",
+            "Reporting year, plain text",
+            "Patient ethnicity as reported to health authorities, plain text"
+          ],
+          "columns_format": [
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "decimalSeparator": ".",
+              "groupSeparator": ","
+            },
+            {}
+          ],
+          "download_count": 145,
+          "provenance": "official",
+          "lens_view_type": "tabular",
+          "lens_display_type": "table",
+          "locked": false,
+          "backend": "nbe",
+          "blob_mime_type": null,
+          "hide_from_data_json": false,
+          "publication_date": "2025-08-19T19:56:59.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "National Center for Emerging and Zoonotic Infectious Diseases",
+          "domain_tags": [
+            "surveillance",
+            "lyme disease"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "bdbepigroup@cdc.gov"
+            },
+            {
+              "key": "Common-Core_Collection",
+              "value": "Lyme Disease Public Use Datasets"
+            },
+            {
+              "key": "Common-Core_Program-Code",
+              "value": "009:028"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Language",
+              "value": "English"
+            },
+            {
+              "key": "Common-Core_References",
+              "value": "https://ndc.services.cdc.gov/conditions/lyme-disease/"
+            },
+            {
+              "key": "Common-Core_Geographic-Coverage",
+              "value": "United States of America"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html"
+            },
+            {
+              "key": "Common-Core_Bureau-Code",
+              "value": "009:20"
+            },
+            {
+              "key": "Common-Core_Data-Standard",
+              "value": "NNDSS"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Bacterial Diseases Branch Epidemiology & Surveillance Team"
+            },
+            {
+              "key": "Dataset-Information_Glossary/Methodology",
+              "value": "Data Suppression: Some data are suppressed to protect individual privacy. To prevent release of data that could be used to identify individuals, data cells are suppressed for low frequency (<5 Lyme disease records with the same combinations of certain potentially identifying variables). In these datasets, suppression includes low frequency combinations of month of illness onset and demographic characteristics (sex, age group, race, and ethnicity). Suppressed values are re-coded accordingly with “suppressed” text inserted; records with data suppression are never removed. Missing data or unknown values are indicated accordingly, so as not to be confused with intentionally suppressed data."
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "data.cdc.gov",
+          "license": "Public Domain U.S. Government"
+        },
+        "permalink": "https://data.cdc.gov/d/abzs-b3gw",
+        "link": "https://data.cdc.gov/National-Center-for-Emerging-and-Zoonotic-Infectio/Lyme-disease-public-use-line-listed-data-without-g/abzs-b3gw",
+        "owner": {
+          "id": "w6xk-sxm6",
+          "user_type": "interactive",
+          "display_name": "xee5@cdc.gov"
+        },
+        "creator": {
+          "id": "w6xk-sxm6",
+          "user_type": "interactive",
+          "display_name": "xee5@cdc.gov"
+        }
+      }
+    },
+    {
+      "normalized_id": "data_cdc_gov:CDCC-0012-2",
+      "source_record_id": "CDCC-0012-2",
+      "record_type": "dataset_metadata",
+      "title": "Lyme disease public use line-listed data without geography, 1992-2007",
+      "description": "Overview:\nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817.\n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments.\n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.\n1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.\n2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context: Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+      "summary": null,
+      "source_url": "https://data.cdc.gov/National-Center-for-Emerging-and-Zoonotic-Infectio/Lyme-disease-public-use-line-listed-data-without-g/e2a5-s9pr",
+      "retrieved_at": "2026-06-08T00:02:52.682869Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "CDC/NCEZID/DVBD",
+      "organizations": [
+        {
+          "name": "CDC/NCEZID/DVBD",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "CDCC-0012-2"
+      },
+      "topics": [],
+      "conditions": [
+        "Lyme arthritis"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "After discovery, fetch /api/views/{dataset_id} for schema and /resource/{dataset_id}.json for rows."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_cdc_gov",
+        "search_id": "CDCC-0012",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+arthritis&limit=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_cdc_gov\\CDCC-0012_lyme-arthritis\\raw\\page_0001.json",
+        "raw_record_sha256": "8428063c6dc06a67b889a6c2ed9039bf1e7425f2502f6cdfa9934b7e47823fdd"
+      },
+      "raw_metadata": {
+        "resource": {
+          "name": "Lyme disease public use line-listed data without geography, 1992-2007",
+          "id": "e2a5-s9pr",
+          "resource_name": null,
+          "parent_fxf": [],
+          "description": "Overview:\nPublic health surveillance data are collected and reported voluntarily to CDC by U.S. states and territories through the National Notifiable Diseases Surveillance System (NNDSS) (https://www.cdc.gov/nndss/index.html). Data include demographic, clinical, and geographic information; data do not include direct identifiers. Two types of datasets of human Lyme disease case data collected through public health surveillance are available: one includes annual case count aggregated by county of residence according to specific demographic variables and one is line-listed with patient demographic factors, month of illness onset, and clinical presentation information but without corresponding geographic information. These privacy-protected datasets were implemented in accordance with methodology described in Lee et al. Protecting Privacy and Transforming COVID-19 Case Surveillance Datasets for Public Use. Public Health Rep. 2021 Sep-Oct;136(5):554-561. doi: 10.1177/00333549211026817.\n\nLyme disease became nationally notifiable in 1991. Different surveillance case definitions have been in effect over time; details are available here: https://ndc.services.cdc.gov/conditions/lyme-disease/. In 2008, a probable case definition was included in public health surveillance for the first time. In 2022, states with a high incidence of Lyme disease started reporting cases based on laboratory evidence alone without requirement for a clinical investigation, precluding comparison with historical data (for more information: https://www.cdc.gov/mmwr/volumes/73/wr/mm7306a1.htm?s_cid=mm7306a1_w). As such, Lyme disease surveillance data are grouped into separate datasets based on when these major changes occurred; data are provided for download separately for 1992–2007, 2008–2021, and 2022 to current. Data will be updated annually upon final verification of Lyme disease surveillance data by health departments.\n\nData Limitations:\nSurveillance data have significant limitations that must be considered in the analysis, interpretation, and reporting of results.\n1. Under-reporting and misclassification are features common to all surveillance systems. Not every case of Lyme disease is reported to CDC, and some cases that are reported may be reflect illness due to another cause.\n2. Please note that before the 2022 surveillance case definition went into effect, several states with high Lyme disease incidence had initiated alternative methods of surveillance and those data were not reportable to CDC.\n3. Final case data are subject to each state’s abilities to capture and classify cases, which is dependent upon budget and personnel. This can vary not only between states, but also from year to year within a given state. Consequently, a sudden or marked change in reported cases does not necessarily represent a true change in disease incidence. Every effort should be made to construct analyses to limit overinterpretation of this variation (see the following reference for more context: Kugeler KJ, Eisen RJ. Challenges in Predicting Lyme Disease Risk. JAMA Netw Open. 2020 Mar 2;3(3):e200328. doi: 10.1001/jamanetworkopen.2020.0328.)",
+          "attribution": "CDC/NCEZID/DVBD",
+          "attribution_link": null,
+          "contact_email": "bdbepigroup@cdc.gov",
+          "type": "dataset",
+          "updatedAt": "2025-08-19T20:19:21.000Z",
+          "createdAt": "2025-08-19T18:45:15.000Z",
+          "metadata_updated_at": "2025-08-19T20:19:21.000Z",
+          "data_updated_at": "2025-08-19T19:07:24.000Z",
+          "page_views": {
+            "page_views_last_week": 4,
+            "page_views_last_month": 17,
+            "page_views_total": 433,
+            "page_views_last_week_log": 2.321928094887362,
+            "page_views_last_month_log": 4.169925001442312,
+            "page_views_total_log": 8.76155123244448
+          },
+          "columns_name": [
+            "Race",
+            "Av_block",
+            "Year",
+            "Age_cat_yrs",
+            "Ethnicity",
+            "Onset_month",
+            "EM",
+            "Arthritis",
+            "Facial_palsy ",
+            "Radiculo",
+            "Lymph_men",
+            "Enceph",
+            "Case_status",
+            "Sex"
+          ],
+          "columns_field_name": [
+            "race",
+            "av_block",
+            "year",
+            "age_cat_yrs",
+            "ethnicity",
+            "onset_month",
+            "em",
+            "arthritis",
+            "facial_palsy",
+            "radiculo",
+            "lymph_men",
+            "enceph",
+            "case_status",
+            "sex"
+          ],
+          "columns_datatype": [
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text",
+            "Text"
+          ],
+          "columns_description": [
+            "Patient race as reported to health authorities, plain text",
+            "Presence of acute-onset high-grade atrioventricular conduction defects (heart block) during illness, plain text",
+            "Reporting year, plain text",
+            "Patient age, in 5-year age categories, plain text",
+            "Patient ethnicity as reported to health authorities, plain text",
+            "Calendar month of illness onset (1-12), numeric",
+            "Presence of erythema migrans rash during illness, plain text",
+            "Presence of objective joint swelling in one or a few joints during illness, plain text",
+            "Presence of cranial neuritis, particularly facial palsy, during illness, plain text",
+            "Presence of radiculoneuropathy during illness, plain text",
+            "Presence of lymphocytic meningitis during illness, plain text",
+            "Presence of encephalomyelitis during illness, plain text",
+            "Surveillance case classification as determined by local and state public health authorities, plain text",
+            "Patient sex as reported to health authorities, plain text"
+          ],
+          "columns_format": [
+            {},
+            {},
+            {
+              "decimalSeparator": ".",
+              "groupSeparator": ","
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "download_count": 145,
+          "provenance": "official",
+          "lens_view_type": "tabular",
+          "lens_display_type": "table",
+          "locked": false,
+          "backend": "nbe",
+          "blob_mime_type": null,
+          "hide_from_data_json": false,
+          "publication_date": "2025-08-19T19:08:00.000Z"
+        },
+        "classification": {
+          "categories": [],
+          "tags": [],
+          "domain_category": "National Center for Emerging and Zoonotic Infectious Diseases",
+          "domain_tags": [
+            "surveillance",
+            "lyme disease"
+          ],
+          "domain_metadata": [
+            {
+              "key": "Common-Core_Contact-Email",
+              "value": "bdbepigroup@cdc.gov"
+            },
+            {
+              "key": "Common-Core_Collection",
+              "value": "Lyme Disease Public Use Datasets"
+            },
+            {
+              "key": "Common-Core_Program-Code",
+              "value": "009:028"
+            },
+            {
+              "key": "Common-Core_Public-Access-Level",
+              "value": "public"
+            },
+            {
+              "key": "Common-Core_Language",
+              "value": "English"
+            },
+            {
+              "key": "Common-Core_References",
+              "value": "https://ndc.services.cdc.gov/conditions/lyme-disease/"
+            },
+            {
+              "key": "Common-Core_Geographic-Coverage",
+              "value": "United States of America"
+            },
+            {
+              "key": "Common-Core_Homepage",
+              "value": "https://www.cdc.gov/lyme/data-research/facts-stats/surveillance-data-1.html"
+            },
+            {
+              "key": "Common-Core_Bureau-Code",
+              "value": "009:20"
+            },
+            {
+              "key": "Common-Core_Data-Standard",
+              "value": "NNDSS"
+            },
+            {
+              "key": "Common-Core_Contact-Name",
+              "value": "Bacterial Diseases Branch Epidemiology & Surveillance Team"
+            },
+            {
+              "key": "Dataset-Information_Glossary/Methodology",
+              "value": "Data Suppression: Some data are suppressed to protect individual privacy. To prevent release of data that could be used to identify individuals, data cells are suppressed for low frequency (<5 Lyme disease records with the same combinations of certain potentially identifying variables). In these datasets, suppression includes low frequency combinations of month of illness onset and demographic characteristics (sex, age group, race, and ethnicity). Suppressed values are re-coded accordingly with “suppressed” text inserted; records with data suppression are never removed. Missing data or unknown values are indicated accordingly, so as not to be confused with intentionally suppressed data."
+            }
+          ]
+        },
+        "metadata": {
+          "domain": "data.cdc.gov",
+          "license": "Public Domain U.S. Government"
+        },
+        "permalink": "https://data.cdc.gov/d/e2a5-s9pr",
+        "link": "https://data.cdc.gov/National-Center-for-Emerging-and-Zoonotic-Infectio/Lyme-disease-public-use-line-listed-data-without-g/e2a5-s9pr",
+        "owner": {
+          "id": "w6xk-sxm6",
+          "user_type": "interactive",
+          "display_name": "xee5@cdc.gov"
+        },
+        "creator": {
+          "id": "w6xk-sxm6",
+          "user_type": "interactive",
+          "display_name": "xee5@cdc.gov"
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

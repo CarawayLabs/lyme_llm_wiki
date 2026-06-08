@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:28.159193Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "NOAA-0008",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://www.ncei.noaa.gov/cdo-web/api/v2/data",
+    "search_term": "cooling degree days",
+    "search_expression": "cooling degree days",
+    "parameters": {
+      "datasetid": "GHCND",
+      "datatypeid": "CLDD",
+      "startdate": "2024-05-01",
+      "enddate": "2024-05-07",
+      "locationid": "FIPS:24",
+      "limit": 1000,
+      "offset": 1,
+      "units": "standard"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "required",
+      "credential_alias": "NOAA_CDO_TOKEN",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "NOAA Climate Data Online API v2",
+    "catalog_slug": "noaa_cdo",
+    "source_type": "weather_and_climate_observations",
+    "organization": "NOAA National Centers for Environmental Information",
+    "docs_url": "https://www.ncei.noaa.gov/cdo-web/webservices/v2",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use station-quality flags and coverage checks. Climate correlation alone does not establish causation."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:27.309818Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 621,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": 1,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\noaa_cdo\\NOAA-0008_cooling-degree-days\\raw\\page_0001.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "byte_count": 2
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "noaa_cdo:NOAA-0008-0",
+      "source_record_id": "NOAA-0008-0",
+      "record_type": "climate_observation_or_station",
+      "title": "cooling degree days",
+      "description": null,
+      "summary": null,
+      "source_url": "https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=CLDD&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard",
+      "retrieved_at": "2026-06-08T00:04:27.309818Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "source_id": "NOAA-0008-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "Selected counties/stations; aggregate to county after retrieval"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "Match Lyme/tick outcome years; include lagged seasonal windows",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use station-quality flags and coverage checks. Climate correlation alone does not establish causation."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use station-quality flags and coverage checks. Climate correlation alone does not establish causation."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "noaa_cdo",
+        "search_id": "NOAA-0008",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=CLDD&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\noaa_cdo\\NOAA-0008_cooling-degree-days\\raw\\page_0001.json",
+        "raw_record_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "raw_metadata": {}
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

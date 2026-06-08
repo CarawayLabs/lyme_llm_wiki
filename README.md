@@ -17,6 +17,7 @@ The TopX Lyme Challenge focuses on identifying high-value AI opportunities relat
 - `outputs/` contains generated artifacts. Review outputs before promoting important content into `wiki/` or `findings/`.
 - `resources/` contains README and project assets such as images.
 - `project_scaffolding/` contains setup and maintenance scripts for the repo itself.
+- `.codex/skills/topx-lyme-llm-wiki/` contains the project-local Codex skill and workflow reference for operating the LLM wiki.
 
 ## Current Wiki Pages
 
@@ -79,6 +80,33 @@ python scripts/run_deep_research.py retrieve --interaction-id v1_your_interactio
 ```
 
 Generated reports are written to `outputs/deep_research/`. Promote only reviewed, useful conclusions into `wiki/` or `findings/`, and keep sourced facts distinct from analysis or inference.
+
+## Codex Workflows
+
+This repo includes a project-local Codex skill:
+
+```text
+.codex/skills/topx-lyme-llm-wiki/
+```
+
+Use it for source-grounded wiki work, artifact review, dataset scoring, opportunity scoring, Deep Research status checks, catalog smoke tests, and submission gap analysis. The detailed workflow reference lives at:
+
+```text
+.codex/skills/topx-lyme-llm-wiki/references/workflows.md
+```
+
+The main workflow equivalents are:
+
+- `wiki-status` - summarize the current wiki state, gaps, stale areas, and next research moves.
+- `promote-artifact` - review a generated report from `outputs/` and promote only defensible conclusions into `wiki/` or `findings/`.
+- `research-question` - answer from repository evidence first, separating sourced facts from analysis and uncertainty.
+- `dataset-score` - evaluate a dataset using `prompts/dataset_scorer.md`.
+- `opportunity-score` - evaluate an AI/product opportunity using `prompts/opportunity_scorer.md`.
+- `deep-research-status` - inspect configured Deep Research jobs and recent outputs.
+- `catalog-smoke-test` - safely test the open-data catalog explorer with narrow limits.
+- `submission-gap-check` - compare the wiki against Phase 1 submission needs.
+
+These are Codex workflow names rather than required CLI commands. Ask Codex for one by name, or describe the task in plain language.
 
 ## Working Principles
 

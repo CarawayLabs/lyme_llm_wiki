@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:04:58.581099Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "RXN-0006",
+    "query_mode": "terminology_lookup",
+    "method": "GET",
+    "endpoint": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json",
+    "search_term": "minocycline",
+    "search_expression": "minocycline",
+    "parameters": {
+      "term": "minocycline",
+      "maxEntries": 20,
+      "option": 1
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NLM RxNorm API",
+    "catalog_slug": "rxnorm",
+    "source_type": "medication_terminology",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:04:57.799483Z",
+    "http_status": 200,
+    "content_type": "application/json;charset=utf-8",
+    "duration_ms": 427,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0006_minocycline\\raw\\page_0001.json",
+      "sha256": "722329c09e18aeb9c01b969d261817e8fc7308804c048a3d8c3b9458665b1d28",
+      "byte_count": 2344
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "rxnorm:RXN-0006-0",
+      "source_record_id": "RXN-0006-0",
+      "record_type": "medication_concept",
+      "title": "minocycline",
+      "description": null,
+      "summary": null,
+      "source_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=minocycline&maxEntries=20&option=1",
+      "retrieved_at": "2026-06-08T00:04:57.799483Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "rxcui": "RXN-0006-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "minocycline"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Use RxNorm to normalize medication names returned by literature, trials, labels, and provider datasets."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "rxnorm",
+        "search_id": "RXN-0006",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=minocycline&maxEntries=20&option=1",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\rxnorm\\RXN-0006_minocycline\\raw\\page_0001.json",
+        "raw_record_sha256": "772f27a7d5c12baac40611d9891ba50c6c7c5e5a695eefe9859376d308dffcd9"
+      },
+      "raw_metadata": {
+        "approximateGroup": {
+          "inputTerm": null,
+          "candidate": [
+            {
+              "rxcui": "6980",
+              "rxaui": "10328911",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "source": "GS"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "12253921",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "name": "minocycline",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "12530921",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "name": "minocycline",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "2072384",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "name": "MINOCYCLINE",
+              "source": "VANDF"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "5481230",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "name": "minocycline",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "5481231",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "name": "minocycline",
+              "source": "ATC"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "6806373",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "source": "NDDF"
+            },
+            {
+              "rxcui": "6980",
+              "rxaui": "8312224",
+              "score": "12.41461181640625",
+              "rank": "1",
+              "name": "Minocycline",
+              "source": "DRUGBANK"
+            },
+            {
+              "rxcui": "1740905",
+              "rxaui": "12267123",
+              "score": "12.002037361145021",
+              "rank": "9",
+              "name": "minocycline Injection",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164755",
+              "rxaui": "12292690",
+              "score": "12.002037361145021",
+              "rank": "9",
+              "name": "minocycline Pill",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "378771",
+              "rxaui": "12257129",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Oral Powder",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "372935",
+              "rxaui": "12259274",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Oral Suspension",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "372936",
+              "rxaui": "12259275",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Oral Tablet",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "372933",
+              "rxaui": "12259450",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Oral Capsule",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "385778",
+              "rxaui": "12261046",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Oral Gel",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2257672",
+              "rxaui": "12267361",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Topical Foam",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164752",
+              "rxaui": "12292687",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Injectable Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "1164754",
+              "rxaui": "12292689",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Oral Product",
+              "source": "RXNORM"
+            },
+            {
+              "rxcui": "2257671",
+              "rxaui": "12296524",
+              "score": "11.649132568174602",
+              "rank": "11",
+              "name": "minocycline Topical Product",
+              "source": "RXNORM"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

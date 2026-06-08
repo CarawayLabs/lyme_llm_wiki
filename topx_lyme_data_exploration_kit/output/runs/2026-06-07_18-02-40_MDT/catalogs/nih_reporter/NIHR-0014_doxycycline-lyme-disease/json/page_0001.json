@@ -1,0 +1,1470 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:43.159988Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "NIHR-0014",
+    "query_mode": "record_search",
+    "method": "POST",
+    "endpoint": "https://api.reporter.nih.gov/v2/projects/search",
+    "search_term": "doxycycline Lyme disease",
+    "search_expression": "doxycycline Lyme disease",
+    "parameters": {
+      "criteria": {
+        "advanced_text_search": {
+          "operator": "and",
+          "search_field": "projecttitle,terms,abstracttext",
+          "search_text": "doxycycline Lyme disease"
+        },
+        "include_active_projects": true,
+        "exclude_subprojects": true,
+        "use_relevance": true
+      },
+      "offset": 0,
+      "limit": 500,
+      "sort_field": "award_notice_date",
+      "sort_order": "desc"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "NIH RePORTER API v2",
+    "catalog_slug": "nih_reporter",
+    "source_type": "research_grant_portfolio",
+    "organization": "NIH RePORTER API v2",
+    "docs_url": "https://api.reporter.nih.gov/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:42.251871Z",
+    "http_status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "duration_ms": 554,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 7,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 7,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+      "sha256": "84b69fec092bea21d49b80639082eb3bccd7808aa85aadd759cad3b1fbe34c4c",
+      "byte_count": 73666
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-0",
+      "source_record_id": "NIHR-0014-0",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-0"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "9f4bdaa29b09bc47a72eb8acda684c8cb1de62d0446179cdb8cfc6d7ce4adc9c"
+      },
+      "raw_metadata": {
+        "appl_id": 11296219,
+        "subproject_id": null,
+        "fiscal_year": 2026,
+        "project_num": "1R01AI190088-01A1",
+        "project_serial_num": "AI190088",
+        "organization": {
+          "org_name": "OHIO STATE UNIVERSITY",
+          "city": null,
+          "country": null,
+          "org_city": "Columbus",
+          "org_country": "UNITED STATES",
+          "org_state": "OH",
+          "org_state_name": null,
+          "dept_type": "VETERINARY SCIENCES",
+          "fips_country_code": null,
+          "org_duns": [
+            "832127323"
+          ],
+          "org_ueis": [
+            "DLWBSLWAJWR1"
+          ],
+          "primary_duns": "832127323",
+          "primary_uei": "DLWBSLWAJWR1",
+          "org_fips": "US",
+          "org_ipf_code": "6218701",
+          "org_zipcode": "43210",
+          "external_org_id": 6218701
+        },
+        "award_type": "1",
+        "activity_code": "R01",
+        "award_amount": 670881,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "1",
+          "activity_code": "R01",
+          "ic_code": "AI",
+          "serial_num": "190088",
+          "support_year": "01",
+          "full_support_year": "01A1",
+          "suffix_code": "A1"
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 1894305,
+            "first_name": "YASUKO",
+            "middle_name": "",
+            "last_name": "RIKIHISA",
+            "is_contact_pi": true,
+            "full_name": "YASUKO  RIKIHISA",
+            "title": "PROFESSOR"
+          }
+        ],
+        "contact_pi_name": "RIKIHISA, YASUKO ",
+        "program_officers": [
+          {
+            "first_name": "SUMAN",
+            "middle_name": "",
+            "last_name": "MUKHOPADHYAY",
+            "full_name": "SUMAN  MUKHOPADHYAY"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2026,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 670881.0,
+            "direct_cost_ic": 425956.0,
+            "indirect_cost_ic": 244925.0
+          }
+        ],
+        "cong_dist": "OH-03",
+        "spending_categories": null,
+        "project_start_date": "2026-04-01T00:00:00",
+        "project_end_date": "2031-03-31T00:00:00",
+        "organization_type": {
+          "name": "SCHOOLS OF VETERINARY MEDICINE",
+          "code": "10",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -83.033131,
+          "lat": 39.999598
+        },
+        "opportunity_number": "PA-25-301",
+        "full_study_section": {
+          "srg_code": "BHI",
+          "srg_flex": null,
+          "sra_designator_code": null,
+          "sra_flex_code": null,
+          "group_code": null,
+          "name": "Bacterial-Host Interactions Study Section [BHI]"
+        },
+        "award_notice_date": "2026-03-30T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "RP",
+        "core_project_num": "R01AI190088",
+        "terms": "<A phagocytophila><A phagocytophilum><A. phagocytophila><A. phagocytophilum><ALL-1 protein><Affinity><Anaplasma><Anaplasma phagocytophila><Anaplasma phagocytophilum><Anaplasmosis><Antibiotic Agents><Antibiotic Drugs><Antibiotics><Apoptosis><Apoptosis Pathway><Autoregulation><Bacteria><Binding><Blood granulocytic cell><C-terminal><CIS Gene><CIS protein><CIS-1 Gene><CIS-1 Protein><CISH Protein><CISH gene><Cell Body><Cell Communication and Signaling><Cell Culture Techniques><Cell Signaling><Cell model><Cells><Cellular model><Communicable Diseases><Cytoecetes phagocytophila><Cytokine Inducible SH2-Containing Protein><Cytokine-Inducible Inhibitor of Signaling Type 1B><Cytokine-Inducible Inhibitor of Signaling Type 1B Gene><Cytokine-Inducible SH2-Containing Protein Gene><Cytoplasm><Data><Dependence><Development><Digestion><Disease><Disorder><Doxycycline><ER stress><Ehrlichia equi><Ehrlichia phagocytophila><Electron Microscopy><Emerging Communicable Diseases><Emerging Infectious Diseases><Encapsulated><Endoplasmic Reticulum><Endothelial Cells><Ergastoplasm><Family><Fluorescence Light Microscopy><Fluorescence Microscopy><G18><G18 Gene><Genetics-Mutagenesis><Goals><Golgi><Golgi Apparatus><Golgi Complex><Granular Leukocytes><Granulocytic cell><HGE Agent><HRX protein><HTRX-1 protein><Homeostasis><Human><Immune response><Immunochemical Immunologic><Immunologic><Immunological><Immunologically><Immunologics><Infection><Infectious Diseases><Infectious Disorder><Innate Immune Response><Integral Membrane Protein><Intervention Strategies><Intracellular Communication and Signaling><Intrinsic Membrane Protein><Knowledge><Link><Lyme Borreliosis><Lyme Disease><MLL protein><Mediating><Membrane><Messenger RNA><Mice><Mice Mammals><Miscellaneous Antibiotic><Mission><Modeling><Modern Man><Molecular><Molecular Interaction><Molecular Target><Murine><Mus><Mutagenesis><Mutagenesis Molecular Biology><N-terminal><NH2-terminal><NIH><National Institutes of Health><Nucleic Acids><Nutrient><Pathogenesis><Pathogenicity Factors><Pathway interactions><Pattern><Peripheral><Physiological Homeostasis><Prevalence><Process><Programmed Cell Death><Protein Trafficking><Proteins><Public Health><Receptor Cell><Ribosomes><Risk><Role><SOCS Gene><Signal Pathway><Signal Transduction><Signal Transduction Systems><Signaling><Site><Sorting><Suppressor of Cytokine Signaling><Suppressor of Cytokine Signaling Gene><Surface><Surface Plasmon Resonance><System><Systemic infection><T4SS><Testing><Therapeutic><Tick-Borne Diseases><Time><Transmembrane Protein><Transmembrane Protein Gene><Type IV Secretion System><Type IV Secretion System Pathway><United States National Institutes of Health><VHH><VHH antibody><Vacuole><Vesicle><Vibramycin><Virulence Factors><Work><aberrant folded protein><aberrant folded proteins><abnormal folded protein><abnormal folded proteins><alpha-6-Deoxyoxytetracycline><biological signal transduction><camelid antibody><camelid based antibody><camelid derived antibody><camelid derived fragment><camelid heavy chain only Abs><camelid immunoglobulin><camelid single chain antibody><camelid variable heavy chain><cell culture><cell cultures><design><designing><determine efficacy><developmental><disability><efficacy analysis><efficacy assessment><efficacy determination><efficacy evaluation><efficacy examination><endoplasmic reticulum stress><evaluate efficacy><examine efficacy><granulocyte><host response><immune system response><immunoresponse><in vivo><innate immune mechanisms><innovate><innovation><innovative><insight><knock-down><knockdown><light microscopy><lipid based nanoparticle><lipid nanoparticle><mRNA><membrane structure><misfolded protein><misfolded proteins><mortality><nanobodies><nanobody><new drug target><new druggable target><new pharmacotherapy target><new therapeutic approach><new therapeutic intervention><new therapeutic strategies><new therapeutic target><new therapy approaches><new therapy target><new treatment approach><new treatment strategy><novel><novel drug target><novel druggable target><novel pharmacotherapy target><novel therapeutic approach><novel therapeutic intervention><novel therapeutic strategies><novel therapeutic target><novel therapy approach><novel therapy target><overexpress><overexpression><pathogen><pathway><pharmacologic><prevent><preventing><prophylactic><protein transport><proteotoxic protein><proteotoxin><response><sdAb><secretory protein><single domain antibodies><social role><stress reduction><superresolution microscopy><tick-borne><tick-borne illness><tickborne><tickborne disease><tickborne illness><type 4 secretion system><uptake><variable heavy chain antibody>",
+        "pref_terms": "Affinity;Anaplasma;Anaplasma phagocytophilum;Anaplasmosis;Antibiotics;Apoptosis;Bacteria;Binding;C-terminal;CISH gene;Cell Culture Techniques;Cell model;Cells;Communicable Diseases;Cytoplasm;Data;Dependence;Development;Digestion;Disease;Doxycycline;Electron Microscopy;Emerging Communicable Diseases;Encapsulated;Endoplasmic Reticulum;Endothelial Cells;Family;Fluorescence Microscopy;Goals;Golgi Apparatus;HRX protein;Homeostasis;Human;Immune response;Immunologics;Infection;Innate Immune Response;Integral Membrane Protein;Intervention Strategies;Knowledge;Link;Lyme Disease;Mediating;Membrane;Messenger RNA;Mission;Modeling;Molecular;Molecular Target;Mus;Mutagenesis;N-terminal;Nucleic Acids;Nutrient;Pathogenesis;Pathway interactions;Pattern;Peripheral;Prevalence;Process;Proteins;Public Health;Receptor Cell;Ribosomes;Risk;Role;Signal Pathway;Signal Transduction;Site;Sorting;Surface;Surface Plasmon Resonance;System;Systemic infection;Testing;Therapeutic;Tick-Borne Diseases;Time;Type IV Secretion System Pathway;United States National Institutes of Health;Vacuole;Vesicle;Virulence Factors;Work;design;disability;efficacy evaluation;endoplasmic reticulum stress;granulocyte;in vivo;innate immune mechanisms;innovation;insight;knock-down;light microscopy;lipid nanoparticle;misfolded protein;mortality;nanobodies;new therapeutic target;novel;novel therapeutic intervention;overexpression;pathogen;pharmacologic;prevent;prophylactic;protein transport;response;secretory protein;stress reduction;superresolution microscopy;tick-borne;uptake",
+        "abstract_text": "An emerging infectious disease, human granulocytic anaplasmosis (HGA) caused by infection with Anaplasma\nphagocytophilum (Aph), is first in mortality among tickborne diseases, and second in prevalence only to Lyme\ndisease. Aph causes systemic infection by effectively replicating within membrane-bound inclusions/vacuoles of\ngranulocytes and endothelial cells by subverting innate immune mechanisms and exploiting host nutrients.\nTherefore, understanding Aph machinery and mechanisms essential for this process in the context of the host\nresponse will inform the design of potential therapeutic/prophylactic targets. Aph have a Type IV secretion\nsystem (T4SS), similar to the virB/virD system, which allows pathogens to manipulate host cells viaT4SS\neffectors. We identified a new T4SS effector, endoplasmic reticulum (ER)-Golgi exit site (ERES) protein of\nAnaplasma (EgeA), and two host cell receptors of EgeA that are ERES proteins: Transport and Golgi\norganization protein 1 (TANGO1) and Sec1 family domain-containing protein 1 (SCFD1). EgeA, TANGO1, and\nSCFD1 are all required for Aph infection of human cells and appear to localize to Aph inclusions. On the\nperipheral ER, ERES exists as specialized domains in a dispersed pattern. At ERESs, vesicles bud off and fuse\nwith cis-Golgi. TANGO1 proteins organize the early secretory pathway from the ER to cis-Golgi to sort cargoes\nthat are too bulky or secreted in volumes too great to use generic mechanisms. Thus, our first hypothesis is\nEgeA facilitates ER nutrient delivery to Aph inclusions by redirecting TANGO1 and SCFD1 protein transport/ER\nexit machinery to Aph inclusions. TANGO1 functions to relieve ER traffic jams due to bulky cargo retention at\nERES. Thus, our second hypothesis is EgeA alleviates ER stress via TANGO1-mediated ER protein exit. In this\nproposal, we will test these hypotheses in three major stages: In Aim 1 we will elucidate how EgeA hijacks\nTANGO1- and SCFD1-mediated protein transport machinery at ERES to deliver ER nutrients to Aph inclusions\nby assessing EgeA domains interacting with host molecules at ERES and inclusions and binding affinities of\nhost molecules and spatial topology between ERES and Aph inclusions, and EgeA-dependency of delivery. In\nAim 2 we will analyze how EgeA interacts with host protein components to modulate ER stress in Aph-infected\ncells and the unfolded protein response (UPR) signaling pathway. In Aim 3, we will test if EgeA functions and\nAph infection can be blocked by intracellular delivery of lipid nanoparticle-encapsulated anti-EgeA nanobody\nmRNA in cell culture and in mice. The proposed studies will be crucial to understanding biomolecular\nmechanisms of EgeA functions in Aph infection. Impact: By ascertaining how intracellular Aph acquires ER\nnutrients and modulates ER stress and the UPR, infection may be pharmacologically or immunologically\ninhibitable, yielding new and innovative approaches to reduce human risk of acquiring or developing severe\nHGA. Further, the results will reveal a mechanism of TANGO1 and SCFD1 modulation in ERES transport and\nER stress with an exogenous molecule, benefiting the broader fields of infectious diseases and ER homeostasis.",
+        "project_title": "Intracellular bacteria hijack ER-Golgi transport to facilitate infection",
+        "phr_text": "Project Narrative\nImportance to public health: An emerging tick-borne disease, human granulocytic anaplasmosis, is caused by\ninfection with Anaplasma phagocytophilum, which is an obligatory intracellular bacterium. The purpose of this\nproject is to understand how A. phagocytophilum acquire host nutrients and overcome host endoplasmic\nreticulum stress in order to infect human cells and cause disease. Ultimately, our results will fill a critical\nknowledge gap in the field of Anaplasma molecular pathogenesis via a thorough understanding of biomolecular\nmechanisms involved in intracellular nutrient uptake by Anaplasma, host cell innate immune responses, and\nconsequent disease. The study will explore a new therapeutic approach using intracellular nanobodies targeting\na key Anaplasma virulence factor.\nRelevance to NIH’s mission: Our work pertains to developing fundamental knowledge that will reduce the\nburden of human disability caused by infectious disease.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2026-04-01T00:00:00",
+        "budget_end": "2027-03-31T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "Non-SBIR/STTR",
+        "direct_cost_amt": 425956,
+        "indirect_cost_amt": 244925,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11296219",
+        "date_added": "2026-04-04T17:04:38"
+      }
+    },
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-1",
+      "source_record_id": "NIHR-0014-1",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-1"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 1,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "50242c88364d746620ffa6a07ddc48491892fbd33856e0643d21f3847e5597f4"
+      },
+      "raw_metadata": {
+        "appl_id": 11313227,
+        "subproject_id": null,
+        "fiscal_year": 2026,
+        "project_num": "1F31AI197469-01",
+        "project_serial_num": "AI197469",
+        "organization": {
+          "org_name": "TUFTS UNIVERSITY BOSTON",
+          "city": null,
+          "country": null,
+          "org_city": "BOSTON",
+          "org_country": "UNITED STATES",
+          "org_state": "MA",
+          "org_state_name": null,
+          "dept_type": "MICROBIOLOGY/IMMUN/VIROLOGY",
+          "fips_country_code": null,
+          "org_duns": [
+            "039318308"
+          ],
+          "org_ueis": [
+            "C1F5LNUF7W86"
+          ],
+          "primary_duns": "039318308",
+          "primary_uei": "C1F5LNUF7W86",
+          "org_fips": "US",
+          "org_ipf_code": "8422704",
+          "org_zipcode": "021111901",
+          "external_org_id": 8422704
+        },
+        "award_type": "1",
+        "activity_code": "F31",
+        "award_amount": 46302,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "1",
+          "activity_code": "F31",
+          "ic_code": "AI",
+          "serial_num": "197469",
+          "support_year": "01",
+          "full_support_year": "01",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 79327327,
+            "first_name": "Kee-Lee",
+            "middle_name": "",
+            "last_name": "Stocks",
+            "is_contact_pi": true,
+            "full_name": "Kee-Lee  Stocks",
+            "title": ""
+          }
+        ],
+        "contact_pi_name": "STOCKS, KEE-LEE ",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2026,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 46302.0,
+            "direct_cost_ic": 46302.0,
+            "indirect_cost_ic": 0.0
+          }
+        ],
+        "cong_dist": "MA-07",
+        "spending_categories": null,
+        "project_start_date": "2026-04-01T00:00:00",
+        "project_end_date": "2029-03-31T00:00:00",
+        "organization_type": {
+          "name": "GRADUATE SCHOOLS",
+          "code": "10",
+          "is_other": true
+        },
+        "geo_lat_lon": {
+          "lon": -71.06149,
+          "lat": 42.3498
+        },
+        "opportunity_number": "PA-23-272",
+        "full_study_section": {
+          "srg_code": "ZRG1",
+          "srg_flex": null,
+          "sra_designator_code": "F07A",
+          "sra_flex_code": "W",
+          "group_code": "20",
+          "name": "Special Emphasis Panel[ZRG1 F07A-W (20)]"
+        },
+        "award_notice_date": "2026-03-30T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "TR",
+        "core_project_num": "F31AI197469",
+        "terms": "<AIDS Virus><Acquired Immune Deficiency Syndrome Virus><Acquired Immunodeficiency Syndrome Virus><Affect><American><Anti-Hypertensive Agents><Anti-Hypertensive Drugs><Anti-Hypertensives><Antibiotic Agents><Antibiotic Drugs><Antibiotics><Autoregulation><B burgdorferi><B. burgdorferi><Bacteria><Bite><Borrelia burgdorferi><Borrelia burgdorferi sensu stricto><Borreliella burgdorferi><C. difficile colitis><Calcium><Calcium Channel Blockers><Calcium Channel Blocking Drugs><Calcium Channel Inhibition><Cell Body><Cell Death><Cell Death Induction><Cell division><Cells><Chemical Structure><Chemotaxis><Clostridioides difficile colitis><Clostridium difficile colitis><Computational toolkit><Data><Deer><Development><Disease><Disorder><Divalent Cations><Doctor of Philosophy><Dose><Doxycycline><Drugs><E coli><E. coli><Enzyme Gene><Enzymes><Escherichia coli><Exogenous Calcium Antagonists><Exogenous Calcium Blockaders><Exogenous Calcium Inhibitors><Exposure to><Future><Gene Deletion><Gene Expression><Gene Transcription><Generalized Growth><Genes><Genetic Transcription><Genome><Goals><Grant><Growth><HIV><Homeostasis><Human><Human Immunodeficiency Viruses><Human Microbiome><Hypotensive Agent><Hypotensive Drugs><ICP-MS><Individual><Inductively Coupled Plasma Mass Spectrometry><Ixodida><Knock-out><Knockout><LAV-HTLV-III><Laboratories><Lyme Borreliosis><Lyme Disease><Lyme Disease Spirochete><Lyme Disease Vaccines><Lymphadenopathy-Associated Virus><M tb><M tuberculosis><M. tb><M. tuberculosis><Malaria><Manganese><Measures><Medication><Metals><Methods><Miscellaneous Antibiotic><Mn element><Modeling><Modern Man><Morphology><Multimodal ML><Multimodal machine learning><Multiomic Data><Mycobacterium tuberculosis><Organism><Paludism><Pathogenesis><Pathway interactions><Patient Education><Patient Instruction><Patient Training><Persons><Ph.D.><PhD><Pharmaceutical Preparations><Phenotype><Physiological Homeostasis><Plasmodium Infections><PrEP><Predisposition><Preventative measure><Prevention><Preventive measure><Prophylactic treatment><Prophylaxis><Pseudomembranous Colitis><Quantitative RTPCR><Quantitative Reverse Transcriptase PCR><RNA Expression><RNA Seq><RNA sequencing><RNAseq><Resistance><Risk><S aureus><S. aureus><Sales><Screening Result><Staph aureus><Staphylococcus aureus><Structure><Supplementation><Susceptibility><System><Target Populations><Testing><Ticks><Tissue Growth><Training><Transcription><United States><Vaccines><Vibramycin><Virus-HIV><Work><alpha-6-Deoxyoxytetracycline><anti-hypertension><anti-microbial agent><anti-microbial drug><autoencoder><autoencoding neural network><calcium antagonist><cofactor><computational toolbox><computational tools><computational toolset><computerized tools><data pipeline><developmental><differential expression><differentially expressed><disease prevention><disorder prevention><drug action><drug mechanism><drug/agent><gene deletion mutation><high risk><human-associated microbiome><hypertension treatment><interest><knock-down><knockdown><living system><lyme spirochete><lyme vaccine><model building><mtb><multimodal learning><multiomics><multiple omic data><multiple omics><mutant><necrocytosis><new vaccines><next generation vaccines><novel><novel vaccines><ontogeny><panomics><pathway><pre-exposure prophylaxis><prevent><preventing><qRTPCR><repurposing><resistant><response><side effect><success><tool><transcriptional differences><transcriptome sequencing><transcriptomic sequencing>",
+        "pref_terms": "Affect;American;Anti-Hypertensive Agents;Antibiotics;Bacteria;Bite;Borrelia burgdorferi;Calcium;Calcium Channel Blockers;Calcium Channel Inhibition;Cell Death;Cell Death Induction;Cell division;Cells;Chemical Structure;Chemotaxis;Data;Deer;Development;Disease;Divalent Cations;Doctor of Philosophy;Dose;Doxycycline;Enzymes;Escherichia coli;Exposure to;Future;Gene Deletion;Gene Expression;Genes;Genetic Transcription;Genome;Goals;Grant;Growth;HIV;Homeostasis;Human;Human Microbiome;Individual;Inductively Coupled Plasma Mass Spectrometry;Knock-out;Laboratories;Lyme Disease;Lyme Disease Vaccines;Malaria;Manganese;Measures;Metals;Methods;Modeling;Morphology;Multiomic Data;Mycobacterium tuberculosis;Organism;Pathogenesis;Pathway interactions;Patient Education;Persons;Pharmaceutical Preparations;Phenotype;Predisposition;Prevention;Preventive measure;Prophylactic treatment;Pseudomembranous Colitis;Quantitative Reverse Transcriptase PCR;Resistance;Risk;Sales;Screening Result;Staphylococcus aureus;Structure;Supplementation;System;Target Populations;Testing;Ticks;Training;United States;Vaccines;Work;anti-microbial drug;autoencoder;cofactor;computerized tools;data pipeline;differential expression;disorder prevention;drug action;drug mechanism;high risk;hypertension treatment;interest;knock-down;model building;multimodal learning;multiple omics;mutant;novel;novel vaccines;pre-exposure prophylaxis;prevent;repurposing;response;side effect;success;tool;transcriptome sequencing",
+        "abstract_text": "PROJECT SUMMARY/ABSTRACT\nBorrelia burgdorferi is the cause of over 475,000 cases of Lyme disease annually in the United States. There\nare currently no preventative measures for Lyme disease beyond tick avoidance. To provide additional means to\nprevent new Lyme disease cases, this grant aims to identify a narrow spectrum antibiotic that can be used for\npre-exposure prophylaxis for Lyme disease. I have previously conducted a high-throughput compound screen\nand identified four calcium channel blockers (CCB) that inhibit B. burgdorferi growth. These CCBs are from two\ndifferent classes of CCBs and have different chemical structures. I further showed the CCBs are non-inhibitory\nin E. coli and S. aureus, suggesting that these compounds act as a narrow-spectrum antimicrobial agent that\ncould be deployed against B. burgdorferi. The objective of this proposal is to identify the mechanism of action in\nB. burgdorferi of the CCBs identified from my screen. I hypothesize that the calcium channel blockers disrupt\ncalcium and/or divalent cations homeostasis in B. burgdorferi leading to inhibition of growth. First, I will determine\nif excess divalent cation supplementation is able to overcome the inhibitory action of the CCBs and if the CCBs\nalter intracellular divalent cation concentrations. B. burgdorferi has two known metal transporters that will be\ninvestigated as possible targets of the CCBs. For the second aim, I will use transcriptional and morphological\nprofiling to develop a machine learning multi-modal autoencoder to characterize compound-induced cell death.\nThis model uses a training set of cell responses to known antibiotics and can be used to identify pathways of\ninterest for compounds of unknown mechanisms. This model will be used to identify possible mechanisms of\naction of the CCBs. With the information from the first and second aim, I will validate possible targets as the\nmechanism of inhibition of CCBs through qRT-PCR and gene deletion. This proposal aims to characterize CCBs\nas this class of drugs could be developed into pre-exposure prophylaxis. Additionally, these studies will also\ndevelop a computational tool to help in the identification of mechanisms of action of novel compounds. Together,\nthese advances will aid in the development of new pre-exposure methods to prevent Lyme disease, which could\nprove to be invaluable in disrupting the continuous rise of annual cases in the United States.",
+        "project_title": "Understanding the mechanism of action of repurposed antihypertensive drugs against Borrelia burgdorferi",
+        "phr_text": "PROJECT NARRATIVE\nThere are currently no agents for pre-exposure prophylaxis/prevention of Lyme disease. I have identified a\npotential class of widely used anti-hypertensive agents that may be repurposed for prevention of Lyme disease.\nThe goal of this project is to better understand how these drugs may act to prevent Lyme disease.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2026-04-01T00:00:00",
+        "budget_end": "2027-03-31T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "Training, Individual",
+        "direct_cost_amt": 46302,
+        "indirect_cost_amt": 0,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11313227",
+        "date_added": "2026-04-18T17:04:06"
+      }
+    },
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-2",
+      "source_record_id": "NIHR-0014-2",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-2"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 2,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "97479889fbcf63257ca1c1b69372140a81d45989bd94529c39456405edb070a4"
+      },
+      "raw_metadata": {
+        "appl_id": 11145963,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "5R01AI152208-05",
+        "project_serial_num": "AI152208",
+        "organization": {
+          "org_name": "STATE UNIVERSITY NEW YORK STONY BROOK",
+          "city": null,
+          "country": null,
+          "org_city": "STONY BROOK",
+          "org_country": "UNITED STATES",
+          "org_state": "NY",
+          "org_state_name": null,
+          "dept_type": "MICROBIOLOGY/IMMUN/VIROLOGY",
+          "fips_country_code": null,
+          "org_duns": [
+            "804878247"
+          ],
+          "org_ueis": [
+            "M746VC6XMNH9"
+          ],
+          "primary_duns": "804878247",
+          "primary_uei": "M746VC6XMNH9",
+          "org_fips": "US",
+          "org_ipf_code": "5992612",
+          "org_zipcode": "117943362",
+          "external_org_id": 5992612
+        },
+        "award_type": "5",
+        "activity_code": "R01",
+        "award_amount": 504201,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "5",
+          "activity_code": "R01",
+          "ic_code": "AI",
+          "serial_num": "152208",
+          "support_year": "05",
+          "full_support_year": "05",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 11151529,
+            "first_name": "Hwan Keun",
+            "middle_name": "",
+            "last_name": "Kim",
+            "is_contact_pi": true,
+            "full_name": "Hwan Keun  Kim",
+            "title": "ASSOCIATE PROFESSOR"
+          }
+        ],
+        "contact_pi_name": "KIM, HWAN KEUN ",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 504201.0,
+            "direct_cost_ic": 320250.0,
+            "indirect_cost_ic": 183951.0
+          }
+        ],
+        "cong_dist": "NY-01",
+        "spending_categories": null,
+        "project_start_date": "2021-09-01T00:00:00",
+        "project_end_date": "2027-08-31T00:00:00",
+        "organization_type": {
+          "name": "SCHOOLS OF MEDICINE",
+          "code": "10",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -73.125169,
+          "lat": 40.914561
+        },
+        "opportunity_number": "RFA-AI-19-037",
+        "full_study_section": {
+          "srg_code": "ZAI1",
+          "srg_flex": null,
+          "sra_designator_code": "FDS",
+          "sra_flex_code": "M",
+          "group_code": "M1",
+          "name": "ZAI1-FDS-M(M1)"
+        },
+        "award_notice_date": "2025-08-15T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "RP",
+        "core_project_num": "R01AI152208",
+        "terms": "<Active immunity><Address><Anabolism><Anaplasmosis><Annual Reports><Antibiotic Agents><Antibiotic Drugs><Antibiotic Therapy><Antibiotic Treatment><Antibiotics><Antibodies><Antigens><Antisera><Attenuated><Attenuated Vaccines><Babesia infection><Babesia parasite infection><Babesiosis><Bacteria><Bacterial Attachment Site><Bacterial Infections><Bacterial O Antigen><Blood Vessels><Boutonneuse Fever><CRM-197><CRM197><Carbohydrates><Carbol><Carbolic Acid><Case Study><Cell Body><Cells><Centers for Disease Control><Centers for Disease Control and Prevention><Centers for Disease Control and Prevention (U.S.)><Cessation of life><Chemicals><Clinical><Clinical Treatment Moab><Conjugate Vaccines><Cross Reactions><Data><Death><Defect><Development><Diagnosis><Diagnostic tests><Disease><Disorder><Doxycycline><Ehrlichia infection><Ehrlichiosis><Endothelial Cells><Enzyme Gene><Enzymes><Epidemic><Exhibits><F tularensis infection><F. tularensis infection><FDA approved><Formalin><Francisella infection><Francisella tularensis infection><Generations><Genes><Genetic study><Genetics-Mutagenesis><Glycans><Goals><HK2><HK2 gene><HKII><HXK2><Habitats><Health><Human><Hydroxybenzene><Immune><Immune Sera><Immune response><Immunes><Immunity><Immunization><In Vitro><Inactivated Vaccines><Inactivated Virus Vaccine><Incidence><Individual><Infection><Invaded><Ixodida><Killed Vaccines><Knowledge><Laboratories><Life Cycle><Life Cycle Stages><Lipopolysaccharides><Live-attenuated Vaccine><Lyme Borreliosis><Lyme Disease><Mediating><Mediterranean Spotted Fever><Mice><Mice Mammals><Miscellaneous Antibiotic><Modeling><Modern Man><Molecular><Monoclonal Antibodies><Morbidity><Morbidity - disease rate><Murine><Mus><Mutagenesis><Mutagenesis Molecular Biology><O Antigens><O-Specific Polysaccharides><Operon><Outcome><Passive Immunity><Pathogenesis><Pathogenicity><Pathology><Patients><Phenols><Piroplasmosis><Polysaccharides><Preventive><Proteus vulgaris><Public Health><Publishing><R conorii><R parkeri><R prowazekii><R rickettsii><R. conorii><R. parkeri><R. prowazekii><R. rickettsii><Rickettsia><Rickettsia Infections><Rickettsia conorii><Rickettsia parkeri><Rickettsia prowazekii><Rickettsia rickettsii><Rickettsial Infectious Disease><Rickettsial Infectious Disorder><Rickettsial Vaccines><Rickettsiales><Rickettsiales disease><Rickettsiosis><Rocky Mountain Spotted Fever><Role><Safety><Sao Paulo Typhus><Serology><Serotyping><Subunit Vaccines><Technology><Testing><Tick-Borne Diseases><Ticks><Tularemia><Typhus><United States><United States Centers for Disease Control><United States Centers for Disease Control and Prevention><Vaccines><Variant><Variation><Vibramycin><Virulence><Work><Yolk Sac><adaptive immune response><alpha-6-Deoxyoxytetracycline><antibody based detection><antibody detection><arthropod transmission><arthropod transmitted><arthropod-borne><arthropodborne><attenuate><attenuates><bacteria infection><bacterial attachment><bacterial disease><bacterial disease treatment><bacterial infectious disease treatment><bactericidal><bactericide><biosynthesis><case report><chemical synthesis><cross reacting material 197><cross reactivity><detect antibodies><develop a vaccine><develop vaccines><development of a vaccine><developmental><egg><host response><immune serum><immune system response><immunogen><immunoresponse><in vitro Assay><infected with Babesia><infected with Ehrlichia><infected with F tularensis><infected with F. tularensis><infected with Francisella tularensis><life course><live vaccine><live vaccines><mAbs><microorganism><monoclonal Abs><mortality><mutant><pathogen><protective efficacy><response><rickettsial disease><social role><spotted fever><structural determinants><structural factors><tick bite><tick mediated transmission><tick transmission><tick transmitted><tick-borne><tick-borne illness><tick-borne pathogen><tickborne><tickborne disease><tickborne illness><tickborne pathogen><treatment choice><vaccine development><vaccine efficacy><vascular><vector><vitelline sac>",
+        "pref_terms": "Active immunity;Address;Anabolism;Anaplasmosis;Annual Reports;Antibiotic Therapy;Antibiotics;Antibodies;Antigens;Attenuated;Attenuated Vaccines;Babesiosis;Bacteria;Bacterial Attachment Site;Bacterial Infections;Blood Vessels;Boutonneuse Fever;Carbohydrates;Case Study;Cells;Centers for Disease Control and Prevention (U.S.);Cessation of life;Chemicals;Clinical;Conjugate Vaccines;Cross Reactions;Data;Defect;Development;Diagnosis;Diagnostic tests;Disease;Doxycycline;Ehrlichiosis;Endothelial Cells;Enzymes;Epidemic;Exhibits;FDA approved;Formalin;Generations;Genes;Genetic study;Goals;HK2 gene;Habitats;Health;Human;Immune;Immune Sera;Immune response;Immunity;Immunization;In Vitro;Inactivated Vaccines;Incidence;Individual;Infection;Invaded;Knowledge;Laboratories;Life Cycle Stages;Lipopolysaccharides;Lyme Disease;Mediating;Modeling;Molecular;Monoclonal Antibodies;Morbidity - disease rate;Mus;Mutagenesis;O Antigens;Operon;Outcome;Passive Immunity;Pathogenesis;Pathogenicity;Pathology;Patients;Phenols;Polysaccharides;Preventive;Proteus vulgaris;Public Health;Publishing;Rickettsia;Rickettsia Infections;Rickettsia conorii;Rickettsia parkeri;Rickettsia prowazekii;Rickettsia rickettsii;Rickettsial Vaccines;Rocky Mountain Spotted Fever;Role;Safety;Serology;Serotyping;Subunit Vaccines;Technology;Testing;Tick-Borne Diseases;Ticks;Tularemia;Typhus;United States;Vaccines;Variant;Virulence;Work;Yolk Sac;adaptive immune response;antibody detection;arthropod-borne;bactericide;chemical synthesis;cross reacting material 197;cross reactivity;egg;in vitro Assay;microorganism;mortality;mutant;pathogen;protective efficacy;response;spotted fever;structural determinants;tick bite;tick transmission;tick-borne;tick-borne pathogen;treatment choice;vaccine development;vaccine efficacy;vector",
+        "abstract_text": "ABSTRACT\nA recent study from the Centers for Disease Control and Prevention revealed a pressing health crisis for the\nUnited States: the number of reported cases of tick-borne diseases has increased significantly during the past\ntwo decades. Importantly, the reported annual incidence captures only a small fraction of the real number of\nindividuals infected with tick-borne pathogens. The broad spectrum of clinically important tick-borne diseases\nincludes Lyme disease, anaplasmosis, ehrlichiosis, tularemia, babesiosis, and Spotted Fever rickettsiosis.\nSpotted Fever group rickettsiae include R. rickettsii (Rocky Mountain Spotted Fever, RMSF), R. conorii\n(Mediterranean Spotted Fever), and R. parkeri (Rickettsia parkeri rickettsiosis) as well as many newly\ndiscovered Rickettsia species with unknown pathogenicity. Doxycycline is considered as the antibiotic of\nchoice for the treatment of tick-borne rickettsiosis; however, delay in diagnosis and antibiotic treatment can\nlead to severe disease and death. The search for long-term immune protection against invasive rickettsial\ndiseases (RMSF and epidemic typhus caused by R. prowazekii) has been a goal since the discovery of the\ncausative microorganisms by Dr. Howard T. Ricketts. However, whole cell live-attenuated or formalin/phenol-\ninactivated vaccines generate limited protective immune responses in humans and, because of safety\nconcerns, are no longer considered for rickettsial vaccine development. We have developed kkaebi transposon\nmutagenesis technology and studied the genetic requirements of the rickettsial intracellular life-cycle (bacterial\nattachment to and invasion into host cells, escape from endo-lysosome, intracellular replication, and release\nfrom host cells). This work determined that the polysaccharide synthesis operon (pso) is responsible for O-\nantigen biosynthesis, contributes to pathogenesis, and is essential for the development of bactericidal Weil–\nFelix antibodies. Immunization with carbohydrate conjugate vaccines, including the capsular polysaccharide or\nthe O-antigen of lipopolysaccharide, generated serotype-specific protective immunity that correlated with the\ninduction of bactericidal antibodies. This proposal aims to understand the adaptive immune responses to\ninvasive rickettsial infections and to determine the contribution of rickettsial O-antigen conjugate vaccine and\nWeil–Felix antibodies toward protective immunity against tick-borne rickettsial infections.\n!",
+        "project_title": "Molecular basis of immunity to tick-borne rickettsioses",
+        "phr_text": "NARRATIVE\nTick-borne rickettsial infections cause significant morbidity and mortality in healthy individuals as the natural\nhabitat of the vector continues to expand in the United States; however, vaccines for tick-borne rickettsial\ninfections are not available. To address this critical need, this proposal will reveal the molecular basis for\nprotective immunity against tick-borne rickettsioses and determine the vaccine efficacy of the O-antigen\nconjugate vaccine and O-antigen-specific (Weil–Felix) monoclonal antibodies.\n!",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2025-09-01T00:00:00",
+        "budget_end": "2027-08-31T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "Non-SBIR/STTR",
+        "direct_cost_amt": 320250,
+        "indirect_cost_amt": 183951,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11145963",
+        "date_added": "2025-09-07T22:56:09"
+      }
+    },
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-3",
+      "source_record_id": "NIHR-0014-3",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-3"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 3,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "c622ac28aa7d43143f554a3c552065313a9626e9bc93045274e7c1b06f44fca9"
+      },
+      "raw_metadata": {
+        "appl_id": 11163246,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "4R01AI151180-06",
+        "project_serial_num": "AI151180",
+        "organization": {
+          "org_name": "BOSTON CHILDREN'S HOSPITAL",
+          "city": null,
+          "country": null,
+          "org_city": "BOSTON",
+          "org_country": "UNITED STATES",
+          "org_state": "MA",
+          "org_state_name": null,
+          "dept_type": null,
+          "fips_country_code": null,
+          "org_duns": [
+            "076593722"
+          ],
+          "org_ueis": [
+            "Z1L9F1MM1RY3"
+          ],
+          "primary_duns": "076593722",
+          "primary_uei": "Z1L9F1MM1RY3",
+          "org_fips": "US",
+          "org_ipf_code": "1504801",
+          "org_zipcode": "021155724",
+          "external_org_id": 1504801
+        },
+        "award_type": "4N",
+        "activity_code": "R01",
+        "award_amount": 1701059,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "4",
+          "activity_code": "R01",
+          "ic_code": "AI",
+          "serial_num": "151180",
+          "support_year": "06",
+          "full_support_year": "06",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 8313991,
+            "first_name": "LISE",
+            "middle_name": "E.",
+            "last_name": "NIGROVIC",
+            "is_contact_pi": true,
+            "full_name": "LISE E. NIGROVIC",
+            "title": "ATTENDING PHYSICIAN"
+          }
+        ],
+        "contact_pi_name": "NIGROVIC, LISE E.",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 1701059.0,
+            "direct_cost_ic": 1506885.0,
+            "indirect_cost_ic": 194174.0
+          }
+        ],
+        "cong_dist": "MA-07",
+        "spending_categories": null,
+        "project_start_date": "2021-09-01T00:00:00",
+        "project_end_date": "2027-08-31T00:00:00",
+        "organization_type": {
+          "name": "Independent Hospitals",
+          "code": "30",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -71.104964,
+          "lat": 42.337481
+        },
+        "opportunity_number": "PA-20-185",
+        "full_study_section": {
+          "srg_code": "CRFS",
+          "srg_flex": null,
+          "sra_designator_code": null,
+          "sra_flex_code": null,
+          "group_code": null,
+          "name": "Clinical Research and Field Studies of Infectious Diseases Study Section[CRFS]"
+        },
+        "award_notice_date": "2025-08-04T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "RP",
+        "core_project_num": "R01AI151180",
+        "terms": "<0-11 years old><21+ years old><Accounting><Adult><Adult Human><Affect><After Care><After-Treatment><Aftercare><Antibiotic Agents><Antibiotic Drugs><Antibiotics><Biometrics><Biometry><Biostatistics><Boston><Catheters><Cefatriaxone><Ceftriaxone><Cephalalgia><Cephalgia><Cephalic><Cephalodynia><Child><Child Care><Child Youth><Childhood><Children (0-21)><Children's Hospital><Clinical><Collaborations><Communicable Diseases><Complication><Cranial><Cranial Pain><Data Coordinating Center><Data Coordination Center><Diagnosis><Doxycycline><Drugs><Enrollment><Equipment and supply inventories><Europe><European><Fatigue><Fever><Goals><Grant><Guidelines><Head Pain><Headache><Health Care Costs><Health Costs><IRB><IRBs><Infectious Diseases><Infectious Disorder><Informed Consent><Institutional Review Boards><Interview><Intravenous><Inventory><Knowledge><Lack of Energy><Lyme Borreliosis><Lyme Disease><Lyme disease diagnosis><Measurement><Medication><Medicine><Meningitis><Methods><Miscellaneous Antibiotic><Neuritis><Neurologic><Neurologic Manifestations><Neurologic Signs and Symptoms><Neurologic Symptoms><Neurological><Neurological Manifestations><Neurological Signs and Symptoms><Observation research><Observation study><Observational Study><Observational research><Oral><Outcome><Parents><Patient-Centered Care><Patients><Pediatric Hospitals><Peripheral Neuritis><Pharmaceutical Preparations><Puericulture><Pyrexia><QOL><QOL improvement><Qualitative Methods><Quality of life><Recommendation><Recovery><Research><Resolution><Risk><Shapes><Survey Instrument><Surveys><Symptoms><Time><Treatment Effectiveness><Universities><Update><Utah><Vibramycin><Work><adulthood><alpha-6-Deoxyoxytetracycline><clinical practice><comparative effectiveness><comparative effectiveness study><cost><design><designing><drug/agent><enroll><experience><febrile><febris><head ache><improved><improvements in QOL><improvements in quality of life><innovate><innovation><innovative><instrument><kids><multidisciplinary><neural manifestation><parent><pediatric><post treatment><preference><prospective><qualitative reasoning><quality of life improvement><recruit><resolutions><shared decision making><side effect><success><youngster>",
+        "pref_terms": "Accounting;Adult;Affect;Aftercare;Antibiotics;Biometry;Boston;Catheters;Ceftriaxone;Cephalic;Child;Child Care;Childhood;Clinical;Collaborations;Communicable Diseases;Complication;Data Coordinating Center;Diagnosis;Doxycycline;Enrollment;Equipment and supply inventories;Europe;European;Fatigue;Fever;Goals;Grant;Guidelines;Headache;Health Care Costs;Informed Consent;Institutional Review Boards;Interview;Intravenous;Knowledge;Lyme Disease;Lyme disease diagnosis;Measurement;Medicine;Meningitis;Methods;Neuritis;Neurologic;Neurologic Symptoms;Observational Study;Oral;Outcome;Parents;Patient-Centered Care;Patients;Pediatric Hospitals;Pharmaceutical Preparations;Qualitative Methods;Quality of life;Recommendation;Recovery;Research;Resolution;Risk;Shapes;Surveys;Symptoms;Time;Treatment Effectiveness;Universities;Update;Utah;Work;clinical practice;comparative effectiveness;comparative effectiveness study;cost;design;experience;improved;innovation;instrument;multidisciplinary;preference;prospective;quality of life improvement;recruit;shared decision making;side effect;success",
+        "abstract_text": "PROJECT SUMMARY\nWith more than 300,000 new cases of Lyme disease each year in the U.S., approximately half of new cases\noccur in children. Children with Lyme meningitis, a clinical manifestation of Lyme disease, present with\nheadache, fever and fatigue. Previously, an intravenous antibiotic (ceftriaxone) was the recommended first\ntreatment for Lyme meningitis, but it is associated with a high rate of complications related either to the long-\nterm intravenous catheter placed for medication delivery or to complications from the medicine itself. Based on\nEuropean trials conducted in adults and small observational pediatric studies, some clinicians have begun\ntreating Lyme meningitis in children with an oral antibiotic (doxycycline), avoiding the complications associated\nwith intravenous ceftriaxone and reducing health care costs.\nOur first goal is to compare oral doxycycline to intravenous ceftriaxone for the treatment of Lyme meningitis,\nwith a focus on both short-term recovery and long-term quality of life. Our second goal is to examine patient,\nparent and clinician preferences to inform shared decision-making about Lyme meningitis treatments.\nTo accomplish our goals, we propose a comprehensive pediatric Lyme meningitis study, enrolling children at\n20 U.S. centers located in regions of the U.S. where Lyme disease is endemic. Treatment decisions will be\nmade by the child’s doctors, per usual practice, and we will obtain informed consent to follow the outcomes\nover the following six months. We will enroll a total of 210 children with Lyme meningitis to determine whether\noral doxycycline is not inferior to intravenous ceftriaxone for the treatment of Lyme meningitis in children. We\nwill interview patients, parents and clinicians to gain a nuanced understanding of the factors that shape\ntreatment decisions. The overall impact of this study will be to inform the best practices for the treatment of\nchildren with Lyme meningitis accounting for the preferences of key stake holders.",
+        "project_title": "Comparative effectiveness and complications of intravenous ceftriaxone compared with oral doxycycline in Lyme meningitis",
+        "phr_text": "PROJECT NARRATIVE\nThis comparative effectiveness study will 1) determine if oral doxycycline is not inferior to intravenous\nceftriaxone for treating children with Lyme meningitis and 2) identify the factors that patients, parents and\nclinicians use to guide treatment decisions. Success of this study would comprehensively improve the quality\nand patient-centered care for children with Lyme meningitis.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2025-09-01T00:00:00",
+        "budget_end": "2027-08-31T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "Non-SBIR/STTR",
+        "direct_cost_amt": 1506885,
+        "indirect_cost_amt": 194174,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11163246",
+        "date_added": "2025-09-07T22:56:09"
+      }
+    },
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-4",
+      "source_record_id": "NIHR-0014-4",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-4"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 4,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "69ef4c741e04dc0a0458b15cc84f4a094e64e7537cd96f14b6b68ff153c107e3"
+      },
+      "raw_metadata": {
+        "appl_id": 11142620,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "5R01AI175417-03",
+        "project_serial_num": "AI175417",
+        "organization": {
+          "org_name": "HUNTER COLLEGE",
+          "city": null,
+          "country": null,
+          "org_city": "NEW YORK",
+          "org_country": "UNITED STATES",
+          "org_state": "NY",
+          "org_state_name": null,
+          "dept_type": "CHEMISTRY",
+          "fips_country_code": null,
+          "org_duns": [
+            "620127915"
+          ],
+          "org_ueis": [
+            "EK93EZLLBSC4"
+          ],
+          "primary_duns": "620127915",
+          "primary_uei": "EK93EZLLBSC4",
+          "org_fips": "US",
+          "org_ipf_code": "1605019",
+          "org_zipcode": "100655024",
+          "external_org_id": 1605019
+        },
+        "award_type": "5",
+        "activity_code": "R01",
+        "award_amount": 552686,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "5",
+          "activity_code": "R01",
+          "ic_code": "AI",
+          "serial_num": "175417",
+          "support_year": "03",
+          "full_support_year": "03",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 9288750,
+            "first_name": "Maria",
+            "middle_name": "",
+            "last_name": "Gomes-Solecki",
+            "is_contact_pi": false,
+            "full_name": "Maria  Gomes-Solecki",
+            "title": ""
+          },
+          {
+            "profile_id": 8436989,
+            "first_name": "WEIGANG",
+            "middle_name": "",
+            "last_name": "QIU",
+            "is_contact_pi": false,
+            "full_name": "WEIGANG  QIU",
+            "title": "ASSOCIATE PROFESSOR"
+          },
+          {
+            "profile_id": 9762203,
+            "first_name": "Brian",
+            "middle_name": "Matthew",
+            "last_name": "Zeglis",
+            "is_contact_pi": true,
+            "full_name": "Brian Matthew Zeglis",
+            "title": "PROFESSOR"
+          }
+        ],
+        "contact_pi_name": "ZEGLIS, BRIAN MATTHEW",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 552686.0,
+            "direct_cost_ic": 432986.0,
+            "indirect_cost_ic": 119700.0
+          }
+        ],
+        "cong_dist": "NY-12",
+        "spending_categories": null,
+        "project_start_date": "2023-09-19T00:00:00",
+        "project_end_date": "2028-07-31T00:00:00",
+        "organization_type": {
+          "name": "SCHOOLS OF ARTS AND SCIENCES",
+          "code": "10",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -73.965182,
+          "lat": 40.768737
+        },
+        "opportunity_number": "PA-20-185",
+        "full_study_section": {
+          "srg_code": "ZRG1",
+          "srg_flex": null,
+          "sra_designator_code": "ISB",
+          "sra_flex_code": "C",
+          "group_code": "03",
+          "name": "Special Emphasis Panel[ZRG1-ISB-C(03)M]"
+        },
+        "award_notice_date": "2025-07-15T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "RP",
+        "core_project_num": "R01AI175417",
+        "terms": "<Affect><Affinity><After Care><After-Treatment><Aftercare><Antibiotic Therapy><Antibiotic Treatment><Area><Autoradiography><B burgdorferi><B burgdorferi sensu lato><B. burgdorferi><B. burgdorferi sensu lato><Bacteria><Basic Research><Basic Science><Binding><Biological><Biological Markers><Biological Testing><Black-legged Tick><Borrelia><Borrelia burgdorferi><Borrelia burgdorferi Group><Borrelia burgdorferi sensu lato><Borrelia burgdorferi sensu stricto><Borreliella><Borreliella burgdorferi><Cell Surface Antigens><Centers for Disease Control><Centers for Disease Control and Prevention><Centers for Disease Control and Prevention (U.S.)><Chemicals><Clinic><Clinical><Clinical Management><Clinical Research><Clinical Study><Clinical Treatment Moab><Data><Dedications><Deer Tick><Development><Diagnosis><Diagnostic><Disease><Disorder><Doxycycline><Drug Kinetics><Dysfunction><Evaluation><Functional disorder><Health Care Costs><Health Costs><Histology><I scapularis><I. scapularis><Image><Immuno-PET><ImmunoPET><Immunoconjugates><Immunohistochemistry><Immunohistochemistry Cell/Tissue><Immunohistochemistry Staining Method><Immunological Surface Markers><In Vitro><Infection><Investigation><Ix scalpularis><Ix. scapularis><Ixodes dammini><Ixodes scapularis><Ixodida><Label><Laboratories><Lyme Borreliosis><Lyme Disease><Lyme Disease Spirochete><Lyme disease diagnosis><Mercaptans><Mercapto Compounds><Mice><Mice Mammals><Midwest><Midwest U.S.><Midwest US><Midwestern United States><Modeling><Molecular Interaction><Monitor><Monoclonal Antibodies><Morbidity><Morbidity - disease rate><Murine><Mus><Order Spirochaetales><PET><PET Scan><PET imaging><PETSCAN><PETT><Performance><Persons><Pharmacokinetics><Physiopathology><Positron Emission Tomography Medical Imaging><Positron Emission Tomography Scan><Positron-Emission Tomography><Post Treatment Lyme Disease Syndrome><Proteins><Public Health><Rad.-PET><Radioautography><Radioimmunoconjugate><Radiolabeled Antibodies><Radiopharmaceutical Compound><Radiopharmaceuticals><Reporting><Research><Risk><Sensitivity and Specificity><Site><Specificity><Spirochaetales><Spirochetes><Sulfhydryl Compounds><Surface><Surface Antigens><Techniques><Therapeutic><Thiols><Tick-Borne Diseases><Ticks><Time><Transmission><United States><United States Centers for Disease Control><United States Centers for Disease Control and Prevention><VHH><VHH antibody><Vaccination><Vaccine Clinical Trial><Validation><Variant><Variation><Vector-borne disease><Vector-borne infectious disease><Vector-transmitted disease><Vector-transmitted infectious disease><Vibramycin><Visualization><Work><alpha-6-Deoxyoxytetracycline><bacterial disease treatment><bacterial infectious disease treatment><bio-markers><biologic><biologic marker><biomarker><blacklegged tick><borrelial><camelid antibody><camelid based antibody><camelid derived antibody><camelid derived fragment><camelid heavy chain only Abs><camelid immunoglobulin><camelid single chain antibody><camelid variable heavy chain><clinical development><clinical imaging><determine efficacy><developmental><disease model><disorder model><efficacy analysis><efficacy assessment><efficacy determination><efficacy evaluation><efficacy examination><evaluate efficacy><examine efficacy><fighting><imaging><imaging agent><imaging probe><immune-PET><in vivo><longitudinal positron emission tomography><lyme spirochete><mAbs><maltreatment><member><mistreatment><molecular imaging><molecule imaging><monoclonal Abs><mouse model><murine model><nanobodies><nanobody><new drug treatments><new drugs><new pharmacological therapeutic><new technology><new therapeutics><new therapy><new vaccines><next generation therapeutics><next generation vaccines><non-invasive imaging><noninvasive imaging><novel><novel drug treatments><novel drugs><novel pharmaco-therapeutic><novel pharmacological therapeutic><novel technologies><novel therapeutics><novel therapy><novel vaccines><pathophysiology><patient response><patient specific response><positron emission tomographic (PET) imaging><positron emission tomographic imaging><positron emitting tomography><post treatment><pre-clinical research><preclinical research><radioactive drugs><radiolabel><radiolabels><radiotherapeutic drugs><radiotracer><response><response to therapy><response to treatment><responsive patient><sdAb><single domain antibodies><subcutaneous><subdermal><sulfhydryl group><targeted agent><targeted imaging><therapeutic response><therapy response><tick-borne><tick-borne illness><tickborne><tickborne disease><tickborne illness><tool><tool development><trait><transmission process><treatment response><treatment responsiveness><validations><variable heavy chain antibody><vector-borne illness><vectorborne disease><vectorborne illness><vectorborne infectious disease>",
+        "pref_terms": "Affect;Affinity;Aftercare;Antibiotic Therapy;Area;Autoradiography;Bacteria;Basic Science;Binding;Biological;Biological Markers;Biological Testing;Black-legged Tick;Borrelia;Borrelia burgdorferi;Borrelia burgdorferi Group;Centers for Disease Control and Prevention (U.S.);Chemicals;Clinic;Clinical;Clinical Management;Clinical Research;Data;Dedications;Development;Diagnosis;Diagnostic;Disease;Doxycycline;Drug Kinetics;Evaluation;Functional disorder;Health Care Costs;Histology;Image;ImmunoPET;Immunoconjugates;Immunohistochemistry;In Vitro;Infection;Investigation;Label;Laboratories;Lyme Disease;Lyme disease diagnosis;Midwestern United States;Modeling;Monitor;Monoclonal Antibodies;Morbidity - disease rate;Mus;Order Spirochaetales;Performance;Persons;Positron-Emission Tomography;Post Treatment Lyme Disease Syndrome;Proteins;Public Health;Radioimmunoconjugate;Radiopharmaceuticals;Reporting;Research;Risk;Sensitivity and Specificity;Site;Specificity;Sulfhydryl Compounds;Surface;Surface Antigens;Techniques;Therapeutic;Tick-Borne Diseases;Ticks;Time;United States;Vaccination;Vaccine Clinical Trial;Validation;Variant;Vector-transmitted infectious disease;Visualization;Work;clinical development;clinical imaging;disease model;efficacy evaluation;fighting;imaging agent;imaging probe;in vivo;longitudinal positron emission tomography;maltreatment;member;molecular imaging;mouse model;nanobodies;new technology;non-invasive imaging;novel;novel therapeutics;novel vaccines;patient response;pre-clinical research;radiotracer;response;subcutaneous;targeted agent;targeted imaging;tick-borne;tool;tool development;trait;transmission process;treatment response",
+        "abstract_text": "Project Summary/Abstract\n Lyme disease is a tick-borne disease caused by the spirochete Borrelia burgdorferi sensu lato (Bbsl) and is\nthe most prevalent tick-borne disease in the United States. The latest surveillance from the CDC reported that\nLyme disease affects more than ~475,000 people in the U.S. every year, a nearly 50% increase from 2015.\nFurthermore, the disease is expanding from its endemic areas in the Northeast, mid-Atlantic, and Upper\nMidwest. The rapidly increasing public health risks and rising healthcare costs associated with the disease are\nexacerbated by controversies surrounding its diagnosis and treatment. While the under-diagnosis of Lyme\ndisease has led to under-treatment, the mis-diagnosis and mis-treatment of the condition have led to serious\nmorbidity as well. Simply put, our current fundamental understanding of the diagnosis, pathophysiology, and\ntreatment of Lyme disease is lacking. Taken together, the data indicate that the development of tools for the\nnon-invasive molecular imaging of Lyme disease is an urgent scientific and clinical need.\n This R01 proposal is focused on the synthesis, characterization, and in vivo validation of first-in-class\nradiopharmaceuticals for the PET imaging of Lyme disease. The target for these agents will be VlsE, a protein\nthat is abundantly expressed on the surface of Bbsl throughout its time in its vertebrate host. Specific Aim 1\n(SA1) will be focused on the synthesis, chemical characterization, and in vitro biological evaluation of 89Zr-\nlabeled monoclonal antibodies and 68Ga-labeled single domain antibodies capable of binding VlsE with high\nspecificity, selectivity, and affinity. Specific Aim 2 (SA2) will be centered on interrogating the in vivo\nperformance of these VlsE-targeted radiopharmaceuticals in two murine models of Lyme disease. First, we will\nuse mice subcutaneously inoculated with cultured Bbsl to interrogate the sensitivity and specificity of the\nradioimmunoconjugates and to assess the power of the imaging agents as tools for monitoring response to\nantibiotic therapy. Subsequently, we will explore the performance of the VlsE-targeted PET probes in a more\nadvanced murine model of Lyme disease: mice infected multiple strains of Bbsl via Ixodes scapularis ticks. In\nboth models, longitudinal PET data will be used alongside a battery of ex vivo analytical techniques to evaluate\nthe ability of the radiotracers to delineate sites of active infection.\n Ultimately, we contend that a Bbsl-targeting radiotracer could have a paradigm-shifting impact on both the\nbasic science and clinical study of Lyme disease. In the laboratory, a VlsE-targeted radioimmunoconjugate\ncould be a valuable non-invasive tool for studying the dissemination, pathophysiology, and treatment of Bbsl\ninfections in murine models of disease. In the clinic, a Bbsl-targeted radiopharmaceutical could be an\nindispensable research tool to support the clinical development of novel vaccines, therapeutics, and\ndiagnostics as well as an effective imaging agent to monitor the therapeutic response of patients with\nparticularly persistent or severe Bbsl infections.",
+        "project_title": "ImmunoPET Probes for the Imaging of Lyme Disease",
+        "phr_text": "Project Narrative\n Lyme disease is a tick-borne disease caused by bacterial spirochetes, the most prevalent vector-borne\ndisease in the United States, and an ever-worsening public health problem. In this proposal, we will develop\nnovel PET radiopharmaceuticals that target the bacteria responsible for Lyme disease — Borrelia burgdoferi\nsensu lato (Bbsl) ¾ and thus facilitate the non-invasive imaging of Bbsl infection. These probes could have a\nparadigm-shifting impact on both the basic science and clinical management of Lyme disease, with\napplications ranging from preclinical research to clinical imaging.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2025-08-01T00:00:00",
+        "budget_end": "2026-07-31T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "Non-SBIR/STTR",
+        "direct_cost_amt": 432986,
+        "indirect_cost_amt": 119700,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11142620",
+        "date_added": "2025-08-02T16:13:37"
+      }
+    },
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-5",
+      "source_record_id": "NIHR-0014-5",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-5"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 5,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "5f0ad428547e3988379035930552c3cc3d90bebe536b87ab9aad59b0d2f3fda3"
+      },
+      "raw_metadata": {
+        "appl_id": 11134674,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "5R41AI186833-02",
+        "project_serial_num": "AI186833",
+        "organization": {
+          "org_name": "L2 DIAGNOSTICS, LLC",
+          "city": null,
+          "country": null,
+          "org_city": "NEW HAVEN",
+          "org_country": "UNITED STATES",
+          "org_state": "CT",
+          "org_state_name": null,
+          "dept_type": null,
+          "fips_country_code": null,
+          "org_duns": [
+            "142406110"
+          ],
+          "org_ueis": [
+            "GKA7VH5LFR25"
+          ],
+          "primary_duns": "142406110",
+          "primary_uei": "GKA7VH5LFR25",
+          "org_fips": "US",
+          "org_ipf_code": "3970901",
+          "org_zipcode": "065300175",
+          "external_org_id": 3970901
+        },
+        "award_type": "5",
+        "activity_code": "R41",
+        "award_amount": 299933,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "5",
+          "activity_code": "R41",
+          "ic_code": "AI",
+          "serial_num": "186833",
+          "support_year": "02",
+          "full_support_year": "02",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 1866620,
+            "first_name": "Erol",
+            "middle_name": "",
+            "last_name": "Fikrig",
+            "is_contact_pi": true,
+            "full_name": "Erol  Fikrig",
+            "title": ""
+          }
+        ],
+        "contact_pi_name": "FIKRIG, EROL ",
+        "program_officers": [
+          {
+            "first_name": "NADINE",
+            "middle_name": "",
+            "last_name": "BOWDEN",
+            "full_name": "NADINE  BOWDEN"
+          }
+        ],
+        "agency_ic_admin": {
+          "code": "AI",
+          "abbreviation": "NIAID",
+          "name": "National Institute of Allergy and Infectious Diseases",
+          "admin_org_id": "12500003",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "AI",
+            "name": "National Institute of Allergy and Infectious Diseases",
+            "abbreviation": "NIAID",
+            "total_cost": 299933.0,
+            "direct_cost_ic": 243332.0,
+            "indirect_cost_ic": 36980.0
+          }
+        ],
+        "cong_dist": "CT-03",
+        "spending_categories": null,
+        "project_start_date": "2024-07-08T00:00:00",
+        "project_end_date": "2027-06-30T00:00:00",
+        "organization_type": {
+          "name": "Domestic For-Profits",
+          "code": "FP",
+          "is_other": false
+        },
+        "geo_lat_lon": {
+          "lon": -72.931023,
+          "lat": 41.30464
+        },
+        "opportunity_number": "PA-23-232",
+        "full_study_section": {
+          "srg_code": "ZRG1",
+          "srg_flex": null,
+          "sra_designator_code": "DCAI",
+          "sra_flex_code": "F",
+          "group_code": "12",
+          "name": "Special Emphasis Panel[ZRG1-DCAI-F(12)B]"
+        },
+        "award_notice_date": "2025-07-02T00:00:00",
+        "is_new": false,
+        "mechanism_code_dc": "SB",
+        "core_project_num": "R41AI186833",
+        "terms": "<ALP sputum><Abscission><Ache><Affect><After Care><After-Treatment><Aftercare><Albumins><Amoxicillin><Amoxicilline><Amoxil><Amoxycillin><Anti-Bacterial Agents><Anti-Inflammatories><Anti-Inflammatory Agents><Anti-inflammatory><Antibiotic Agents><Antibiotic Drugs><Antibiotic Therapy><Antibiotic Treatment><Antibiotics><Antiinflammatory Effect><Antileukoproteinase><Arthralgia><Arthritis><Arthritis in Lyme disease><Assay><B afzelii><B burgdorferi><B garinii><B. afzelii><B. burgdorferi><B. garinii><Binding><Bioassay><Biological Assay><Blood Neutrophil><Blood Polymorphonuclear Neutrophil><Blood Serum><Body Tissues><Borrelia><Borrelia afzelii><Borrelia burgdorferi><Borrelia burgdorferi sensu stricto><Borrelia garinii><Borreliella burgdorferi><C3H/HeN Mouse><Causality><Cefatriaxone><Ceftriaxone><Cell Body><Cells><Chemotactic Cytokines><Clinical><Clinical Treatment><Cognitive Disturbance><Cognitive Impairment><Cognitive decline><Cognitive function abnormal><DMARD><DMARDs><Data><Development><Diagnosis><Diarthrosis><Disease><Disease-Modifying Antirheumatic Drugs><Disease-Modifying Second-Line Drugs><Disorder><Disturbance in cognition><Dose><Doxycycline><Dysfunction><ELISA><Enzyme-Linked Immunosorbent Assay><Etiology><Europe><Excision><Extirpation><Fatigue><Flow Cytofluorometries><Flow Cytofluorometry><Flow Cytometry><Flow Microfluorimetry><Flow Microfluorometry><Formulation><Fostering><Foundations><Functional disorder><Goals><Half-Life><Histology><Homologous Chemotactic Cytokines><Human><Hydroxyampicillin><Impaired cognition><In Vitro><Individual><Infection><Infiltration><Intercrines><Joint Pain><Joints><KO mice><Knock-out><Knock-out Mice><Knockout><Knockout Mice><Knowledge><Lack of Energy><Libraries><Lyme Arthritis><Lyme Borreliosis><Lyme Disease><Lyme Disease Spirochete><Macrophage><Marrow Neutrophil><Measures><Membrana Synovialis Capsulae Articularis><Methods><Mice><Mice Mammals><Minimum Inhibitory Concentration measurement><Minimum Inhibitory Concentrations><Minority><Miscellaneous Antibiotic><Modeling><Modern Man><Molecular Interaction><Morbidity><Morbidity - disease rate><Murine><Mus><Muscle><Muscle Tissue><Mφ><NHP models><Neutrophilic Granulocyte><Neutrophilic Leukocyte><Null Mouse><Oral><Order Spirochaetales><Pain><Painful><Pathology><Pathway interactions><Patients><Persons><Phase><Physiopathology><Polymorphonuclear Cell><Polymorphonuclear Leukocytes><Polymorphonuclear Neutrophils><Polymox><Population><Post Treatment Lyme Disease Syndrome><Proteins><Regimen><Removal><Research><Resolution><SIS cytokines><Serum><Severities><Spirochaetales><Spirochetes><Surgical Removal><Swelling><Symptoms><Synovia><Synovial Fluid><Synovial Membrane><Synovial joint><Synovitis><Synovium><Testing><Therapeutic><Therapeutic Agents><Therapeutic Fungicides><Tick-Borne Diseases><Tissues><Toxicology><Trimox><United States><Utimox><Vibramycin><Viral Activity><Viral Function><Viral Physiology><Wymox><Yeasts><alpha-6-Deoxyoxytetracycline><anti-bacterial><anti-fungal><anti-fungal agents><anti-fungal drug><anti-inflammatory effect><anti-microbial><antileukoprotease><antimicrobial><arthritic><bacterial disease treatment><bacterial infectious disease treatment><bactericidal><bactericide><borrelial><causation><chemoattractant cytokine><chemokine><clinical intervention><clinical significance><clinical therapy><clinically significant><cognitive dysfunction><cognitive loss><communicable disease transmission><cytokine><developmental><disease causation><disease transmission><dosage><enzyme linked immunoassay><experience><flow cytophotometry><in vitro Assay><in vivo><infectious disease transmission><inflamed joint><inflamed synovial tissue><inflamed synovium><joint inflammation><joint swelling><lyme spirochete><mouse model><mucus protease inhibitor><mucus proteinase inhibitor><murine model><muscular><neutrophil><new drug treatments><new drugs><new pharmacological therapeutic><new therapeutics><new therapy><next generation therapeutics><nonhuman primate models><novel><novel drug treatments><novel drugs><novel pharmaco-therapeutic><novel pharmacological therapeutic><novel therapeutics><novel therapy><pathogen><pathophysiology><pathway><pleiotropic effect><pleiotropism><pleiotropy><post treatment><public health relevance><resection><resolutions><secretory leukocyte-protease inhibitor><secretory leukoprotease inhibitor><synovial inflammation><tick bite><tick mediated transmission><tick transmission><tick transmitted><tick-borne illness><tickborne disease><tickborne illness><trial regimen><trial treatment><vaccine efficacy>",
+        "pref_terms": "Ache;Affect;Aftercare;Albumins;Amoxicillin;Anti-Bacterial Agents;Anti-Inflammatory Agents;Antibiotic Therapy;Antibiotics;Antiinflammatory Effect;Arthralgia;Arthritis;Binding;Biological Assay;Borrelia;Borrelia afzelii;Borrelia burgdorferi;Borrelia garinii;C3H/HeN Mouse;Ceftriaxone;Cells;Clinical;Clinical Treatment;Data;Development;Diagnosis;Disease;Disease-Modifying Second-Line Drugs;Dose;Doxycycline;Enzyme-Linked Immunosorbent Assay;Etiology;Europe;Excision;Fatigue;Flow Cytometry;Formulation;Fostering;Foundations;Functional disorder;Goals;Half-Life;Histology;Human;Impaired cognition;In Vitro;Individual;Infection;Infiltration;Joints;Knock-out;Knockout Mice;Knowledge;Libraries;Lyme Arthritis;Lyme Disease;Macrophage;Measures;Methods;Minimum Inhibitory Concentration measurement;Minority;Modeling;Morbidity - disease rate;Mus;Muscle;Oral;Order Spirochaetales;Pain;Pathology;Pathway interactions;Patients;Persons;Phase;Population;Post Treatment Lyme Disease Syndrome;Proteins;Regimen;Research;Resolution;Serum;Severities;Swelling;Symptoms;Synovial Fluid;Synovial Membrane;Synovial joint;Synovitis;Testing;Therapeutic;Therapeutic Agents;Tick-Borne Diseases;Tissues;Toxicology;United States;Viral Physiology;Yeasts;anti-fungal agents;antileukoprotease;antimicrobial;bactericide;chemokine;clinically significant;cytokine;disease transmission;dosage;experience;in vitro Assay;in vivo;joint inflammation;mouse model;neutrophil;nonhuman primate models;novel;novel therapeutics;pathogen;pleiotropism;public health relevance;tick bite;tick transmission;vaccine efficacy",
+        "abstract_text": "PROJECT SUMMARY/ABSTRACT\n Lyme disease (LD), the most common tick-borne disease in the United States, is caused by a spirochete,\nBorrelia burgdorferi. An estimated 500,000 people are diagnosed and treated each year. Antibiotic therapy is mostly\nsuccessful in cases diagnosed in the early stage of the infection. However, in some patients, early B. burgdorferi\ninfection is asymptomatic and Lyme arthritis (LA) is the primary manifestation of long-term LD, which usually occurs\nmonths after the tick bite. LA is the leading cause of Lyme disease-associated morbidity, affecting around one third of\nB. burgdorferi-infected individuals. Symptoms of LA include intermittent or persistent attacks of joint swelling and\npain that can lead to permanent joint dysfunction and debilitation. Most patient respond to a 30-day course of oral or\nIV antibiotic therapy. However, in a small percentage of LA patients, arthritis persists after antibiotic therapy and can\nlast for months or several years. Distinct from LA, research has shown that up to 34% of Lyme patients have Post\nTreatment Lyme Disease Syndrome (PTLDS). Symptoms include fatigue, pain, joint and muscle aches, and cognitive\ndecline, with an onset ranging from months to years. Long-term antibiotic therapy has not been proven to be beneficial\nfor PTLDS. Therefore, better therapeutic agents are urgently needed to resolve both LA and PTLDS.\n A human secretory leukocyte protease inhibitor (SLPI) was identified as binding to B. burgdorferi from the\nBASEHIT yeast display library of 3,336 human exoproteins. SLPI is an evolutionarily conserved, multi-functional\nprotein. SLPI expression inhibits neutrophil activity and the NF-κB pathway in macrophages, leading to an overall\nanti-inflammatory effect. A high percentage of neutrophils and macrophages have been observed in the synovial fluid\nof LA patients during active LA and post-treatment LA respectively. SLPI also has broad-spectrum antibacterial,\nantifungal, and antiviral activities. Using a SLPI knockout mice, our preliminary data showed a significantly higher B.\nburgdorferi infection load and severe swelling and synovitis in the tibiotarsal joints of SLPI knockout mice in\ncomparison to the WT mice. The data indicate that SLPI expression suppresses the B. burgdorferi infection load and\ninhibits the development of murine Lyme arthritis.\n The prior knowledge of SLPI and our preliminary data form the foundation of our hypothesis that therapeutic\ndosing of SLPI will significantly mitigate human LA. This proposal aims to show the feasibility of that in the murine\nLA model. Our long-term product goal is a novel secretory leukocyte protease inhibitor (SLPI) based therapeutic\nindicated for advanced Lyme disease, including both LA and PTLS.",
+        "project_title": "A novel therapeutic for Lyme arthritis based on a secretory leukocyte protease inhibitor",
+        "phr_text": "PUBLIC HEALTH RELEVANCE\nLyme disease (LD), caused by the spirochete Borrelia burgdorferi, is the most common disease transmitted by tick,\naffecting an estimated 500,000 people in the United States each year. 10-20% of patients experience long-term clinical\nmanifestations, including Lyme arthritis (LA) and/or Post Treatment Lyme Disease Syndrome (PTLDS), for which\nbetter therapeutic agents are urgently needed. Our long-term product goal is a novel secretory leukocyte protease\ninhibitor (SLPI) based therapeutic indicated for advanced Lyme disease, including potentially both LA and PTLDS.",
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": "2025-07-01T00:00:00",
+        "budget_end": "2027-06-30T00:00:00",
+        "cfda_code": "93.855",
+        "funding_mechanism": "SBIR/STTR",
+        "direct_cost_amt": 243332,
+        "indirect_cost_amt": 36980,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11134674",
+        "date_added": "2025-07-05T16:13:35"
+      }
+    },
+    {
+      "normalized_id": "nih_reporter:NIHR-0014-6",
+      "source_record_id": "NIHR-0014-6",
+      "record_type": "funded_research_project",
+      "title": "doxycycline Lyme disease",
+      "description": null,
+      "summary": null,
+      "source_url": "https://api.reporter.nih.gov/v2/projects/search",
+      "retrieved_at": "2026-06-08T00:03:42.251871Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "project_number": "NIHR-0014-6"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [
+        "doxycycline Lyme disease"
+      ],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Funding is not evidence that a hypothesis is validated. Preserve project dates, award amounts, investigators, organizations, and public-health relevance."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "nih_reporter",
+        "search_id": "NIHR-0014",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 6,
+        "retrieval_url": "https://api.reporter.nih.gov/v2/projects/search",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\nih_reporter\\NIHR-0014_doxycycline-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "4f90afbb4b564dfb843dd5a5bf1e28ee42c196cfd3ee0420d67f51bb532f3e3f"
+      },
+      "raw_metadata": {
+        "appl_id": 11412037,
+        "subproject_id": null,
+        "fiscal_year": 2025,
+        "project_num": "1ZIATR000413-06",
+        "project_serial_num": "TR000413",
+        "organization": {
+          "org_name": "NATIONAL CENTER FOR ADVANCING TRANSLATIONAL SCIENCES",
+          "city": null,
+          "country": null,
+          "org_city": null,
+          "org_country": "UNITED STATES",
+          "org_state": null,
+          "org_state_name": null,
+          "dept_type": null,
+          "fips_country_code": null,
+          "org_duns": null,
+          "org_ueis": null,
+          "primary_duns": null,
+          "primary_uei": null,
+          "org_fips": null,
+          "org_ipf_code": null,
+          "org_zipcode": null,
+          "external_org_id": null
+        },
+        "award_type": "1",
+        "activity_code": "ZIA",
+        "award_amount": 278962,
+        "is_active": true,
+        "project_num_split": {
+          "appl_type_code": "1",
+          "activity_code": "ZIA",
+          "ic_code": "TR",
+          "serial_num": "000413",
+          "support_year": "06",
+          "full_support_year": "06",
+          "suffix_code": ""
+        },
+        "principal_investigators": [
+          {
+            "profile_id": 80479575,
+            "first_name": "Natalia",
+            "middle_name": "",
+            "last_name": "Martinez",
+            "is_contact_pi": true,
+            "full_name": "Natalia  Martinez",
+            "title": ""
+          }
+        ],
+        "contact_pi_name": "MARTINEZ, NATALIA ",
+        "program_officers": [],
+        "agency_ic_admin": {
+          "code": "TR",
+          "abbreviation": "NCATS",
+          "name": "National Center for Advancing Translational Sciences",
+          "admin_org_id": "12500062",
+          "admin_funding_url": ""
+        },
+        "agency_ic_fundings": [
+          {
+            "fy": 2025,
+            "code": "TR",
+            "name": "National Center for Advancing Translational Sciences",
+            "abbreviation": "NCATS",
+            "total_cost": 278962.0,
+            "direct_cost_ic": null,
+            "indirect_cost_ic": null
+          }
+        ],
+        "cong_dist": null,
+        "spending_categories": null,
+        "project_start_date": null,
+        "project_end_date": null,
+        "organization_type": {
+          "name": "Unavailable",
+          "code": null,
+          "is_other": false
+        },
+        "geo_lat_lon": null,
+        "opportunity_number": null,
+        "full_study_section": {
+          "srg_code": null,
+          "srg_flex": null,
+          "sra_designator_code": null,
+          "sra_flex_code": null,
+          "group_code": null,
+          "name": null
+        },
+        "award_notice_date": null,
+        "is_new": false,
+        "mechanism_code_dc": "IM",
+        "core_project_num": "ZIATR000413",
+        "terms": "<Antibiotic Agents><Antibiotic Drugs><Antibiotics><Assay><Automobile Driving><B burgdorferi><B. burgdorferi><Basic Research><Basic Science><Bioassay><Biological Assay><Borrelia><Borrelia burgdorferi><Borrelia burgdorferi sensu stricto><Borreliella burgdorferi><Diagnosis><Doxycycline><Drugs><Focal Infection><Health><Human><Human Genome><Luciferase Immunologic><Luciferases><Lyme Borreliosis><Lyme Disease><Lyme Disease Spirochete><Lytotoxicity><Medication><Miniaturisations><Miniaturization><Miscellaneous Antibiotic><Modern Man><NCATS><National Center for Advancing Translational Sciences><Orphan Disease><Pathway interactions><Pharmaceutical Preparations><Rare Diseases><Rare Disorder><Recombinants><Reporting><Research><Ribosomes><Structure><Tick-Borne Diseases><Translations><Treatment Protocols><Treatment Regimen><Treatment Schedule><United States><Vibramycin><Work><alpha-6-Deoxyoxytetracycline><borrelial><chemical library><cytotoxicity><driving><drug candidate><drug/agent><human whole genome><improved><infection localized><interest><local infection><lyme spirochete><microbial><orphan disorder><pathway><pharmacologic><programs><screening><screenings><small molecule libraries><standard care><standard treatment><tick-borne illness><tickborne disease><tickborne illness><tool><translation>",
+        "pref_terms": "Antibiotics;Automobile Driving;Basic Science;Biological Assay;Borrelia;Borrelia burgdorferi;Diagnosis;Doxycycline;Focal Infection;Health;Human;Human Genome;Luciferases;Lyme Disease;Miniaturization;National Center for Advancing Translational Sciences;Pathway interactions;Pharmaceutical Preparations;Rare Diseases;Recombinants;Reporting;Research;Ribosomes;Structure;Tick-Borne Diseases;Translations;Treatment Protocols;United States;Work;cytotoxicity;drug candidate;improved;interest;microbial;pharmacologic;programs;screening;small molecule libraries;standard care;tool",
+        "abstract_text": "The NCATS Early Translation Branch (ETB) hosts a broad and comprehensive program for the discovery of drug candidates directed towards rare diseases and pharmacological tools to probe the function of the human genome. ETB conducts research to understand the underlying principles driving the translation of basic research discoveries into tangible improvements in human health.\n\nDuring the reporting period, the collaborative team has begun assay optimization utilizing wildtype and recombinant Borrelia stocks (with stable luciferase expression). Assay miniaturization work is ongoing, with a view to developing a high-throughput amenable screening assay using both BacTiterGlo and luciferase readouts.",
+        "project_title": "Screening for B. burgdorferi borreliacidal/borreliastatic compounds",
+        "phr_text": null,
+        "spending_categories_desc": null,
+        "agency_code": "NIH",
+        "covid_response": null,
+        "arra_funded": "N",
+        "budget_start": null,
+        "budget_end": null,
+        "cfda_code": null,
+        "funding_mechanism": "Intramural Research",
+        "direct_cost_amt": null,
+        "indirect_cost_amt": null,
+        "project_detail_url": "https://reporter.nih.gov/project-details/11412037",
+        "date_added": "2026-02-28T17:04:01"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

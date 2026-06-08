@@ -1,0 +1,312 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:02:44.382725Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "DGOV-0033",
+    "query_mode": "catalog_search",
+    "method": "GET",
+    "endpoint": "https://api.gsa.gov/technology/datagov/v4/search",
+    "search_term": "county Lyme disease",
+    "search_expression": "county Lyme disease",
+    "parameters": {
+      "q": "county Lyme disease",
+      "sort": "relevance",
+      "per_page": 100
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "required",
+      "credential_alias": "DATA_GOV_API_KEY",
+      "credential_sent": true
+    }
+  },
+  "source": {
+    "catalog_name": "Data.gov Catalog API",
+    "catalog_slug": "data_gov",
+    "source_type": "federal_metadata_catalog",
+    "organization": "U.S. General Services Administration",
+    "docs_url": "https://resources.data.gov/catalog-api/",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:02:44.011206Z",
+    "http_status": 200,
+    "content_type": "application/json",
+    "duration_ms": 316,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0033_county-lyme-disease\\raw\\page_0001.json",
+      "sha256": "a8c74156c4d5f36f9540fd6523c3f778cb9d1853f499e7e2da565a0c6e67319a",
+      "byte_count": 4835
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "data_gov:http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+      "source_record_id": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+      "record_type": "dataset_metadata",
+      "title": "Genetic analysis of microbiota and mycobiota associated with Ixodes scapularis ticks collected from Wisconsin in 2022",
+      "description": "This metadata presents a dataset of bacterial (microbiota), and fungal (mycobiota) communities associated with Ixodes scapularis ticks collected from hunter-harvested white-tailed deer during the 2022 fall hunting season in Wisconsin. Deer were hunted across eleven counties in Wisconsin. Engorged ticks were collected from deer at the deer-weighing station in Fort McCoy in Monroe County, Wisconsin. Nucleic acid was extracted from individual ticks and used for high-throughput sequencing of the 16S rRNA gene and ITS2 region to characterize bacterial and fungal diversity, respectively. This dataset provides raw sequence reads associated with the individual tick samples to facilitate the study of tick microbial dynamics in response to natural infection.",
+      "summary": null,
+      "source_url": "https://api.gsa.gov/technology/datagov/v4/search?q=county+Lyme+disease&sort=relevance&per_page=100",
+      "retrieved_at": "2026-06-08T00:02:44.011206Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": "U.S. Geological Survey",
+      "organizations": [
+        {
+          "name": "U.S. Geological Survey",
+          "role": "publisher",
+          "identifier": null,
+          "url": null
+        }
+      ],
+      "people": [],
+      "identifiers": {
+        "source_id": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308"
+      },
+      "topics": [],
+      "conditions": [],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": true,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Metadata discovery only; follow distribution or landing-page URLs to obtain actual data."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "data_gov",
+        "search_id": "DGOV-0033",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://api.gsa.gov/technology/datagov/v4/search?q=county+Lyme+disease&sort=relevance&per_page=100",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\data_gov\\DGOV-0033_county-lyme-disease\\raw\\page_0001.json",
+        "raw_record_sha256": "9a3a0f2d54177fa237dbfd8128759099de1119892866754a9cdddf677e955474"
+      },
+      "raw_metadata": {
+        "_score": 44.128613,
+        "_sort": [
+          44.128613,
+          0,
+          "89d108cf-554d-4ac4-b7f8-59ff73ebea02"
+        ],
+        "dcat": {
+          "accessLevel": "public",
+          "bureauCode": [
+            "010:12"
+          ],
+          "contactPoint": {
+            "@type": "vcard:Contact",
+            "fn": "Patil Tawidian",
+            "hasEmail": "mailto:ptawidian@usgs.gov"
+          },
+          "description": "This metadata presents a dataset of bacterial (microbiota), and fungal (mycobiota) communities associated with Ixodes scapularis ticks collected from hunter-harvested white-tailed deer during the 2022 fall hunting season in Wisconsin. Deer were hunted across eleven counties in Wisconsin. Engorged ticks were collected from deer at the deer-weighing station in Fort McCoy in Monroe County, Wisconsin. Nucleic acid was extracted from individual ticks and used for high-throughput sequencing of the 16S rRNA gene and ITS2 region to characterize bacterial and fungal diversity, respectively. This dataset provides raw sequence reads associated with the individual tick samples to facilitate the study of tick microbial dynamics in response to natural infection.",
+          "distribution": [
+            {
+              "@type": "dcat:Distribution",
+              "accessURL": "https://doi.org/10.5066/P13OPBRU",
+              "description": "Landing page for access to the data",
+              "format": "XML",
+              "mediaType": "application/http",
+              "title": "Digital Data"
+            },
+            {
+              "@type": "dcat:Distribution",
+              "description": "The metadata original format",
+              "downloadURL": "https://data.usgs.gov/datacatalog/metadata/USGS.68645690d4be025fd24f0308.xml",
+              "format": "XML",
+              "mediaType": "text/xml",
+              "title": "Original Metadata"
+            }
+          ],
+          "identifier": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+          "keyword": [
+            "Clark County, Wisconsin",
+            "Columbia County, Wisconsin",
+            "Dane County, Wisconsin",
+            "Dunn County, Wisconsin",
+            "Green County, Wisconsin",
+            "La Crosse County, Wisconsin",
+            "Lyme disease",
+            "Marquette County, Wisconsin",
+            "Monroe County, Wisconsin",
+            "Richland County, Wisconsin",
+            "Sauk County, Wisconsin",
+            "USGS:68645690d4be025fd24f0308",
+            "Wisconsin",
+            "Wood County, Wisconsin",
+            "arachnids",
+            "biota",
+            "disease vectors",
+            "genetics",
+            "microbiota",
+            "mycobiota",
+            "tick holobiont",
+            "tick-borne disease",
+            "wildlife disease"
+          ],
+          "modified": "2025-11-19T00:00:00Z",
+          "publisher": {
+            "@type": "org:Organization",
+            "name": "U.S. Geological Survey"
+          },
+          "spatial": "-92.8125, 42.4964, -88.5718, 45.3058",
+          "theme": [
+            "geospatial"
+          ],
+          "title": "Genetic analysis of microbiota and mycobiota associated with Ixodes scapularis ticks collected from Wisconsin in 2022"
+        },
+        "description": "This metadata presents a dataset of bacterial (microbiota), and fungal (mycobiota) communities associated with Ixodes scapularis ticks collected from hunter-harvested white-tailed deer during the 2022 fall hunting season in Wisconsin. Deer were hunted across eleven counties in Wisconsin. Engorged ticks were collected from deer at the deer-weighing station in Fort McCoy in Monroe County, Wisconsin. Nucleic acid was extracted from individual ticks and used for high-throughput sequencing of the 16S rRNA gene and ITS2 region to characterize bacterial and fungal diversity, respectively. This dataset provides raw sequence reads associated with the individual tick samples to facilitate the study of tick microbial dynamics in response to natural infection.",
+        "distribution_titles": [
+          "Digital Data",
+          "Original Metadata"
+        ],
+        "harvest_record": "https://catalog.data.gov/harvest_record/e523f473-b0cf-40fb-b549-6c22dcf21a5d",
+        "harvest_record_raw": "https://catalog.data.gov/harvest_record/e523f473-b0cf-40fb-b549-6c22dcf21a5d/raw",
+        "has_spatial": true,
+        "identifier": "http://datainventory.doi.gov/id/dataset/USGS_68645690d4be025fd24f0308",
+        "keyword": [
+          "Clark County, Wisconsin",
+          "Columbia County, Wisconsin",
+          "Dane County, Wisconsin",
+          "Dunn County, Wisconsin",
+          "Green County, Wisconsin",
+          "La Crosse County, Wisconsin",
+          "Lyme disease",
+          "Marquette County, Wisconsin",
+          "Monroe County, Wisconsin",
+          "Richland County, Wisconsin",
+          "Sauk County, Wisconsin",
+          "USGS:68645690d4be025fd24f0308",
+          "Wisconsin",
+          "Wood County, Wisconsin",
+          "arachnids",
+          "biota",
+          "disease vectors",
+          "genetics",
+          "microbiota",
+          "mycobiota",
+          "tick holobiont",
+          "tick-borne disease",
+          "wildlife disease"
+        ],
+        "last_harvested_date": "2026-05-05T21:32:10.483440",
+        "organization": {
+          "aliases": [
+            "dept"
+          ],
+          "description": null,
+          "id": "143529f7-2eef-4a07-b227-93ac9e84fad8",
+          "logo": "https://raw.githubusercontent.com/GSA/logo/master/doi.png",
+          "name": "Department of the Interior",
+          "organization_type": "Federal Government",
+          "slug": "doi"
+        },
+        "popularity": 0,
+        "publisher": "U.S. Geological Survey",
+        "slug": "genetic-analysis-of-microbiota-and-mycobiota-associated-with-ixodes-scapularis-ticks--2022",
+        "spatial_centroid": {
+          "lat": 43.62016,
+          "lon": -91.11622
+        },
+        "spatial_shape": {
+          "coordinates": [
+            [
+              [
+                -92.8125,
+                42.4964
+              ],
+              [
+                -92.8125,
+                45.3058
+              ],
+              [
+                -88.5718,
+                45.3058
+              ],
+              [
+                -88.5718,
+                42.4964
+              ],
+              [
+                -92.8125,
+                42.4964
+              ]
+            ]
+          ],
+          "type": "Polygon"
+        },
+        "theme": [
+          "geospatial"
+        ],
+        "title": "Genetic analysis of microbiota and mycobiota associated with Ixodes scapularis ticks collected from Wisconsin in 2022"
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}

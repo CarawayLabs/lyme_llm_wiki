@@ -1,0 +1,671 @@
+2026-06-07 18:02:40,371 INFO Starting run_id=2026-06-07_18-02-40_MDT smoke_test=False csv=C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\topx_lyme_search_queries.csv output_dir=C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output log=C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\logs\catalog_explorer.log
+2026-06-07 18:02:40,371 INFO Loaded env files: C:\codex_programming\lyme_llm_wiki\.env
+2026-06-07 18:02:40,372 INFO Loaded env aliases: CDC_SOCRATA_APP_TOKEN, CENSUS_API_KEY, DATA_GOV_API_KEY, NOAA_CDO_TOKEN
+2026-06-07 18:02:40,383 INFO Selected 333 queries across 23 catalogs.
+2026-06-07 18:02:40,391 INFO Running DGOV-0002 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+borreliosis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,391 INFO Running DGOV-0004 https://api.gsa.gov/technology/datagov/v4/search?q=Borrelia+mayonii&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,392 INFO Running DGOV-0001 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,392 INFO Running DGOV-0003 https://api.gsa.gov/technology/datagov/v4/search?q=Borrelia+burgdorferi&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,921 INFO Running DGOV-0005 https://api.gsa.gov/technology/datagov/v4/search?q=Borrelia+miyamotoi&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,921 INFO Running DGOV-0006 https://api.gsa.gov/technology/datagov/v4/search?q=tickborne+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,921 INFO Finished DGOV-0002 status=succeeded http=200 records=0
+2026-06-07 18:02:40,922 INFO Finished DGOV-0004 status=succeeded http=200 records=0
+2026-06-07 18:02:40,955 INFO Finished DGOV-0001 status=succeeded http=200 records=17
+2026-06-07 18:02:40,955 INFO Running DGOV-0007 https://api.gsa.gov/technology/datagov/v4/search?q=blacklegged+tick&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,955 INFO Running DGOV-0008 https://api.gsa.gov/technology/datagov/v4/search?q=Ixodes+scapularis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:40,956 INFO Finished DGOV-0003 status=succeeded http=200 records=6
+2026-06-07 18:02:41,376 INFO Finished DGOV-0006 status=succeeded http=200 records=7
+2026-06-07 18:02:41,377 INFO Running DGOV-0009 https://api.gsa.gov/technology/datagov/v4/search?q=Ixodes+pacificus&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,379 INFO Finished DGOV-0008 status=succeeded http=200 records=2
+2026-06-07 18:02:41,379 INFO Running DGOV-0010 https://api.gsa.gov/technology/datagov/v4/search?q=erythema+migrans&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,380 INFO Running DGOV-0011 https://api.gsa.gov/technology/datagov/v4/search?q=neuroborreliosis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,380 INFO Finished DGOV-0005 status=succeeded http=200 records=0
+2026-06-07 18:02:41,383 INFO Finished DGOV-0007 status=succeeded http=200 records=2
+2026-06-07 18:02:41,384 INFO Running DGOV-0012 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+arthritis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,848 INFO Finished DGOV-0010 status=succeeded http=200 records=0
+2026-06-07 18:02:41,849 INFO Finished DGOV-0009 status=succeeded http=200 records=0
+2026-06-07 18:02:41,849 INFO Running DGOV-0013 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+carditis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,850 INFO Running DGOV-0014 https://api.gsa.gov/technology/datagov/v4/search?q=early+localized+Lyme+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,851 INFO Finished DGOV-0012 status=succeeded http=200 records=2
+2026-06-07 18:02:41,851 INFO Running DGOV-0015 https://api.gsa.gov/technology/datagov/v4/search?q=early+disseminated+Lyme+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:41,852 INFO Finished DGOV-0011 status=succeeded http=200 records=0
+2026-06-07 18:02:41,854 INFO Running DGOV-0016 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+diagnosis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,291 INFO Finished DGOV-0013 status=succeeded http=200 records=0
+2026-06-07 18:02:42,292 INFO Running DGOV-0017 https://api.gsa.gov/technology/datagov/v4/search?q=diagnostic+delay+Lyme+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,294 INFO Finished DGOV-0015 status=succeeded http=200 records=0
+2026-06-07 18:02:42,295 INFO Running DGOV-0018 https://api.gsa.gov/technology/datagov/v4/search?q=delayed+diagnosis+tickborne+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,302 INFO Finished DGOV-0016 status=succeeded http=200 records=0
+2026-06-07 18:02:42,303 INFO Running DGOV-0019 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+misdiagnosis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,311 INFO Finished DGOV-0014 status=succeeded http=200 records=0
+2026-06-07 18:02:42,312 INFO Running DGOV-0020 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+differential+diagnosis&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,745 INFO Finished DGOV-0017 status=succeeded http=200 records=0
+2026-06-07 18:02:42,746 INFO Running DGOV-0021 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+serology&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,756 INFO Finished DGOV-0020 status=succeeded http=200 records=0
+2026-06-07 18:02:42,757 INFO Running DGOV-0022 https://api.gsa.gov/technology/datagov/v4/search?q=two-tier+Lyme+testing&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,767 INFO Finished DGOV-0018 status=succeeded http=200 records=0
+2026-06-07 18:02:42,767 INFO Running DGOV-0023 https://api.gsa.gov/technology/datagov/v4/search?q=modified+two-tier+testing+Lyme&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:42,769 INFO Finished DGOV-0019 status=succeeded http=200 records=0
+2026-06-07 18:02:42,770 INFO Running DGOV-0024 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+surveillance&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,167 INFO Finished DGOV-0021 status=succeeded http=200 records=0
+2026-06-07 18:02:43,168 INFO Running DGOV-0025 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+incidence&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,168 INFO Finished DGOV-0022 status=succeeded http=200 records=0
+2026-06-07 18:02:43,169 INFO Running DGOV-0026 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+case+counts&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,174 INFO Finished DGOV-0023 status=succeeded http=200 records=0
+2026-06-07 18:02:43,175 INFO Running DGOV-0027 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+underreporting&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,181 INFO Finished DGOV-0024 status=succeeded http=200 records=4
+2026-06-07 18:02:43,182 INFO Running DGOV-0028 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+case+definition&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,591 INFO Finished DGOV-0028 status=succeeded http=200 records=0
+2026-06-07 18:02:43,592 INFO Running DGOV-0029 https://api.gsa.gov/technology/datagov/v4/search?q=notifiable+disease+Lyme&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,593 INFO Finished DGOV-0027 status=succeeded http=200 records=0
+2026-06-07 18:02:43,594 INFO Running DGOV-0030 https://api.gsa.gov/technology/datagov/v4/search?q=tickborne+disease+surveillance&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,599 INFO Finished DGOV-0025 status=succeeded http=200 records=2
+2026-06-07 18:02:43,600 INFO Running DGOV-0031 https://api.gsa.gov/technology/datagov/v4/search?q=tick+surveillance&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:43,608 INFO Finished DGOV-0026 status=succeeded http=200 records=3
+2026-06-07 18:02:43,610 INFO Running DGOV-0032 https://api.gsa.gov/technology/datagov/v4/search?q=tick+pathogen+surveillance&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,011 INFO Finished DGOV-0030 status=succeeded http=200 records=0
+2026-06-07 18:02:44,012 INFO Running DGOV-0033 https://api.gsa.gov/technology/datagov/v4/search?q=county+Lyme+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,012 INFO Running DGOV-0034 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+access+to+care&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,012 INFO Finished DGOV-0032 status=succeeded http=200 records=0
+2026-06-07 18:02:44,013 INFO Finished DGOV-0031 status=succeeded http=200 records=1
+2026-06-07 18:02:44,013 INFO Running DGOV-0035 https://api.gsa.gov/technology/datagov/v4/search?q=Lyme+disease+provider+shortage&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,031 INFO Finished DGOV-0029 status=succeeded http=200 records=3
+2026-06-07 18:02:44,032 INFO Running DGOV-0036 https://api.gsa.gov/technology/datagov/v4/search?q=infectious+disease+specialist+access&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,441 INFO Finished DGOV-0036 status=succeeded http=200 records=0
+2026-06-07 18:02:44,444 INFO Running DGOV-0037 https://api.gsa.gov/technology/datagov/v4/search?q=rheumatology+access+Lyme&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,457 INFO Running DGOV-0038 https://api.gsa.gov/technology/datagov/v4/search?q=neurology+access+Lyme&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,457 INFO Finished DGOV-0035 status=succeeded http=200 records=0
+2026-06-07 18:02:44,457 INFO Running DGOV-0039 https://api.gsa.gov/technology/datagov/v4/search?q=cardiology+access+Lyme&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,460 INFO Finished DGOV-0034 status=succeeded http=200 records=0
+2026-06-07 18:02:44,461 INFO Running DGOV-0040 https://api.gsa.gov/technology/datagov/v4/search?q=primary+care+Lyme+disease&sort=relevance&per_page=100 catalog=data_gov auth_alias=DATA_GOV_API_KEY credential_sent=True
+2026-06-07 18:02:44,461 INFO Finished DGOV-0033 status=succeeded http=200 records=1
+2026-06-07 18:02:44,936 INFO Finished DGOV-0038 status=succeeded http=200 records=0
+2026-06-07 18:02:44,939 INFO Running HDAT-0001 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:44,939 INFO Running HDAT-0002 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+borreliosis&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:44,941 INFO Finished DGOV-0040 status=succeeded http=200 records=0
+2026-06-07 18:02:44,943 INFO Running HDAT-0003 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Borrelia+burgdorferi&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:44,950 INFO Finished DGOV-0039 status=succeeded http=200 records=0
+2026-06-07 18:02:45,003 INFO Finished DGOV-0037 status=succeeded http=200 records=0
+2026-06-07 18:02:45,003 INFO Running HDAT-0004 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Borrelia+mayonii&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:46,036 INFO Finished HDAT-0002 status=succeeded http=200 records=0
+2026-06-07 18:02:46,036 INFO Running HDAT-0005 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Borrelia+miyamotoi&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:46,040 INFO Finished HDAT-0004 status=succeeded http=200 records=0
+2026-06-07 18:02:46,041 INFO Running HDAT-0006 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=tickborne+disease&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:46,110 INFO Finished HDAT-0003 status=succeeded http=200 records=5
+2026-06-07 18:02:46,111 INFO Running HDAT-0007 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=blacklegged+tick&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:46,304 INFO Finished HDAT-0001 status=succeeded http=200 records=31
+2026-06-07 18:02:46,304 INFO Running HDAT-0008 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Ixodes+scapularis&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:46,966 INFO Finished HDAT-0005 status=succeeded http=200 records=2
+2026-06-07 18:02:46,967 INFO Running HDAT-0009 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Ixodes+pacificus&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:47,211 INFO Finished HDAT-0006 status=succeeded http=200 records=12
+2026-06-07 18:02:47,212 INFO Running HDAT-0010 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=erythema+migrans&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:47,265 INFO Finished HDAT-0007 status=succeeded http=200 records=6
+2026-06-07 18:02:47,266 INFO Running HDAT-0011 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease+access+to+care&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:47,313 INFO Finished HDAT-0008 status=succeeded http=200 records=4
+2026-06-07 18:02:47,313 INFO Running HDAT-0012 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease+provider+shortage&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:47,878 INFO Finished HDAT-0009 status=succeeded http=200 records=0
+2026-06-07 18:02:47,879 INFO Running HDAT-0013 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=infectious+disease+specialist+access&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:48,095 INFO Finished HDAT-0010 status=succeeded http=200 records=0
+2026-06-07 18:02:48,095 INFO Running HDAT-0014 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=rheumatology+access+Lyme&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:48,893 INFO Finished HDAT-0011 status=succeeded http=200 records=100
+2026-06-07 18:02:48,895 INFO Running HDAT-0015 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=neurology+access+Lyme&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:48,899 INFO Finished HDAT-0012 status=succeeded http=200 records=100
+2026-06-07 18:02:48,899 INFO Running HDAT-0016 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=cardiology+access+Lyme&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:48,986 INFO Finished HDAT-0014 status=succeeded http=200 records=0
+2026-06-07 18:02:48,987 INFO Running HDAT-0017 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease+rural+populations&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:49,434 INFO Finished HDAT-0013 status=succeeded http=200 records=100
+2026-06-07 18:02:49,435 INFO Running HDAT-0018 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease+underserved+communities&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:49,834 INFO Finished HDAT-0015 status=succeeded http=200 records=0
+2026-06-07 18:02:49,835 INFO Running HDAT-0019 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease+social+vulnerability&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:49,878 INFO Finished HDAT-0016 status=succeeded http=200 records=0
+2026-06-07 18:02:49,879 INFO Running HDAT-0020 https://api.us.socrata.com/api/catalog/v1?search_context=healthdata.gov&q=Lyme+disease+health+disparities&limit=100 catalog=healthdata_gov auth_alias=HEALTHDATA_SOCRATA_APP_TOKEN credential_sent=False
+2026-06-07 18:02:50,574 INFO Finished HDAT-0017 status=succeeded http=200 records=100
+2026-06-07 18:02:50,576 INFO Running CDCC-0001 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+disease&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:50,916 INFO Finished HDAT-0018 status=succeeded http=200 records=100
+2026-06-07 18:02:50,917 INFO Running CDCC-0002 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+borreliosis&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:51,417 INFO Finished HDAT-0019 status=succeeded http=200 records=100
+2026-06-07 18:02:51,421 INFO Running CDCC-0003 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Borrelia+burgdorferi&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:51,421 INFO Finished HDAT-0020 status=succeeded http=200 records=100
+2026-06-07 18:02:51,422 INFO Running CDCC-0004 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Borrelia+mayonii&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:51,423 INFO Finished CDCC-0001 status=succeeded http=200 records=9
+2026-06-07 18:02:51,425 INFO Running CDCC-0005 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Borrelia+miyamotoi&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:51,556 INFO Finished CDCC-0002 status=succeeded http=200 records=0
+2026-06-07 18:02:51,557 INFO Running CDCC-0006 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=tickborne+disease&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,066 INFO Finished CDCC-0004 status=succeeded http=200 records=0
+2026-06-07 18:02:52,067 INFO Running CDCC-0007 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=blacklegged+tick&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,067 INFO Finished CDCC-0005 status=succeeded http=200 records=0
+2026-06-07 18:02:52,068 INFO Running CDCC-0008 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Ixodes+scapularis&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,076 INFO Finished CDCC-0003 status=succeeded http=200 records=0
+2026-06-07 18:02:52,077 INFO Running CDCC-0009 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Ixodes+pacificus&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,157 INFO Finished CDCC-0006 status=succeeded http=200 records=0
+2026-06-07 18:02:52,158 INFO Running CDCC-0010 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=erythema+migrans&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,674 INFO Finished CDCC-0008 status=succeeded http=200 records=0
+2026-06-07 18:02:52,675 INFO Running CDCC-0011 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=neuroborreliosis&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,682 INFO Finished CDCC-0007 status=succeeded http=200 records=0
+2026-06-07 18:02:52,683 INFO Running CDCC-0012 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+arthritis&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,701 INFO Finished CDCC-0009 status=succeeded http=200 records=0
+2026-06-07 18:02:52,701 INFO Running CDCC-0013 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+babesiosis+coinfection&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:52,867 INFO Finished CDCC-0010 status=succeeded http=200 records=3
+2026-06-07 18:02:52,867 INFO Running CDCC-0014 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+anaplasmosis+coinfection&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,298 INFO Finished CDCC-0013 status=succeeded http=200 records=0
+2026-06-07 18:02:53,298 INFO Finished CDCC-0011 status=succeeded http=200 records=0
+2026-06-07 18:02:53,299 INFO Running CDCC-0015 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+ehrlichiosis+coinfection&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,300 INFO Running CDCC-0016 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+Powassan+coinfection&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,387 INFO Finished CDCC-0012 status=succeeded http=200 records=3
+2026-06-07 18:02:53,388 INFO Running CDCC-0017 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Babesia+microti&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,467 INFO Finished CDCC-0014 status=succeeded http=200 records=0
+2026-06-07 18:02:53,467 INFO Running CDCC-0018 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Anaplasma+phagocytophilum&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,911 INFO Finished CDCC-0016 status=succeeded http=200 records=0
+2026-06-07 18:02:53,912 INFO Finished CDCC-0015 status=succeeded http=200 records=0
+2026-06-07 18:02:53,912 INFO Running CDCC-0019 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+disease+surveillance&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,912 INFO Running CDCC-0020 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+disease+incidence&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:53,960 INFO Finished CDCC-0017 status=succeeded http=200 records=0
+2026-06-07 18:02:53,961 INFO Running CDCC-0021 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+disease+case+counts&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:54,390 INFO Finished CDCC-0018 status=succeeded http=200 records=10
+2026-06-07 18:02:54,391 INFO Running CDCC-0022 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+disease+underreporting&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:54,814 INFO Finished CDCC-0019 status=succeeded http=200 records=9
+2026-06-07 18:02:54,815 INFO Running CDCC-0023 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=Lyme+disease+case+definition&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:54,817 INFO Running CDCC-0024 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=notifiable+disease+Lyme&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:54,818 INFO Finished CDCC-0020 status=succeeded http=200 records=8
+2026-06-07 18:02:54,984 INFO Finished CDCC-0022 status=succeeded http=200 records=0
+2026-06-07 18:02:54,984 INFO Running CDCC-0025 https://api.us.socrata.com/api/catalog/v1?search_context=data.cdc.gov&q=tickborne+disease+surveillance&limit=100 catalog=data_cdc_gov auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:55,269 INFO Finished CDCC-0021 status=succeeded http=200 records=100
+2026-06-07 18:02:55,269 INFO Running CDCL-0001 https://data.cdc.gov/api/views/84rx-ksgd catalog=cdc_lyme_84rx-ksgd auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:55,591 INFO Finished CDCC-0025 status=succeeded http=200 records=0
+2026-06-07 18:02:55,592 INFO Running CDCL-0002 https://data.cdc.gov/api/views/84rx-ksgd/rows.csv?accessType=DOWNLOAD catalog=cdc_lyme_84rx-ksgd auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:55,677 INFO Finished CDCC-0024 status=succeeded http=200 records=9
+2026-06-07 18:02:55,678 INFO Running CDCL-0003 https://data.cdc.gov/resource/84rx-ksgd.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_84rx-ksgd auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:56,102 INFO Finished CDCL-0001 status=succeeded http=200 records=1
+2026-06-07 18:02:56,102 INFO Running CDCL-0004 https://data.cdc.gov/resource/84rx-ksgd.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_84rx-ksgd auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:56,242 INFO Finished CDCC-0023 status=succeeded http=200 records=100
+2026-06-07 18:02:56,242 INFO Running CDCL-0005 https://data.cdc.gov/resource/84rx-ksgd.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_84rx-ksgd auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:56,719 INFO Finished CDCL-0003 status=succeeded http=200 records=100
+2026-06-07 18:02:56,719 INFO Running CDCL-0006 https://data.cdc.gov/resource/84rx-ksgd.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_84rx-ksgd auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:56,953 INFO Finished CDCL-0002 status=succeeded http=200 records=0
+2026-06-07 18:02:56,953 INFO Running CDCL-0007 https://data.cdc.gov/api/views/qtbi-xd4i catalog=cdc_lyme_qtbi-xd4i auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:57,137 INFO Finished CDCL-0004 status=succeeded http=200 records=100
+2026-06-07 18:02:57,137 INFO Running CDCL-0008 https://data.cdc.gov/api/views/qtbi-xd4i/rows.csv?accessType=DOWNLOAD catalog=cdc_lyme_qtbi-xd4i auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:57,297 INFO Finished CDCL-0005 status=succeeded http=200 records=100
+2026-06-07 18:02:57,298 INFO Running CDCL-0009 https://data.cdc.gov/resource/qtbi-xd4i.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_qtbi-xd4i auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:57,727 INFO Finished CDCL-0007 status=succeeded http=200 records=1
+2026-06-07 18:02:57,728 INFO Running CDCL-0010 https://data.cdc.gov/resource/qtbi-xd4i.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_qtbi-xd4i auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:58,304 INFO Finished CDCL-0009 status=succeeded http=200 records=100
+2026-06-07 18:02:58,304 INFO Running CDCL-0011 https://data.cdc.gov/resource/qtbi-xd4i.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_qtbi-xd4i auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:58,784 INFO Finished CDCL-0010 status=succeeded http=200 records=100
+2026-06-07 18:02:58,785 INFO Running CDCL-0012 https://data.cdc.gov/resource/qtbi-xd4i.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_qtbi-xd4i auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:58,827 INFO Finished CDCL-0006 status=succeeded http=200 records=100
+2026-06-07 18:02:58,831 INFO Running CDCL-0013 https://data.cdc.gov/api/views/x5j9-wybp catalog=cdc_lyme_x5j9-wybp auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:59,715 INFO Finished CDCL-0011 status=succeeded http=200 records=100
+2026-06-07 18:02:59,716 INFO Running CDCL-0014 https://data.cdc.gov/api/views/x5j9-wybp/rows.csv?accessType=DOWNLOAD catalog=cdc_lyme_x5j9-wybp auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:59,858 INFO Finished CDCL-0013 status=succeeded http=200 records=1
+2026-06-07 18:02:59,860 INFO Running CDCL-0015 https://data.cdc.gov/resource/x5j9-wybp.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_x5j9-wybp auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:02:59,982 INFO Finished CDCL-0012 status=succeeded http=200 records=100
+2026-06-07 18:02:59,983 INFO Running CDCL-0016 https://data.cdc.gov/resource/x5j9-wybp.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_x5j9-wybp auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:00,792 INFO Finished CDCL-0008 status=succeeded http=200 records=0
+2026-06-07 18:03:00,794 INFO Running CDCL-0017 https://data.cdc.gov/resource/x5j9-wybp.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_x5j9-wybp auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:01,238 INFO Finished CDCL-0014 status=succeeded http=200 records=0
+2026-06-07 18:03:01,239 INFO Running CDCL-0018 https://data.cdc.gov/resource/x5j9-wybp.json?%24limit=1000&%24offset=0 catalog=cdc_lyme_x5j9-wybp auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:01,610 INFO Finished CDCL-0016 status=succeeded http=200 records=100
+2026-06-07 18:03:01,625 INFO Running NNDSS-0001 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:01,628 INFO Finished CDCL-0015 status=succeeded http=200 records=100
+2026-06-07 18:03:01,631 INFO Running NNDSS-0002 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:02,151 INFO Finished CDCL-0017 status=succeeded http=200 records=100
+2026-06-07 18:03:02,152 INFO Running NNDSS-0003 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:02,545 INFO Finished CDCL-0018 status=succeeded http=200 records=100
+2026-06-07 18:03:02,546 INFO Running NNDSS-0004 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:03,286 INFO Finished NNDSS-0002 status=succeeded http=200 records=100
+2026-06-07 18:03:03,288 INFO Running NNDSS-0005 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:03,405 INFO Finished NNDSS-0001 status=succeeded http=200 records=100
+2026-06-07 18:03:03,406 INFO Running NNDSS-0006 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:04,050 INFO Finished NNDSS-0003 status=succeeded http=200 records=100
+2026-06-07 18:03:04,051 INFO Running NNDSS-0007 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:04,370 INFO Finished NNDSS-0004 status=succeeded http=200 records=100
+2026-06-07 18:03:04,371 INFO Running NNDSS-0008 https://data.cdc.gov/resource/x9gk-5huc.json?%24limit=5000 catalog=cdc_nndss_weekly auth_alias=CDC_SOCRATA_APP_TOKEN credential_sent=True
+2026-06-07 18:03:05,199 INFO Finished NNDSS-0006 status=succeeded http=200 records=100
+2026-06-07 18:03:05,202 INFO Running TICK-0001 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=Ixodes+scapularis+present%2Festablished+county+file catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:05,348 INFO Finished NNDSS-0005 status=succeeded http=200 records=100
+2026-06-07 18:03:05,350 INFO Running TICK-0002 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=Ixodes+pacificus+present%2Festablished+county+file catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:05,921 INFO Finished NNDSS-0007 status=succeeded http=200 records=100
+2026-06-07 18:03:05,922 INFO Running TICK-0003 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=County-level+pathogen+detection+records catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:05,923 INFO Finished TICK-0001 status=succeeded http=200 records=0
+2026-06-07 18:03:05,925 INFO Running TICK-0004 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=County-level+pathogen+detection+records catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:06,176 INFO Finished NNDSS-0008 status=succeeded http=200 records=100
+2026-06-07 18:03:06,179 INFO Running TICK-0005 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=County-level+pathogen+detection+records catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:06,428 INFO Finished TICK-0002 status=succeeded http=200 records=0
+2026-06-07 18:03:06,430 INFO Running TICK-0006 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=County-level+pathogen+detection+records catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:07,085 INFO Finished TICK-0006 status=succeeded http=200 records=0
+2026-06-07 18:03:07,085 INFO Running TICK-0007 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=County-level+pathogen+detection+records catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:07,140 INFO Finished TICK-0003 status=succeeded http=200 records=0
+2026-06-07 18:03:07,141 INFO Running TICK-0008 https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html?target_asset_description=County-level+pathogen+detection+records catalog=cdc_tick_surveillance auth_alias=None credential_sent=False
+2026-06-07 18:03:07,717 INFO Finished TICK-0004 status=succeeded http=200 records=0
+2026-06-07 18:03:07,718 INFO Finished TICK-0005 status=succeeded http=200 records=0
+2026-06-07 18:03:07,721 INFO Running CTG-0002 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+borreliosis&query.term=Lyme+borreliosis&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:07,722 INFO Running CTG-0001 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+disease&query.term=Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:07,805 INFO Finished TICK-0007 status=succeeded http=200 records=0
+2026-06-07 18:03:07,807 INFO Finished TICK-0008 status=succeeded http=200 records=0
+2026-06-07 18:03:07,809 INFO Running CTG-0003 https://clinicaltrials.gov/api/v2/studies?query.cond=Borrelia+burgdorferi&query.term=Borrelia+burgdorferi&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:07,810 INFO Running CTG-0004 https://clinicaltrials.gov/api/v2/studies?query.cond=Borrelia+mayonii&query.term=Borrelia+mayonii&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:08,627 INFO Running CTG-0005 https://clinicaltrials.gov/api/v2/studies?query.cond=Borrelia+miyamotoi&query.term=Borrelia+miyamotoi&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:08,629 INFO Finished CTG-0004 status=succeeded http=200 records=0
+2026-06-07 18:03:09,058 INFO Finished CTG-0003 status=succeeded http=200 records=19
+2026-06-07 18:03:09,059 INFO Running CTG-0006 https://clinicaltrials.gov/api/v2/studies?query.cond=tickborne+disease&query.term=tickborne+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:10,147 INFO Finished CTG-0002 status=succeeded http=200 records=100
+2026-06-07 18:03:10,149 INFO Running CTG-0007 https://clinicaltrials.gov/api/v2/studies?query.cond=blacklegged+tick&query.term=blacklegged+tick&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:10,159 INFO Finished CTG-0001 status=succeeded http=200 records=100
+2026-06-07 18:03:10,160 INFO Running CTG-0008 https://clinicaltrials.gov/api/v2/studies?query.cond=Ixodes+scapularis&query.term=Ixodes+scapularis&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:10,185 INFO Finished CTG-0005 status=succeeded http=200 records=1
+2026-06-07 18:03:10,187 INFO Running CTG-0009 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+disease+diagnosis&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:10,230 INFO Finished CTG-0006 status=succeeded http=200 records=0
+2026-06-07 18:03:10,230 INFO Running CTG-0010 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=diagnostic+delay+Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:11,065 INFO Finished CTG-0010 status=succeeded http=200 records=1
+2026-06-07 18:03:11,066 INFO Running CTG-0011 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=delayed+diagnosis+tickborne+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:11,067 INFO Running CTG-0012 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+disease+misdiagnosis&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:11,067 INFO Finished CTG-0007 status=succeeded http=200 records=4
+2026-06-07 18:03:11,070 INFO Finished CTG-0008 status=succeeded http=200 records=4
+2026-06-07 18:03:11,071 INFO Running CTG-0013 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+disease+differential+diagnosis&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:11,996 INFO Finished CTG-0009 status=succeeded http=200 records=100
+2026-06-07 18:03:11,997 INFO Running CTG-0014 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+serology&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:12,060 INFO Finished CTG-0012 status=succeeded http=200 records=0
+2026-06-07 18:03:12,062 INFO Running CTG-0015 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=Lyme+disease+treatment&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:12,062 INFO Finished CTG-0011 status=succeeded http=200 records=0
+2026-06-07 18:03:12,063 INFO Running CTG-0016 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=doxycycline+Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:12,336 INFO Finished CTG-0013 status=succeeded http=200 records=27
+2026-06-07 18:03:12,337 INFO Running CTG-0017 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=amoxicillin+Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:12,865 INFO Finished CTG-0014 status=succeeded http=200 records=9
+2026-06-07 18:03:12,866 INFO Running CTG-0018 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=cefuroxime+Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:13,059 INFO Finished CTG-0016 status=succeeded http=200 records=28
+2026-06-07 18:03:13,060 INFO Running CTG-0019 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=ceftriaxone+Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:13,071 INFO Finished CTG-0017 status=succeeded http=200 records=4
+2026-06-07 18:03:13,072 INFO Running CTG-0020 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+Disease&query.term=antibiotics+Lyme+disease&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:13,667 INFO Finished CTG-0015 status=succeeded http=200 records=91
+2026-06-07 18:03:13,670 INFO Running CTG-0021 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+babesiosis+coinfection&query.term=Lyme+babesiosis+coinfection&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:13,921 INFO Finished CTG-0018 status=succeeded http=200 records=4
+2026-06-07 18:03:13,922 INFO Running CTG-0022 https://clinicaltrials.gov/api/v2/studies?query.cond=Lyme+anaplasmosis+coinfection&query.term=Lyme+anaplasmosis+coinfection&pageSize=100&format=json&countTotal=true catalog=clinicaltrials_gov auth_alias=None credential_sent=False
+2026-06-07 18:03:14,155 INFO Finished CTG-0019 status=succeeded http=200 records=16
+2026-06-07 18:03:14,157 INFO Running PUBM-0001 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:14,441 INFO Finished CTG-0021 status=succeeded http=200 records=0
+2026-06-07 18:03:14,441 INFO Running PUBM-0002 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+borreliosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:14,442 INFO Finished CTG-0020 status=succeeded http=200 records=38
+2026-06-07 18:03:14,442 INFO Running PUBM-0003 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+burgdorferi%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:14,651 INFO Finished CTG-0022 status=succeeded http=200 records=0
+2026-06-07 18:03:14,651 INFO Running PUBM-0004 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+mayonii%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:15,016 INFO Finished PUBM-0001 status=succeeded http=200 records=100
+2026-06-07 18:03:15,017 INFO Running PUBM-0005 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Borrelia+miyamotoi%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:15,224 INFO Finished PUBM-0002 status=succeeded http=200 records=100
+2026-06-07 18:03:15,225 INFO Running PUBM-0006 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22tickborne+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:15,228 INFO Finished PUBM-0003 status=succeeded http=200 records=100
+2026-06-07 18:03:15,229 INFO Running PUBM-0007 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22blacklegged+tick%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:15,986 INFO Finished PUBM-0007 status=succeeded http=200 records=100
+2026-06-07 18:03:15,987 INFO Running PUBM-0008 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Ixodes+scapularis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:16,748 INFO Finished PUBM-0008 status=succeeded http=200 records=100
+2026-06-07 18:03:16,749 INFO Running PUBM-0009 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Ixodes+pacificus%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:17,504 INFO Finished PUBM-0009 status=succeeded http=200 records=100
+2026-06-07 18:03:17,505 INFO Running PUBM-0010 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22erythema+migrans%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:17,554 INFO Finished PUBM-0004 status=succeeded http=200 records=20
+2026-06-07 18:03:17,555 INFO Running PUBM-0011 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:17,970 INFO Finished PUBM-0005 status=succeeded http=200 records=100
+2026-06-07 18:03:17,971 INFO Running PUBM-0012 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22diagnostic+delay+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:18,686 INFO Finished PUBM-0012 status=succeeded http=200 records=0
+2026-06-07 18:03:18,687 INFO Running PUBM-0013 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22delayed+diagnosis+tickborne+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:19,427 INFO Finished PUBM-0013 status=succeeded http=200 records=0
+2026-06-07 18:03:19,428 INFO Running PUBM-0014 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+misdiagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:19,428 INFO Finished PUBM-0010 status=succeeded http=200 records=100
+2026-06-07 18:03:19,429 INFO Running PUBM-0015 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+differential+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:20,180 INFO Finished PUBM-0015 status=succeeded http=200 records=0
+2026-06-07 18:03:20,181 INFO Running PUBM-0016 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+serology%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:20,484 INFO Finished PUBM-0011 status=succeeded http=200 records=56
+2026-06-07 18:03:20,485 INFO Running PUBM-0017 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22two-tier+Lyme+testing%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:20,570 INFO Finished PUBM-0006 status=succeeded http=200 records=93
+2026-06-07 18:03:20,571 INFO Running PUBM-0018 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22modified+two-tier+testing+Lyme%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:21,190 INFO Finished PUBM-0017 status=succeeded http=200 records=0
+2026-06-07 18:03:21,191 INFO Running PUBM-0019 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22ELISA+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:21,901 INFO Finished PUBM-0019 status=succeeded http=200 records=0
+2026-06-07 18:03:21,902 INFO Running PUBM-0020 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22immunoblot+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:22,357 INFO Finished PUBM-0014 status=succeeded http=200 records=0
+2026-06-07 18:03:22,358 INFO Running PUBM-0021 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+fatigue%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:22,620 INFO Finished PUBM-0020 status=succeeded http=200 records=0
+2026-06-07 18:03:22,621 INFO Running PUBM-0022 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+cognitive+symptoms%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:23,060 INFO Finished PUBM-0021 status=succeeded http=200 records=0
+2026-06-07 18:03:23,061 INFO Running PUBM-0023 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+brain+fog%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:23,477 INFO Finished PUBM-0018 status=succeeded http=200 records=0
+2026-06-07 18:03:23,479 INFO Running PUBM-0024 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+pain%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:23,841 INFO Finished PUBM-0023 status=succeeded http=200 records=0
+2026-06-07 18:03:23,843 INFO Running PUBM-0025 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+neuropathy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:24,218 INFO Finished PUBM-0024 status=succeeded http=200 records=0
+2026-06-07 18:03:24,219 INFO Running PUBM-0026 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+facial+palsy%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:24,613 INFO Finished PUBM-0025 status=succeeded http=200 records=0
+2026-06-07 18:03:24,613 INFO Running PUBM-0027 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+headache%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:24,941 INFO Finished PUBM-0026 status=succeeded http=200 records=5
+2026-06-07 18:03:24,942 INFO Running PUBM-0028 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:25,373 INFO Finished PUBM-0016 status=succeeded http=200 records=100
+2026-06-07 18:03:25,375 INFO Running PUBM-0029 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22doxycycline+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:25,680 INFO Finished PUBM-0028 status=succeeded http=200 records=22
+2026-06-07 18:03:25,681 INFO Running PUBM-0030 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22amoxicillin+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:26,079 INFO Finished PUBM-0029 status=succeeded http=200 records=0
+2026-06-07 18:03:26,080 INFO Running PUBM-0031 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22cefuroxime+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:26,392 INFO Finished PUBM-0030 status=succeeded http=200 records=0
+2026-06-07 18:03:26,392 INFO Running PUBM-0032 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22ceftriaxone+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:26,775 INFO Finished PUBM-0031 status=succeeded http=200 records=0
+2026-06-07 18:03:26,776 INFO Running PUBM-0033 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22antibiotics+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:27,108 INFO Finished PUBM-0032 status=succeeded http=200 records=0
+2026-06-07 18:03:27,108 INFO Running PUBM-0034 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+treatment+duration%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:27,501 INFO Finished PUBM-0033 status=succeeded http=200 records=0
+2026-06-07 18:03:27,501 INFO Running PUBM-0035 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+systematic+review%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:27,832 INFO Finished PUBM-0034 status=succeeded http=200 records=0
+2026-06-07 18:03:27,833 INFO Running PUBM-0036 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+randomized+trial%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:28,230 INFO Finished PUBM-0035 status=succeeded http=200 records=0
+2026-06-07 18:03:28,231 INFO Running PUBM-0037 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+cohort+study%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:28,553 INFO Finished PUBM-0036 status=succeeded http=200 records=0
+2026-06-07 18:03:28,554 INFO Running PUBM-0038 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+diagnostic+study%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:28,936 INFO Finished PUBM-0037 status=succeeded http=200 records=0
+2026-06-07 18:03:28,937 INFO Running PUBM-0039 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+clinical+guideline%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:29,269 INFO Finished PUBM-0038 status=succeeded http=200 records=0
+2026-06-07 18:03:29,270 INFO Running PUBM-0040 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=%28%22Lyme+disease+research+grant%22%5BTitle%2FAbstract%5D%29+AND+humans%5BMeSH+Terms%5D&retmode=json&retmax=100&usehistory=y&sort=pub+date&tool=topx_lyme_explorer catalog=pubmed auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:29,644 INFO Finished PUBM-0039 status=succeeded http=200 records=0
+2026-06-07 18:03:29,646 INFO Running PMC-0001 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+systematic+review%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:29,993 INFO Finished PUBM-0040 status=succeeded http=200 records=0
+2026-06-07 18:03:29,994 INFO Running PMC-0002 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+randomized+trial%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:30,369 INFO Finished PMC-0001 status=succeeded http=200 records=0
+2026-06-07 18:03:30,370 INFO Running PMC-0003 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+cohort+study%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:30,694 INFO Finished PMC-0002 status=succeeded http=200 records=0
+2026-06-07 18:03:30,694 INFO Running PMC-0004 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+diagnostic+study%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:31,229 INFO Finished PMC-0003 status=succeeded http=200 records=0
+2026-06-07 18:03:31,231 INFO Running PMC-0005 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+clinical+guideline%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:31,447 INFO Finished PMC-0004 status=succeeded http=200 records=0
+2026-06-07 18:03:31,454 INFO Running PMC-0006 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+research+grant%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:32,006 INFO Finished PMC-0005 status=succeeded http=200 records=0
+2026-06-07 18:03:32,006 INFO Running PMC-0007 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+clinical+trial%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:32,715 INFO Finished PMC-0007 status=succeeded http=200 records=0
+2026-06-07 18:03:32,716 INFO Running PMC-0008 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+patient-reported+outcomes%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:33,571 INFO Finished PMC-0008 status=succeeded http=200 records=0
+2026-06-07 18:03:33,572 INFO Running PMC-0009 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+diagnosis%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:34,338 INFO Finished PUBM-0022 status=succeeded http=200 records=0
+2026-06-07 18:03:34,340 INFO Running PMC-0010 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22diagnostic+delay+Lyme+disease%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:34,396 INFO Finished PMC-0006 status=succeeded http=200 records=0
+2026-06-07 18:03:34,396 INFO Running PMC-0011 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22delayed+diagnosis+tickborne+disease%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:35,078 INFO Finished PMC-0010 status=succeeded http=200 records=0
+2026-06-07 18:03:35,079 INFO Running PMC-0012 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+misdiagnosis%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:35,815 INFO Finished PMC-0012 status=succeeded http=200 records=0
+2026-06-07 18:03:35,816 INFO Running PMC-0013 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+fatigue%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:36,547 INFO Finished PMC-0013 status=succeeded http=200 records=0
+2026-06-07 18:03:36,548 INFO Running PMC-0014 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+cognitive+symptoms%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:36,555 INFO Finished PUBM-0027 status=succeeded http=200 records=0
+2026-06-07 18:03:36,556 INFO Running PMC-0015 https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pmc&term=%28%22Lyme+disease+brain+fog%22%5BTitle%2FAbstract%5D%29+AND+open+access%5Bfilter%5D&retmode=json&retmax=100&usehistory=y&tool=topx_lyme_explorer catalog=pubmed_central auth_alias=NCBI_API_KEY credential_sent=False
+2026-06-07 18:03:37,311 INFO Finished PMC-0014 status=succeeded http=200 records=0
+2026-06-07 18:03:37,312 INFO Running NIHR-0001 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:38,856 INFO Finished PMC-0009 status=succeeded http=200 records=21
+2026-06-07 18:03:38,857 INFO Running NIHR-0002 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:38,978 INFO Finished NIHR-0001 status=succeeded http=200 records=100
+2026-06-07 18:03:38,979 INFO Running NIHR-0003 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:39,612 INFO Finished PMC-0015 status=succeeded http=200 records=0
+2026-06-07 18:03:39,613 INFO Finished PMC-0011 status=succeeded http=200 records=0
+2026-06-07 18:03:39,613 INFO Running NIHR-0004 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:39,614 INFO Running NIHR-0005 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:40,425 INFO Finished NIHR-0002 status=succeeded http=200 records=100
+2026-06-07 18:03:40,426 INFO Running NIHR-0006 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:40,560 INFO Finished NIHR-0004 status=succeeded http=200 records=2
+2026-06-07 18:03:40,560 INFO Running NIHR-0007 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:40,563 INFO Finished NIHR-0003 status=succeeded http=200 records=100
+2026-06-07 18:03:40,565 INFO Running NIHR-0008 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:40,671 INFO Running NIHR-0009 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:40,672 INFO Finished NIHR-0005 status=succeeded http=200 records=4
+2026-06-07 18:03:41,447 INFO Finished NIHR-0009 status=succeeded http=200 records=0
+2026-06-07 18:03:41,447 INFO Running NIHR-0010 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:41,841 INFO Finished NIHR-0008 status=succeeded http=200 records=32
+2026-06-07 18:03:41,842 INFO Running NIHR-0011 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:41,936 INFO Finished NIHR-0007 status=succeeded http=200 records=51
+2026-06-07 18:03:41,937 INFO Running NIHR-0012 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:42,041 INFO Finished NIHR-0006 status=succeeded http=200 records=100
+2026-06-07 18:03:42,041 INFO Running NIHR-0013 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:42,251 INFO Finished NIHR-0010 status=succeeded http=200 records=0
+2026-06-07 18:03:42,251 INFO Running NIHR-0014 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:42,679 INFO Finished NIHR-0011 status=succeeded http=200 records=1
+2026-06-07 18:03:42,679 INFO Running NIHR-0015 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:42,772 INFO Finished NIHR-0012 status=succeeded http=200 records=0
+2026-06-07 18:03:42,772 INFO Running NIHR-0016 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:43,216 INFO Finished NIHR-0014 status=succeeded http=200 records=7
+2026-06-07 18:03:43,216 INFO Running NIHR-0017 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:43,455 INFO Finished NIHR-0013 status=succeeded http=200 records=67
+2026-06-07 18:03:43,459 INFO Running NIHR-0018 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:43,510 INFO Finished NIHR-0015 status=succeeded http=200 records=1
+2026-06-07 18:03:43,510 INFO Running NIHR-0019 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:43,834 INFO Finished NIHR-0016 status=succeeded http=200 records=5
+2026-06-07 18:03:43,835 INFO Running NIHR-0020 https://api.reporter.nih.gov/v2/projects/search catalog=nih_reporter auth_alias=None credential_sent=False
+2026-06-07 18:03:44,123 INFO Finished NIHR-0017 status=succeeded http=200 records=2
+2026-06-07 18:03:44,124 INFO Running CMSD-0001 https://data.cms.gov/?catalog_search_term=Lyme+disease+utilization&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:44,218 INFO Finished NIHR-0018 status=succeeded http=200 records=0
+2026-06-07 18:03:44,219 INFO Running CMSD-0002 https://data.cms.gov/?catalog_search_term=tickborne+disease+hospitalization&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:44,645 INFO Finished NIHR-0019 status=succeeded http=200 records=17
+2026-06-07 18:03:44,646 INFO Running CMSD-0003 https://data.cms.gov/?catalog_search_term=infectious+disease+services&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:44,719 INFO Finished CMSD-0001 status=succeeded http=200 records=0
+2026-06-07 18:03:44,720 INFO Running CMSD-0004 https://data.cms.gov/?catalog_search_term=emergency+department+infectious+disease&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:44,740 INFO Finished CMSD-0002 status=succeeded http=200 records=0
+2026-06-07 18:03:44,740 INFO Running CMSD-0005 https://data.cms.gov/?catalog_search_term=antibiotic+prescribing&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:44,910 INFO Finished NIHR-0020 status=succeeded http=200 records=6
+2026-06-07 18:03:44,911 INFO Running CMSD-0006 https://data.cms.gov/?catalog_search_term=doxycycline+utilization&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,167 INFO Finished CMSD-0003 status=succeeded http=200 records=0
+2026-06-07 18:03:45,168 INFO Running CMSD-0007 https://data.cms.gov/?catalog_search_term=laboratory+testing+utilization&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,288 INFO Finished CMSD-0005 status=succeeded http=200 records=0
+2026-06-07 18:03:45,289 INFO Running CMSD-0008 https://data.cms.gov/?catalog_search_term=Medicare+geographic+variation&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,317 INFO Finished CMSD-0004 status=succeeded http=200 records=0
+2026-06-07 18:03:45,318 INFO Running CMSD-0009 https://data.cms.gov/?catalog_search_term=rural+health+utilization&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,483 INFO Finished CMSD-0006 status=succeeded http=200 records=0
+2026-06-07 18:03:45,485 INFO Running CMSD-0010 https://data.cms.gov/?catalog_search_term=telehealth+infectious+disease&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,730 INFO Finished CMSD-0007 status=succeeded http=200 records=0
+2026-06-07 18:03:45,731 INFO Running CMSD-0011 https://data.cms.gov/?catalog_search_term=outpatient+antibiotic+use&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,816 INFO Finished CMSD-0008 status=succeeded http=200 records=0
+2026-06-07 18:03:45,817 INFO Running CMSD-0012 https://data.cms.gov/?catalog_search_term=hospital+quality+infectious+disease&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,848 INFO Finished CMSD-0009 status=succeeded http=200 records=0
+2026-06-07 18:03:45,849 INFO Running CMSD-0013 https://data.cms.gov/?catalog_search_term=Medicaid+provider+access&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:45,999 INFO Finished CMSD-0010 status=succeeded http=200 records=0
+2026-06-07 18:03:45,999 INFO Running CMSD-0014 https://data.cms.gov/?catalog_search_term=healthcare+spending+infectious+disease&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:46,278 INFO Finished CMSD-0011 status=succeeded http=200 records=0
+2026-06-07 18:03:46,279 INFO Running CMSD-0015 https://data.cms.gov/?catalog_search_term=beneficiary+travel+distance+care&follow_access_api_link=True catalog=cms_data auth_alias=None credential_sent=False
+2026-06-07 18:03:46,424 INFO Finished CMSD-0012 status=succeeded http=200 records=0
+2026-06-07 18:03:46,426 INFO Running CMSP-0001 https://data.cms.gov/provider-data/?provider_or_facility_focus=infectious+disease+physician&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:46,448 INFO Finished CMSD-0013 status=succeeded http=200 records=0
+2026-06-07 18:03:46,448 INFO Running CMSP-0002 https://data.cms.gov/provider-data/?provider_or_facility_focus=family+medicine&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:46,544 INFO Finished CMSD-0014 status=succeeded http=200 records=0
+2026-06-07 18:03:46,544 INFO Running CMSP-0003 https://data.cms.gov/provider-data/?provider_or_facility_focus=internal+medicine&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:46,868 INFO Finished CMSD-0015 status=succeeded http=200 records=0
+2026-06-07 18:03:46,869 INFO Running CMSP-0004 https://data.cms.gov/provider-data/?provider_or_facility_focus=pediatrics&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,065 INFO Finished CMSP-0002 status=succeeded http=200 records=0
+2026-06-07 18:03:47,066 INFO Running CMSP-0005 https://data.cms.gov/provider-data/?provider_or_facility_focus=rheumatology&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,070 INFO Finished CMSP-0001 status=succeeded http=200 records=0
+2026-06-07 18:03:47,070 INFO Running CMSP-0006 https://data.cms.gov/provider-data/?provider_or_facility_focus=neurology&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,133 INFO Finished CMSP-0003 status=succeeded http=200 records=0
+2026-06-07 18:03:47,134 INFO Running CMSP-0007 https://data.cms.gov/provider-data/?provider_or_facility_focus=cardiology&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,506 INFO Finished CMSP-0004 status=succeeded http=200 records=0
+2026-06-07 18:03:47,507 INFO Running CMSP-0008 https://data.cms.gov/provider-data/?provider_or_facility_focus=emergency+medicine&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,776 INFO Finished CMSP-0006 status=succeeded http=200 records=0
+2026-06-07 18:03:47,776 INFO Finished CMSP-0007 status=succeeded http=200 records=0
+2026-06-07 18:03:47,777 INFO Running CMSP-0009 https://data.cms.gov/provider-data/?provider_or_facility_focus=clinical+laboratory&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,777 INFO Running CMSP-0010 https://data.cms.gov/provider-data/?provider_or_facility_focus=critical+access+hospital&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:47,782 INFO Finished CMSP-0005 status=succeeded http=200 records=0
+2026-06-07 18:03:47,783 INFO Running CMSP-0011 https://data.cms.gov/provider-data/?provider_or_facility_focus=rural+health+clinic&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:48,169 INFO Finished CMSP-0008 status=succeeded http=200 records=0
+2026-06-07 18:03:48,171 INFO Running CMSP-0012 https://data.cms.gov/provider-data/?provider_or_facility_focus=federally+qualified+health+center&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:48,416 INFO Finished CMSP-0010 status=succeeded http=200 records=0
+2026-06-07 18:03:48,417 INFO Finished CMSP-0009 status=succeeded http=200 records=0
+2026-06-07 18:03:48,417 INFO Running CMSP-0013 https://data.cms.gov/provider-data/?provider_or_facility_focus=telehealth+provider&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:48,418 INFO Running CMSP-0014 https://data.cms.gov/provider-data/?provider_or_facility_focus=hospital+outpatient+department&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:48,435 INFO Finished CMSP-0011 status=succeeded http=200 records=0
+2026-06-07 18:03:48,435 INFO Running CMSP-0015 https://data.cms.gov/provider-data/?provider_or_facility_focus=urgent+care&follow_access_api_link=True catalog=cms_provider_data auth_alias=None credential_sent=False
+2026-06-07 18:03:48,866 INFO Finished CMSP-0012 status=succeeded http=200 records=0
+2026-06-07 18:03:48,867 INFO Running AHRQ-0001 https://datatools.ahrq.gov/?asset_search_term=Lyme+disease+healthcare+expenditures&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:49,068 INFO Finished CMSP-0014 status=succeeded http=200 records=0
+2026-06-07 18:03:49,069 INFO Running AHRQ-0002 https://datatools.ahrq.gov/?asset_search_term=tickborne+disease+utilization&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:49,072 INFO Finished CMSP-0013 status=succeeded http=200 records=0
+2026-06-07 18:03:49,073 INFO Running AHRQ-0003 https://datatools.ahrq.gov/?asset_search_term=infectious+disease+access+to+care&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:49,091 INFO Finished CMSP-0015 status=succeeded http=200 records=0
+2026-06-07 18:03:49,092 INFO Running AHRQ-0004 https://datatools.ahrq.gov/?asset_search_term=rural+healthcare+access&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:50,330 INFO Finished AHRQ-0001 status=succeeded http=200 records=0
+2026-06-07 18:03:50,330 INFO Running AHRQ-0005 https://datatools.ahrq.gov/?asset_search_term=insurance+coverage&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:50,719 INFO Finished AHRQ-0004 status=succeeded http=200 records=0
+2026-06-07 18:03:50,720 INFO Running AHRQ-0006 https://datatools.ahrq.gov/?asset_search_term=out-of-pocket+healthcare+cost&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:50,735 INFO Finished AHRQ-0002 status=succeeded http=200 records=0
+2026-06-07 18:03:50,736 INFO Running AHRQ-0007 https://datatools.ahrq.gov/?asset_search_term=community+provider+availability&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:50,744 INFO Finished AHRQ-0003 status=succeeded http=200 records=0
+2026-06-07 18:03:50,745 INFO Running AHRQ-0008 https://datatools.ahrq.gov/?asset_search_term=travel+time+healthcare&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:51,367 INFO Finished AHRQ-0005 status=succeeded http=200 records=0
+2026-06-07 18:03:51,368 INFO Running AHRQ-0009 https://datatools.ahrq.gov/?asset_search_term=healthcare+quality+rural+communities&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:51,802 INFO Finished AHRQ-0007 status=succeeded http=200 records=0
+2026-06-07 18:03:51,803 INFO Running AHRQ-0010 https://datatools.ahrq.gov/?asset_search_term=community-level+health+database&capture_codebook=True catalog=ahrq auth_alias=None credential_sent=False
+2026-06-07 18:03:51,827 INFO Finished AHRQ-0008 status=succeeded http=200 records=0
+2026-06-07 18:03:51,829 INFO Running ACS-0001 https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB01003_001E&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:52,135 INFO Finished AHRQ-0006 status=succeeded http=200 records=0
+2026-06-07 18:03:52,135 INFO Running ACS-0002 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B01001%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:52,731 INFO Finished AHRQ-0009 status=succeeded http=200 records=0
+2026-06-07 18:03:52,732 INFO Running ACS-0003 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B17001%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:53,125 INFO Finished AHRQ-0010 status=succeeded http=200 records=0
+2026-06-07 18:03:53,126 INFO Running ACS-0004 https://api.census.gov/data/2024/acs/acs5?get=NAME%2CB19013_001E&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:53,594 INFO Finished ACS-0001 status=succeeded http=200 records=100
+2026-06-07 18:03:53,595 INFO Running ACS-0005 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B27001%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:54,676 INFO Finished ACS-0004 status=succeeded http=200 records=100
+2026-06-07 18:03:54,677 INFO Running ACS-0006 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28C18108%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:58,326 INFO Finished ACS-0006 status=succeeded http=200 records=100
+2026-06-07 18:03:58,327 INFO Running ACS-0007 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B28002%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:03:59,579 INFO Finished ACS-0002 status=succeeded http=200 records=100
+2026-06-07 18:03:59,580 INFO Running ACS-0008 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B28001%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:01,104 INFO Finished ACS-0003 status=succeeded http=200 records=100
+2026-06-07 18:04:01,104 INFO Running ACS-0009 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B08201%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:01,598 INFO Finished ACS-0007 status=succeeded http=200 records=100
+2026-06-07 18:04:01,599 INFO Running ACS-0010 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B08301%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:01,744 INFO Finished ACS-0005 status=succeeded http=200 records=100
+2026-06-07 18:04:01,745 INFO Running ACS-0011 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B15003%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:02,440 INFO Finished ACS-0008 status=succeeded http=200 records=100
+2026-06-07 18:04:02,441 INFO Running ACS-0012 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28C16002%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:05,506 INFO Finished ACS-0012 status=succeeded http=200 records=100
+2026-06-07 18:04:05,506 INFO Running ACS-0013 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B07001%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:05,606 INFO Finished ACS-0010 status=succeeded http=200 records=100
+2026-06-07 18:04:05,607 INFO Running ACS-0014 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B23025%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:05,972 INFO Finished ACS-0011 status=succeeded http=200 records=100
+2026-06-07 18:04:05,973 INFO Running ACS-0015 https://api.census.gov/data/2024/acs/acs5?get=NAME%2Cgroup%28B25001%29&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:06,205 INFO Finished ACS-0009 status=succeeded http=200 records=100
+2026-06-07 18:04:06,206 INFO Running ACS-0016 https://api.census.gov/data/2024/acs/acs5?get=NAME%2CNAME%2CB01003_001E&for=county%3A%2A&key=%3Credacted%3E catalog=census_acs5 auth_alias=CENSUS_API_KEY credential_sent=True
+2026-06-07 18:04:07,574 INFO Finished ACS-0015 status=succeeded http=200 records=100
+2026-06-07 18:04:07,576 INFO Running SVI-0001 https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html?geography=county&capture_csv_and_documentation=True catalog=cdc_svi auth_alias=None credential_sent=False
+2026-06-07 18:04:07,635 INFO Finished ACS-0016 status=succeeded http=200 records=100
+2026-06-07 18:04:07,635 INFO Running SVI-0002 https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html?geography=tract&capture_csv_and_documentation=True catalog=cdc_svi auth_alias=None credential_sent=False
+2026-06-07 18:04:07,904 INFO Finished ACS-0014 status=succeeded http=200 records=100
+2026-06-07 18:04:07,905 INFO Running SVI-0003 https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html?geography=tract&capture_csv_and_documentation=True catalog=cdc_svi auth_alias=None credential_sent=False
+2026-06-07 18:04:08,215 INFO Finished SVI-0001 status=succeeded http=200 records=0
+2026-06-07 18:04:08,216 INFO Running SVI-0004 https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html?geography=tract&capture_csv_and_documentation=True catalog=cdc_svi auth_alias=None credential_sent=False
+2026-06-07 18:04:08,675 INFO Finished SVI-0003 status=succeeded http=200 records=0
+2026-06-07 18:04:08,676 INFO Running SVI-0005 https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html?geography=tract&capture_csv_and_documentation=True catalog=cdc_svi auth_alias=None credential_sent=False
+2026-06-07 18:04:08,771 INFO Finished SVI-0004 status=succeeded http=200 records=0
+2026-06-07 18:04:08,772 INFO Running SVI-0006 https://www.atsdr.cdc.gov/place-health/php/svi/svi-data-documentation-download.html?geography=tract&capture_csv_and_documentation=True catalog=cdc_svi auth_alias=None credential_sent=False
+2026-06-07 18:04:08,995 INFO Finished SVI-0002 status=succeeded http=200 records=0
+2026-06-07 18:04:08,997 INFO Running NOAA-0001 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TMAX&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:09,318 INFO Finished SVI-0005 status=succeeded http=200 records=0
+2026-06-07 18:04:09,319 INFO Running NOAA-0002 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TMIN&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:09,392 INFO Finished SVI-0006 status=succeeded http=200 records=0
+2026-06-07 18:04:09,393 INFO Running NOAA-0003 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:15,861 INFO Finished NOAA-0003 status=succeeded http=200 records=1
+2026-06-07 18:04:15,862 INFO Running NOAA-0004 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:17,247 INFO Finished ACS-0013 status=succeeded http=200 records=100
+2026-06-07 18:04:17,248 INFO Running NOAA-0005 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=SNOW&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:19,595 INFO Finished NOAA-0001 status=succeeded http=200 records=100
+2026-06-07 18:04:19,596 INFO Running NOAA-0006 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=SNWD&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:26,408 INFO Finished NOAA-0002 status=succeeded http=200 records=100
+2026-06-07 18:04:26,408 INFO Running NOAA-0007 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=HTDD&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:27,308 INFO Finished NOAA-0007 status=succeeded http=200 records=1
+2026-06-07 18:04:27,310 INFO Running NOAA-0008 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=CLDD&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:28,221 INFO Finished NOAA-0008 status=succeeded http=200 records=1
+2026-06-07 18:04:28,221 INFO Running NOAA-0009 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=MLY-TAVG-NORMAL&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:29,176 INFO Finished NOAA-0009 status=succeeded http=200 records=1
+2026-06-07 18:04:29,177 INFO Running NOAA-0010 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=MLY-PRCP-NORMAL&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:29,981 INFO Finished NOAA-0010 status=succeeded http=200 records=1
+2026-06-07 18:04:29,982 INFO Running NOAA-0011 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TMIN&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:35,922 INFO Finished NOAA-0006 status=succeeded http=200 records=100
+2026-06-07 18:04:35,923 INFO Running NOAA-0012 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:36,745 INFO Finished NOAA-0011 status=succeeded http=200 records=100
+2026-06-07 18:04:36,745 INFO Running NOAA-0013 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=PRCP&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:38,409 INFO Finished NOAA-0012 status=succeeded http=200 records=1
+2026-06-07 18:04:38,410 INFO Running NOAA-0014 https://www.ncei.noaa.gov/cdo-web/api/v2/data?datasetid=GHCND&datatypeid=TAVG&startdate=2024-05-01&enddate=2024-05-07&locationid=FIPS%3A24&limit=1000&offset=1&units=standard catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:40,062 INFO Finished NOAA-0005 status=succeeded http=200 records=100
+2026-06-07 18:04:40,063 INFO Running NOAA-0015 https://www.ncei.noaa.gov/cdo-web/api/v2/stations?datasetid=GHCND&locationid=FIPS%3A24&limit=1000&offset=1 catalog=noaa_cdo auth_alias=NOAA_CDO_TOKEN credential_sent=True
+2026-06-07 18:04:40,914 INFO Finished NOAA-0014 status=succeeded http=200 records=1
+2026-06-07 18:04:40,916 INFO Running NLCD-0001 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=annual+land+cover&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:41,399 INFO Finished NOAA-0015 status=succeeded http=200 records=100
+2026-06-07 18:04:41,399 INFO Running NLCD-0002 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=forest+cover+percentage&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:42,919 INFO Finished NLCD-0001 status=succeeded http=200 records=0
+2026-06-07 18:04:42,922 INFO Running NLCD-0003 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=developed+land+percentage&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:43,349 INFO Finished NLCD-0002 status=succeeded http=200 records=0
+2026-06-07 18:04:43,349 INFO Running NLCD-0004 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=forest+edge+density&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:44,836 INFO Finished NLCD-0003 status=succeeded http=200 records=0
+2026-06-07 18:04:44,836 INFO Running NLCD-0005 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=land+cover+change&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:45,486 INFO Finished NLCD-0004 status=succeeded http=200 records=0
+2026-06-07 18:04:45,487 INFO Running NLCD-0006 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=impervious+surface+percentage&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:45,510 INFO Finished NOAA-0004 status=succeeded http=200 records=100
+2026-06-07 18:04:45,511 INFO Running NLCD-0007 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=habitat+fragmentation&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:46,707 INFO Finished NLCD-0005 status=succeeded http=200 records=0
+2026-06-07 18:04:46,707 INFO Running NLCD-0008 https://www.usgs.gov/centers/eros/science/annual-nlcd-data-access?product_or_derived_feature=county+zonal+statistics&target_resolution=30m&derive_county_features=True catalog=usgs_annual_nlcd auth_alias=None credential_sent=False
+2026-06-07 18:04:47,520 INFO Finished NLCD-0007 status=succeeded http=200 records=0
+2026-06-07 18:04:47,525 INFO Running EPA-0001 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=forest+and+woodland+cover&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:47,579 INFO Finished NLCD-0006 status=succeeded http=200 records=0
+2026-06-07 18:04:47,581 INFO Running EPA-0002 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=tree+cover&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:48,105 INFO Finished EPA-0001 status=succeeded http=202 records=0
+2026-06-07 18:04:48,107 INFO Running EPA-0003 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=green+space&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:48,120 INFO Finished EPA-0002 status=succeeded http=202 records=0
+2026-06-07 18:04:48,122 INFO Running EPA-0004 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=land+use+mix&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:48,599 INFO Finished NLCD-0008 status=succeeded http=200 records=0
+2026-06-07 18:04:48,600 INFO Running EPA-0005 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=road+density&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:48,645 INFO Finished EPA-0003 status=succeeded http=202 records=0
+2026-06-07 18:04:48,646 INFO Running EPA-0006 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=population+density&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:48,657 INFO Finished EPA-0004 status=succeeded http=202 records=0
+2026-06-07 18:04:48,657 INFO Running EPA-0007 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=recreation+access&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:48,808 INFO Finished NOAA-0013 status=succeeded http=200 records=100
+2026-06-07 18:04:48,809 INFO Running EPA-0008 https://www.epa.gov/enviroatlas/enviroatlas-web-services?layer_search_term=ecosystem+services+human+health&preferred_formats=GeoJSON&preferred_formats=CSV&preferred_formats=WFS&preferred_formats=ArcGIS+REST catalog=epa_enviroatlas auth_alias=None credential_sent=False
+2026-06-07 18:04:49,135 INFO Finished EPA-0005 status=succeeded http=202 records=0
+2026-06-07 18:04:49,137 INFO Running FDAL-0001 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22doxycycline%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:49,194 INFO Finished EPA-0006 status=succeeded http=202 records=0
+2026-06-07 18:04:49,194 INFO Finished EPA-0007 status=succeeded http=202 records=0
+2026-06-07 18:04:49,195 INFO Running FDAL-0002 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22amoxicillin%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:49,197 INFO Running FDAE-0001 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22doxycycline%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:49,385 INFO Finished EPA-0008 status=succeeded http=202 records=0
+2026-06-07 18:04:49,386 INFO Running FDAE-0002 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22amoxicillin%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:51,368 INFO Finished FDAL-0002 status=succeeded http=200 records=100
+2026-06-07 18:04:51,370 INFO Running FDAL-0003 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22cefuroxime%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:51,964 INFO Finished FDAE-0001 status=succeeded http=200 records=100
+2026-06-07 18:04:51,964 INFO Running FDAE-0003 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22cefuroxime%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:52,012 INFO Finished FDAE-0002 status=succeeded http=200 records=100
+2026-06-07 18:04:52,034 INFO Running FDAL-0004 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22ceftriaxone%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:52,212 INFO Finished FDAL-0001 status=succeeded http=200 records=100
+2026-06-07 18:04:52,213 INFO Running FDAE-0004 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22ceftriaxone%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:52,617 INFO Finished FDAL-0003 status=succeeded http=200 records=37
+2026-06-07 18:04:52,617 INFO Running FDAL-0005 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22azithromycin%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:53,279 INFO Finished FDAL-0004 status=succeeded http=200 records=34
+2026-06-07 18:04:53,280 INFO Running FDAE-0005 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22azithromycin%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:53,832 INFO Finished FDAE-0003 status=succeeded http=200 records=100
+2026-06-07 18:04:53,837 INFO Running FDAL-0006 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22minocycline%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:54,422 INFO Finished FDAE-0004 status=succeeded http=200 records=100
+2026-06-07 18:04:54,423 INFO Running FDAE-0006 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22minocycline%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:55,451 INFO Finished FDAL-0005 status=succeeded http=200 records=100
+2026-06-07 18:04:55,451 INFO Running FDAL-0007 https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22penicillin%22&limit=100 catalog=openfda_drug_label auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:55,780 INFO Finished FDAE-0005 status=succeeded http=200 records=100
+2026-06-07 18:04:55,807 INFO Running FDAE-0007 https://api.fda.gov/drug/event.json?search=patient.drug.openfda.generic_name%3A%22penicillin%22&limit=100 catalog=openfda_drug_event auth_alias=OPENFDA_API_KEY credential_sent=False
+2026-06-07 18:04:56,011 INFO Finished FDAL-0006 status=succeeded http=200 records=75
+2026-06-07 18:04:56,013 INFO Running RXN-0001 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=doxycycline&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:56,569 INFO Finished FDAE-0006 status=succeeded http=200 records=100
+2026-06-07 18:04:56,569 INFO Running RXN-0002 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=amoxicillin&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:56,816 INFO Finished FDAL-0007 status=succeeded http=200 records=73
+2026-06-07 18:04:56,818 INFO Running RXN-0003 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=cefuroxime&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:57,095 INFO Finished RXN-0001 status=succeeded http=200 records=1
+2026-06-07 18:04:57,096 INFO Running RXN-0004 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=ceftriaxone&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:57,777 INFO Finished FDAE-0007 status=succeeded http=200 records=100
+2026-06-07 18:04:57,779 INFO Running RXN-0005 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=azithromycin&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:57,798 INFO Finished RXN-0002 status=succeeded http=200 records=1
+2026-06-07 18:04:57,799 INFO Running RXN-0006 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=minocycline&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:57,826 INFO Finished RXN-0003 status=succeeded http=200 records=1
+2026-06-07 18:04:57,828 INFO Running RXN-0007 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=penicillin&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:58,050 INFO Finished RXN-0004 status=succeeded http=200 records=1
+2026-06-07 18:04:58,051 INFO Running RXN-0008 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=doxycycline+hyclate&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:58,583 INFO Finished RXN-0005 status=succeeded http=200 records=1
+2026-06-07 18:04:58,584 INFO Running RXN-0009 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=doxycycline+monohydrate&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:58,639 INFO Finished RXN-0006 status=succeeded http=200 records=1
+2026-06-07 18:04:58,640 INFO Running RXN-0010 https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=cefuroxime+axetil&maxEntries=20&option=1 catalog=rxnorm auth_alias=None credential_sent=False
+2026-06-07 18:04:58,655 INFO Finished RXN-0007 status=succeeded http=200 records=1
+2026-06-07 18:04:58,891 INFO Finished RXN-0008 status=succeeded http=200 records=1
+2026-06-07 18:04:59,431 INFO Finished RXN-0009 status=succeeded http=200 records=1
+2026-06-07 18:04:59,455 INFO Finished RXN-0010 status=succeeded http=200 records=1
+2026-06-07 18:04:59,476 INFO Completed run_id=2026-06-07_18-02-40_MDT succeeded=333 failed=0 manifest=C:\codex_programming\lyme_llm_wiki\topx_lyme_data_exploration_kit\output\runs\2026-06-07_18-02-40_MDT\run_manifest.json

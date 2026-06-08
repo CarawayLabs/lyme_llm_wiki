@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-06-07T18:19:16",
+  "completed": [
+    {
+      "job_id": "data_linkage_feasibility",
+      "interaction_id": "v1_ChdXZnNsYXAzS0RLZlJqTWNQOFoyTHdRWRIXV2ZzbGFwM0tES2ZSak1jUDhaMkx3UVk",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\data_linkage_feasibility.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\06_data_linkage_feasibility_20260607_172858.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "evidence_and_controversy_map",
+      "interaction_id": "v1_ChdMUFVsYXRMa0ZJRFJ6N0lQbzRpQm9BaxIXTFBVbGF0TGtGSURSejdJUG80aUJvQWs",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\evidence_and_controversy_map.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\04_evidence_and_controversy_map_20260607_165659.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "interview_preparation",
+      "interaction_id": "v1_Chc3Z2dtYXBEU0pfdVU2ZGtQNmZXNzhBVRIXN2dnbWFwRFNKX3VVNmRrUDZmVzc4QVU",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\interview_preparation.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\11_interview_preparation_20260607_181916.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "open_data_inventory",
+      "interaction_id": "v1_ChdMUFVsYXVtUUZjLUh6N0lQM1pxWXNBOBIXTFBVbGF1bVFGYy1IejdJUDNacVlzQTg",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\open_data_inventory.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\03_open_data_inventory_20260607_165805.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "opportunity_generation",
+      "interaction_id": "v1_ChdOUUltYW9HR05MLW1xdHNQdGFUMTRBbxIXTlFJbWFvR0dOTC1tcXRzUHRhVDE0QW8",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\opportunity_generation.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\09_opportunity_generation_20260607_180034.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "patient_and_clinician_journeys",
+      "interaction_id": "v1_ChdMUFVsYXZya0ZLcUV6N0lQenUtaHlBZxIXTFBVbGF2cmtGS3FFejdJUHp1LWh5QWc",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\patient_and_clinician_journeys.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\02_patient_and_clinician_journeys_20260607_165650.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "previous_solution_analysis",
+      "interaction_id": "v1_ChdXZnNsYXZxMERZSE1qTWNQeTZXWXNRbxIXV2ZzbGF2cTBEWUhNak1jUHk2V1lzUW8",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\previous_solution_analysis.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\07_previous_solution_analysis_20260607_172105.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "problem_space_map",
+      "interaction_id": "v1_ChdMUFVsYXBqdUZyQ0V6N0lQdzhIN2tBWRIXTFBVbGFwanVGckNFejdJUHc4SDdrQVk",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\lyme_disease_problem_space_map.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\01_problem_space_map_20260607_165629.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "red_team_analysis",
+      "interaction_id": "v1_ChdJd1ltYXVERkpzcmlxdHNQc2RpZTZBOBIXSXdZbWF1REZKc3JpcXRzUHNkaWU2QTg",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\red_team_analysis.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\10_red_team_analysis_20260607_181229.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "stakeholder_and_incentive_map",
+      "interaction_id": "v1_Chd1XzRsYXZHbklhaWVxdHNQcm8zbXNRdxIXdV80bGF2R25JYWllcXRzUHJvM21zUXc",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\stakeholder_and_incentive_map.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\08_stakeholder_and_incentive_map_20260607_174349.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "synthesis_agent_integrate_findings",
+      "interaction_id": "resp_01bff3977c4b9808006a25fb1584248199a1c2b82527ffc8a2",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\synthesis_agent_integrate_findings.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\05_synthesis_agent_integrate_findings_20260607_171432.md",
+      "provider": "openai"
+    }
+  ],
+  "failed": []
+}

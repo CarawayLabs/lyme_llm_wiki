@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:07.665177Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "TICK-0008",
+    "query_mode": "download_manifest",
+    "method": "GET",
+    "endpoint": "https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html",
+    "search_term": "Powassan virus tick pathogen detections",
+    "search_expression": "Powassan virus tick pathogen detections",
+    "parameters": {
+      "target_asset_description": "County-level pathogen detection records"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "CDC Tick Surveillance Data Sets",
+    "catalog_slug": "cdc_tick_surveillance",
+    "source_type": "downloadable_surveillance_files",
+    "organization": "Centers for Disease Control and Prevention",
+    "docs_url": "https://www.cdc.gov/ticks/data-research/facts-stats/tick-surveillance-data-sets.html",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "A no-records value is not evidence of absence. Preserve sampling and status definitions."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:07.141024Z",
+    "http_status": 200,
+    "content_type": "text/html",
+    "duration_ms": 170,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 0,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 0,
+    "total_count": null,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\cdc_tick_surveillance\\TICK-0008_powassan-virus-tick-pathogen-detections\\raw\\page_0001.html",
+      "sha256": "2cb8b29ac47c3d4a50ff64064157869a1272bc70884d250f31e0d38cc0b47b51",
+      "byte_count": 50968
+    }
+  },
+  "records": [],
+  "warnings": [],
+  "errors": []
+}

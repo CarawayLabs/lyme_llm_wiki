@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-07T16:58:05",
+  "completed": [
+    {
+      "job_id": "evidence_and_controversy_map",
+      "interaction_id": "v1_ChdMUFVsYXRMa0ZJRFJ6N0lQbzRpQm9BaxIXTFBVbGF0TGtGSURSejdJUG80aUJvQWs",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\evidence_and_controversy_map.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\04_evidence_and_controversy_map_20260607_165659.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "open_data_inventory",
+      "interaction_id": "v1_ChdMUFVsYXVtUUZjLUh6N0lQM1pxWXNBOBIXTFBVbGF1bVFGYy1IejdJUDNacVlzQTg",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\open_data_inventory.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\03_open_data_inventory_20260607_165805.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "patient_and_clinician_journeys",
+      "interaction_id": "v1_ChdMUFVsYXZya0ZLcUV6N0lQenUtaHlBZxIXTFBVbGF2cmtGS3FFejdJUHp1LWh5QWc",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\patient_and_clinician_journeys.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\02_patient_and_clinician_journeys_20260607_165650.md",
+      "provider": "gemini"
+    },
+    {
+      "job_id": "problem_space_map",
+      "interaction_id": "v1_ChdMUFVsYXBqdUZyQ0V6N0lQdzhIN2tBWRIXTFBVbGFwanVGckNFejdJUHc4SDdrQVk",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\lyme_disease_problem_space_map.md",
+      "output_file": "C:\\codex_programming\\lyme_llm_wiki\\outputs\\deep_research\\phase_zero\\01_problem_space_map_20260607_165629.md",
+      "provider": "gemini"
+    }
+  ],
+  "failed": [
+    {
+      "node_id": "synthesis_agent_integrate_findings",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\synthesis_agent_integrate_findings.md",
+      "error": "Client.__init__() got an unexpected keyword argument 'proxies'"
+    },
+    {
+      "node_id": "data_linkage_feasibility",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\data_linkage_feasibility.md",
+      "error": "Skipped because dependency failed or was skipped: synthesis_agent_integrate_findings"
+    },
+    {
+      "node_id": "interview_preparation",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\interview_preparation.md",
+      "error": "Skipped because dependency failed or was skipped: stakeholder_and_incentive_map, opportunity_generation, red_team_analysis"
+    },
+    {
+      "node_id": "opportunity_generation",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\opportunity_generation.md",
+      "error": "Skipped because dependency failed or was skipped: data_linkage_feasibility, synthesis_agent_integrate_findings"
+    },
+    {
+      "node_id": "previous_solution_analysis",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\previous_solution_analysis.md",
+      "error": "Skipped because dependency failed or was skipped: synthesis_agent_integrate_findings"
+    },
+    {
+      "node_id": "red_team_analysis",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\red_team_analysis.md",
+      "error": "Skipped because dependency failed or was skipped: opportunity_generation"
+    },
+    {
+      "node_id": "stakeholder_and_incentive_map",
+      "input_file": "C:\\codex_programming\\lyme_llm_wiki\\input\\deep_research\\stakeholder_and_incentive_map.md",
+      "error": "Skipped because dependency failed or was skipped: data_linkage_feasibility, previous_solution_analysis, synthesis_agent_integrate_findings"
+    }
+  ]
+}

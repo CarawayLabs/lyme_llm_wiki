@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "run": {
+    "run_id": "2026-06-07_18-02-40_MDT",
+    "started_at": "2026-06-08T00:02:40.369110Z",
+    "completed_at": "2026-06-08T00:03:09.827683Z",
+    "status": "succeeded",
+    "software": {
+      "name": "topx-lyme-catalog-explorer",
+      "version": "0.1.0",
+      "git_commit": "a0eeff296b130b3e7e818fce8fad19280fc55f2f"
+    },
+    "environment": {
+      "mode": "search",
+      "credential_aliases_available": "CDC_SOCRATA_APP_TOKEN,CENSUS_API_KEY,DATA_GOV_API_KEY,NOAA_CDO_TOKEN"
+    }
+  },
+  "query": {
+    "search_id": "CTG-0005",
+    "query_mode": "record_search",
+    "method": "GET",
+    "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+    "search_term": "Borrelia miyamotoi",
+    "search_expression": "Borrelia miyamotoi",
+    "parameters": {
+      "query.cond": "Borrelia miyamotoi",
+      "query.term": "Borrelia miyamotoi",
+      "pageSize": 100,
+      "format": "json",
+      "countTotal": "true"
+    },
+    "request_body": null,
+    "auth": {
+      "requirement": "none",
+      "credential_alias": null,
+      "credential_sent": false
+    }
+  },
+  "source": {
+    "catalog_name": "ClinicalTrials.gov API v2",
+    "catalog_slug": "clinicaltrials_gov",
+    "source_type": "clinical_study_registry",
+    "organization": "National Institutes of Health",
+    "docs_url": "https://clinicaltrials.gov/data-api/api",
+    "license_url": null,
+    "terms_url": null,
+    "data_use_restrictions": [
+      "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+    ]
+  },
+  "response": {
+    "retrieved_at": "2026-06-08T00:03:08.627039Z",
+    "http_status": 200,
+    "content_type": null,
+    "duration_ms": 476,
+    "request_id": null,
+    "page": {
+      "page_number": 1,
+      "page_size": 1,
+      "cursor_in": null,
+      "cursor_out": null,
+      "offset": null,
+      "has_more": false
+    },
+    "record_count": 1,
+    "total_count": 1,
+    "rate_limit": null,
+    "raw_file": {
+      "path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0005_borrelia-miyamotoi\\raw\\page_0001.bin",
+      "sha256": "41343db2ec780ae1ce79793501efcecc015b18413f2a180aae4e6e61a8444375",
+      "byte_count": 4723
+    }
+  },
+  "records": [
+    {
+      "normalized_id": "clinicaltrials_gov:CTG-0005-0",
+      "source_record_id": "CTG-0005-0",
+      "record_type": "clinical_trial",
+      "title": "Borrelia miyamotoi",
+      "description": null,
+      "summary": null,
+      "source_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Borrelia+miyamotoi&query.term=Borrelia+miyamotoi&pageSize=100&format=json&countTotal=true",
+      "retrieved_at": "2026-06-08T00:03:08.627039Z",
+      "modified_at": null,
+      "issued_at": null,
+      "publisher": null,
+      "organizations": [],
+      "people": [],
+      "identifiers": {
+        "nct_id": "CTG-0005-0"
+      },
+      "topics": [],
+      "conditions": [
+        "Borrelia miyamotoi"
+      ],
+      "pathogens": [],
+      "vectors": [],
+      "interventions": [],
+      "medications": [],
+      "geographies": [
+        {
+          "level": "national",
+          "name": "United States"
+        }
+      ],
+      "temporal_coverage": {
+        "start_date": null,
+        "end_date": null,
+        "years": [],
+        "vintage": "All available; preserve source vintage",
+        "update_frequency": null
+      },
+      "access": {
+        "access_level": "public",
+        "machine_readable": true,
+        "api_available": true,
+        "download_available": false,
+        "requires_account": false,
+        "requires_license": false,
+        "cost": "free/unknown",
+        "license_url": null,
+        "rights_notes": "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+      },
+      "distributions": [],
+      "relationships": [],
+      "data_quality": {
+        "completeness_score": null,
+        "freshness_score": null,
+        "has_documentation": true,
+        "has_data_dictionary": null,
+        "known_limitations": [
+          "Registry data are not patient-level data. Preserve study status, design, eligibility, outcomes, results-posting status, and update date."
+        ],
+        "suppression_rules": [],
+        "manual_review_required": false
+      },
+      "provenance": {
+        "source_catalog": "clinicaltrials_gov",
+        "search_id": "CTG-0005",
+        "normalization_version": "0.1.0",
+        "source_page": 1,
+        "source_row_index": 0,
+        "retrieval_url": "https://clinicaltrials.gov/api/v2/studies?query.cond=Borrelia+miyamotoi&query.term=Borrelia+miyamotoi&pageSize=100&format=json&countTotal=true",
+        "raw_file_path": "runs\\2026-06-07_18-02-40_MDT\\catalogs\\clinicaltrials_gov\\CTG-0005_borrelia-miyamotoi\\raw\\page_0001.bin",
+        "raw_record_sha256": "9069c7eab3234a22a7a280c7da7ceda17ee0009d9fa54be120777b51f79256d4"
+      },
+      "raw_metadata": {
+        "protocolSection": {
+          "identificationModule": {
+            "nctId": "NCT07343089",
+            "orgStudyIdInfo": {
+              "id": "9819"
+            },
+            "organization": {
+              "fullName": "University Hospital, Strasbourg, France",
+              "class": "OTHER"
+            },
+            "briefTitle": "A Multicenter Real-life Study of Disseminated Borreliosis Cases Occurring in Patients Receiving Anti-CD20 Treatment in France",
+            "officialTitle": "A Multicenter Real-life Study of Disseminated Borreliosis Cases Occurring in Patients Receiving Anti-CD20 Treatment in France",
+            "acronym": "BorDiMab"
+          },
+          "statusModule": {
+            "statusVerifiedDate": "2026-01",
+            "overallStatus": "RECRUITING",
+            "expandedAccessInfo": {
+              "hasExpandedAccess": false
+            },
+            "startDateStruct": {
+              "date": "2025-08-29",
+              "type": "ACTUAL"
+            },
+            "primaryCompletionDateStruct": {
+              "date": "2026-08",
+              "type": "ESTIMATED"
+            },
+            "completionDateStruct": {
+              "date": "2026-08-29",
+              "type": "ESTIMATED"
+            },
+            "studyFirstSubmitDate": "2026-01-06",
+            "studyFirstSubmitQcDate": "2026-01-06",
+            "studyFirstPostDateStruct": {
+              "date": "2026-01-15",
+              "type": "ACTUAL"
+            },
+            "lastUpdateSubmitDate": "2026-01-06",
+            "lastUpdatePostDateStruct": {
+              "date": "2026-01-15",
+              "type": "ACTUAL"
+            }
+          },
+          "sponsorCollaboratorsModule": {
+            "responsibleParty": {
+              "type": "SPONSOR"
+            },
+            "leadSponsor": {
+              "name": "University Hospital, Strasbourg, France",
+              "class": "OTHER"
+            }
+          },
+          "oversightModule": {
+            "oversightHasDmc": false,
+            "isFdaRegulatedDrug": false,
+            "isFdaRegulatedDevice": false
+          },
+          "descriptionModule": {
+            "briefSummary": "Clinical, biological, radiological, and pharmacological description of cases of disseminated borreliosis (Borrelia burgdorferi sl. and Borrelia miyamotoi) occurring in patients who received drug treatment based on anti-CD20 monoclonal antibodies."
+          },
+          "conditionsModule": {
+            "conditions": [
+              "Borrelia Infections"
+            ],
+            "keywords": [
+              "Borreliosis, Lyme",
+              "Borrelia Infections",
+              "Borrelia Burgdorferi",
+              "Borrelia Miyamotoi",
+              "Anti-CD20 monoclonal antibodies"
+            ]
+          },
+          "designModule": {
+            "studyType": "OBSERVATIONAL",
+            "patientRegistry": false,
+            "designInfo": {
+              "observationalModel": "CASE_ONLY",
+              "timePerspective": "RETROSPECTIVE"
+            },
+            "enrollmentInfo": {
+              "count": 100,
+              "type": "ESTIMATED"
+            }
+          },
+          "outcomesModule": {
+            "primaryOutcomes": [
+              {
+                "measure": "Description of the clinical presentation of cases of disseminated borreliosis occurring in patients receiving anti-CD20 therapy in France",
+                "description": "The clinical presentation describes how the disease manifests in patients:\n\n* the symptoms,\n* their severity,\n* and their progression.\n\nExample:\n\nTwo patients may have the same disease, but one will primarily experience fever while the other will have neurological symptoms. This is part of the clinical presentation.",
+                "timeFrame": "Up to 12 months"
+              }
+            ]
+          },
+          "eligibilityModule": {
+            "eligibilityCriteria": "Inclusion Criteria:\n\n* Minor or adult subject\n* Having presented disseminated borreliosis confirmed by molecular biology (Borrelia burgdorferi sl. or Borrelia miyamotoi) within 24 months of receiving treatment with an anti-CD20 monoclonal antibody between January 1, 2010, and July 30, 2025.\n\nExclusion Criteria:\n\n\\- Refusal to participate in the study",
+            "healthyVolunteers": false,
+            "sex": "ALL",
+            "minimumAge": "1 Year",
+            "stdAges": [
+              "CHILD",
+              "ADULT",
+              "OLDER_ADULT"
+            ],
+            "studyPopulation": "Patient having presented disseminated borreliosis confirmed by molecular biology (Borrelia burgdorferi sl. or Borrelia miyamotoi) within 24 months of receiving treatment with an anti-CD20 monoclonal antibody between January 1, 2010, and July 30, 2025.",
+            "samplingMethod": "NON_PROBABILITY_SAMPLE"
+          },
+          "contactsLocationsModule": {
+            "centralContacts": [
+              {
+                "name": "Pierre BOYER, MD",
+                "role": "CONTACT",
+                "phone": "33 3 69 55 14 69",
+                "email": "pierre.boyer@chru-strasbourg.fr"
+              }
+            ],
+            "locations": [
+              {
+                "facility": "Laboratoire de Bactériologie - CHU de Strasbourg - France",
+                "status": "RECRUITING",
+                "city": "Strasbourg",
+                "zip": "67091",
+                "country": "France",
+                "contacts": [
+                  {
+                    "name": "Pierre BOYER, MD",
+                    "role": "CONTACT",
+                    "phone": "33 3 69 55 14 69",
+                    "email": "pierre.boyer@chru-strasbourg.fr"
+                  },
+                  {
+                    "name": "Émilie TALAGRAND-REBOUL, MD",
+                    "role": "CONTACT",
+                    "phone": "33 3 69 55 14 57",
+                    "email": "Emilie.TALAGRANDREBOUL@chru-strasbourg.fr"
+                  },
+                  {
+                    "name": "Pierre BOYER, MD",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                  },
+                  {
+                    "name": "Émilie TALAGRAND-REBOUL",
+                    "role": "PRINCIPAL_INVESTIGATOR"
+                  }
+                ],
+                "geoPoint": {
+                  "lat": 48.58392,
+                  "lon": 7.74553
+                }
+              }
+            ]
+          }
+        },
+        "derivedSection": {
+          "miscInfoModule": {
+            "versionHolder": "2026-06-05"
+          },
+          "conditionBrowseModule": {
+            "meshes": [
+              {
+                "id": "D001899",
+                "term": "Borrelia Infections"
+              },
+              {
+                "id": "D008193",
+                "term": "Lyme Disease"
+              }
+            ],
+            "ancestors": [
+              {
+                "id": "D013145",
+                "term": "Spirochaetales Infections"
+              },
+              {
+                "id": "D016905",
+                "term": "Gram-Negative Bacterial Infections"
+              },
+              {
+                "id": "D001424",
+                "term": "Bacterial Infections"
+              },
+              {
+                "id": "D001423",
+                "term": "Bacterial Infections and Mycoses"
+              },
+              {
+                "id": "D007239",
+                "term": "Infections"
+              },
+              {
+                "id": "D017282",
+                "term": "Tick-Borne Diseases"
+              },
+              {
+                "id": "D000079426",
+                "term": "Vector Borne Diseases"
+              }
+            ]
+          }
+        },
+        "hasResults": false
+      }
+    }
+  ],
+  "warnings": [],
+  "errors": []
+}
